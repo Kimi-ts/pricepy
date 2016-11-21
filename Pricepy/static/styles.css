@@ -1,6 +1,26 @@
-h1 {
-  color: #FF7F50;
+* {
+  padding: 0;
+  margin: 0;
 }
-h3 {
-  color: #800082;
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+.row {
+  display: table;
+  width: 100%;
+}
+.row.fullscreen {
+  height: 100%;
+}
+.slide {
+  text-align: center;
+  color: white;
+  background-color: lightblue;
+}
+.slide--centered {
+  display: table-cell;
+  vertical-align: middle;
 }
