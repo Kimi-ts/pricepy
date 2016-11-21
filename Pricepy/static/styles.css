@@ -19,8 +19,8 @@ body {
   text-align: center;
   color: white;
   background-color: lightblue;
+  display: table-cell;
 }
 .slide--centered {
-  display: table-cell;
   vertical-align: middle;
 }
