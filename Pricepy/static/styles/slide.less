@@ -3,6 +3,10 @@
     color: @primarytextcolor;
     background-color: @primarybackgroundcolor;
     display: table-cell;
+    background-size: cover;
+    //background-repeat: no-repeat;
+    //note: just to test: background-image should be inline property!
+    background-image: url('content/2.jpg');
 }
 
 .slide--centered{
@@ -10,5 +14,15 @@
 }
 
 .slide-headline{
+    font-size: @headerfontsize;
+}
 
+.slide-subheadline{
+    font-family: @headlinefont;
+    font-size: @subheaderfontsize;
+    margin: 10px 0 15px 0;
+}
+
+.slide-btn{
+    display: inline-block;
 }
