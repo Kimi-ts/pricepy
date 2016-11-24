@@ -1,8 +1,30 @@
 .row{
     display: table;
-    width: 100%;
+    background-color: @primarybackgroundcolor;
 }
 
-.row.fullscreen {
+.row--alternate {
+    background-color: @secondarybackgroundcolor;
+}
+
+.cell{
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.cell--fullscreen{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.well{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.well--fullscreen{
+    padding-top: 0;
+    padding-bottom: 0;
     height: 100%;
 }

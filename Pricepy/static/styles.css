@@ -8,11 +8,32 @@ html {
 body {
   height: 100%;
 }
+* {
+  box-sizing: border-box;
+}
 .row {
   display: table;
-  width: 100%;
+  background-color: lightblue;
 }
-.row.fullscreen {
+.row--alternate {
+  background-color: lightgray;
+}
+.cell {
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.cell--fullscreen {
+  padding-left: 0;
+  padding-right: 0;
+}
+.well {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.well--fullscreen {
+  padding-top: 0;
+  padding-bottom: 0;
   height: 100%;
 }
 .slide {
@@ -20,6 +41,7 @@ body {
   color: white;
   background-color: lightblue;
   display: table-cell;
+  padding: 20px;
   background-size: cover;
   background-image: url('content/2.jpg');
 }
