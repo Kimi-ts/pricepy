@@ -16,7 +16,8 @@ body {
   background-color: white;
 }
 .row--alternate {
-  background-color: #e8e6e6;
+  background-color: orange;
+  color: white;
 }
 .cell {
   width: 100%;
@@ -39,6 +40,7 @@ body {
 .slide {
   text-align: center;
   color: white;
+  font-size: 20px;
   background-color: white;
   display: table-cell;
   padding: 20px;
@@ -58,6 +60,20 @@ body {
 }
 .slide-btn {
   display: inline-block;
+}
+.slide-list {
+  display: inline-block;
+  text-align: left;
+  padding-left: 20px;
+}
+.slide-list--ticked {
+  list-style: none;
+}
+.slide-list--ticked li:before {
+  position: absolute;
+  margin-left: -1.3em;
+  font-weight: bold;
+  content: "\2713";
 }
 .bucket {
   display: table;
@@ -101,6 +117,7 @@ body {
   border-width: 2px;
   text-decoration: none;
   font-family: Georgia, "Times New Roman", Times, sans-serif;
+  font-size: 16px;
   font-style: italic;
 }
 .btn:hover {
