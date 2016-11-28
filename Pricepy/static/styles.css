@@ -28,8 +28,8 @@ body {
   padding-right: 0;
 }
 .well {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .well--fullscreen {
   padding-top: 0;
@@ -103,11 +103,36 @@ body {
   font-family: Georgia, "Times New Roman", Times, sans-serif;
   font-style: italic;
 }
+.btn:hover {
+  color: orange;
+  border-color: headlinetextcolor;
+}
+.btn--noborder {
+  border: none;
+}
 .btn--secondary {
+  color: white !important;
   background-color: orange;
   border-color: orange;
 }
 .btn--secondary:hover {
   background-color: #f0b434;
   border-color: #f0b434;
+}
+.menu {
+  color: #807b7b;
+  font-weight: bold;
+}
+ul.nav {
+  list-style: none;
+  float: right;
+}
+ul.nav--horizontal {
+  display: inline;
+}
+ul.nav--horizontal li {
+  display: inline-block;
+}
+.menu-item {
+  color: #807b7b;
 }
