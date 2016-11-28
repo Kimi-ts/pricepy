@@ -97,6 +97,9 @@ body {
 .bucket-content {
   padding-left: 40px;
 }
+.bucket-content a {
+  color: orange;
+}
 .bucket-content-headline {
   font-size: 24px;
   margin-bottom: 10px;
