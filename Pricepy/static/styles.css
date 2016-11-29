@@ -19,6 +19,10 @@ body {
   background-color: orange;
   color: white;
 }
+.row--darkbackground {
+  background-color: #807b7b;
+  color: white;
+}
 .cell {
   width: 100%;
   padding-left: 300px;
@@ -36,6 +40,19 @@ body {
   padding-top: 0;
   padding-bottom: 0;
   height: 100%;
+}
+.grid {
+  width: 100%;
+}
+.col {
+  float: left;
+  width: 50%;
+}
+.col--quoter {
+  width: 25%;
+}
+.col--third {
+  width: 33%;
 }
 .slide {
   text-align: center;
@@ -89,6 +106,15 @@ body {
 }
 .textBlock-text--highlited {
   font-weight: bold;
+}
+.textBlock-text--rightaligned {
+  float: right;
+}
+.textBlock-horizontalline {
+  float: left;
+  clear: both;
+  width: 100%;
+  margin: 20px 0;
 }
 .bucket {
   display: table;
