@@ -92,8 +92,15 @@ body {
   font-weight: bold;
   content: "\2713";
 }
+.textBlock p {
+  margin-bottom: 5px;
+}
 .textBlock a {
   color: orange;
+  text-decoration: none;
+}
+.textBlock a:hover {
+  text-decoration: underline;
 }
 .textBlock-headline {
   font-size: 24px;
