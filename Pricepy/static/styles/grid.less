@@ -1,6 +1,7 @@
 .row{
-    display: table;
     background-color: @primarybackgroundcolor;
+    color: @secondarytextcolor;
+    width: 100%;
 }
 
 .row--alternate {
@@ -13,20 +14,23 @@
     color: @primarytextcolor;
 }
 
-.cell{
-    width: 100%;
-    padding-left: 300px;
-    padding-right: 300px;
+.row.has-background-image{
+    display: table;
 }
 
-.cell--fullscreen{
-    padding-left: 0;
-    padding-right: 0;
+.cell{
+    padding-left: 300px;
+    padding-right: 300px;
 }
 
 .well{
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+.well--smaller{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .well--fullscreen{
@@ -37,6 +41,7 @@
 
 .grid {
     width: 100%;
+    float: left;
 }
 
 .col {

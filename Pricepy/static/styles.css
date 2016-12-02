@@ -12,8 +12,9 @@ body {
   box-sizing: border-box;
 }
 .row {
-  display: table;
   background-color: white;
+  color: #807b7b;
+  width: 100%;
 }
 .row--alternate {
   background-color: #eae8e4;
@@ -23,18 +24,20 @@ body {
   background-color: #807b7b;
   color: white;
 }
+.row.has-background-image {
+  display: table;
+}
 .cell {
-  width: 100%;
   padding-left: 300px;
   padding-right: 300px;
-}
-.cell--fullscreen {
-  padding-left: 0;
-  padding-right: 0;
 }
 .well {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+.well--smaller {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .well--fullscreen {
   padding-top: 0;
@@ -43,6 +46,7 @@ body {
 }
 .grid {
   width: 100%;
+  float: left;
 }
 .col {
   float: left;
@@ -173,18 +177,17 @@ body {
   border-color: #f0b434;
 }
 .menu {
-  color: #807b7b;
   font-weight: bold;
 }
 ul.nav {
   list-style: none;
-  float: right;
 }
 ul.nav--horizontal {
-  display: inline;
+  text-align: right;
 }
 ul.nav--horizontal li {
   display: inline-block;
+  padding: 10px 0;
 }
 .menu-item {
   color: #807b7b;
