@@ -1,5 +1,16 @@
 .textBlock{
+    font-size: @primaryfontsize;
+}
 
+.textBlock--smallertext{
+    font-size: @smallerfontsize;
+}
+
+.textBlock--centered{
+    vertical-align: middle;
+    margin: 0 auto;
+    text-align: center;
+    display: table-cell;
 }
 
 .textBlock p {
@@ -15,12 +26,27 @@
     text-decoration: underline;
 }
 
+.textBlock .btn{
+    color: inherit;
+    display: inline-block;
+}
+
+.textBlock .btn:hover{
+    text-decoration: none;
+}
 
 .textBlock-headline{
-    font-size: @headlinefontsize;
+    font-size: @headerfontsize;
     margin-bottom: 10px;
-    color: @headlinetextcolor;
+    line-height: 30px;
     font-weight: bold;
+}
+
+.textBlock-subheadline{
+    font-family: @headlinefont;
+    font-size: @subheaderfontsize;
+    font-weight: normal;
+    margin: 0 0 15px 0;
 }
 
 .textBlock-text{
@@ -44,4 +70,21 @@
     clear: both;
     width: 100%;
     margin: 20px 0;
+}
+
+.textBlock-list{
+    display: inline-block;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.textBlock-list--ticked{
+    list-style: none;
+}
+
+.textBlock-list--ticked li:before{
+    position: absolute;
+    margin-left: -1.3em;
+    font-weight: bold;
+    content: "\2713";
 }

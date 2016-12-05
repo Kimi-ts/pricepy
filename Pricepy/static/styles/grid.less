@@ -2,6 +2,7 @@
     background-color: @primarybackgroundcolor;
     color: @secondarytextcolor;
     width: 100%;
+    display: inline-table;
 }
 
 .row--alternate {
@@ -16,6 +17,12 @@
 
 .row.has-background-image{
     display: table;
+}
+
+//note this class is for testing, 
+//will be replaced by inline-attributes!
+.row.has-background-image.imaged{
+    background-image: url('content/2.jpg');
 }
 
 .cell{

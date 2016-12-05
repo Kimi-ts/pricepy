@@ -11,10 +11,20 @@ body {
 * {
   box-sizing: border-box;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+}
 .row {
   background-color: white;
   color: #807b7b;
   width: 100%;
+  display: inline-table;
 }
 .row--alternate {
   background-color: #eae8e4;
@@ -26,6 +36,9 @@ body {
 }
 .row.has-background-image {
   display: table;
+}
+.row.has-background-image.imaged {
+  background-image: url('content/2.jpg');
 }
 .cell {
   padding-left: 300px;
@@ -58,43 +71,17 @@ body {
 .col--third {
   width: 33%;
 }
-.slide {
-  text-align: center;
-  color: white;
+.textBlock {
   font-size: 20px;
-  background-color: white;
-  display: table-cell;
-  padding: 20px;
-  background-size: cover;
-  background-image: url('content/2.jpg');
 }
-.slide--centered {
+.textBlock--smallertext {
+  font-size: 16px;
+}
+.textBlock--centered {
   vertical-align: middle;
-}
-.slide-headline {
-  font-size: 40px;
-}
-.slide-subheadline {
-  font-family: "Open Sans", sans-serif;
-  font-size: 24px;
-  margin: 10px 0 15px 0;
-}
-.slide-btn {
-  display: inline-block;
-}
-.slide-list {
-  display: inline-block;
-  text-align: left;
-  padding-left: 20px;
-}
-.slide-list--ticked {
-  list-style: none;
-}
-.slide-list--ticked li:before {
-  position: absolute;
-  margin-left: -1.3em;
-  font-weight: bold;
-  content: "\2713";
+  margin: 0 auto;
+  text-align: center;
+  display: table-cell;
 }
 .textBlock p {
   margin-bottom: 5px;
@@ -106,11 +93,24 @@ body {
 .textBlock a:hover {
   text-decoration: underline;
 }
+.textBlock .btn {
+  color: inherit;
+  display: inline-block;
+}
+.textBlock .btn:hover {
+  text-decoration: none;
+}
 .textBlock-headline {
-  font-size: 24px;
+  font-size: 40px;
   margin-bottom: 10px;
-  color: orange;
+  line-height: 30px;
   font-weight: bold;
+}
+.textBlock-subheadline {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0 0 15px 0;
 }
 .textBlock-text--italic {
   font-style: italic;
@@ -126,6 +126,20 @@ body {
   clear: both;
   width: 100%;
   margin: 20px 0;
+}
+.textBlock-list {
+  display: inline-block;
+  text-align: left;
+  padding-left: 20px;
+}
+.textBlock-list--ticked {
+  list-style: none;
+}
+.textBlock-list--ticked li:before {
+  position: absolute;
+  margin-left: -1.3em;
+  font-weight: bold;
+  content: "\2713";
 }
 .bucket {
   display: table;
@@ -152,7 +166,7 @@ body {
 .btn {
   padding: 10px;
   margin: 5px;
-  color: white;
+  color: #807b7b;
   border-style: solid;
   border-width: 2px;
   text-decoration: none;
@@ -163,6 +177,7 @@ body {
 .btn:hover {
   color: orange;
   border-color: headlinetextcolor;
+  text-decoration: none;
 }
 .btn--noborder {
   border: none;
@@ -178,6 +193,7 @@ body {
 }
 .menu {
   font-weight: bold;
+  color: #807b7b;
 }
 ul.nav {
   list-style: none;
@@ -185,10 +201,15 @@ ul.nav {
 ul.nav--horizontal {
   text-align: right;
 }
-ul.nav--horizontal li {
-  display: inline-block;
+ul.nav li {
+  display: table-cell;
   padding: 10px 0;
 }
-.menu-item {
-  color: #807b7b;
+ul.nav--horizontal li {
+  display: inline-block;
 }
+/*
+.menu-item{
+    color: @secondarytextcolor;
+}
+*/

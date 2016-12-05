@@ -1,5 +1,6 @@
 .menu{
     font-weight: bold;
+    color: @secondarytextcolor;
 }
 
 ul.nav{
@@ -10,11 +11,17 @@ ul.nav--horizontal{
    text-align: right;
 }
 
-ul.nav--horizontal li{
-    display: inline-block;
+ul.nav li{
+    display: table-cell;
     padding: 10px 0;
 }
 
+ul.nav--horizontal li{
+    display: inline-block;
+}
+
+/*
 .menu-item{
     color: @secondarytextcolor;
 }
+*/
