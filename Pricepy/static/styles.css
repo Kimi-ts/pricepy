@@ -28,7 +28,6 @@ p {
 }
 .row--alternate {
   background-color: #eae8e4;
-  color: white;
 }
 .row--darkbackground {
   background-color: #807b7b;
@@ -41,8 +40,8 @@ p {
   background-image: url('content/2.jpg');
 }
 .cell {
-  padding-left: 300px;
-  padding-right: 300px;
+  padding-left: 150px;
+  padding-right: 150px;
 }
 .well {
   padding-top: 30px;
@@ -81,10 +80,12 @@ p {
   vertical-align: middle;
   margin: 0 auto;
   text-align: center;
+}
+.textBlock--verticallycentered {
   display: table-cell;
 }
 .textBlock p {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .textBlock a {
   color: orange;
@@ -142,8 +143,6 @@ p {
   content: "\2713";
 }
 .bucket {
-  display: table;
-  color: #807b7b;
   font-size: 20px;
 }
 .bucket--centered {
@@ -156,6 +155,14 @@ p {
 }
 .bucket-media {
   text-align: right;
+  position: relative;
+}
+.bucket-media-headline {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7);
 }
 .bucket-media img {
   width: 100%;
@@ -213,3 +220,17 @@ ul.nav--horizontal li {
     color: @secondarytextcolor;
 }
 */
+.gallery ul {
+  list-style-type: none;
+}
+.gallery-item {
+  float: left;
+  padding: 15px 20px 40px 15px;
+  margin: 0 15px 20px 0;
+  width: 365px;
+  border: 1px solid #807b7b;
+  box-shadow: 2px 2px 5px #d3d3d3;
+}
+.gallery-item img {
+  width: 330px;
+}
