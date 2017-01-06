@@ -13,9 +13,24 @@
     width: 365px;
     border: 1px solid @secondarytextcolor;
     box-shadow: 2px 2px 5px @lightgraycolor;
+    position: relative;
 }
 
 .gallery-item img{
     width: 330px;
     //height: 300px;
+}
+
+.gallery-item .textBlock{
+    font-size: @gallerydescriptionfontsize;
+}
+
+.gallery-diccountIcon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75px;
+    height: 75px;
+    background-image: url("icons/orange transparent discount icon.png");
+    background-repeat: round;
 }
