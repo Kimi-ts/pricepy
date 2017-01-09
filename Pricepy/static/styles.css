@@ -244,6 +244,8 @@ ul.nav--horizontal li {
   left: 0;
   width: 75px;
   height: 75px;
-  background-image: url("icons/orange transparent discount icon.png");
-  background-repeat: round;
+}
+.gallery-diccountIcon img {
+  width: 75px;
+  height: 75px;
 }
