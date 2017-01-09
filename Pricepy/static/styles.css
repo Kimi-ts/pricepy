@@ -20,6 +20,14 @@ p {
   margin: 0;
   padding: 0;
 }
+.mainLogo {
+  float: left;
+  line-height: 18px;
+}
+.mainLogo img {
+  width: 40px;
+  height: 40px;
+}
 .row {
   background-color: white;
   color: #807b7b;
