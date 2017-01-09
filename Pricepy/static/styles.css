@@ -108,11 +108,11 @@ p {
 .textBlock a:hover {
   text-decoration: underline;
 }
-.textBlock .btn {
+.textBlock a.btn {
   color: inherit;
   display: inline-block;
 }
-.textBlock .btn:hover {
+.textBlock a.btn:hover {
   text-decoration: none;
 }
 .textBlock-headline {
@@ -240,6 +240,23 @@ p {
 .btn--secondary:hover {
   background-color: #f0b434;
   border-color: #f0b434;
+}
+.form-label {
+  display: block;
+}
+.form-input {
+  width: 300px;
+  height: 35px;
+  margin-bottom: 10px;
+}
+.form-input.error {
+  border: 1px solid red;
+}
+.form-textarea {
+  height: auto;
+}
+form .form-button {
+  display: block;
 }
 .menu {
   font-weight: bold;
