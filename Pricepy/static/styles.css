@@ -180,9 +180,23 @@ p {
   float: left;
   width: 50%;
 }
+.bucket--notCentered .bucket-media {
+  width: 33%;
+}
 .bucket-media {
   text-align: right;
   position: relative;
+}
+.bucket-media--main {
+  width: 100%;
+}
+.bucket-media--secondary {
+  width: 33%;
+  float: left;
+}
+.bucket-media-wrapper {
+  padding: 10px 0;
+  overflow: hidden;
 }
 .bucket-media-headline {
   position: absolute;
@@ -191,9 +205,11 @@ p {
   width: 100%;
   background: rgba(255, 255, 255, 0.7);
 }
-.bucket-media img {
-  width: 100%;
+/*
+.bucket-media img{
+    width: 100%;
 }
+*/
 .bucket-content {
   padding-left: 40px;
 }
