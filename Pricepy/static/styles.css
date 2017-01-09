@@ -87,6 +87,12 @@ p {
 .textBlock p {
   margin-bottom: 10px;
 }
+.textBlock p.green {
+  color: green;
+}
+.textBlock p.red {
+  color: red;
+}
 .textBlock a {
   color: orange;
   text-decoration: none;
@@ -141,6 +147,19 @@ p {
   margin-left: -1.3em;
   font-weight: bold;
   content: "\2713";
+}
+.textBlock-contentBlock {
+  margin: 10px 0;
+  clear: both;
+}
+.textBlock-contentBlock-title {
+  float: left;
+}
+.textBlock-contentBlock-value {
+  float: right;
+}
+.textBlock-contentBlock-value--highlighted {
+  font-weight: bold;
 }
 .bucket {
   font-size: 20px;
@@ -234,6 +253,10 @@ ul.nav--horizontal li {
 }
 .gallery-item img {
   width: 330px;
+}
+.gallery-link {
+  display: block;
+  clear: both;
 }
 .gallery-item .textBlock {
   font-size: 16px;
