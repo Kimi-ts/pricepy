@@ -11,13 +11,35 @@
     width: 50%;
 }
 
+@media screen and (max-width: 768px){
+    .bucket-media, .bucket-content{
+        width: 100%;
+    }
+}
+
 .bucket--notCentered .bucket-media{
     width: 33%;
+}
+
+@media screen and (max-width: 768px){
+    .bucket--notCentered .bucket-media{
+        width: 75%;
+    }
 }
 
 .bucket-media{
     text-align: right;
     position: relative;
+}
+
+@media screen and (max-width: 768px){
+    .bucket-media{
+        padding-bottom: 20px;
+    }
+
+    .bucket-media.mobile-hidden{
+        display: none;
+    }
 }
 
 .bucket-media--main{
@@ -42,11 +64,12 @@
     background: rgba(255, 255, 255, 0.7);
 }
 
-/*
-.bucket-media img{
-    width: 100%;
-}
-*/
 .bucket-content{
     padding-left: 40px;
+}
+
+@media screen and (max-width: 768px){
+    .bucket-content{
+        padding: 0 10px;
+    }
 }

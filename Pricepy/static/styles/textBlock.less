@@ -6,6 +6,12 @@
     font-size: @smallerfontsize;
 }
 
+@media screen and (max-width: 480px){
+    .textBlock--smallertext{
+        font-size: 10px;
+    }
+}
+
 .textBlock--centered{
     vertical-align: middle;
     margin: 0 auto;
@@ -107,10 +113,19 @@
 
 .textBlock-contentBlock-title{
     float: left;
+    max-width: 30%;
+}
+
+@media screen and (max-width: 768px){
+    .textBlock-contentBlock-title{
+        font-size: 16px;
+    }
 }
 
 .textBlock-contentBlock-value{
     float: right;
+    text-align: right;
+    max-width: 70%;
 }
 
 .textBlock-contentBlock-value--highlighted{

@@ -51,6 +51,18 @@ p {
   padding-left: 150px;
   padding-right: 150px;
 }
+@media screen and (max-width: 1110px) {
+  .cell {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .cell {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 .well {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -75,6 +87,11 @@ p {
 .col--quoter {
   width: 25%;
 }
+@media screen and (max-width: 768px) {
+  .col--quoter {
+    width: 50%;
+  }
+}
 .col--third {
   width: 33%;
 }
@@ -83,6 +100,11 @@ p {
 }
 .textBlock--smallertext {
   font-size: 16px;
+}
+@media screen and (max-width: 480px) {
+  .textBlock--smallertext {
+    font-size: 10px;
+  }
 }
 .textBlock--centered {
   vertical-align: middle;
@@ -162,9 +184,17 @@ p {
 }
 .textBlock-contentBlock-title {
   float: left;
+  max-width: 30%;
+}
+@media screen and (max-width: 768px) {
+  .textBlock-contentBlock-title {
+    font-size: 16px;
+  }
 }
 .textBlock-contentBlock-value {
   float: right;
+  text-align: right;
+  max-width: 70%;
 }
 .textBlock-contentBlock-value--highlighted {
   font-weight: bold;
@@ -180,12 +210,31 @@ p {
   float: left;
   width: 50%;
 }
+@media screen and (max-width: 768px) {
+  .bucket-media,
+  .bucket-content {
+    width: 100%;
+  }
+}
 .bucket--notCentered .bucket-media {
   width: 33%;
+}
+@media screen and (max-width: 768px) {
+  .bucket--notCentered .bucket-media {
+    width: 75%;
+  }
 }
 .bucket-media {
   text-align: right;
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  .bucket-media {
+    padding-bottom: 20px;
+  }
+  .bucket-media.mobile-hidden {
+    display: none;
+  }
 }
 .bucket-media--main {
   width: 100%;
@@ -205,13 +254,13 @@ p {
   width: 100%;
   background: rgba(255, 255, 255, 0.7);
 }
-/*
-.bucket-media img{
-    width: 100%;
-}
-*/
 .bucket-content {
   padding-left: 40px;
+}
+@media screen and (max-width: 768px) {
+  .bucket-content {
+    padding: 0 10px;
+  }
 }
 .btn {
   padding: 10px;
@@ -223,6 +272,13 @@ p {
   font-family: Georgia, "Times New Roman", Times, sans-serif;
   font-size: 16px;
   font-style: italic;
+}
+@media screen and (max-width: 480px) {
+  .btn {
+    font-size: 12px;
+    margin: 1px;
+    padding: 2px;
+  }
 }
 a.btn:hover {
   color: orange;
@@ -248,6 +304,11 @@ a.btn:hover {
   width: 300px;
   height: 35px;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 480px) {
+  .form-input {
+    width: 100%;
+  }
 }
 .form-input.error {
   border: 1px solid red;
@@ -287,13 +348,29 @@ ul.nav--horizontal li {
   float: left;
   padding: 15px 20px 40px 15px;
   margin: 0 15px 20px 0;
-  width: 365px;
+  width: 320px;
   border: 1px solid #807b7b;
   box-shadow: 2px 2px 5px #d3d3d3;
   position: relative;
 }
+@media screen and (max-width: 1110px) {
+  .gallery-item {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 630px) {
+  .gallery-item {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .gallery-item {
+    width: 100%;
+  }
+}
 .gallery-item img {
-  width: 330px;
+  width: 100%;
+  max-height: 250px;
 }
 .gallery-link {
   display: block;
