@@ -390,3 +390,9 @@ ul.nav--horizontal li {
   width: 75px;
   height: 75px;
 }
+.social i {
+  padding: 0 3px;
+}
+.social i:hover {
+  color: orange;
+}
