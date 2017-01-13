@@ -27,42 +27,19 @@
     <script type="text/javascript" src="static/node_modules/angular/angular.js"></script>
     <script type="text/javascript" src="static/node_modules/angular-route/angular-route.js"></script>
     <script type="text/javascript" src="static/app/app.js"></script>
-    <!--<script type="text/javascript" src="app/controllers/mainController.js"></script>
-    <script type="text/javascript" src="app/controllers/menuController.js"></script>
-    <script type="text/javascript" src="app/components/menu.component.js"></script>-->
 </head>
 <body ng-app="myApp">
-
-    <a href="/">Main</a>
-
-    <a href="red">Red</a>
-    <a href="green">Green</a>
-    <a href="blue">Blue</a>
+    <div class="row cell well well--smaller">
+        <a href="#" class="mainLogo"><img src="static/content/2.jpg"></a>
+        <ul class="nav nav--horizontal menu">
+            <li><a href="/" class="btn btn--noborder menu-item">Main</a></li>
+            <li><a href="/#!/red" class="btn btn--noborder btn--active menu-item">News</a></li>
+            <li><a href="/#!/green" class="btn btn--noborder menu-item">Machines</a></li>
+            <li><a href="/#!/blue" class="btn btn--noborder btn--active menu-item">Contact Us</a></li>
+        </ul>
+    </div>
 
     <div ng-view></div>
-
-    <script>
-        var app = angular.module("myApp", ["ngRoute"]);
-        app.config(function ($routeProvider, $locationProvider) {
-            $routeProvider
-            .when("/", {
-                templateUrl: "static/app/templates/main.htm"
-            })
-            .when("/red", {
-                templateUrl: "static/app/templates/menu.htm"
-            })
-            .when("/green", {
-                templateUrl: "static/app/templates/menu.htm"
-            })
-            .when("/blue", {
-                templateUrl: "static/app/templates/main.htm"
-            });
-
-            $locationProvider.html5Mode({ enabled: true, requireBase: false });
-        });
-    </script>
-
-    <p>Click on the links to navigate to "red.htm", "green.htm", "blue.htm", or back to "main.htm"</p>
 
     <!--<div class="row row--darkbackground has-background-image imaged cell well well--fullscreen">
         <div class="textBlock textBlock--centered textBlock--verticallycentered">
