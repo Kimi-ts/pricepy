@@ -288,7 +288,8 @@ a.btn:hover {
 .btn--noborder {
   border: none;
 }
-.btn--secondary {
+.btn--secondary,
+.btn--active {
   color: white !important;
   background-color: orange;
   border-color: orange;

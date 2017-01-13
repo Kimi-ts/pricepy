@@ -1,10 +1,11 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="myApp">
 <head>
 	<link rel="stylesheet" href="styles.css" type="text/css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>@PageTitle</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<base href="/static/index.html">
 	<style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
@@ -18,25 +19,54 @@
         padding: 0;
       }
     </style>
+	<script type="text/javascript" src="node_modules/angular/angular.js"></script>
+	<script type="text/javascript" src="node_modules/angular-route/angular-route.js"></script>
+	<script type="text/javascript" src="app/app.js"></script>
+	<!--<script type="text/javascript" src="app/controllers/mainController.js"></script>
+	<script type="text/javascript" src="app/controllers/menuController.js"></script>
+	<script type="text/javascript" src="app/components/menu.component.js"></script>-->
 </head>
-<body>
-	<div class="row cell well well--smaller">
-		<a href="#" class="mainLogo"><img src="content/2.jpg" ></a>
-		<ul class="nav nav--horizontal menu">
-			<li><a href="#" class="btn btn--noborder menu-item">Main</a></li>
-			<li><a href="/#News" class="btn btn--noborder btn--secondary menu-item">News</a></li>
-			<li><a href="/#Mathines" class="btn btn--noborder menu-item">Machines</a></li>
-			<li><a href="/#Contact" class="btn btn--noborder menu-item">Contact Us</a></li>
-		</ul>
-	</div>
-	<div class="row row--darkbackground has-background-image imaged cell well well--fullscreen">
+<body ng-app="myApp">
+
+<p><a href="">Main</a></p>
+
+<a href="red">Red</a>
+<a href="green">Green</a>
+<a href="blue">Blue</a>
+
+<div ng-view></div>
+
+<script>
+var app = angular.module("myApp", ["ngRoute"]);
+app.config(function($routeProvider, $locationProvider) {
+    $routeProvider
+    .when("", {
+        templateUrl : "app/templates/main.htm"
+    })
+    .when("/red", {
+        templateUrl : "app/templates/menu.htm"
+    })
+    .when("/green", {
+        templateUrl : "app/templates/menu.htm"
+    })
+    .when("/blue", {
+        templateUrl : "app/templates/main.htm"
+    });
+
+	$locationProvider.html5Mode({enabled:true, requireBase: true});
+});
+</script>
+
+<p>Click on the links to navigate to "red.htm", "green.htm", "blue.htm", or back to "main.htm"</p>
+
+	<!--<div class="row row--darkbackground has-background-image imaged cell well well--fullscreen">
 		<div class="textBlock textBlock--centered textBlock--verticallycentered">
 			<h1 class="textBlock-headline">Headline</h1>
 			<h5 class="textBlock-subheadline">Subheadline. Can be multiple lines. Hey Mister I'm-too-good-to-call-or-white-my-fans! This'll be the last package I'll ever send your ass! There's been six month and still no word.. I don't deserve it?</h5>
 			<a href="#" class="btn">Original Button</a>
 			<a href="#" class="btn btn--secondary">Alternate Button</a>
 		</div>
-	</div>
+	</div>-->
 	<div class="row well cell">
 		<div class="bucket bucket--centered">
 			<div class="bucket-media mobile-hidden">
