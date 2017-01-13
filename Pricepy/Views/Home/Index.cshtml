@@ -27,21 +27,25 @@
     <script type="text/javascript" src="static/node_modules/angular/angular.js"></script>
     <script type="text/javascript" src="static/node_modules/angular-route/angular-route.js"></script>
     <script type="text/javascript" src="static/app/app.js"></script>
+    <script type="text/javascript" src="static/app/controllers/homeController.js"></script>
+    <script type="text/javascript" src="static/app/controllers/newsController.js"></script>
+    <script type="text/javascript" src="static/app/controllers/machinesController.js"></script>
+    <script type="text/javascript" src="static/app/controllers/contactController.js"></script>
 </head>
-<body ng-app="myApp">
+<body ng-app="myApp" ng-controller="appController">
     <div class="row cell well well--smaller">
         <a href="#" class="mainLogo"><img src="static/content/2.jpg"></a>
         <ul class="nav nav--horizontal menu">
-            <li><a href="/" class="btn btn--noborder menu-item">Main</a></li>
-            <li><a href="/#!/news" class="btn btn--noborder btn--active menu-item">News</a></li>
-            <li><a href="/#!/machines" class="btn btn--noborder menu-item">Machines</a></li>
-            <li><a href="/#!/contact" class="btn btn--noborder btn--active menu-item">Contact Us</a></li>
+            <li><a href="/" class="btn btn--noborder menu-item" ng-class="path =='/' ? 'btn--active' : ''">Main</a></li>
+            <li><a href="/#!/news" class="btn btn--noborder menu-item" ng-class="path =='/news' ? 'btn--active' : ''">News</a></li>
+            <li><a href="/#!/machines" class="btn btn--noborder menu-item" ng-class="path =='/machines' ? 'btn--active' : ''">Machines</a></li>
+            <li><a href="/#!/contact" class="btn btn--noborder menu-item" ng-class="path =='/contact' ? 'btn--active' : ''">Contact Us</a></li>
         </ul>
     </div>
 
     <div ng-view></div>
 
-    <div class="row well cell">
+    @*<div class="row well cell">
         <div class="bucket bucket--centered">
             <div class="bucket-media mobile-hidden">
                 <img src="static/content/1.jpg" class="bucket-media--main" />
@@ -60,13 +64,13 @@
                     <li>High-qualified ecosystem</li>
                 </ul>
 
-                <!--
+                
                 <h3 class="bucket-content-headline">Постоянным клиентам-скидки!</h3>
                 <p>Наша компания сдает напрокат лафеты, прицепы для перевозки легковых автомобилей, джипов, микроавтобусов, мини эксковаторов, спецтехники и стройматериалов. В стоимость проката входит комплект крепёжных ремней+лебёдка+переходники+зелёная карта. Работаем круглосуточно, без выходных. </p>
-                -->
+                
             </div>
         </div>
-    </div>
+    </div>*@
     <div class="row row--darkbackground has-background-image imaged well">
         <div class="textBlock textBlock--centered">
             <p class="textBlock-subheadline">Subheadline:</p>
