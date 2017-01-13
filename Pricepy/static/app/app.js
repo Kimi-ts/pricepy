@@ -5,13 +5,13 @@ app.config(function ($routeProvider, $locationProvider) {
     .when("/", {
         templateUrl: "static/app/templates/main.htm"
     })
-    .when("/red", {
-        templateUrl: "static/app/templates/menu.htm"
+    .when("/news", {
+        templateUrl: "static/app/templates/news.htm"
     })
-    .when("/green", {
-        templateUrl: "static/app/templates/menu.htm"
+    .when("/machines", {
+        templateUrl: "static/app/templates/machines.htm"
     })
-    .when("/blue", {
-        templateUrl: "static/app/templates/main.htm"
+    .when("/contact", {
+        templateUrl: "static/app/templates/contact.htm"
     });
 });
