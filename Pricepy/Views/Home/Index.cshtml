@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    @*<base href="/static/index.html">*@
-    @*<base href="/" />*@
     <style>
          /* Always set the map height explicitly to define the size of the div
         * element that contains the map. */
@@ -31,10 +29,14 @@
     <script type="text/javascript" src="static/app/controllers/newsController.js"></script>
     <script type="text/javascript" src="static/app/controllers/machinesController.js"></script>
     <script type="text/javascript" src="static/app/controllers/contactController.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkNKAC_frei_BLZ0zphi92XjvIkGzudBA"
+            async defer></script>
+
 </head>
 <body ng-app="myApp" ng-controller="appController">
     <div class="row cell well well--smaller">
-        <a href="#" class="mainLogo"><img src="static/content/2.jpg"></a>
+        <a href="/" class="mainLogo"><img src="static/content/2.jpg"></a>
         <ul class="nav nav--horizontal menu">
             <li><a href="/" class="btn btn--noborder menu-item" ng-class="path =='/' ? 'btn--active' : ''">Main</a></li>
             <li><a href="/#!/news" class="btn btn--noborder menu-item" ng-class="path =='/news' ? 'btn--active' : ''">News</a></li>
@@ -296,7 +298,7 @@
             </div>
         </div>
     </div>
-    <div class="row cell well">
+    @*<div class="row cell well">
         <div class="bucket bucket--notCentered">
             <div class="bucket-media">
                 <div id="map"></div>
@@ -313,11 +315,12 @@
                     center: { lat: -34.397, lng: 150.644 },
                     zoom: 8
                 });
-            }
+            };
+            initMap();
         </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkNKAC_frei_BLZ0zphi92XjvIkGzudBA&callback=initMap"
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkNKAC_frei_BLZ0zphi92XjvIkGzudBA"
                 async defer></script>
-    </div>
+    </div>*@
     <div class="row row--darkbackground cell well grid">
         <div class="textBlock textBlock--smallertext col col--quoter">
             <p class="textBlock-text--highlited"><a href="tel:+375 3453453">+2734 35345 35</a></p>
