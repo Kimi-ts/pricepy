@@ -1,11 +1,51 @@
-    <div class="row row--alternate cell well">
+    <div class="row row--alternate cell well" ng-show="!isSucceeded && !isError">
         <div class="bucket bucket--notCentered">
-            <div class="bucket-media">
-                <div id="map"></div>
+            <div class="bucket-media mobile-hidden">
+                <img src="static/content/1.jpg" class="bucket-media--main" />
+            </div>
+            <div class="bucket-content textBlock">
+                <form novalidate name="messagesForm">
+                    <h3 class="textBlock-headline">Contact Us</h3>
+                    <p class="textBlock-text--italic">Please, leave us your contacts and we'll call you back sooner.</p>
+                    <span class="form-label">Your Name*: </span>
+                    <input type="text" class="form-input" ng-model="form.UserName" required />
+                    <span class="form-label">Your E-mail*:</span>
+                    <input type="email" class="form-input error" ng-model="form.UserEmail" required />
+                    <span class="form-label">Your message*:</span>
+                    <textarea class="form-input form-textarea" rows="4" ng-model="form.Message" required></textarea>
+                    <input type="submit" class="btn btn--secondary form-button" ng-click="submit()" value="Submit" />
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row row--alternate cell well" ng-show="isSucceeded">
+        <div class="bucket bucket--notCentered">
+            <div class="bucket-media mobile-hidden">
+                <img src="static/content/1.jpg" class="bucket-media--main" />
             </div>
             <div class="bucket-content textBlock">
                 <h3 class="textBlock-subheadline">Thank You for your visit!</h3>
                 <p>Our managers'll contact you as soon as possible.</p>
+            </div>
+        </div>
+    </div>
+        <div class="row row--alternate cell well" ng-show="isError">
+        <div class="bucket bucket--notCentered">
+            <div class="bucket-media mobile-hidden">
+                <img src="static/content/1.jpg" class="bucket-media--main" />
+            </div>
+            <div class="bucket-content textBlock">
+                <h3 class="textBlock-subheadline">Thank You for your visit!</h3>
+                <p>Unfourtunately, the problem is occured on our server. We'll fix it sooner. But your message is lost. We appologize.</p>
+                <p> Please, contact our managers by phones provided: </p>
+                <ul class="textBlock-list">
+                    <li>+3734 3534 3535</li>
+                    <li>+34534534</li>
+                </ul> 
+                <p>Or send us your message as email:</p>
+                <ul class="textBlock-list">
+                    <li>contact@customesservierereg.com</li>
+                </ul> 
             </div>
         </div>
     </div>

@@ -55,14 +55,15 @@ a.btn:hover{
     }
 }
 
-.form-input.error{
-    border: 1px solid red;
-}
-
 .form-textarea{
     height: auto;
 }
 
 form .form-button{
     display: block;
+}
+
+form.ng-submitted input.ng-invalid,
+form.ng-submitted textarea.ng-invalid{
+    border: 1px solid red;
 }
