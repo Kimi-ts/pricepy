@@ -71,6 +71,10 @@ p {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.well--larger {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 .well--fullscreen {
   padding-top: 0;
   padding-bottom: 0;
