@@ -12,14 +12,12 @@
     </div>
     <div class="row row--alternate cell well">
         <div class="bucket bucket--notCentered">
-            <div class="bucket-media">
-                <img src="static/content/1.jpg" class="bucket-media--main" />
+            <div class="bucket-media" match-height>
+                <!--TO DO
+                create mechanism to use first item src by default-->
+                <img src="{{activeSrc}}" class="bucket-media--main" />
                 <div class="bucket-media-wrapper">
-                    <img src="static/content/2.jpg" class="bucket-media--secondary" />
-                    <img src="static/content/3.jpeg" class="bucket-media--secondary" />
-                    <img src="static/content/1.jpg" class="bucket-media--secondary" />
-                    <img src="static/content/3.jpeg" class="bucket-media--secondary" />
-                    <img src="static/content/1.jpg" class="bucket-media--secondary" />
+                    <img ng-repeat="image in secondaryImages" ng-src="{{image}}"  class="bucket-media--secondary item-img"  ng-click="setActive(image)" ng-class="image==activeSrc ? 'active' : ''"/>
                 </div>
             </div>
             <div class="bucket-content textBlock">
