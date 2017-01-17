@@ -24,4 +24,4 @@ app.directive("matchHeight", function($timeout, $window){
             })
         }
     }
-})
+});
