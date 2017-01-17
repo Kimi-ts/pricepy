@@ -384,7 +384,7 @@ ul.nav--horizontal li {
     height: 100% !important;
   }
 }
-.gallery-link {
+.gallery-link-wrapper {
   display: block;
   clear: both;
 }

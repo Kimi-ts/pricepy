@@ -8,8 +8,6 @@ app.directive("matchHeight", function($timeout, $window){
                     var max = 1000;
                     for(var i = 0; i< images.length; i++){
                         images[i].style.height = 'auto';
-                    };
-                    for(var i = 0; i< images.length; i++){
                         var height = images[i].height;
                         if (height < max){
                             max = height;
