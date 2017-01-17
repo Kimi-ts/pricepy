@@ -1,6 +1,6 @@
 var app = angular.module("myApp", ["ngRoute"]);
 
-app.config(function ($routeProvider, $locationProvider) {
+app.config(function ($routeProvider) {
     $routeProvider
     .when("/", {
         templateUrl: "static/app/templates/home.htm",
@@ -9,6 +9,11 @@ app.config(function ($routeProvider, $locationProvider) {
     .when("/news", {
         templateUrl: "static/app/templates/news.htm",
         controller: "newsController"
+    })
+    .when("/machines/:machineId", {
+        templateUrl: "static/app/templates/machine.htm",
+        controller: "machineController",
+        machineId: "machineId"
     })
     .when("/machines", {
         templateUrl: "static/app/templates/machines.htm",
