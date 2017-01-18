@@ -33,6 +33,7 @@ p {
   color: #807b7b;
   width: 100%;
   display: inline-table;
+  position: relative;
 }
 .row--alternate {
   background-color: #eae8e4;
@@ -411,4 +412,9 @@ ul.nav--horizontal li {
 }
 .social i:hover {
   color: orange;
+}
+.back-to-top {
+  position: absolute;
+  bottom: 30px;
+  right: 180px;
 }

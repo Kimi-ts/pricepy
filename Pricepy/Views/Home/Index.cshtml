@@ -25,11 +25,13 @@
     <script type="text/javascript" src="static/node_modules/angular/angular.js"></script>
     <script type="text/javascript" src="static/node_modules/angular-route/angular-route.js"></script>
     <script type="text/javascript" src="static/app/app.js"></script>
+    <script type="text/javascript" src="static/app/services/anchorSmoothScrollService.js"></script>
     <script type="text/javascript" src="static/app/controllers/homeController.js"></script>
     <script type="text/javascript" src="static/app/controllers/newsController.js"></script>
     <script type="text/javascript" src="static/app/controllers/machinesController.js"></script>
     <script type="text/javascript" src="static/app/controllers/machineController.js"></script>
     <script type="text/javascript" src="static/app/controllers/contactController.js"></script>
+    <script type="text/javascript" src="static/app/controllers/scrollToAnchorController.js"></script>
     <script type="text/javascript" src="static/app/directives/matchHeight.js"></script>
     <script type="text/javascript" src="static/app/directives/setMap.js"></script>
 
@@ -39,7 +41,7 @@
 </head>
 <body ng-app="myApp" ng-controller="appController">
     <div class="row cell well well--smaller">
-        <a href="/" class="mainLogo"><img src="static/content/2.jpg"></a>
+        <a href="/" name="top" id="top" class="mainLogo"><img src="static/content/2.jpg"></a>
         <ul class="nav nav--horizontal menu">
             <li><a href="/" class="btn btn--noborder menu-item" ng-class="path =='/' ? 'btn--active' : ''">Main</a></li>
             <li><a href="/#!/news" class="btn btn--noborder menu-item" ng-class="path =='/news' ? 'btn--active' : ''">News</a></li>
