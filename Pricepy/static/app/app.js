@@ -19,6 +19,10 @@ app.config(function ($routeProvider) {
         templateUrl: "static/app/templates/machines.htm",
         controller: "machinesController"
     })
+    .when("/arenda", {
+        templateUrl: "static/app/templates/arenda.htm",
+        controller: "arendaController"
+    })
     .when("/contact", {
         templateUrl: "static/app/templates/contact.htm",
         controller: "contactController"
