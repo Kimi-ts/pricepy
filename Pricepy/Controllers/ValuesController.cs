@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -10,30 +11,35 @@ namespace Pricepy.Controllers
     public class ValuesController : ApiController
     {
         // GET api/values
-        public IEnumerable<string> Get()
+        public object Get()
         {
-            return new string[] { "value1", "value2" };
+            string currentDir = Environment.CurrentDirectory;
+            var path = System.Web.HttpContext.Current.Request.MapPath("~\\Content\\contentConfig.json");
+            string allText = System.IO.File.ReadAllText(path);
+
+            object jsonObject = JsonConvert.DeserializeObject(allText);
+            return jsonObject;
         }
 
-        // GET api/values/5
-        public string Get(int id)
-        {
-            return "value";
-        }
+        //// GET api/values/5
+        //public string Get(int id)
+        //{
+        //    return "value";
+        //}
 
-        // POST api/values
-        public void Post([FromBody]string value)
-        {
-        }
+        //// POST api/values
+        //public void Post([FromBody]string value)
+        //{
+        //}
 
-        // PUT api/values/5
-        public void Put(int id, [FromBody]string value)
-        {
-        }
+        //// PUT api/values/5
+        //public void Put(int id, [FromBody]string value)
+        //{
+        //}
 
-        // DELETE api/values/5
-        public void Delete(int id)
-        {
-        }
+        //// DELETE api/values/5
+        //public void Delete(int id)
+        //{
+        //}
     }
 }

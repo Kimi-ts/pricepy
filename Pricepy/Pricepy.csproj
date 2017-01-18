@@ -136,6 +136,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="Content\contentConfig.json" />
     <None Include="Project_Readme.html" />
     <None Include="Properties\PublishProfiles\priceps.pubxml" />
     <Content Include="web.config" />

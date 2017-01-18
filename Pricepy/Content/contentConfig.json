@@ -1,0 +1,41 @@
+﻿    {
+    header: {
+        logo: {
+                src: "static/content2.jpg"
+        },
+        menu: [
+			{ title: "Главная", href: "/" },
+			{ title: "Новости", href: "/#!/news" },
+			{ title: "Наша Техника", href: "/#!/machines" },
+			{ title: "Аренда", href: "/#!/arenda" },
+			{ title: "Контакты", href: "/#!/contact" },
+        ]
+
+    },
+    main: [],
+    news: [],
+    machines: [],
+    arenda: [],
+    contacts: [],
+    footer: {
+        leftColumn: [
+			{type: "tel", href: "tel:+375 3453453", title: "+375 3453453"},
+			{type: "email", href: "mailto:marenda2015@gmail.com", title: "marenda2015@gmail.com" },
+			{type: "text-highlithed", title: "8.00 - 21.00 Без выходных" },
+			{type: "text", title: "Наличный и безналичный расчёт"}
+        ],
+        middleColumn: [
+			{type: "text", title: "Беларусь, Минский район"},
+			{type: "text", title: "г.п. Мачулищи, 7 км от МКАД по Слуцкому шоссе"},
+			{type: "text", title: "ИП Бобок Светлана Петровна"},
+			{type: "text", title: "УНП 691782209"},
+			{type: "text", title: "р\\с 3013247940011 ЗАО Банк ВТБ"}
+        ],
+        socialBar: [
+			{type: "vkontakte", class: "fa-vk", href: "https://vk.com/share.php?url=http%3A%2F%2Fwww.bigtrailer-minsk.net"},
+			{type: "twitter", class: "fa-twitter", href: "http://twitter.com/share?text=Самые надёжные прицепы в твоём городе&url=http://BigTrailler-Minsk.net&#BigTrailler-Minsk"},
+			{type: "facebook", class: "fa-facebook", href: "https://www.facebook.com/Bigtrailer-minsk-1037970656247038/"},
+        ],
+        copyright: {title: "kimi_finland@hotmail.com"}
+    }
+}

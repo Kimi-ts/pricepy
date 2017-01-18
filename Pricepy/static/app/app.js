@@ -29,6 +29,16 @@ app.config(function ($routeProvider) {
     });
 });
 
-app.controller("appController", function($scope, $location){
+app.controller("appController", function($scope, $location, $http){
     $scope.path = $location.path();
+
+    $http({
+         method: 'Get',
+         url: '/api/values',
+    }).then(function successCallback(response) {
+        $scope.data = response.data;
+        console.log($scope.data);
+    }, function errorCallback(response) {
+        console.log("error");
+    });
 })
