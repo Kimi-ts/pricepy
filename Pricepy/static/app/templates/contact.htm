@@ -1,31 +1,27 @@
     <div class="row row--darkbackground has-background-image imaged well">
         <div class="textBlock textBlock--centered">
-            <p class="textBlock-subheadline">Check out our new discount program:</p>
+            <p class="textBlock-subheadline">{{data.banner.subheadline}}</p>
             <ul class="textBlock-list textBlock-list--ticked">
-                <li>3-hour rent</li>
-                <li>Minimum documents required</li>
-                <li>30 rub/hour</li>
-                <li>Flexible discount system</li>
-                <li>5-hour 44 rub/hour!</li>
+                <li ng-repeat="item in data.banner.items">{{item.title}}</li>
             </ul>
         </div>
     </div>
     <div class="row row--alternate cell well well--larger" ng-show="!isSucceeded && !isError">
         <div class="bucket bucket--notCentered">
             <div class="bucket-media mobile-hidden">
-                <img src="static/content/1.jpg" class="bucket-media--main" />
+                <img ng-src="{{data.form.imageSrc}}" class="bucket-media--main" />
             </div>
             <div class="bucket-content textBlock">
                 <form novalidate name="messagesForm">
-                    <h3 class="textBlock-headline">Contact Us</h3>
-                    <p class="textBlock-text--italic">Please, leave us your contacts and we'll call you back sooner.</p>
-                    <span class="form-label">Your Name*: </span>
+                    <h3 class="textBlock-headline">{{data.form.headline}}</h3>
+                    <p class="textBlock-text--italic">{{data.form.innerText}}</p>
+                    <span class="form-label">{{data.form.inputs.nameLabel}} </span>
                     <input type="text" class="form-input" ng-model="form.UserName" required />
-                    <span class="form-label">Your E-mail*:</span>
-                    <input type="email" class="form-input error" ng-model="form.UserEmail" required />
-                    <span class="form-label">Your message*:</span>
+                    <span class="form-label">{{data.form.inputs.emailLabel}}</span>
+                    <input type="email" class="form-input" ng-model="form.UserEmail" required />
+                    <span class="form-label">{{data.form.inputs.messageLabel}}</span>
                     <textarea class="form-input form-textarea" rows="4" ng-model="form.Message" required></textarea>
-                    <input type="submit" class="btn btn--secondary form-button" ng-click="submit()" value="Submit" />
+                    <input type="submit" class="btn btn--secondary form-button" ng-click="submit()" value="{{data.form.inputs.submitLabel}}" />
                 </form>
             </div>
         </div>

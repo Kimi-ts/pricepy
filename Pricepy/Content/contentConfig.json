@@ -1,29 +1,131 @@
 ﻿    {
     header: {
         logo: {
-                src: "static/content2.jpg"
+                src: "static/content/2.jpg"
         },
         menu: [
-			{ title: "Главная", href: "/" },
-			{ title: "Новости", href: "/#!/news" },
-			{ title: "Наша Техника", href: "/#!/machines" },
-			{ title: "Аренда", href: "/#!/arenda" },
-			{ title: "Контакты", href: "/#!/contact" },
+			{ title: "Главная", href: "/", path: "/" },
+			{ title: "Новости", href: "/#!/news", path: "/news" },
+			{ title: "Наша Техника", href: "/#!/machines", path: "/machines" },
+			{ title: "Аренда", href: "/#!/arenda", path: "/arenda" },
+			{ title: "Контакты", href: "/#!/contact", path: "/contact" },
         ]
 
     },
     main: [],
     news: [],
-    machines: [],
-    arenda: [],
-    contacts: [],
+    machines: {
+        content: {
+            headline: "Бонусы для постоянных клиентов",
+            text: "<p class='textBlock-text--highlited'>Бонусы для постоянных клиентов</p><p>Для постоянныъх клиентов у нас предусмотрены дополнительные скидки, а также возможность бронирования прицепов по договоренности без внесения предоплаты.</p>",
+            imgSrc: "static/content/2.jpg"
+        },
+        gallery: {
+            headline: "Наша Техника",
+            priceLabel: "Цена:",
+            availabilityLabel: "Доступен:",
+            moreLabel: "Подробнее",
+            items: [
+                {
+                    imgSrc: "static/content/pr1.jpg",
+                    description: "Прицеп Rydwan Euro С750\\T4",
+                    price: "30 руб",
+                    availibilityLabel: "да",
+                    availibility: true,
+                    discount: false,
+                    href: "/#!/machines/1"
+                },
+                {
+                    imgSrc: "static/content/pr2.jpg",
+                    description: "Прицеп Rydwan Euro A750\\L4",
+                    price: "60 руб",
+                    availibilityLabel: "нет (до 27 января)",
+                    availibility: false,
+                    discount: false,
+                    href: "/#!/machines/2"
+                },
+                {
+                   imgSrc: "static/content/pr3.jpg",
+                   description: "Прицеп Rydwan Euro C750\\L8",
+                   price: "34 руб",
+                   availibilityLabel: "нет (до 3 марта)",
+                   availibility: false,
+                   discount: false,
+                   href: "/#!/machines/3"
+                },
+                {
+                   imgSrc: "static/content/pr4.jpg",
+                   description: "Прицеп Rydwan Euro R-EU-L2",
+                   price: "30 руб",
+                   availibilityLabel: "да",
+                   availibility: true,
+                   discount: false,
+                   href: "/#!/machines/4"
+                },
+                {
+                    imgSrc: "static/content/pr5.jpg",
+                    description: "Прицеп Rydwan Euro B2600/0/L8",
+                    price: "60 руб",
+                    availibilityLabel: "да",
+                    availibility: true,
+                    discount: true,
+                    href: "/#!/machines/5"
+                },
+                {
+                    imgSrc: "static/content/pr6.jpg",
+                    description: "Прицеп Rydwan Euro B2600\\0\\Р3",
+                    price: "60 руб",
+                    availibilityLabel: "нет (до 3 февраля)",
+                    availibility: false,
+                    discount: false,
+                    href: "/#!/machines/6"
+                }
+            ]
+        }
+    },
+    arenda: {
+        content: {
+            headline: "Полезная информация",
+            text: "<p class='textBlock-text--highlited textBlock-text--uppercased'>требования к арендатору</p><p>Перечень документов, необходимых при заключении договора аренды:</p><ul class='textBlock-list'><li>водительское удостоверение соответствующее классу прицепа (В,Е)</li><li>Паспорт гражданина Республики Беларусь</li></ul><p class='textBlock-text--highlited textBlock-text--uppercased'>Порядок оплаты</p><p>При оплате по безналичному расчету к стоимости добавляется 10%.</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Постоянным Клиентам</p><p>Для постоянныъх клиентов предусмотрены дополнительные скидки, а также возможность бронирования прицепов по договоренности без внесения предоплаты.</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Время Работы</p><p>Выдача прицепов осуществляется с 8.00 до 21.00 ежедневно без выходных, а также по дополнительной договоренности в удобное для Вас время.</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Правила Эксплуатации</p><p>Обращаем Ваше внимание, что при выборе прицепа в аренду важно учитывать габариты и массу перевозимого груза. Запрещена перегрузка прицепа, а также перевозка грузов выступающих за габариты прицепа более чем это установлено действующими правилами дорожного движения. При эксплуатации прицепа оборудованного тентом необходимо размещать груз таким образом, чтобы при движении не произошло порыва либо протирания тента.</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Бронирование</p><p>Бронирование прицепов осуществляется при составлении договора аренды на конкретную дату и внесении предоплаты в размере 100%. Обращаем Ваше внимание, что для постоянных клиентов возможно бронирование без предоплаты</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Скорость Движения</p><p>Легковым и грузовым автомобилям при их движении с прицепом на автомагистралях — не более 90 км/ч, на остальных дорогах — не более 70 км/ч</p>",
+            imgSrc: "static/content/2.jpg"
+        }
+    },
+    contacts: {
+        banner: {
+            subheadline: "Наши преимущества:",
+            items: [
+                {title: "Возможность аренды на 3 часа"},
+                {title: "Категории Б и Е"},
+                {title: "Акции и скидки"},
+                {title: "Бонусы постоянным клиентам"},
+                {title: "Безналичный и наличный расчёт"}
+            ]
+        },
+        form: {
+            headline: "Свяжитесь с нами",
+            innerText: "Пожалуйста, заполните предложенные поля, чтобы мы могли ответить на ваши вопросы",
+            inputs: {
+                nameLabel: "Ваше Имя",
+                emailLabel: "Ваш email",
+                messageLabel: "Сообщение",
+                submitLabel: "Отправить"
+            },
+            imageSrc: "static/content/1.jpg"
+        }
+    },
     footer: {
-        leftColumn: [
-			{type: "tel", href: "tel:+375 3453453", title: "+375 3453453"},
-			{type: "email", href: "mailto:marenda2015@gmail.com", title: "marenda2015@gmail.com" },
-			{type: "text-highlithed", title: "8.00 - 21.00 Без выходных" },
-			{type: "text", title: "Наличный и безналичный расчёт"}
-        ],
+        leftColumn: {
+            tels: [
+			    {type: "tel", href: "tel:+375 3453453", title: "+375 3453453"}
+            ],
+            emails: [
+			    {type: "email", href: "mailto:marenda2015@gmail.com", title: "marenda2015@gmail.com" }
+            ],
+            paragraphs: [
+			    {type: "text", class: "textBlock-text--highlited", title: "8.00 - 21.00 Без выходных" },
+			    {type: "text", title: "Наличный и безналичный расчёт"}
+            ]
+        },
         middleColumn: [
 			{type: "text", title: "Беларусь, Минский район"},
 			{type: "text", title: "г.п. Мачулищи, 7 км от МКАД по Слуцкому шоссе"},

@@ -1,6 +1,8 @@
 app.controller('contactController', function contactController($scope, $http){
     console.log("contact controller runs");
     $scope.$parent.path = "/contact";
+    $scope.data = $scope.$parent.data.contacts;
+    console.log($scope.data);
     $scope.isSucceeded = false;
     $scope.isError = false;
     $scope.submit = function(){

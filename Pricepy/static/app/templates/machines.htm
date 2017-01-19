@@ -1,27 +1,40 @@
     <div class="row row--alternate cell well">
         <div class="bucket bucket--notCentered">
             <div class="bucket-media mobile-hidden">
-                <img src="static/content/1.jpg" class="bucket-media--main" />
+                <img ng-src="{{data.content.imgSrc}}" class="bucket-media--main" />
             </div>
             <div class="bucket-content textBlock">
-                <p class="textBlock-text--highlited">Highlited content.</p>
-                <p>Janne Ahonen.</p>
-                <ul class="textBlock-list">
-                    <li>Development</li>
-                    <li>Successful projects</li>
-                    <li>Powerful energy</li>
-                    <li>High-qualified ecosystem</li>
-                </ul>
+                <span ng-bind-html="data.content.text"></span>
             </div>
         </div>
     </div>
     <div class="row well cell">
         <div class="textBlock textBlock--centered">
-            <h3 class="textBlock-headline">Our Machines</h3>
+            <h3 class="textBlock-headline">{{data.gallery.headline}}</h3>
         </div>
         <div class="gallery" match-height>
             <ul>
-                <li class="gallery-item">
+                <li ng-repeat="item in data.gallery.items" class="gallery-item">
+                    <img class="item-img" ng-src="{{item.imgSrc}}" />
+                    <span ng-if="item.discount" class="gallery-diccountIcon">
+                        <img src="static/icons/orange transparent discount icon.png" alt="discount!" title="image title" />
+                    </span>
+                    <div class="textBlock">
+                        <p class="gallery-item-description">{{item.description}}</p>
+                        <div class="textBlock-contentBlock">
+                            <h5 class="textBlock-contentBlock-title">{{data.gallery.priceLabel}}</h5>
+                            <p class="textBlock-contentBlock-value">{{item.price}}</p>
+                        </div>
+                        <div class="textBlock-contentBlock">
+                            <h5 class="textBlock-contentBlock-title">{{data.gallery.availabilityLabel}}</h5>
+                            <p class="textBlock-contentBlock-value textBlock-contentBlock-value--highlighted" ng-class="item.availibility == true ? 'green' : 'red'">{{item.availibilityLabel}}</p>
+                        </div>
+                        <div class="gallery-link-wrapper">
+                            <a ng-href="{{item.href}}" class="gallery-link">{{data.gallery.moreLabel}}</a>
+                        </div>
+                    </div>
+                </li>
+                <!--<li class="gallery-item">
                     <img class="item-img" src="static/content/2.jpg" />
                     <div class="textBlock">
                         <p class="gallery-item-description">Item description Janne Ahonen</p>
@@ -108,7 +121,7 @@
                             <a href="/#!/machines/1" class="gallery-link">More</a>
                         </div>
                     </div>
-                </li>
+                </li>-->
             </ul>
         </div>
     </div>

@@ -21,6 +21,7 @@
     </style>
     <script type="text/javascript" src="static/node_modules/angular/angular.js"></script>
     <script type="text/javascript" src="static/node_modules/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="static/node_modules/angular-sanitize/angular-sanitize.js"></script>
     <script type="text/javascript" src="static/app/app.js"></script>
     <script type="text/javascript" src="static/app/services/anchorSmoothScrollService.js"></script>
     <script type="text/javascript" src="static/app/controllers/homeController.js"></script>
@@ -37,40 +38,29 @@
 </head>
 <body ng-app="myApp" ng-controller="appController">
     <div class="row cell well well--smaller">
-        <a href="/" name="top" id="top" class="mainLogo"><img src="static/content/2.jpg"></a>
+        <a href="/" name="top" id="top" class="mainLogo"><img ng-src="{{data.header.logo.src}}"></a>
         <ul class="nav nav--horizontal menu">
-            <li><a href="/" class="btn btn--noborder menu-item" ng-class="path =='/' ? 'btn--active' : ''">Главная</a></li>
-            <li><a href="/#!/news" class="btn btn--noborder menu-item" ng-class="path =='/news' ? 'btn--active' : ''">Новости</a></li>
-            <li><a href="/#!/machines" class="btn btn--noborder menu-item" ng-class="path =='/machines' ? 'btn--active' : ''">Наша Техника</a></li>
-            <li><a href="/#!/arenda" class="btn btn--noborder menu-item" ng-class="path =='/arenda' ? 'btn--active' : ''">Аренда</a></li>
-            <li><a href="/#!/contact" class="btn btn--noborder menu-item" ng-class="path =='/contact' ? 'btn--active' : ''">Контакты</a></li>
+            <li ng-repeat="item in data.header.menu"><a href="{{item.href}}" class="btn btn--noborder menu-item" ng-class="path == item.path? 'btn--active': ''">{{item.title}}</a></li>
         </ul>
     </div>
     <div ng-view></div>
     <div class="row row--darkbackground cell well grid">
         <div class="textBlock textBlock--smallertext col col--quoter">
-            <p class="textBlock-text--highlited"><a href="tel:+375 3453453">+375 44 7669269</a></p>
-            <p><a href="">marenda2015@gmail.com</a></p>
-            <p class="textBlock-text--highlited">8.00 - 21.00 Без выходных</p>
-            <p>Наличный и безналичный расчёт</p>
+            <p ng-repeat="item in data.footer.leftColumn.tels" class="textBlock-text--highlited"><a href="{{item.href}}">{{item.title}}</a></p>
+            <p ng-repeat="item in data.footer.leftColumn.emails"><a href="{{item.href}}">{{item.title}}</a></p>
+            <p ng-repeat="item in data.footer.leftColumn.paragraphs" class="{{item.class}}">{{item.title}}</p>
         </div>
         <div class="textBlock textBlock--smallertext col col--quoter">
-            <p>Беларусь, Минский район</p>
-            <p>г.п. Мачулищи, 7 км от МКАД по Слуцкому шоссе</p>
-            <p>ИП Бобок Светлана Петровна</p>
-            <p>УНП 691782209</p>
-            <p>р\с 3013247940011 ЗАО Банк ВТБ</p>
+            <p ng-repeat="item in data.footer.middleColumn">{{item.title}}</p>
         </div>
         <div class="col textBlock social">
-            <a href="https://vk.com/share.php?url=http%3A%2F%2Fwww.bigtrailer-minsk.net" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a>
-            <a href="http://twitter.com/share?text=Самые надёжные прицепы в твоём городе&url=http://BigTrailler-Minsk.net&#BigTrailler-Minsk" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a href="https://www.facebook.com/Bigtrailer-minsk-1037970656247038/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a ng-repeat="item in data.footer.socialBar" href="{{item.href}}" target="_blank"><i class="fa {{item.class}}" aria-hidden="true"></i></a>
         </div>
         <div class="textBlock">
             <hr class="textBlock-horizontalline" />
         </div>
         <div class="textBlock">
-            <p class="textBlock--smallertext textBlock-text--rightaligned">kimi_finland@hotmail.com (c) 2016</p>
+            <p class="textBlock--smallertext textBlock-text--rightaligned">{{data.footer.copyright.title}}</p>
         </div>
     </div>
 </body>
