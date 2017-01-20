@@ -55,6 +55,9 @@
                     {title: "Бонусы постоянным клиентам"},
                     {title: "Безналичный и наличный расчёт"}
                 ]
+        },
+        section: {
+            background: "alternate"
         }
     },
     machines: {
