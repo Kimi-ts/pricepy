@@ -14,7 +14,7 @@
             </ul>
         </div>
     </div>
-    <div ng-repeat="section in data.sections" class="row row--alternate cell well">
+    <div ng-repeat="section in data.sections" class="row cell well" ng-class="section.background == 'alternate' ? 'row--alternate' : ''">
         <div class="bucket">
             <div class="bucket-media mobile-hidden">
                 <img ng-src="{{section.imgSrc}}" class="bucket-media--main" />
@@ -24,7 +24,7 @@
             </div>
         </div>
     </div>
-    <div class="row cell well">
+    <div class="row cell well" ng-class="data.mapView.background == 'alternate' ? 'row--alternate' : ''">
         <div class="bucket bucket--notCentered">
             <div class="bucket-media">
                 <div class="map" set-map></div>

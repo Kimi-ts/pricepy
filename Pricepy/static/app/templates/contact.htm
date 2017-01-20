@@ -6,7 +6,7 @@
             </ul>
         </div>
     </div>
-    <div class="row row--alternate cell well well--larger" ng-show="!isSucceeded && !isError">
+    <div class="row cell well well--larger" ng-show="!isSucceeded && !isError" ng-class="data.form.background == 'alternate' ? 'row--alternate' : ''">
         <div class="bucket bucket--notCentered">
             <div class="bucket-media mobile-hidden">
                 <img ng-src="{{data.form.imageSrc}}" class="bucket-media--main" />
@@ -26,7 +26,7 @@
             </div>
         </div>
     </div>
-    <div class="row row--alternate cell well well-larger" ng-show="isSucceeded">
+    <div class="row cell well well-larger" ng-show="isSucceeded" ng-class="data.successView.background == 'alternate' ? 'row--alternate' : ''">
         <div class="bucket bucket--notCentered">
             <div class="bucket-media mobile-hidden">
                 <img ng-src="{{data.successView.imgSrc}}" class="bucket-media--main" />
@@ -39,7 +39,7 @@
             </div>
         </div>
     </div>
-    <div class="row row--alternate cell well well-larger" ng-show="isError">
+    <div class="row cell well well-larger" ng-show="isError" ng-class="data.successView.background == 'alternate' ? 'row--alternate' : ''">
         <div class="bucket bucket--notCentered">
             <div class="bucket-media mobile-hidden">
                 <img ng-src="{{data.errorView.imgSrc}}" class="bucket-media--main" />
@@ -55,7 +55,7 @@
             </div>
         </div>
     </div>
-    <div class="row cell well">
+    <div class="row cell well" ng-class="data.mapView.background == 'alternate' ? 'row--alternate' : ''">
         <div class="bucket bucket--notCentered">
             <div class="bucket-media">
                 <div class="map" set-map></div>
