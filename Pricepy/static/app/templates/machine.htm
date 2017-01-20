@@ -1,38 +1,31 @@
     <div class="row row--darkbackground has-background-image imaged well">
         <div class="textBlock textBlock--centered">
-            <p class="textBlock-subheadline">Check out our new discount program:</p>
+            <p class="textBlock-subheadline">{{data.banner.subheadline}}</p>
             <ul class="textBlock-list textBlock-list--ticked">
-                <li>3-hour rent</li>
-                <li>Minimum documents required</li>
-                <li>30 rub/hour</li>
-                <li>Flexible discount system</li>
-                <li>5-hour 44 rub/hour!</li>
+                <li ng-repeat="item in data.banner.items">{{item.title}}</li>
             </ul>
         </div>
     </div>
     <div class="row row--alternate cell well">
         <div class="bucket bucket--notCentered">
             <div class="bucket-media" match-height>
-                <!--TO DO
-                create mechanism to use first item src by default-->
-                <img src="{{activeSrc}}" class="bucket-media--main" />
+                <img ng-src="{{activeImg.imgSrc}}" class="bucket-media--main" />
                 <div class="bucket-media-wrapper">
-                    <img ng-repeat="image in secondaryImages" ng-src="{{image}}"  class="bucket-media--secondary item-img"  ng-click="setActive(image)" ng-class="image==activeSrc ? 'active' : ''"/>
+                    <img ng-repeat="image in machine.secondaryImages" ng-src="{{image.imgSrc}}"  class="bucket-media--secondary item-img"  ng-click="setActive(image)" ng-class="image.imgSrc==activeImg.imgSrc ? 'active' : ''"/>
                 </div>
             </div>
             <div class="bucket-content textBlock">
-                <h3 class="textBlock-headline">Headline</h3>
-                <p>Many lines of text.</p>
-                <p class="textBlock-text--italic">Inner text.</p>
-                <p>Kimi Raikkonen is 2007 year F1 World Champion from Finland. Hey, Slim, I <a href="#">wrote you</a>, but you still ain't calling... I left my cell, my pager and my home phone at the bottom. I sent two letters back in autumn, you mustn't a got'em: there're probably a problem at the Post office or something.</p>
-                <p class="textBlock-text--highlited">Highlited content.</p>
-                <p>Janne Ahonen.</p>
-                <ul class="textBlock-list">
-                    <li>Development</li>
-                    <li>Successful projects</li>
-                    <li>Powerful energy</li>
-                    <li>High-qualified ecosystem</li>
-                </ul>
+                <h3 class="textBlock-headline">{{machine.name}}</h3>
+                <p class="textBlock-text--highlited">{{machine.fullInfo.category}}</p>
+                <div ng-repeat="item in machine.fullInfo.characteristics" class="textBlock-contentBlock">
+                    <h5 class="textBlock-contentBlock-title">{{item.name}}</h5>
+                    <p class="textBlock-contentBlock-value">{{item.value}}</p>
+                </div>
+                <span ng-bind-html="machine.fullInfo.textHtml"></span>
+                <!--<p class="textBlock-text--italic orange">Цена</p>
+                <p>40 руб/сутки</p>
+                <p>24 руб/3-7 суток</p>
+                <p>20 руб/10+ суток</p>-->
             </div>
         </div>
     </div>

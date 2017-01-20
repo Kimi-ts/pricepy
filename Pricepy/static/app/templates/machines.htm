@@ -4,7 +4,7 @@
                 <img ng-src="{{data.content.imgSrc}}" class="bucket-media--main" />
             </div>
             <div class="bucket-content textBlock">
-                <span ng-bind-html="data.content.text"></span>
+                <span ng-bind-html="data.content.textHtml"></span>
             </div>
         </div>
     </div>
@@ -21,11 +21,11 @@
                     </span>
                     <div class="textBlock">
                         <p class="gallery-item-description">{{item.description}}</p>
-                        <div class="textBlock-contentBlock">
+                        <div class="textBlock-contentBlock inGallery">
                             <h5 class="textBlock-contentBlock-title">{{data.gallery.priceLabel}}</h5>
                             <p class="textBlock-contentBlock-value">{{item.price}}</p>
                         </div>
-                        <div class="textBlock-contentBlock">
+                        <div class="textBlock-contentBlock inGallery">
                             <h5 class="textBlock-contentBlock-title">{{data.gallery.availabilityLabel}}</h5>
                             <p class="textBlock-contentBlock-value textBlock-contentBlock-value--highlighted" ng-class="item.availibility == true ? 'green' : 'red'">{{item.availibilityLabel}}</p>
                         </div>
@@ -34,94 +34,7 @@
                         </div>
                     </div>
                 </li>
-                <!--<li class="gallery-item">
-                    <img class="item-img" src="static/content/2.jpg" />
-                    <div class="textBlock">
-                        <p class="gallery-item-description">Item description Janne Ahonen</p>
-                        <div class="textBlock-contentBlock">
-                            <h5 class="textBlock-contentBlock-title">Price:</h5>
-                            <p class="textBlock-contentBlock-value">30 rub</p>
-                        </div>
-                        <div class="textBlock-contentBlock">
-                            <h5 class="textBlock-contentBlock-title">Availability:</h5>
-                            <p class="textBlock-contentBlock-value textBlock-contentBlock-value--highlighted red">Nope (until 13, June)</p>
-                        </div>
-                        <div class="gallery-link-wrapper">
-                            <a href="/#!/machines/1" class="gallery-link">More</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="gallery-item">
-                    <img class="item-img" src="static/content/1.jpg" />
-                    <div class="textBlock">
-                        <p class="gallery-item-description">Item description Janne Ahonen</p>
-                        <div class="textBlock-contentBlock">
-                            <h5 class="textBlock-contentBlock-title">Price:</h5>
-                            <p class="textBlock-contentBlock-value">30 rub</p>
-                        </div>
-                        <div class="textBlock-contentBlock">
-                            <h5 class="textBlock-contentBlock-title">Availability:</h5>
-                            <p class="textBlock-contentBlock-value textBlock-contentBlock-value--highlighted green">Yep</p>
-                        </div>
-                        <div class="gallery-link-wrapper">
-                            <a href="/#!/machines/2" class="gallery-link">More</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="gallery-item">
-                    <img class="item-img" class="" src="static/content/3.jpeg" />
-                    <span class="gallery-diccountIcon">
-                        <img src="static/icons/orange transparent discount icon.png" alt="discount!" title="image title" />
-                    </span>
-                    <div class="textBlock">
-                        <p class="gallery-item-description">Can't be longer than 1 line</p>
-                        <div class="textBlock-contentBlock">
-                            <h5 class="textBlock-contentBlock-title">Price:</h5>
-                            <p class="textBlock-contentBlock-value">30 rub</p>
-                        </div>
-                        <div class="textBlock-contentBlock">
-                            <h5 class="textBlock-contentBlock-title">Доступен:</h5>
-                            <p class="textBlock-contentBlock-value textBlock-contentBlock-value--highlighted red">Нет (до 31 сентября)</p>
-                        </div>
-                        <div class="gallery-link-wrapper">
-                            <a href="/#!/machines/3" class="gallery-link">More</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="gallery-item">
-                    <img class="item-img" src="static/content/3.jpeg" />
-                    <div class="textBlock">
-                        <p class="gallery-item-description">Item description Janne Ahonen</p>
-                        <div class="textBlock-contentBlock">
-                            <h5 class="textBlock-contentBlock-title">Price:</h5>
-                            <p class="textBlock-contentBlock-value">30 rub</p>
-                        </div>
-                        <div class="textBlock-contentBlock">
-                            <h5 class="textBlock-contentBlock-title">Availability:</h5>
-                            <p class="textBlock-contentBlock-value textBlock-contentBlock-value--highlighted red">Nope (until 13, June)</p>
-                        </div>
-                        <div class="gallery-link-wrapper">
-                            <a href="/#!/machines/4" class="gallery-link">More</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="gallery-item">
-                    <img class="item-img" src="static/content/1.jpg" />
-                    <div class="textBlock">
-                        <p class="gallery-item-description">Item description Janne Ahonen</p>
-                        <div class="textBlock-contentBlock">
-                            <h5 class="textBlock-contentBlock-title">Price:</h5>
-                            <p class="textBlock-contentBlock-value">30 rub</p>
-                        </div>
-                        <div class="textBlock-contentBlock">
-                            <h5 class="textBlock-contentBlock-title">Availability:</h5>
-                            <p class="textBlock-contentBlock-value textBlock-contentBlock-value--highlighted green">Yep</p>
-                        </div>
-                        <div class="gallery-link-wrapper">
-                            <a href="/#!/machines/1" class="gallery-link">More</a>
-                        </div>
-                    </div>
-                </li>-->
             </ul>
+            <div ng-controller="scrollToAnchorController" class="back-to-top" ng-click="gotoElement('top')"><i class="fa fa-chevron-up"></i></div>
         </div>
     </div>

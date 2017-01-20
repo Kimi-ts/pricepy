@@ -4,16 +4,14 @@ app.controller('machineController', function machineController($scope, $routePar
     $scope.$parent.path = "/machines";
     console.log($routeParams);
 
-    // TO DO
-    // create mechanism to use first item src by default
-    $scope.activeSrc = "static/content/2.jpg";
+    this.index = $routeParams.machineId;
+    $scope.data = $scope.$parent.data.machine;
+    $scope.machine = $scope.$parent.data.machines.gallery.items[this.index-1];
 
-    // TO DO
-    // retrieve images from backend 
+    //first item active by default
+    $scope.activeImg = $scope.machine.secondaryImages[0];
 
-    $scope.secondaryImages = [ "static/content/1.jpg", "static/content/2.jpg", "static/content/3.jpeg"];
-
-    $scope.setActive = function(activeSrc){
-        $scope.activeSrc = activeSrc;
+    $scope.setActive = function(image){
+        $scope.activeImg = image;
     }
 })

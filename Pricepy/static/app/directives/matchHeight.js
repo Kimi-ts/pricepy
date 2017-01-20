@@ -2,7 +2,7 @@ app.directive("matchHeight", function($timeout, $window){
     return {
         restrict: "A",
         link: function(scope, element, attrs) {
-            scope.onresize = function(){
+            scope.matchHeight = function(){
                 $timeout(function(){
                     var images = element[0].getElementsByClassName('item-img');
                     var max = 1000;
@@ -16,11 +16,11 @@ app.directive("matchHeight", function($timeout, $window){
                     for(var i = 0; i< images.length; i++){
                         images[i].style.height = max + "px";
                     };
-                }, 1000);
+                },500);
             };
-            scope.onresize();
+            scope.matchHeight();
             angular.element($window).bind('resize', function() {
-                scope.onresize();
+                scope.matchHeight();
             })
         }
     }

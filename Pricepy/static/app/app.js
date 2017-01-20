@@ -6,10 +6,6 @@ app.config(function ($routeProvider) {
         templateUrl: "static/app/templates/home.htm",
         controller: "homeController"
     })
-    .when("/news", {
-        templateUrl: "static/app/templates/news.htm",
-        controller: "newsController"
-    })
     .when("/machines/:machineId", {
         templateUrl: "static/app/templates/machine.htm",
         controller: "machineController",

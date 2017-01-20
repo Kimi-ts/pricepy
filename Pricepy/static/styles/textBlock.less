@@ -34,6 +34,10 @@
     color: red;
 }
 
+.textBlock p.orange{
+    color: orange;
+}
+
 .textBlock a{
     color: @headlinetextcolor;
     text-decoration: none;
@@ -114,11 +118,12 @@
 .textBlock-contentBlock{
     margin: 10px 0;
     clear: both;
+    overflow: hidden;
 }
 
 .textBlock-contentBlock-title{
     float: left;
-    max-width: 30%;
+    max-width: 40%;
 }
 
 @media screen and (max-width: 768px){
@@ -130,7 +135,17 @@
 .textBlock-contentBlock-value{
     float: right;
     text-align: right;
-    max-width: 70%;
+    max-width: 60%;
+    margin-bottom: 0 !important;
+}
+
+.textBlock-contentBlock.inGallery{
+    .textBlock-contentBlock-value{
+        max-width: 70%;
+    }
+    .textBlock-contentBlock-title{
+        max-width: 30%;
+    }
 }
 
 .textBlock-contentBlock-value--highlighted{
