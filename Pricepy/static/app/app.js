@@ -25,16 +25,11 @@ app.config(function ($routeProvider) {
     });
 });
 
-app.controller("appController", function($scope, $location, $http){
+app.controller("appController", function($scope, $location, $http, getData){
     $scope.path = $location.path();
 
-    $http({
-         method: 'Get',
-         url: '/api/values',
-    }).then(function successCallback(response) {
-        $scope.data = response.data;
+    getData.then(function(data){
+        $scope.data = data;
         console.log($scope.data);
-    }, function errorCallback(response) {
-        console.log("error");
-    });
+    })
 })

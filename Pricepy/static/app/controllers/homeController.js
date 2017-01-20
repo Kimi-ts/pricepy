@@ -1,7 +1,9 @@
-app.controller('homeController', function homeController($scope, $location){
+app.controller('homeController', function homeController($scope, $location, getData){
     console.log("home controller runs");
     $scope.$parent.path = "/";
 
-    $scope.data = $scope.$parent.data.home;
-    console.log($scope.data);
+    getData.then(function(data){
+        $scope.data = data.home;
+        console.log($scope.data);
+    })
 })

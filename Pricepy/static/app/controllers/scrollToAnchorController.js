@@ -1,4 +1,4 @@
-app.controller('scrollToAnchorController', function($scope, $location, anchorSmoothScroll) {
+app.controller('scrollToAnchorController', function($scope, anchorSmoothScroll) {
     $scope.gotoElement = function (eID){
       anchorSmoothScroll.scrollTo(eID);
     };
