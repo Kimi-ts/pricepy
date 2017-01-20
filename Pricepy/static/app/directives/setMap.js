@@ -4,11 +4,17 @@ app.directive("setMap", function($timeout){
         link: function(scope, element, attrs) {
             var map;
             function initMap() {
-                map = new google.maps.Map(element[0], {
-                    center: { lat: -34.397, lng: 150.644 },
-                    zoom: 8
+                var myLatLng = {lat: 53.7782142, lng: 27.5949404};
+
+                var map = new google.maps.Map(element[0], {
+                    zoom: 10,
+                    center: myLatLng
                 });
-                console.log("init map called");
+
+                var marker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                });
             };
 
             $timeout(function(){
