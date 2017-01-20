@@ -1,7 +1,7 @@
 ﻿{
     header: {
         logo: {
-                src: "static/content/2.jpg"
+                src: "static/content/icon.png"
         },
         menu: [
 			{ title: "Главная", href: "/", path: "/" },
