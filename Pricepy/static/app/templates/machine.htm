@@ -13,6 +13,10 @@
                 <div class="bucket-media-wrapper">
                     <img ng-repeat="image in machine.secondaryImages" ng-src="{{image.imgSrc}}"  class="bucket-media--secondary item-img"  ng-click="setActive(image)" ng-class="image.imgSrc==activeImg.imgSrc ? 'active' : ''"/>
                 </div>
+                <div class="bucket-media-links-wrapper textBlock">
+                    <a href="{{machine.previousHref}}" class="prev left">{{data.section.previousLinkLabel}}</a>
+                    <a href="{{machine.nextHref}}" class="right next">{{data.section.nextLinkLabel}}</a>
+                </div>
             </div>
             <div class="bucket-content textBlock">
                 <h3 class="textBlock-headline">{{machine.name}}</h3>

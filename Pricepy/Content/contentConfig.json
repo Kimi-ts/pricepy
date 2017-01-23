@@ -57,7 +57,9 @@
                 ]
         },
         section: {
-            background: "alternate"
+          background: "alternate",
+          nextLinkLabel: "Следующий",
+          previousLinkLabel: "Предыдущий"
         }
     },
     machines: {
@@ -71,194 +73,387 @@
             headline: "Наша Техника",
             priceLabel: "Цена:",
             availabilityLabel: "Доступен:",
-            moreLabel: "Подробнее",
+          moreLabel: "Подробнее",
+
             items: [
-                {
-                    imgSrc: "static/content/pr1.jpg",
-                    secondaryImages: [
-                        {imgSrc: "static/content/pr1.jpg"},
-                        {imgSrc: "static/content/pr2.jpg"},
-                        {imgSrc: "static/content/pr3.jpg"}
-                    ],
-                    description: "Прицеп Rydwan Euro С750\\T4",
-                    name: "Прицеп Rydwan Euro С750\\T4",
-                    fullInfo: {
-                        caregory: "Категория В",
-                        characteristics: [
-                            {name: "Длинна внутренняя/внешняя", value: "600/606 см"},
-                            {name: "Ширина внутренняя/внешняя", value: "600/606 см"},
-                            {name: "Высота прицепа от земли", value: "80 см"},
-                            {name: "Высота прицепа от пола до верха", value: "35 см"},
-                            {name: "Высота от борта", value: "35 см"},
-                            {name: "Резина", value: "усиленная"},
-                            {name: "Полная масса", value: "750 кг"},
-                            {name: "Тип подвески", value: "задняя"},
-                            {name: "Открывающийся задний борт", value: ""},
-                            {name: "Зелёная карта", value: ""}
-                        ],
-                        textHtml: "<p class='textBlock-text--italic orange'>Цена</p><p>40 руб/сутки</p><p>24 руб/3-7 суток</p><p>20 руб/10+ суток</p>"
+              {
+                "imgSrc": "static/content/pr1.jpg",
+                "secondaryImages": [
+                  { "imgSrc": "static/content/pr1.jpg" },
+                  { "imgSrc": "static/content/pr2.jpg" },
+                  { "imgSrc": "static/content/pr3.jpg" }
+                ],
+                "description": "Прицеп Rydwan Euro С750\\T4",
+                "name": "Прицеп Rydwan Euro С750\\T4",
+                "fullInfo": {
+                  "caregory": "Категория В",
+                  "characteristics": [
+                    {
+                      "name": "Длинна внутренняя/внешняя",
+                      "value": "600/606 см"
                     },
-                    price: "30 руб",
-                    availibilityLabel: "да",
-                    availibility: true,
-                    discount: false,
-                    href: "/#!/machines/1"
-                },
-                {
-                    imgSrc: "static/content/pr2.jpg",
-                    secondaryImages: [
-                        {imgSrc: "static/content/pr2.jpg"},
-                        {imgSrc: "static/content/pr3.jpg"},
-                        {imgSrc: "static/content/pr4.jpg"}
-                    ],
-                    description: "Прицеп Rydwan Euro A750\\L4",
-                    name: "Прицеп Rydwan Euro A750\\L4",
-                    fullInfo: {
-                        caregory: "Категория В",
-                        characteristics: [
-                            {name: "Длинна внутренняя/внешняя", value: "600/606 см"},
-                            {name: "Ширина внутренняя/внешняя", value: "600/606 см"},
-                            {name: "Высота прицепа от земли", value: "80 см"},
-                            {name: "Высота прицепа от пола до верха", value: "35 см"},
-                            {name: "Высота от борта", value: "35 см"},
-                            {name: "Резина", value: "усиленная"},
-                            {name: "Полная масса", value: "750 кг"},
-                            {name: "Тип подвески", value: "задняя"},
-                            {name: "Открывающийся задний борт", value: ""},
-                            {name: "Зелёная карта", value: ""}
-                        ],
-                        textHtml: "<p class='textBlock-text--italic orange'>Цена</p><p>40 руб/сутки</p><p>24 руб/3-7 суток</p><p>20 руб/10+ суток</p>"
+                    {
+                      "name": "Ширина внутренняя/внешняя",
+                      "value": "600/606 см"
                     },
-                    price: "60 руб",
-                    availibilityLabel: "нет (до 27 января)",
-                    availibility: false,
-                    discount: false,
-                    href: "/#!/machines/2"
-                },
-                {
-                   imgSrc: "static/content/pr3.jpg",
-                   secondaryImages: [
-                        {imgSrc: "static/content/pr3.jpg"},
-                        {imgSrc: "static/content/pr4.jpg"},
-                        {imgSrc: "static/content/pr5.jpg"}
-                   ],
-                   description: "Прицеп Rydwan Euro C750\\L8",
-                   name: "Прицеп Rydwan Euro C750\\L8",
-                   fullInfo: {
-                       caregory: "Категория В",
-                       characteristics: [
-                           {name: "Длинна внутренняя/внешняя", value: "600/606 см"},
-                           {name: "Ширина внутренняя/внешняя", value: "600/606 см"},
-                           {name: "Высота прицепа от земли", value: "80 см"},
-                           {name: "Высота прицепа от пола до верха", value: "35 см"},
-                           {name: "Высота от борта", value: "35 см"},
-                           {name: "Резина", value: "усиленная"},
-                           {name: "Полная масса", value: "750 кг"},
-                           {name: "Тип подвески", value: "задняя"},
-                           {name: "Открывающийся задний борт", value: ""},
-                           {name: "Зелёная карта", value: ""}
-                       ],
-                       textHtml: "<p class='textBlock-text--italic orange'>Цена</p><p>40 руб/сутки</p><p>24 руб/3-7 суток</p><p>20 руб/10+ суток</p>"
-                   },
-                   price: "34 руб",
-                   availibilityLabel: "нет (до 3 марта)",
-                   availibility: false,
-                   discount: false,
-                   href: "/#!/machines/3"
-                },
-                {
-                   imgSrc: "static/content/pr4.jpg",
-                   secondaryImages: [
-                     {imgSrc: "static/content/pr4.jpg"},
-                     {imgSrc: "static/content/pr5.jpg"},
-                     {imgSrc: "static/content/pr6.jpg"}
-                   ],
-                   description: "Прицеп Rydwan Euro R-EU-L2",
-                   name: "Прицеп Rydwan Euro R-EU-L2",
-                   fullInfo: {
-                       caregory: "Категория В",
-                       characteristics: [
-                           {name: "Длинна внутренняя/внешняя", value: "600/606 см"},
-                           {name: "Ширина внутренняя/внешняя", value: "600/606 см"},
-                           {name: "Высота прицепа от земли", value: "80 см"},
-                           {name: "Высота прицепа от пола до верха", value: "35 см"},
-                           {name: "Высота от борта", value: "35 см"},
-                           {name: "Резина", value: "усиленная"},
-                           {name: "Полная масса", value: "750 кг"},
-                           {name: "Тип подвески", value: "задняя"},
-                           {name: "Открывающийся задний борт", value: ""},
-                           {name: "Зелёная карта", value: ""}
-                       ],
-                       textHtml: "<p class='textBlock-text--italic orange'>Цена</p><p>40 руб/сутки</p><p>24 руб/3-7 суток</p><p>20 руб/10+ суток</p>"
-                   },
-                   price: "30 руб",
-                   availibilityLabel: "да",
-                   availibility: true,
-                   discount: false,
-                   href: "/#!/machines/4"
-                },
-                {
-                    imgSrc: "static/content/pr5.jpg",
-                    secondaryImages: [
-                         {imgSrc: "static/content/pr5.jpg"},
-                         {imgSrc: "static/content/pr6.jpg"},
-                         {imgSrc: "static/content/pr1.jpg"}
-                    ],
-                    description: "Прицеп Rydwan Euro B2600/0/L8",
-                    name: "Прицеп Rydwan Euro B2600/0/L8",
-                    fullInfo: {
-                        caregory: "Категория В",
-                        characteristics: [
-                            {name: "Длинна внутренняя/внешняя", value: "600/606 см"},
-                            {name: "Ширина внутренняя/внешняя", value: "600/606 см"},
-                            {name: "Высота прицепа от земли", value: "80 см"},
-                            {name: "Высота прицепа от пола до верха", value: "35 см"},
-                            {name: "Высота от борта", value: "35 см"},
-                            {name: "Резина", value: "усиленная"},
-                            {name: "Полная масса", value: "750 кг"},
-                            {name: "Тип подвески", value: "задняя"},
-                            {name: "Открывающийся задний борт", value: ""},
-                            {name: "Зелёная карта", value: ""}
-                        ],
-                        textHtml: "<p class='textBlock-text--italic orange'>Цена</p><p>40 руб/сутки</p><p>24 руб/3-7 суток</p><p>20 руб/10+ суток</p>"
+                    {
+                      "name": "Высота прицепа от земли",
+                      "value": "80 см"
                     },
-                    price: "60 руб",
-                    availibilityLabel: "да",
-                    availibility: true,
-                    discount: true,
-                    href: "/#!/machines/5"
-                },
-                {
-                    imgSrc: "static/content/pr6.jpg",
-                    secondaryImages: [
-                         {imgSrc: "static/content/pr6.jpg"},
-                         {imgSrc: "static/content/pr1.jpg"},
-                         {imgSrc: "static/content/pr2.jpg"}
-                    ],
-                    description: "Прицеп Rydwan Euro B2600\\0\\Р3",
-                    name: "Прицеп Rydwan Euro B2600\\0\\Р3",
-                    fullInfo: {
-                        caregory: "Категория В",
-                        characteristics: [
-                            {name: "Длинна внутренняя/внешняя", value: "600/606 см"},
-                            {name: "Ширина внутренняя/внешняя", value: "600/606 см"},
-                            {name: "Высота прицепа от земли", value: "80 см"},
-                            {name: "Высота прицепа от пола до верха", value: "35 см"},
-                            {name: "Высота от борта", value: "35 см"},
-                            {name: "Резина", value: "усиленная"},
-                            {name: "Полная масса", value: "750 кг"},
-                            {name: "Тип подвески", value: "задняя"},
-                            {name: "Открывающийся задний борт", value: ""},
-                            {name: "Зелёная карта", value: ""}
-                        ],
-                        textHtml: "<p class='textBlock-text--italic orange'>Цена</p><p>40 руб/сутки</p><p>24 руб/3-7 суток</p><p>20 руб/10+ суток</p>"
+                    {
+                      "name": "Высота прицепа от пола до верха",
+                      "value": "35 см"
                     },
-                    price: "60 руб",
-                    availibilityLabel: "нет (до 3 февраля)",
-                    availibility: false,
-                    discount: false,
-                    href: "/#!/machines/6"
-                }
+                    {
+                      "name": "Высота от борта",
+                      "value": "35 см"
+                    },
+                    {
+                      "name": "Резина",
+                      "value": "усиленная"
+                    },
+                    {
+                      "name": "Полная масса",
+                      "value": "750 кг"
+                    },
+                    {
+                      "name": "Тип подвески",
+                      "value": "задняя"
+                    },
+                    {
+                      "name": "Открывающийся задний борт",
+                      "value": ""
+                    },
+                    {
+                      "name": "Зелёная карта",
+                      "value": ""
+                    }
+                  ],
+                  "textHtml": "<p class='textBlock-text--italic orange'>Цена</p><p>40 руб/сутки</p><p>24 руб/3-7 суток</p><p>20 руб/10+ суток</p>"
+                },
+                "price": "30 руб",
+                "availibilityLabel": "да",
+                "availibility": true,
+                "discount": false,
+                "href": "/#!/machines/1",
+                "nextHref": "/#!/machines/2",
+                "previousHref": "/#!/machines/6"
+              },
+              {
+                "imgSrc": "static/content/pr2.jpg",
+                "secondaryImages": [
+                  { "imgSrc": "static/content/pr2.jpg" },
+                  { "imgSrc": "static/content/pr3.jpg" },
+                  { "imgSrc": "static/content/pr4.jpg" }
+                ],
+                "description": "Прицеп Rydwan Euro A750\\L4",
+                "name": "Прицеп Rydwan Euro A750\\L4",
+                "fullInfo": {
+                  "caregory": "Категория В",
+                  "characteristics": [
+                    {
+                      "name": "Длинна внутренняя/внешняя",
+                      "value": "600/606 см"
+                    },
+                    {
+                      "name": "Ширина внутренняя/внешняя",
+                      "value": "600/606 см"
+                    },
+                    {
+                      "name": "Высота прицепа от земли",
+                      "value": "80 см"
+                    },
+                    {
+                      "name": "Высота прицепа от пола до верха",
+                      "value": "35 см"
+                    },
+                    {
+                      "name": "Высота от борта",
+                      "value": "35 см"
+                    },
+                    {
+                      "name": "Резина",
+                      "value": "усиленная"
+                    },
+                    {
+                      "name": "Полная масса",
+                      "value": "750 кг"
+                    },
+                    {
+                      "name": "Тип подвески",
+                      "value": "задняя"
+                    },
+                    {
+                      "name": "Открывающийся задний борт",
+                      "value": ""
+                    },
+                    {
+                      "name": "Зелёная карта",
+                      "value": ""
+                    }
+                  ],
+                  "textHtml": "<p class='textBlock-text--italic orange'>Цена</p><p>40 руб/сутки</p><p>24 руб/3-7 суток</p><p>20 руб/10+ суток</p>"
+                },
+                "price": "60 руб",
+                "availibilityLabel": "нет (до 27 января)",
+                "availibility": false,
+                "discount": false,
+                "href": "/#!/machines/2",
+                "nextHref": "/#!/machines/3",
+                "previousHref": "/#!/machines/1"
+              },
+              {
+                "imgSrc": "static/content/pr3.jpg",
+                "secondaryImages": [
+                  { "imgSrc": "static/content/pr3.jpg" },
+                  { "imgSrc": "static/content/pr4.jpg" },
+                  { "imgSrc": "static/content/pr5.jpg" }
+                ],
+                "description": "Прицеп Rydwan Euro C750\\L8",
+                "name": "Прицеп Rydwan Euro C750\\L8",
+                "fullInfo": {
+                  "caregory": "Категория В",
+                  "characteristics": [
+                    {
+                      "name": "Длинна внутренняя/внешняя",
+                      "value": "600/606 см"
+                    },
+                    {
+                      "name": "Ширина внутренняя/внешняя",
+                      "value": "600/606 см"
+                    },
+                    {
+                      "name": "Высота прицепа от земли",
+                      "value": "80 см"
+                    },
+                    {
+                      "name": "Высота прицепа от пола до верха",
+                      "value": "35 см"
+                    },
+                    {
+                      "name": "Высота от борта",
+                      "value": "35 см"
+                    },
+                    {
+                      "name": "Резина",
+                      "value": "усиленная"
+                    },
+                    {
+                      "name": "Полная масса",
+                      "value": "750 кг"
+                    },
+                    {
+                      "name": "Тип подвески",
+                      "value": "задняя"
+                    },
+                    {
+                      "name": "Открывающийся задний борт",
+                      "value": ""
+                    },
+                    {
+                      "name": "Зелёная карта",
+                      "value": ""
+                    }
+                  ],
+                  "textHtml": "<p class='textBlock-text--italic orange'>Цена</p><p>40 руб/сутки</p><p>24 руб/3-7 суток</p><p>20 руб/10+ суток</p>"
+                },
+                "price": "34 руб",
+                "availibilityLabel": "нет (до 3 марта)",
+                "availibility": false,
+                "discount": false,
+                "href": "/#!/machines/3",
+                "nextHref": "/#!/machines/4",
+                "previousHref": "/#!/machines/2"
+              },
+              {
+                "imgSrc": "static/content/pr4.jpg",
+                "secondaryImages": [
+                  { "imgSrc": "static/content/pr4.jpg" },
+                  { "imgSrc": "static/content/pr5.jpg" },
+                  { "imgSrc": "static/content/pr6.jpg" }
+                ],
+                "description": "Прицеп Rydwan Euro R-EU-L2",
+                "name": "Прицеп Rydwan Euro R-EU-L2",
+                "fullInfo": {
+                  "caregory": "Категория В",
+                  "characteristics": [
+                    {
+                      "name": "Длинна внутренняя/внешняя",
+                      "value": "600/606 см"
+                    },
+                    {
+                      "name": "Ширина внутренняя/внешняя",
+                      "value": "600/606 см"
+                    },
+                    {
+                      "name": "Высота прицепа от земли",
+                      "value": "80 см"
+                    },
+                    {
+                      "name": "Высота прицепа от пола до верха",
+                      "value": "35 см"
+                    },
+                    {
+                      "name": "Высота от борта",
+                      "value": "35 см"
+                    },
+                    {
+                      "name": "Резина",
+                      "value": "усиленная"
+                    },
+                    {
+                      "name": "Полная масса",
+                      "value": "750 кг"
+                    },
+                    {
+                      "name": "Тип подвески",
+                      "value": "задняя"
+                    },
+                    {
+                      "name": "Открывающийся задний борт",
+                      "value": ""
+                    },
+                    {
+                      "name": "Зелёная карта",
+                      "value": ""
+                    }
+                  ],
+                  "textHtml": "<p class='textBlock-text--italic orange'>Цена</p><p>40 руб/сутки</p><p>24 руб/3-7 суток</p><p>20 руб/10+ суток</p>"
+                },
+                "price": "30 руб",
+                "availibilityLabel": "да",
+                "availibility": true,
+                "discount": false,
+                "href": "/#!/machines/4",
+                "nextHref": "/#!/machines/5",
+                "previousHref": "/#!/machines/3"
+              },
+              {
+                "imgSrc": "static/content/pr5.jpg",
+                "secondaryImages": [
+                  { "imgSrc": "static/content/pr5.jpg" },
+                  { "imgSrc": "static/content/pr6.jpg" },
+                  { "imgSrc": "static/content/pr1.jpg" }
+                ],
+                "description": "Прицеп Rydwan Euro B2600/0/L8",
+                "name": "Прицеп Rydwan Euro B2600/0/L8",
+                "fullInfo": {
+                  "caregory": "Категория В",
+                  "characteristics": [
+                    {
+                      "name": "Длинна внутренняя/внешняя",
+                      "value": "600/606 см"
+                    },
+                    {
+                      "name": "Ширина внутренняя/внешняя",
+                      "value": "600/606 см"
+                    },
+                    {
+                      "name": "Высота прицепа от земли",
+                      "value": "80 см"
+                    },
+                    {
+                      "name": "Высота прицепа от пола до верха",
+                      "value": "35 см"
+                    },
+                    {
+                      "name": "Высота от борта",
+                      "value": "35 см"
+                    },
+                    {
+                      "name": "Резина",
+                      "value": "усиленная"
+                    },
+                    {
+                      "name": "Полная масса",
+                      "value": "750 кг"
+                    },
+                    {
+                      "name": "Тип подвески",
+                      "value": "задняя"
+                    },
+                    {
+                      "name": "Открывающийся задний борт",
+                      "value": ""
+                    },
+                    {
+                      "name": "Зелёная карта",
+                      "value": ""
+                    }
+                  ],
+                  "textHtml": "<p class='textBlock-text--italic orange'>Цена</p><p>40 руб/сутки</p><p>24 руб/3-7 суток</p><p>20 руб/10+ суток</p>"
+                },
+                "price": "60 руб",
+                "availibilityLabel": "да",
+                "availibility": true,
+                "discount": true,
+                "href": "/#!/machines/5",
+                "nextHref": "/#!/machines/6",
+                "previousHref": "/#!/machines/4"
+              },
+              {
+                "imgSrc": "static/content/pr6.jpg",
+                "secondaryImages": [
+                  { "imgSrc": "static/content/pr6.jpg" },
+                  { "imgSrc": "static/content/pr1.jpg" },
+                  { "imgSrc": "static/content/pr2.jpg" }
+                ],
+                "description": "Прицеп Rydwan Euro B2600\\0\\Р3",
+                "name": "Прицеп Rydwan Euro B2600\\0\\Р3",
+                "fullInfo": {
+                  "caregory": "Категория В",
+                  "characteristics": [
+                    {
+                      "name": "Длинна внутренняя/внешняя",
+                      "value": "600/606 см"
+                    },
+                    {
+                      "name": "Ширина внутренняя/внешняя",
+                      "value": "600/606 см"
+                    },
+                    {
+                      "name": "Высота прицепа от земли",
+                      "value": "80 см"
+                    },
+                    {
+                      "name": "Высота прицепа от пола до верха",
+                      "value": "35 см"
+                    },
+                    {
+                      "name": "Высота от борта",
+                      "value": "35 см"
+                    },
+                    {
+                      "name": "Резина",
+                      "value": "усиленная"
+                    },
+                    {
+                      "name": "Полная масса",
+                      "value": "750 кг"
+                    },
+                    {
+                      "name": "Тип подвески",
+                      "value": "задняя"
+                    },
+                    {
+                      "name": "Открывающийся задний борт",
+                      "value": ""
+                    },
+                    {
+                      "name": "Зелёная карта",
+                      "value": ""
+                    }
+                  ],
+                  "textHtml": "<p class='textBlock-text--italic orange'>Цена</p><p>40 руб/сутки</p><p>24 руб/3-7 суток</p><p>20 руб/10+ суток</p>"
+                },
+                "price": "60 руб",
+                "availibilityLabel": "нет (до 3 февраля)",
+                "availibility": false,
+                "discount": false,
+                "href": "/#!/machines/6",
+                "nextHref": "/#!/machines/5",
+                "previousHref": "/#!/machines/1"
+              }
             ]
         }
     },
