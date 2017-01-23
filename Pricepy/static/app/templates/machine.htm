@@ -14,8 +14,8 @@
                     <img ng-repeat="image in machine.secondaryImages" ng-src="{{image.imgSrc}}"  class="bucket-media--secondary item-img"  ng-click="setActive(image)" ng-class="image.imgSrc==activeImg.imgSrc ? 'active' : ''"/>
                 </div>
                 <div class="bucket-media-links-wrapper textBlock">
-                    <a href="{{machine.previousHref}}" class="prev left">{{data.section.previousLinkLabel}}</a>
-                    <a href="{{machine.nextHref}}" class="right next">{{data.section.nextLinkLabel}}</a>
+                    <a href="{{machine.previousHref}}" class="prev left" title="{{data.section.previousLinkLabel}}"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                    <a href="{{machine.nextHref}}" class="right next" title="{{data.section.nextLinkLabel}}"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
                 </div>
             </div>
             <div class="bucket-content textBlock">

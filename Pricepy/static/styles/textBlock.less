@@ -26,16 +26,16 @@
     margin-bottom: 10px;
 }
 
-.textBlock p.green{
-    color: green;
+.textBlock .green{
+    color: @greencolor;
 }
 
-.textBlock p.red{
-    color: red;
+.textBlock .red{
+    color: @redcolor;
 }
 
-.textBlock p.orange{
-    color: orange;
+.textBlock .orange{
+    color: @orangecolor;
 }
 
 .textBlock a{
@@ -44,6 +44,14 @@
 }
 
 .textBlock a:hover{
+    text-decoration: underline;
+}
+
+.textBlock a i.fa{
+    font-weight: bold;
+}
+
+.textBlock a i.fa:hover{
     text-decoration: underline;
 }
 
