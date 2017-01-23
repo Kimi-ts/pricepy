@@ -20,6 +20,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -119,6 +120,8 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\AdminValuesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MessagesController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
@@ -131,7 +134,10 @@
   <ItemGroup>
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="static\admin\app.js" />
+    <Content Include="static\admin\services\getDataService.js" />
     <Content Include="static\app\app.js" />
+    <Content Include="static\app\controllers\adminController.js" />
     <Content Include="static\app\controllers\arendaController.js" />
     <Content Include="static\app\controllers\contactController.js" />
     <Content Include="static\app\controllers\homeController.js" />
@@ -168,6 +174,7 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <Content Include="Content\contentConfig.json" />
+    <Content Include="Content\adminConfig.json" />
     <None Include="Project_Readme.html" />
     <None Include="Properties\PublishProfiles\priceps.pubxml" />
     <Content Include="static\node_modules\angular-route\angular-route.js" />
@@ -1228,6 +1235,7 @@
     <Content Include="static\styles\textBlock.less" />
     <Content Include="static\package.json" />
     <Content Include="static\styles.less" />
+    <Content Include="Views\Admin\Index.cshtml" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>

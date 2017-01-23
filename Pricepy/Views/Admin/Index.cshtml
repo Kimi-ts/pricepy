@@ -1,0 +1,68 @@
+﻿@inherits System.Web.Mvc.WebViewPage
+@{
+    ViewBag.Title = "Index";
+}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="static/styles.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+        .map {
+            height: 300px;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <script type="text/javascript" src="static/node_modules/angular/angular.js"></script>
+    <script type="text/javascript" src="static/node_modules/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="static/node_modules/angular-sanitize/angular-sanitize.js"></script>
+    <script type="text/javascript" src="static/admin/app.js"></script>
+    @*<script type="text/javascript" src="static/app/services/anchorSmoothScrollService.js"></script>*@
+    <script type="text/javascript" src="static/admin/services/getDataService.js"></script>
+    @*<script type="text/javascript" src="static/app/controllers/homeController.js"></script>
+    <script type="text/javascript" src="static/app/controllers/machinesController.js"></script>
+    <script type="text/javascript" src="static/app/controllers/machineController.js"></script>
+    <script type="text/javascript" src="static/app/controllers/arendaController.js"></script>
+    <script type="text/javascript" src="static/app/controllers/contactController.js"></script>
+    <script type="text/javascript" src="static/app/controllers/scrollToAnchorController.js"></script>
+    <script type="text/javascript" src="static/app/directives/matchHeight.js"></script>
+    <script type="text/javascript" src="static/app/directives/setMap.js"></script>*@
+
+    @*<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkNKAC_frei_BLZ0zphi92XjvIkGzudBA" async defer></script>*@
+</head>
+<body ng-app="adminApp" ng-controller="adminController">
+    <div class="row cell well well--smaller">
+        <a href="/" name="top" id="top" class="mainLogo"><img ng-src="{{data.header.logo.src}}"></a>
+        <ul class="nav nav--horizontal menu">
+            <li ng-repeat="item in data.header.menu"><a href="{{item.href}}" class="btn btn--noborder menu-item" ng-class="path == item.path? 'btn--active': ''">{{item.title}}</a></li>
+        </ul>
+    </div>
+    <div ng-view></div>
+    <div class="row row--darkbackground cell well grid">
+        <div class="textBlock textBlock--smallertext col col--quoter">
+            <p ng-repeat="item in data.footer.leftColumn.tels" class="textBlock-text--highlited"><a href="{{item.href}}">{{item.title}}</a></p>
+            <p ng-repeat="item in data.footer.leftColumn.emails"><a href="{{item.href}}">{{item.title}}</a></p>
+            <p ng-repeat="item in data.footer.leftColumn.paragraphs" class="{{item.class}}">{{item.title}}</p>
+        </div>
+        <div class="textBlock textBlock--smallertext col col--quoter">
+            <p ng-repeat="item in data.footer.middleColumn">{{item.title}}</p>
+        </div>
+        <div class="col textBlock social">
+            <a ng-repeat="item in data.footer.socialBar" href="{{item.href}}" target="_blank"><i class="fa {{item.class}}" aria-hidden="true"></i></a>
+        </div>
+        <div class="textBlock">
+            <hr class="textBlock-horizontalline" />
+        </div>
+        <div class="textBlock">
+            <p class="textBlock--smallertext textBlock-text--rightaligned">{{data.footer.copyright.title}}</p>
+        </div>
+    </div>
+</body>
+</html>
