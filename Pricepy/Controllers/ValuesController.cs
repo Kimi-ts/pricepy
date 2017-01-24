@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Pricepy.DB;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,14 +11,18 @@ namespace Pricepy.Controllers
 {
     public class ValuesController : ApiController
     {
+        private IDBService _dbService;
+
+        public ValuesController(IDBService dbService)
+        {
+            _dbService = dbService;
+        }
+
         // GET api/values
         public object Get()
         {
-            string currentDir = Environment.CurrentDirectory;
-            var path = System.Web.HttpContext.Current.Request.MapPath("~\\Content\\contentConfig.json");
-            string allText = System.IO.File.ReadAllText(path);
-
-            object jsonObject = JsonConvert.DeserializeObject(allText);
+            var jsonObject = new object();
+            jsonObject = _dbService.GetAllContent("~\\Content\\contentConfig.json");
             return jsonObject;
         }
 

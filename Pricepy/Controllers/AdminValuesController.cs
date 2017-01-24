@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Pricepy.DB;
 using Pricepy.Models;
 using System;
 using System.Collections.Generic;
@@ -11,15 +12,16 @@ namespace Pricepy.Controllers
 {
     public class AdminValuesController : ApiController
     {
+        private IDBService _dbService;
+
+        public AdminValuesController(IDBService dbService)
+        {
+            _dbService = dbService;
+        }
         public object Get()
         {
-            //TO DO
-            //Move IO operations into separate classes
-            string currentDir = Environment.CurrentDirectory;
-            var path = System.Web.HttpContext.Current.Request.MapPath("~\\Content\\adminConfig.json");
-            string allText = System.IO.File.ReadAllText(path);
-
-            object jsonObject = JsonConvert.DeserializeObject(allText);
+            object jsonObject = new object();
+            jsonObject = _dbService.GetAllContent("~\\Content\\adminConfig.json");
             return jsonObject;
         }
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Pricepy.DB
 {
-    interface IDBService
+    public interface IDBService
     {
         object GetAllContent(string filename);
     }
