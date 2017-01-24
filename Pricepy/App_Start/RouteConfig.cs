@@ -15,7 +15,7 @@ namespace Pricepy
 
             routes.MapRoute(
                 name: "Admin",
-                url: "Admin",
+                url: "Admin/{action}",
                 defaults: new { controller = "Admin", action = "Index" }
             );
 

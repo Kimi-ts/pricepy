@@ -1,3 +1,120 @@
 ﻿{
-  "header":  "Admin Text"
+  "header": {
+    "logo": {
+      "src": "static/content/icon.png"
+    },
+    "menu": [
+      {
+        "title": "Главная",
+        "href": "/",
+        "path": "/"
+      },
+      {
+        "title": "Наша Техника",
+        "href": "/#!/machines",
+        "path": "/machines"
+      },
+      {
+        "title": "Аренда",
+        "href": "/#!/arenda",
+        "path": "/arenda"
+      },
+      {
+        "title": "Контакты",
+        "href": "/#!/contact",
+        "path": "/contact"
+      }
+    ]
+  },
+  "signin": {
+    "form": {
+      "background": "alternate",
+      "headline": "Пожалуйста, введите данные для входа в систему",
+      "inputs": {
+        "nameLabel": "Ваше Имя",
+        "passwordLabel": "Пароль",
+        "submitLabel": "Отправить"
+      },
+      "imageSrc": "static/content/1.jpg"
+    },
+    "successView": {
+      "background": "alternate",
+      "textHtml": "<h3 class='textBlock-subheadline'>Спасибо за Ваше сообщение</h3><p>Сотрудники Big Trailler свяжутся с Вами в самое ближайшее время.</p><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>",
+      "imgSrc": "static/content/1.jpg"
+    },
+    "errorView": {
+      "background": "alternate",
+      "textHtml": "<h3 class='textBlock-subheadline'>К сожалению, Ваше сообщение не было отправлено</h3><p>Приносим свои извинени, на нашем сервере произошла ошибка. Мы постараемся оперативно её исправить.</p><p>Пожалуйста, свяжитесь с нашими сотрудниками по телефону</p><p><a href='tel:+365 3453453'>+375 3453453</a></p><p>или отправьте Ваше сообщение на электронную почту</p><p><a href='mailto:marenda2015@gmail.com'>marenda2015@gmail.com</a></p>",
+      "imgSrc": "static/content/1.jpg"
+    }
+  },
+  "footer": {
+    "leftColumn": {
+      "tels": [
+        {
+          "type": "tel",
+          "href": "tel:+375 3453453",
+          "title": "+375 3453453"
+        }
+      ],
+      "emails": [
+        {
+          "type": "email",
+          "href": "mailto:marenda2015@gmail.com",
+          "title": "marenda2015@gmail.com"
+        }
+      ],
+      "paragraphs": [
+        {
+          "type": "text",
+          "class": "textBlock-text--highlited",
+          "title": "8.00 - 21.00 Без выходных"
+        },
+        {
+          "type": "text",
+          "title": "Наличный и безналичный расчёт"
+        }
+      ]
+    },
+    "middleColumn": [
+      {
+        "type": "text",
+        "title": "Беларусь, Минский район"
+      },
+      {
+        "type": "text",
+        "title": "г.п. Мачулищи, 7 км от МКАД по Слуцкому шоссе"
+      },
+      {
+        "type": "text",
+        "title": "ИП Бобок Светлана Петровна"
+      },
+      {
+        "type": "text",
+        "title": "УНП 691782209"
+      },
+      {
+        "type": "text",
+        "title": "р\\с 3013247940011 ЗАО Банк ВТБ"
+      }
+    ],
+    "socialBar": [
+      {
+        "type": "vkontakte",
+        "class": "fa-vk",
+        "href": "https://vk.com/share.php?url=http%3A%2F%2Fwww.bigtrailer-minsk.net"
+      },
+      {
+        "type": "twitter",
+        "class": "fa-twitter",
+        "href": "http://twitter.com/share?text=Самые надёжные прицепы в твоём городе&url=http://BigTrailler-Minsk.net&#BigTrailler-Minsk"
+      },
+      {
+        "type": "facebook",
+        "class": "fa-facebook",
+        "href": "https://www.facebook.com/Bigtrailer-minsk-1037970656247038/"
+      }
+    ],
+    "copyright": { "title": "kimi_finland@hotmail.com" }
+  }
 }

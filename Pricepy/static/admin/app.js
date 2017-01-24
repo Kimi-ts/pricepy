@@ -1,32 +1,33 @@
 ﻿var adminApp = angular.module("adminApp", ["ngRoute", "ngSanitize"]);
 
-// app.config(function ($routeProvider) {
-//     $routeProvider
-//     .when("/", {
-//         // templateUrl: "static/app/templates/home.htm",
-//         // controller: "homeController"
-//     })
-//     // .when("/machines/:machineId", {
-//     //     templateUrl: "static/app/templates/machine.htm",
-//     //     controller: "machineController",
-//     //     machineId: "machineId"
-//     // })
-//     // .when("/machines", {
-//     //     templateUrl: "static/app/templates/machines.htm",
-//     //     controller: "machinesController"
-//     // })
-//     // .when("/arenda", {
-//     //     templateUrl: "static/app/templates/arenda.htm",
-//     //     controller: "arendaController"
-//     // })
-//     // .when("/contact", {
-//     //     templateUrl: "static/app/templates/contact.htm",
-//     //     controller: "contactController"
-//     // });
-// });
+adminApp.config(function ($routeProvider) {
+    $routeProvider
+    .when("/", {
+        templateUrl: "static/admin/templates/signin.htm",
+        controller: "signinController"
+    })
+    // .when("/machines/:machineId", {
+    //     templateUrl: "static/app/templates/machine.htm",
+    //     controller: "machineController",
+    //     machineId: "machineId"
+    // })
+    // .when("/machines", {
+    //     templateUrl: "static/app/templates/machines.htm",
+    //     controller: "machinesController"
+    // })
+    // .when("/arenda", {
+    //     templateUrl: "static/app/templates/arenda.htm",
+    //     controller: "arendaController"
+    // })
+    // .when("/contact", {
+    //     templateUrl: "static/app/templates/contact.htm",
+    //     controller: "contactController"
+    // });
+});
 
 adminApp.controller("adminController", function ($scope, $location, $http, getData) {
     $scope.path = $location.path();
+    console.log("hello");
 
     getData.then(function (data) {
         $scope.data = data;

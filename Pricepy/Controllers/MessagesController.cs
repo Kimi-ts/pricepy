@@ -10,10 +10,10 @@ namespace Pricepy.Controllers
 {
     public class MessagesController : ApiController
     {
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
+        //public IEnumerable<string> Get()
+        //{
+        //    return new string[] { "value1", "value2" };
+        //}
 
         public bool Post(FormData data)
         {
