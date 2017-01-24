@@ -13,6 +13,8 @@ namespace Pricepy.Controllers
     public class AdminValuesController : ApiController
     {
         private IDBService _dbService;
+        private string _configFile = "~\\Content\\adminConfig.json";
+        private string _securityDataFile = "~\\Content\\adminSecurityInfo.json";
 
         public AdminValuesController(IDBService dbService)
         {
@@ -21,7 +23,7 @@ namespace Pricepy.Controllers
         public object Get()
         {
             object jsonObject = new object();
-            jsonObject = _dbService.GetAllContent("~\\Content\\adminConfig.json");
+            jsonObject = _dbService.GetAllContent(_configFile);
             return jsonObject;
         }
 
@@ -31,7 +33,11 @@ namespace Pricepy.Controllers
             {
                 return null;
             }
-            if (userData.Name == "Max" && userData.Password == "Payne")
+
+            var name = _dbService.GetNodeValue(_securityDataFile, "name");
+            var password = _dbService.GetNodeValue(_securityDataFile, "password");
+
+            if (userData.Name == name && userData.Password == password)
             {
                 Random random = new Random();
                 var value = random.Next(100, 1000);

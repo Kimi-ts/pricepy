@@ -13,6 +13,8 @@ namespace Pricepy.Controllers
     {
         private IDBService _dbService;
 
+        private string _contentFile = "~\\Content\\contentConfig.json";
+
         public ValuesController(IDBService dbService)
         {
             _dbService = dbService;
@@ -22,7 +24,7 @@ namespace Pricepy.Controllers
         public object Get()
         {
             var jsonObject = new object();
-            jsonObject = _dbService.GetAllContent("~\\Content\\contentConfig.json");
+            jsonObject = _dbService.GetAllContent(_contentFile);
             return jsonObject;
         }
 
