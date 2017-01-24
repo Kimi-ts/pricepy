@@ -35,11 +35,30 @@ namespace Pricepy.DB
             return nodeValue;
         }
 
+        public void UpdateNodeValue(string filename, Dictionary<string,string> newValues)
+        {
+            string allText = ReadFileContent(filename);
+            JObject jObject = JObject.Parse(allText);
+            //jObject[nodeName] = newValue;
+            foreach (var item in newValues)
+            {
+                jObject[item.Key] = item.Value;
+            }
+            string strContent = jObject.ToString();
+            WriteFileContent(filename, strContent);
+        }
+
         private string ReadFileContent(string filename)
         {
             var path = System.Web.HttpContext.Current.Request.MapPath(filename);
             string allText = System.IO.File.ReadAllText(path);
             return allText;
+        }
+
+        private void WriteFileContent(string filename, string newContent)
+        {
+            var path = System.Web.HttpContext.Current.Request.MapPath(filename);
+            System.IO.File.WriteAllText(path, newContent);
         }
     }
 }

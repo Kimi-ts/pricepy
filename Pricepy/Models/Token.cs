@@ -7,7 +7,14 @@ namespace Pricepy.Models
 {
     public class Token
     {
-        public int Value { get; set; }
+        public string Value { get; set; }
         public DateTime Expiredate { get; set; }
+
+        public bool IsValid
+        {
+            get {
+                return DateTime.Now > Expiredate;
+            }
+        }
     }
 }

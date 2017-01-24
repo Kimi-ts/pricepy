@@ -41,9 +41,13 @@ namespace Pricepy.Controllers
             {
                 Random random = new Random();
                 var value = random.Next(100, 1000);
-                Token token = new Token { Value = value, Expiredate = DateTime.Now.AddHours(1) };
-                //TO DO
-                //Write token to DB
+                Token token = new Token { Value = value.ToString(), Expiredate = DateTime.Now.AddHours(1) };
+                _dbService.UpdateNodeValue(_securityDataFile, 
+                    new Dictionary<string, string>()
+                {
+                    { "token", token.Value },
+                    { "exrires", token.Expiredate.ToString() }
+                });
 
                 return token;
             }

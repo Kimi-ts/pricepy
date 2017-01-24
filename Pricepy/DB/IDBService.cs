@@ -11,6 +11,7 @@ namespace Pricepy.DB
     {
         object GetAllContent(string filename);
         object GetNode(string filename, string nodeName);
-        string GetNodeValue(string filename, string nodeValue);
+        string GetNodeValue(string filename, string nodeName);
+        void UpdateNodeValue(string filename, Dictionary<string, string> newValues);
     }
 }
