@@ -13,7 +13,11 @@ namespace Pricepy.Controllers
     public class AdminValuesController : ApiController
     {
         private IDBService _dbService;
-        private string _configFile = "~\\Content\\adminConfig.json";
+        private string _configFile = "~\\Content\\adminSignIn.json";
+        private string _dataFile = "~\\Content\\adminContent.json";
+
+        //TO DO
+        //Create separate file for sensitive admin data and read it, if authenticated
         private string _securityDataFile = "~\\Content\\adminSecurityInfo.json";
 
         public AdminValuesController(IDBService dbService)
@@ -22,9 +26,33 @@ namespace Pricepy.Controllers
         }
         public object Get()
         {
+            IEnumerable<string> headerValues;
+            var tokenValue = string.Empty;
+            if (Request.Headers.TryGetValues("X-Token", out headerValues))
+            {
+                tokenValue = headerValues.FirstOrDefault();
+            }
+
             object jsonObject = new object();
+
             jsonObject = _dbService.GetAllContent(_configFile);
+            if (!string.IsNullOrEmpty(tokenValue))
+            {
+                var token = _dbService.GetNodeValue(_securityDataFile, "token");
+
+                if (tokenValue == token)
+                {
+                    var expires = _dbService.GetNodeValue(_securityDataFile, "expires");
+                    DateTime expiredate = DateTime.Parse(expires);
+                    Token securityToken = new Token { Value = token, Expiredate = expiredate };
+                    if (securityToken.IsValid)
+                    {
+                        jsonObject = _dbService.GetAllContent(_dataFile);
+                    }
+                }
+            }
             return jsonObject;
+
         }
 
         public Token Post(User userData)

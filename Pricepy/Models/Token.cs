@@ -13,7 +13,7 @@ namespace Pricepy.Models
         public bool IsValid
         {
             get {
-                return DateTime.Now > Expiredate;
+                return DateTime.Now < Expiredate;
             }
         }
     }
