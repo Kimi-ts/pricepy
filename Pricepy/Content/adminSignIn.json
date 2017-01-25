@@ -35,17 +35,8 @@
         "passwordLabel": "Пароль",
         "submitLabel": "Отправить"
       },
+      "errorLabel":  "Проверьте введённые Вами данные",
       "imageSrc": "static/content/1.jpg"
-    },
-    "successView": {
-      "background": "alternate",
-      "textHtml": "<h3 class='textBlock-subheadline'>Спасибо за Ваше сообщение</h3><p>Сотрудники Big Trailler свяжутся с Вами в самое ближайшее время.</p><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>",
-      "imgSrc": "static/content/1.jpg"
-    },
-    "errorView": {
-      "background": "alternate",
-      "textHtml": "<h3 class='textBlock-subheadline'>К сожалению, Ваше сообщение не было отправлено</h3><p>Приносим свои извинени, на нашем сервере произошла ошибка. Мы постараемся оперативно её исправить.</p><p>Пожалуйста, свяжитесь с нашими сотрудниками по телефону</p><p><a href='tel:+365 3453453'>+375 3453453</a></p><p>или отправьте Ваше сообщение на электронную почту</p><p><a href='mailto:marenda2015@gmail.com'>marenda2015@gmail.com</a></p>",
-      "imgSrc": "static/content/1.jpg"
     }
   },
   "footer": {
