@@ -1,4 +1,4 @@
-﻿adminApp.controller('signinController', ['$scope', '$http', 'getData', 'myVars', function signinController($scope, $http, getData, myVars){
+﻿adminApp.controller('signinController', ['$scope', '$http', '$location', 'getData', 'myVars', function signinController($scope, $http, $location, getData, myVars){
     console.log("sign in controller runs");
     $scope.$parent.path = "/sign in";
     
@@ -22,6 +22,7 @@
                     console.log("true")
                     $scope.isError = false;
                     myVars.tokenValue = response.data.Value;
+                    $location.path("/gallery")
                     //TO DO
                     //2) redirect to next Page
                 }
