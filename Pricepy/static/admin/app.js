@@ -29,7 +29,7 @@ adminApp.controller("adminController", function ($scope, $location, $http, getDa
     $scope.path = $location.path();
     console.log("hello");
 
-    getData.then(function (data) {
+    getData.getContent().then(function (data) {
         $scope.data = data;
         console.log($scope.data);
     })

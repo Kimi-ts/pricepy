@@ -145,6 +145,7 @@
     <Content Include="static\admin\app.js" />
     <Content Include="static\admin\controllers\signinController.js" />
     <Content Include="static\admin\services\getDataService.js" />
+    <Content Include="static\admin\services\valuesService.js" />
     <Content Include="static\admin\templates\signin.htm" />
     <Content Include="static\app\app.js" />
     <Content Include="static\app\controllers\adminController.js" />
