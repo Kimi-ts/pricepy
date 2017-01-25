@@ -47,6 +47,12 @@ namespace Pricepy.Controllers
                     Token securityToken = new Token { Value = token, Expiredate = expiredate };
                     if (securityToken.IsValid)
                     {
+                        var newDateValue = DateTime.Now.AddHours(1);
+                        _dbService.UpdateNodeValue(_securityDataFile,
+                            new Dictionary<string, string>()
+                        {
+                            { "expires", newDateValue.ToString() }
+                        });
                         jsonObject = _dbService.GetAllContent(_dataFile);
                     }
                 }
@@ -74,7 +80,7 @@ namespace Pricepy.Controllers
                     new Dictionary<string, string>()
                 {
                     { "token", token.Value },
-                    { "exrires", token.Expiredate.ToString() }
+                    { "expires", token.Expiredate.ToString() }
                 });
 
                 return token;
