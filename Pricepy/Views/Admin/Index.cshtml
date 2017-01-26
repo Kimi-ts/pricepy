@@ -40,7 +40,7 @@
     <script type="text/javascript" src="static/app/directives/setMap.js"></script>*@
 </head>
 <body ng-app="adminApp" ng-controller="adminController">
-    <div class="row cell well well--smaller">
+    <div class="row row--borderBottom cell well well--smaller">
         <a href="/" name="top" id="top" class="mainLogo"><img ng-src="{{data.header.logo.src}}"></a>
         <ul class="nav nav--horizontal menu">
             <li ng-repeat="item in data.header.menu"><a href="{{item.href}}" class="btn btn--noborder menu-item" ng-class="path == item.path? 'btn--active': ''">{{item.title}}</a></li>

@@ -174,9 +174,9 @@
             "textHtml": "<p class='textBlock-text--italic orange'>Цена</p><p>40 руб/сутки</p><p>24 руб/3-7 суток</p><p>20 руб/10+ суток</p>"
           },
           "price": "30 руб",
-          "availibilityLabel": "да",
-          "availibility": true,
-          "discount": true,
+          "availibilityLabel": "нет (до завтра)",
+          "availibility": false,
+          "discount": false,
           "href": "/#!/machines/1",
           "nextHref": "/#!/machines/2",
           "previousHref": "/#!/machines/6"
@@ -245,7 +245,7 @@
           "price": "60 руб",
           "availibilityLabel": "нет (до 27 января)",
           "availibility": false,
-          "discount": false,
+          "discount": true,
           "href": "/#!/machines/2",
           "nextHref": "/#!/machines/3",
           "previousHref": "/#!/machines/1"
@@ -314,7 +314,7 @@
           "price": "34 руб",
           "availibilityLabel": "нет (до 4 марта)",
           "availibility": false,
-          "discount": false,
+          "discount": true,
           "href": "/#!/machines/3",
           "nextHref": "/#!/machines/4",
           "previousHref": "/#!/machines/2"
@@ -588,7 +588,7 @@
   "signin": {
     "form": {
       "background": "alternate",
-      "headline": "From content Config",
+      "headline": "Введите данные для входа в систему",
       "inputs": {
         "nameLabel": "Ваше Имя",
         "passwordLabel": "Пароль",
@@ -602,6 +602,7 @@
     "content": {
       "background": "default",
       "headline": "Наша Техника",
+      "saveButtonLabel": "Сохранить",
       "successSavedLabel": "Данные успешно сохранены",
       "textHtml": "<p class='textBlock-text--highlited textBlock-text--uppercased'>требования к арендатору</p><p>Перечень документов, необходимых при заключении договора аренды:</p><ul class='textBlock-list'><li>водительское удостоверение соответствующее классу прицепа (В,Е)</li><li>Паспорт гражданина Республики Беларусь</li></ul><p class='textBlock-text--highlited textBlock-text--uppercased'>Порядок оплаты</p><p>При оплате по безналичному расчету к стоимости добавляется 10%.</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Постоянным Клиентам</p><p>Для постоянныъх клиентов предусмотрены дополнительные скидки, а также возможность бронирования прицепов по договоренности без внесения предоплаты.</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Время Работы</p><p>Выдача прицепов осуществляется с 8.00 до 21.00 ежедневно без выходных, а также по дополнительной договоренности в удобное для Вас время.</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Правила Эксплуатации</p><p>Обращаем Ваше внимание, что при выборе прицепа в аренду важно учитывать габариты и массу перевозимого груза. Запрещена перегрузка прицепа, а также перевозка грузов выступающих за габариты прицепа более чем это установлено действующими правилами дорожного движения. При эксплуатации прицепа оборудованного тентом необходимо размещать груз таким образом, чтобы при движении не произошло порыва либо протирания тента.</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Бронирование</p><p>Бронирование прицепов осуществляется при составлении договора аренды на конкретную дату и внесении предоплаты в размере 100%. Обращаем Ваше внимание, что для постоянных клиентов возможно бронирование без предоплаты</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Скорость Движения</p><p>Легковым и грузовым автомобилям при их движении с прицепом на автомагистралях — не более 90 км/ч, на остальных дорогах — не более 70 км/ч</p>"
     }
@@ -660,12 +661,12 @@
       {
         "type": "vkontakte",
         "class": "fa-vk",
-        "href": "https://vk.com/share.php?url=http%3A%2F%2Fwww.bigtrailer-minsk.net"
+        "href": "https://vk.com/id395551614"
       },
       {
         "type": "twitter",
         "class": "fa-twitter",
-        "href": "http://twitter.com/share?text=Самые надёжные прицепы в твоём городе&url=http://BigTrailler-Minsk.net&#BigTrailler-Minsk"
+        "href": "http://twitter.com/share?text=Самые надёжные прицепы в твоём городе!&url=http://BigTrailler-Minsk.net&#BigTrailler-Minsk"
       },
       {
         "type": "facebook",

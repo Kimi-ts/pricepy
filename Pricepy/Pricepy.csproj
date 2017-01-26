@@ -152,7 +152,6 @@
     <Content Include="static\admin\templates\gallery.htm" />
     <Content Include="static\admin\templates\signin.htm" />
     <Content Include="static\app\app.js" />
-    <Content Include="static\app\controllers\adminController.js" />
     <Content Include="static\app\controllers\arendaController.js" />
     <Content Include="static\app\controllers\contactController.js" />
     <Content Include="static\app\controllers\homeController.js" />
@@ -173,6 +172,7 @@
     <Content Include="static\content\3.jpeg" />
     <Content Include="static\content\4.jpg" />
     <Content Include="static\content\icon.png" />
+    <Content Include="static\content\icon1.png" />
     <Content Include="static\content\icon3.PNG" />
     <Content Include="static\content\pr1.jpg" />
     <Content Include="static\content\pr2.jpg" />

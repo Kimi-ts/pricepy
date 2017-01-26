@@ -41,6 +41,9 @@ p {
   background-color: #807b7b;
   color: white;
 }
+.row--borderBottom {
+  border-bottom: 2px solid #807b7b;
+}
 .row.has-background-image {
   display: table;
 }
@@ -234,6 +237,7 @@ p {
   border: 1px solid #807b7b;
   border-collapse: collapse;
   width: 100%;
+  margin: 20px 0;
 }
 .textBlock-table th {
   text-align: left;
