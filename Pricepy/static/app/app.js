@@ -28,8 +28,13 @@ app.config(function ($routeProvider) {
 app.controller("appController", function($scope, $location, $http, getData){
     $scope.path = $location.path();
 
-    getData.then(function(data){
-        $scope.data = data;
+    getData.getContent("/api/Values", "header").then(function(data){
+        $scope.data = {};
+        $scope.data.header = data;
         console.log($scope.data);
+        getData.getContent("/api/Values", "footer").then(function(data){
+            $scope.data.footer = data;
+            console.log($scope.data);
+        })
     })
 })

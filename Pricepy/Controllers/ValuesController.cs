@@ -21,11 +21,15 @@ namespace Pricepy.Controllers
         }
 
         // GET api/values
-        public object Get()
+        public object Get(string sectionName)
         {
-            var jsonObject = new object();
-            jsonObject = _dbService.GetAllContent(_contentFile);
-            return jsonObject;
+            var sectionObject = new object();
+            //jsonObject = _dbService.GetAllContent(_contentFile);
+            if (!string.IsNullOrEmpty(sectionName))
+            {
+                sectionObject = _dbService.GetNode(_contentFile, sectionName);
+            }
+            return sectionObject;
         }
 
         //// GET api/values/5

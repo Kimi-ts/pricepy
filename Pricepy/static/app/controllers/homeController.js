@@ -2,8 +2,8 @@ app.controller('homeController', function homeController($scope, $location, getD
     console.log("home controller runs");
     $scope.$parent.path = "/";
 
-    getData.then(function(data){
-        $scope.data = data.home;
+    getData.getContent("/api/Values", "home").then(function(data){
+        $scope.data = data;
         console.log($scope.data);
     })
 })

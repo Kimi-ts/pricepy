@@ -2,8 +2,8 @@ app.controller('contactController', function contactController($scope, $http, ge
     console.log("contact controller runs");
     $scope.$parent.path = "/contact";
 
-    getData.then(function(data){
-        $scope.data = data.contacts;
+    getData.getContent("/api/Values", "contacts").then(function(data){
+        $scope.data = data;
         console.log($scope.data);
 
         $scope.isSucceeded = false;

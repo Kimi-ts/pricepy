@@ -6,13 +6,15 @@ app.controller('machineController', function machineController($scope, $routePar
 
     $scope.index = $routeParams.machineId;
 
-    getData.then(function(data){
-        $scope.data = data.machine;
-        $scope.machine = data.machines.gallery.items[$scope.index-1];
-        console.log($scope.data);
+    getData.getContent("/api/Values", "machine").then(function(data){
+        $scope.data = data;
+        getData.getContent("/api/Values", "machines").then(function(data){
+            $scope.machine = data.gallery.items[$scope.index-1];
+            console.log($scope.data);
 
-        //first item active by default
-        $scope.activeImg = $scope.machine.secondaryImages[0];
+            //first item active by default
+            $scope.activeImg = $scope.machine.secondaryImages[0];
+        });
     });
 
     $scope.setActive = function(image){
