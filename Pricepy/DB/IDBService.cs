@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json.Linq;
+using Pricepy.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,5 +14,6 @@ namespace Pricepy.DB
         object GetNode(string filename, string nodeName);
         string GetNodeValue(string filename, string nodeName);
         void UpdateNodeValue(string filename, Dictionary<string, string> newValues);
+        void Update(string filename, List<Machine> newProperties);
     }
 }

@@ -1,4 +1,4 @@
-﻿{
+{
   "header": {
     "logo": {
       "src": "static/content/icon.png"
@@ -25,18 +25,29 @@
         "path": "/contact"
       }
     ]
-
   },
   "home": {
     "banner": {
       "subheadline": "Big Trailler - это",
       "items": [
-        { "title": "Надёжные прицепы" },
-        { "title": "Качественное обслуживание" },
-        { "title": "Индивидуальный подход к каждому клиенту" },
-        { "title": "Возможность наличного и безналичного расчёта" },
-        { "title": "Гибкая система скидок" },
-        { "title": "Бонусы постоянным клиентам" }
+        {
+          "title": "Надёжные прицепы"
+        },
+        {
+          "title": "Качественное обслуживание"
+        },
+        {
+          "title": "Индивидуальный подход к каждому клиенту"
+        },
+        {
+          "title": "Возможность наличного и безналичного расчёта"
+        },
+        {
+          "title": "Гибкая система скидок"
+        },
+        {
+          "title": "Бонусы постоянным клиентам"
+        }
       ]
     },
     "sections": [
@@ -65,11 +76,21 @@
     "banner": {
       "subheadline": "Наши преимущества:",
       "items": [
-        { "title": "Возможность аренды прицепа на 5 часов" },
-        { "title": "Категории Б и Е" },
-        { "title": "Акции и скидки" },
-        { "title": "Бонусы постоянным клиентам" },
-        { "title": "Безналичный и наличный расчёт" }
+        {
+          "title": "Возможность аренды прицепа на 5 часов"
+        },
+        {
+          "title": "Категории Б и Е"
+        },
+        {
+          "title": "Акции и скидки"
+        },
+        {
+          "title": "Бонусы постоянным клиентам"
+        },
+        {
+          "title": "Безналичный и наличный расчёт"
+        }
       ]
     },
     "section": {
@@ -90,17 +111,22 @@
       "priceLabel": "Цена:",
       "availabilityLabel": "Доступен:",
       "moreLabel": "Подробнее",
-
       "items": [
         {
           "imgSrc": "static/content/pr1.jpg",
           "secondaryImages": [
-            { "imgSrc": "static/content/pr1.jpg" },
-            { "imgSrc": "static/content/pr2.jpg" },
-            { "imgSrc": "static/content/pr3.jpg" }
+            {
+              "imgSrc": "static/content/pr1.jpg"
+            },
+            {
+              "imgSrc": "static/content/pr2.jpg"
+            },
+            {
+              "imgSrc": "static/content/pr3.jpg"
+            }
           ],
           "description": "Прицеп Rydwan Euro С750\\T4",
-          "name": "Прицеп Rydwan Euro С750\\T4",
+          "name": "Прицеп Rydwan Euro С750\\T4666666666",
           "fullInfo": {
             "caregory": "Категория В",
             "characteristics": [
@@ -148,7 +174,7 @@
             "textHtml": "<p class='textBlock-text--italic orange'>Цена</p><p>40 руб/сутки</p><p>24 руб/3-7 суток</p><p>20 руб/10+ суток</p>"
           },
           "price": "30 руб",
-          "availibilityLabel": "да",
+          "availibilityLabel": "net",
           "availibility": true,
           "discount": false,
           "href": "/#!/machines/1",
@@ -158,12 +184,18 @@
         {
           "imgSrc": "static/content/pr2.jpg",
           "secondaryImages": [
-            { "imgSrc": "static/content/pr2.jpg" },
-            { "imgSrc": "static/content/pr3.jpg" },
-            { "imgSrc": "static/content/pr4.jpg" }
+            {
+              "imgSrc": "static/content/pr2.jpg"
+            },
+            {
+              "imgSrc": "static/content/pr3.jpg"
+            },
+            {
+              "imgSrc": "static/content/pr4.jpg"
+            }
           ],
           "description": "Прицеп Rydwan Euro A750\\L4",
-          "name": "Прицеп Rydwan Euro A750\\L4",
+          "name": "Прицеп Rydwan Euro A750\\L4666666666",
           "fullInfo": {
             "caregory": "Категория В",
             "characteristics": [
@@ -221,12 +253,18 @@
         {
           "imgSrc": "static/content/pr3.jpg",
           "secondaryImages": [
-            { "imgSrc": "static/content/pr3.jpg" },
-            { "imgSrc": "static/content/pr4.jpg" },
-            { "imgSrc": "static/content/pr5.jpg" }
+            {
+              "imgSrc": "static/content/pr3.jpg"
+            },
+            {
+              "imgSrc": "static/content/pr4.jpg"
+            },
+            {
+              "imgSrc": "static/content/pr5.jpg"
+            }
           ],
           "description": "Прицеп Rydwan Euro C750\\L8",
-          "name": "Прицеп Rydwan Euro C750\\L8",
+          "name": "Прицеп Rydwan Euro C750\\L8666666666",
           "fullInfo": {
             "caregory": "Категория В",
             "characteristics": [
@@ -284,12 +322,18 @@
         {
           "imgSrc": "static/content/pr4.jpg",
           "secondaryImages": [
-            { "imgSrc": "static/content/pr4.jpg" },
-            { "imgSrc": "static/content/pr5.jpg" },
-            { "imgSrc": "static/content/pr6.jpg" }
+            {
+              "imgSrc": "static/content/pr4.jpg"
+            },
+            {
+              "imgSrc": "static/content/pr5.jpg"
+            },
+            {
+              "imgSrc": "static/content/pr6.jpg"
+            }
           ],
           "description": "Прицеп Rydwan Euro R-EU-L2",
-          "name": "Прицеп Rydwan Euro R-EU-L2",
+          "name": "Прицеп Rydwan Euro R-EU-L2666666666",
           "fullInfo": {
             "caregory": "Категория В",
             "characteristics": [
@@ -347,12 +391,18 @@
         {
           "imgSrc": "static/content/pr5.jpg",
           "secondaryImages": [
-            { "imgSrc": "static/content/pr5.jpg" },
-            { "imgSrc": "static/content/pr6.jpg" },
-            { "imgSrc": "static/content/pr1.jpg" }
+            {
+              "imgSrc": "static/content/pr5.jpg"
+            },
+            {
+              "imgSrc": "static/content/pr6.jpg"
+            },
+            {
+              "imgSrc": "static/content/pr1.jpg"
+            }
           ],
           "description": "Прицеп Rydwan Euro B2600/0/L8",
-          "name": "Прицеп Rydwan Euro B2600/0/L8",
+          "name": "Прицеп Rydwan Euro B2600/0/L8666666666",
           "fullInfo": {
             "caregory": "Категория В",
             "characteristics": [
@@ -410,12 +460,18 @@
         {
           "imgSrc": "static/content/pr6.jpg",
           "secondaryImages": [
-            { "imgSrc": "static/content/pr6.jpg" },
-            { "imgSrc": "static/content/pr1.jpg" },
-            { "imgSrc": "static/content/pr2.jpg" }
+            {
+              "imgSrc": "static/content/pr6.jpg"
+            },
+            {
+              "imgSrc": "static/content/pr1.jpg"
+            },
+            {
+              "imgSrc": "static/content/pr2.jpg"
+            }
           ],
           "description": "Прицеп Rydwan Euro B2600\\0\\Р3",
-          "name": "Прицеп Rydwan Euro B2600\\0\\Р3",
+          "name": "Прицеп Rydwan Euro B2600\\0\\Р3666666666",
           "fullInfo": {
             "caregory": "Категория В",
             "characteristics": [
@@ -485,11 +541,21 @@
     "banner": {
       "subheadline": "Наши преимущества:",
       "items": [
-        { "title": "Возможность аренды на 5 часов" },
-        { "title": "Категории Б и Е" },
-        { "title": "Акции и скидки" },
-        { "title": "Бонусы постоянным клиентам" },
-        { "title": "Безналичный и наличный расчёт" }
+        {
+          "title": "Возможность аренды на 5 часов"
+        },
+        {
+          "title": "Категории Б и Е"
+        },
+        {
+          "title": "Акции и скидки"
+        },
+        {
+          "title": "Бонусы постоянным клиентам"
+        },
+        {
+          "title": "Безналичный и наличный расчёт"
+        }
       ]
     },
     "form": {
@@ -530,6 +596,13 @@
       },
       "errorLabel": "Проверьте введённые Вами данные",
       "imageSrc": "static/content/1.jpg"
+    }
+  },
+  "adminGallery": {
+    "content": {
+      "background": "default",
+      "headline": "Наша Техника",
+      "textHtml": "<p class='textBlock-text--highlited textBlock-text--uppercased'>требования к арендатору</p><p>Перечень документов, необходимых при заключении договора аренды:</p><ul class='textBlock-list'><li>водительское удостоверение соответствующее классу прицепа (В,Е)</li><li>Паспорт гражданина Республики Беларусь</li></ul><p class='textBlock-text--highlited textBlock-text--uppercased'>Порядок оплаты</p><p>При оплате по безналичному расчету к стоимости добавляется 10%.</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Постоянным Клиентам</p><p>Для постоянныъх клиентов предусмотрены дополнительные скидки, а также возможность бронирования прицепов по договоренности без внесения предоплаты.</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Время Работы</p><p>Выдача прицепов осуществляется с 8.00 до 21.00 ежедневно без выходных, а также по дополнительной договоренности в удобное для Вас время.</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Правила Эксплуатации</p><p>Обращаем Ваше внимание, что при выборе прицепа в аренду важно учитывать габариты и массу перевозимого груза. Запрещена перегрузка прицепа, а также перевозка грузов выступающих за габариты прицепа более чем это установлено действующими правилами дорожного движения. При эксплуатации прицепа оборудованного тентом необходимо размещать груз таким образом, чтобы при движении не произошло порыва либо протирания тента.</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Бронирование</p><p>Бронирование прицепов осуществляется при составлении договора аренды на конкретную дату и внесении предоплаты в размере 100%. Обращаем Ваше внимание, что для постоянных клиентов возможно бронирование без предоплаты</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Скорость Движения</p><p>Легковым и грузовым автомобилям при их движении с прицепом на автомагистралях — не более 90 км/ч, на остальных дорогах — не более 70 км/ч</p>"
     }
   },
   "footer": {
@@ -599,6 +672,8 @@
         "href": "https://www.facebook.com/Bigtrailer-minsk-1037970656247038/"
       }
     ],
-    "copyright": { "title": "kimi_finland@hotmail.com" }
+    "copyright": {
+      "title": "kimi_finland@hotmail.com"
+    }
   }
 }

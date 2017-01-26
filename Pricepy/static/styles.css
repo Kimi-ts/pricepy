@@ -230,6 +230,21 @@ p {
 .textBlock-contentBlock-value--highlighted {
   font-weight: bold;
 }
+.textBlock-table {
+  border: 1px solid #807b7b;
+  border-collapse: collapse;
+  width: 100%;
+}
+.textBlock-table th {
+  text-align: left;
+  padding: 5px;
+  border: 1px solid #807b7b;
+  font-weight: bold;
+}
+.textBlock-table td {
+  padding: 5px;
+  border: 1px solid #807b7b;
+}
 .bucket {
   font-size: 20px;
 }

@@ -35,6 +35,37 @@ namespace Pricepy.DB
             return nodeValue;
         }
 
+        public void Update(string filename, List<Machine> machines)
+        {
+            var json = ReadFileContent(filename);
+
+            JObject rss = JObject.Parse(json);
+
+            var galleryItems = from p in rss["machines"]["gallery"]["items"]
+                               select p;
+
+            //foreach (var item in galleryItems)
+            //{
+            //    //item["name"] = item["name"] + "6";
+            //}
+
+            foreach (var sourceItem in machines)
+            {
+                foreach (var item in galleryItems)
+                {
+                    if ((string)item["name"] == sourceItem.Name)
+                    {
+                        item["availibility"] = sourceItem.IsAvailable;
+                        item["availibilityLabel"] = sourceItem.AvailibilityLabel;
+                    }
+                }
+            }
+
+            //updated json object
+            var newFileContent = rss.ToString();
+            WriteFileContent(filename, newFileContent);
+        }
+
         public void UpdateNodeValue(string filename, Dictionary<string,string> newValues)
         {
             string allText = ReadFileContent(filename);
