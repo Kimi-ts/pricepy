@@ -10,7 +10,6 @@ namespace Pricepy.Models
         public string Name { get; set; }
         public bool IsAvailable { get; set; }
         public string AvailibilityLabel { get; set; }
-        //TO DO
-        //Add Discount system logic here
+        public bool IsDiscount { get; set; }
     }
 }

@@ -1,6 +1,8 @@
 ﻿adminApp.controller('galleryController', [ '$scope', '$location', '$http', 'getData', 'myVars', function galleryController($scope, $location, $http, getData, myVars){
         console.log("gallery controller runs");
         $scope.$parent.path = "/gallery";
+
+        $scope.isDataUpdated = false;
         getData.getContent("/api/AdminValues", "adminGallery").then(function(data){
             console.log("in gallery controller");
             console.log(data);
@@ -38,6 +40,7 @@
                 newMachine.Name = item.name;
                 newMachine.IsAvailable = item.availibility;
                 newMachine.AvailibilityLabel = item.availibilityLabel;
+                newMachine.IsDiscount = item.discount;
                 $scope.updatedMachines.push(newMachine);
             };
 
@@ -53,12 +56,12 @@
                     "X-Token": tokenValue
                 }
             }).then(function successCallback(response) {
+                console.log("finally returned:");
                 console.log(response);
                 if (response.data){
                     console.log("true")
+                    $scope.isDataUpdated = true;
                     $scope.isError = false;
-                    myVars.tokenValue = response.data.Value;
-                    $location.path("/gallery")
                 }
                 else{
                     $scope.isError = true;

@@ -35,7 +35,7 @@ namespace Pricepy.DB
             return nodeValue;
         }
 
-        public void Update(string filename, List<Machine> machines)
+        public bool UpdateGallery(string filename, List<Machine> machines)
         {
             var json = ReadFileContent(filename);
 
@@ -43,11 +43,6 @@ namespace Pricepy.DB
 
             var galleryItems = from p in rss["machines"]["gallery"]["items"]
                                select p;
-
-            //foreach (var item in galleryItems)
-            //{
-            //    //item["name"] = item["name"] + "6";
-            //}
 
             foreach (var sourceItem in machines)
             {
@@ -57,6 +52,7 @@ namespace Pricepy.DB
                     {
                         item["availibility"] = sourceItem.IsAvailable;
                         item["availibilityLabel"] = sourceItem.AvailibilityLabel;
+                        item["discount"] = sourceItem.IsDiscount;
                     }
                 }
             }
@@ -64,6 +60,7 @@ namespace Pricepy.DB
             //updated json object
             var newFileContent = rss.ToString();
             WriteFileContent(filename, newFileContent);
+            return true;
         }
 
         public void UpdateNodeValue(string filename, Dictionary<string,string> newValues)

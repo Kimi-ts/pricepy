@@ -2,22 +2,15 @@
         <div class="bucket">
             <div class="bucket-content textBlock">
                 <h3 class="textBlock-headline">{{data.content.headline}}</h3>
-                <!--<span ng-bind-html="data.content.textHtml"></span>
-                <!--<h3 class="textBlock-subheadline">К сожалению, Ваше сообщение не было отправлено</h3>
-                <p>Приносим свои извинени, на нашем сервере произошла ошибка. Мы постараемся оперативно её исправить.</p>
-                <p>Пожалуйста, свяжитесь с нашими сотрудниками по телефону</p>
-                <p><a href="tel:+365 3453453">+375 3453453</a></p>
-                <p>или отправьте Ваше сообщение на электронную почту</p>
-                <p><a href="mailto:marenda2015@gmail.com">marenda2015@gmail.com</a></p>-->
+                <p ng-show="isDataUpdated" class="textBlock-text--italic green">{{data.content.successSavedLabel}}</p>
                 <form novalidate name="galleryForm">
                     <table class="textBlock-table">
                         <thead>
                             <tr>
-                                <!--//TO DO
-                                //Add Discount column-->
                                 <th>Name</th>
                                 <th>Availibility</th>
                                 <th></th>
+                                <th>Discount</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -25,6 +18,7 @@
                                 <td>{{item.name}}</td>
                                 <td><input type="checkbox" ng-model="item.availibility" ng-change="clearAvailibilityTextBox(item)" /></td>
                                 <td><input type="text" ng-model="item.availibilityLabel" required /></td>
+                                <td><input type="checkbox" ng-model="item.discount" /></td>
                             </tr>
                         </tbody>
                     </table>

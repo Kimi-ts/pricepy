@@ -14,6 +14,6 @@ namespace Pricepy.DB
         object GetNode(string filename, string nodeName);
         string GetNodeValue(string filename, string nodeName);
         void UpdateNodeValue(string filename, Dictionary<string, string> newValues);
-        void Update(string filename, List<Machine> newProperties);
+        bool UpdateGallery(string filename, List<Machine> newProperties);
     }
 }
