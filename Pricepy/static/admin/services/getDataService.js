@@ -9,7 +9,7 @@
         // });
 
     return {
-            getContent: function () {
+            getContent: function (url, sectionName) {
 
             //console.log(TokenValue);
             var tokenValue = myVars.tokenValue;
@@ -18,7 +18,10 @@
             
             var promise = $http({
                 method: 'Get',
-                url: '/api/adminValues',
+                url: url,
+                params: {
+                    sectionName: sectionName
+                },
                 headers: {
                     "X-Token": tokenValue
                 }

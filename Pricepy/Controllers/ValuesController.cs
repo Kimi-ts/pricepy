@@ -24,7 +24,6 @@ namespace Pricepy.Controllers
         public object Get(string sectionName)
         {
             var sectionObject = new object();
-            //jsonObject = _dbService.GetAllContent(_contentFile);
             if (!string.IsNullOrEmpty(sectionName))
             {
                 sectionObject = _dbService.GetNode(_contentFile, sectionName);

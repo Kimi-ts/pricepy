@@ -4,8 +4,8 @@
     
     $scope.isError = false;
 
-    getData.getContent().then(function(data){
-        $scope.data = data.signin;
+    getData.getContent("/api/Values", "signin").then(function(data){
+        $scope.data = data;
         console.log($scope.data);
 
         $scope.submit = function(){
@@ -23,8 +23,6 @@
                     $scope.isError = false;
                     myVars.tokenValue = response.data.Value;
                     $location.path("/gallery")
-                    //TO DO
-                    //2) redirect to next Page
                 }
                 else{
                     $scope.isError = true;

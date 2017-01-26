@@ -187,9 +187,7 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <Content Include="Content\contentConfig.json" />
-    <Content Include="Content\adminSignIn.json" />
     <Content Include="Content\adminSecurityInfo.json" />
-    <Content Include="Content\adminContent.json" />
     <None Include="Project_Readme.html" />
     <None Include="Properties\PublishProfiles\priceps.pubxml" />
     <Content Include="static\node_modules\angular-route\angular-route.js" />

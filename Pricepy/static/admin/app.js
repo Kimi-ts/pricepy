@@ -34,10 +34,15 @@ adminApp.config(function ($routeProvider) {
 
 adminApp.controller("adminController", function ($scope, $location, $http, getData) {
     $scope.path = $location.path();
-    console.log("hello");
+    console.log("hello from Admin");
 
-    getData.getContent().then(function (data) {
-        $scope.data = data;
+    getData.getContent("/api/Values", "header").then(function(data){
+        $scope.data = {};
+        $scope.data.header = data;
         console.log($scope.data);
-    })
+        getData.getContent("/api/Values", "footer").then(function(data){
+            $scope.data.footer = data;
+            console.log($scope.data);
+        })
+    });
 })

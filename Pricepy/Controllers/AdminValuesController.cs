@@ -13,8 +13,7 @@ namespace Pricepy.Controllers
     public class AdminValuesController : ApiController
     {
         private IDBService _dbService;
-        private string _configFile = "~\\Content\\adminSignIn.json";
-        private string _dataFile = "~\\Content\\adminContent.json";
+        private string _contentFile = "~\\Content\\contentConfig.json";
 
         //TO DO
         //Create separate file for sensitive admin data and read it, if authenticated
@@ -24,36 +23,42 @@ namespace Pricepy.Controllers
         {
             _dbService = dbService;
         }
-        public object Get()
-        {
-            IEnumerable<string> headerValues;
-            var tokenValue = string.Empty;
-            if (Request.Headers.TryGetValues("X-Token", out headerValues))
-            {
-                tokenValue = headerValues.FirstOrDefault();
-            }
 
+        //NOTE:
+        //get /api/AdminValues - here we do token validation
+        //but the sections return from content file
+        public object Get(string sectionName)
+        {
             object jsonObject = new object();
 
-            jsonObject = _dbService.GetAllContent(_configFile);
-            if (!string.IsNullOrEmpty(tokenValue))
+            if (!string.IsNullOrEmpty(sectionName))
             {
-                var token = _dbService.GetNodeValue(_securityDataFile, "token");
-
-                if (tokenValue == token)
+                IEnumerable<string> headerValues;
+                var tokenValue = string.Empty;
+                if (Request.Headers.TryGetValues("X-Token", out headerValues))
                 {
-                    var expires = _dbService.GetNodeValue(_securityDataFile, "expires");
-                    DateTime expiredate = DateTime.Parse(expires);
-                    Token securityToken = new Token { Value = token, Expiredate = expiredate };
-                    if (securityToken.IsValid)
+                    tokenValue = headerValues.FirstOrDefault();
+                }
+
+                if (!string.IsNullOrEmpty(tokenValue))
+                {
+                    var token = _dbService.GetNodeValue(_securityDataFile, "token");
+
+                    if (tokenValue == token)
                     {
-                        var newDateValue = DateTime.Now.AddHours(1);
-                        _dbService.UpdateNodeValue(_securityDataFile,
-                            new Dictionary<string, string>()
+                        var expires = _dbService.GetNodeValue(_securityDataFile, "expires");
+                        DateTime expiredate = DateTime.Parse(expires);
+                        Token securityToken = new Token { Value = token, Expiredate = expiredate };
+                        if (securityToken.IsValid)
                         {
+                            var newDateValue = DateTime.Now.AddHours(1);
+                            _dbService.UpdateNodeValue(_securityDataFile,
+                                new Dictionary<string, string>()
+                            {
                             { "expires", newDateValue.ToString() }
-                        });
-                        jsonObject = _dbService.GetAllContent(_dataFile);
+                            });
+                            jsonObject = _dbService.GetNode(_contentFile, sectionName);
+                        }
                     }
                 }
             }

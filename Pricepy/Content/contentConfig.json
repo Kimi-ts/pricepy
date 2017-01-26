@@ -1,533 +1,604 @@
 ﻿{
-    header: {
-        logo: {
-                src: "static/content/icon.png"
-        },
-        menu: [
-			{ title: "Главная", href: "/", path: "/" },
-			{ title: "Наша Техника", href: "/#!/machines", path: "/machines" },
-			{ title: "Аренда", href: "/#!/arenda", path: "/arenda" },
-			{ title: "Контакты", href: "/#!/contact", path: "/contact" },
-        ]
+  "header": {
+    "logo": {
+      "src": "static/content/icon.png"
+    },
+    "menu": [
+      {
+        "title": "Главная",
+        "href": "/",
+        "path": "/"
+      },
+      {
+        "title": "Наша Техника",
+        "href": "/#!/machines",
+        "path": "/machines"
+      },
+      {
+        "title": "Аренда",
+        "href": "/#!/arenda",
+        "path": "/arenda"
+      },
+      {
+        "title": "Контакты",
+        "href": "/#!/contact",
+        "path": "/contact"
+      }
+    ]
 
+  },
+  "home": {
+    "banner": {
+      "subheadline": "Big Trailler - это",
+      "items": [
+        { "title": "Надёжные прицепы" },
+        { "title": "Качественное обслуживание" },
+        { "title": "Индивидуальный подход к каждому клиенту" },
+        { "title": "Возможность наличного и безналичного расчёта" },
+        { "title": "Гибкая система скидок" },
+        { "title": "Бонусы постоянным клиентам" }
+      ]
     },
-    home: {
-            banner: {
-                subheadline: "Big Trailler - это",
-                items: [
-                    {title: "Надёжные прицепы"},
-                    {title: "Качественное обслуживание"},
-                    {title: "Индивидуальный подход к каждому клиенту"},
-                    {title: "Возможность наличного и безналичного расчёта"},
-                    {title: "Гибкая система скидок"},
-                    {title: "Бонусы постоянным клиентам"}
-                ]
-            },
-        sections: [
-            {
-                background: "alternate",
-                textHtml: "<h3 class='textBlock-headline'>Акция</h3><p class='textBlock-text--highlited'>Зимние скидки!!!</p><p>С 1 декабря 2016 года по 2 февраля 2017 года предоставляется скидка на все прицепы в размере 15%!<p/><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p><p> Мы работаем для Вас ежедневно с 8-00 до 17-00.</p>", 
-                imgSrc: "static/content/4.jpg"
-            },
-            {
-                background: "default",
-                textHtml: "<h3 class='textBlock-subheadline'>У нас пополнение парка!</h3><p>С 26 декабря в нашем парке пополнение! Для Вас теперь доступен Младший брат, новый прицеп Rydwan Euro С750/T4. Размеры кузова 2.65 метра на 1.45 метра, высота тента 1.5 метра, торсионная подвеска, зеленая карта с выездом во все страны, полная масса 750 кг, категория В. С полными характеристиками новинки Вы можете ознакомиться <a href='#!/machines/6'>здесь</a>.</p><p>Первые 3 арендатора получат скидку 10% при условии бронирования более чем на сутки. Спешите получить свою скидку!</p><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>", 
-                imgSrc: "static/content/pr6.jpg"
-            },
-            {
-                background: "alternate",
-                textHtml: "<h3 class='textBlock-subheadline'>Новая услуга!</h3><p class='textBlock-text--highlited'>Прицеп на 5 часов</p><p>Информируем Вас, что с 14 ноября Вам доступна новая услуга: аренда любого прицепа на 5 часов. Предварительное бронирование обязательно.</p><p>Доступность прицепов а также более подробную информацию о нашем парке можно найти в разделе <a href='#!/machines'>Парк</a>, а также по телефону +375 3453453.<p/><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>",
-                imgSrc: "static/content/1.jpg"
-            }
-        ],
-        mapView: {
-            background: "default",
-            textHtml: "<h3 class='textBlock-subheadline orange'>Спасибо, что выбрали нас!</h3><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p><p>Мы находимся по адресу: Минский район, г.п. Мачулищи, 7 км от МКАД по Слуцкому шоссе</p>"
-        }
-    },
-    machine: {
-        banner: {
-                subheadline: "Наши преимущества:",
-                items: [
-                    {title: "Возможность аренды прицепа на 5 часов"},
-                    {title: "Категории Б и Е"},
-                    {title: "Акции и скидки"},
-                    {title: "Бонусы постоянным клиентам"},
-                    {title: "Безналичный и наличный расчёт"}
-                ]
-        },
-        section: {
-          background: "alternate",
-          nextLinkLabel: "Следующий",
-          previousLinkLabel: "Предыдущий"
-        }
-    },
-    machines: {
-        content: {
-            background: "alternate",
-            headline: "Бонусы для постоянных клиентов",
-            textHtml: "<p class='textBlock-text--highlited'>Бонусы для постоянных клиентов</p><p>Для постоянныъх клиентов у нас предусмотрены дополнительные скидки, а также возможность бронирования прицепов по договоренности без внесения предоплаты.</p>",
-            imgSrc: "static/content/2.jpg"
-        },
-        gallery: {
-            headline: "Наша Техника",
-            priceLabel: "Цена:",
-            availabilityLabel: "Доступен:",
-          moreLabel: "Подробнее",
-
-            items: [
-              {
-                "imgSrc": "static/content/pr1.jpg",
-                "secondaryImages": [
-                  { "imgSrc": "static/content/pr1.jpg" },
-                  { "imgSrc": "static/content/pr2.jpg" },
-                  { "imgSrc": "static/content/pr3.jpg" }
-                ],
-                "description": "Прицеп Rydwan Euro С750\\T4",
-                "name": "Прицеп Rydwan Euro С750\\T4",
-                "fullInfo": {
-                  "caregory": "Категория В",
-                  "characteristics": [
-                    {
-                      "name": "Длинна внутренняя/внешняя",
-                      "value": "600/606 см"
-                    },
-                    {
-                      "name": "Ширина внутренняя/внешняя",
-                      "value": "600/606 см"
-                    },
-                    {
-                      "name": "Высота прицепа от земли",
-                      "value": "80 см"
-                    },
-                    {
-                      "name": "Высота прицепа от пола до верха",
-                      "value": "35 см"
-                    },
-                    {
-                      "name": "Высота от борта",
-                      "value": "35 см"
-                    },
-                    {
-                      "name": "Резина",
-                      "value": "усиленная"
-                    },
-                    {
-                      "name": "Полная масса",
-                      "value": "750 кг"
-                    },
-                    {
-                      "name": "Тип подвески",
-                      "value": "задняя"
-                    },
-                    {
-                      "name": "Открывающийся задний борт",
-                      "value": ""
-                    },
-                    {
-                      "name": "Зелёная карта",
-                      "value": ""
-                    }
-                  ],
-                  "textHtml": "<p class='textBlock-text--italic orange'>Цена</p><p>40 руб/сутки</p><p>24 руб/3-7 суток</p><p>20 руб/10+ суток</p>"
-                },
-                "price": "30 руб",
-                "availibilityLabel": "да",
-                "availibility": true,
-                "discount": false,
-                "href": "/#!/machines/1",
-                "nextHref": "/#!/machines/2",
-                "previousHref": "/#!/machines/6"
-              },
-              {
-                "imgSrc": "static/content/pr2.jpg",
-                "secondaryImages": [
-                  { "imgSrc": "static/content/pr2.jpg" },
-                  { "imgSrc": "static/content/pr3.jpg" },
-                  { "imgSrc": "static/content/pr4.jpg" }
-                ],
-                "description": "Прицеп Rydwan Euro A750\\L4",
-                "name": "Прицеп Rydwan Euro A750\\L4",
-                "fullInfo": {
-                  "caregory": "Категория В",
-                  "characteristics": [
-                    {
-                      "name": "Длинна внутренняя/внешняя",
-                      "value": "600/606 см"
-                    },
-                    {
-                      "name": "Ширина внутренняя/внешняя",
-                      "value": "600/606 см"
-                    },
-                    {
-                      "name": "Высота прицепа от земли",
-                      "value": "80 см"
-                    },
-                    {
-                      "name": "Высота прицепа от пола до верха",
-                      "value": "35 см"
-                    },
-                    {
-                      "name": "Высота от борта",
-                      "value": "35 см"
-                    },
-                    {
-                      "name": "Резина",
-                      "value": "усиленная"
-                    },
-                    {
-                      "name": "Полная масса",
-                      "value": "750 кг"
-                    },
-                    {
-                      "name": "Тип подвески",
-                      "value": "задняя"
-                    },
-                    {
-                      "name": "Открывающийся задний борт",
-                      "value": ""
-                    },
-                    {
-                      "name": "Зелёная карта",
-                      "value": ""
-                    }
-                  ],
-                  "textHtml": "<p class='textBlock-text--italic orange'>Цена</p><p>40 руб/сутки</p><p>24 руб/3-7 суток</p><p>20 руб/10+ суток</p>"
-                },
-                "price": "60 руб",
-                "availibilityLabel": "нет (до 27 января)",
-                "availibility": false,
-                "discount": false,
-                "href": "/#!/machines/2",
-                "nextHref": "/#!/machines/3",
-                "previousHref": "/#!/machines/1"
-              },
-              {
-                "imgSrc": "static/content/pr3.jpg",
-                "secondaryImages": [
-                  { "imgSrc": "static/content/pr3.jpg" },
-                  { "imgSrc": "static/content/pr4.jpg" },
-                  { "imgSrc": "static/content/pr5.jpg" }
-                ],
-                "description": "Прицеп Rydwan Euro C750\\L8",
-                "name": "Прицеп Rydwan Euro C750\\L8",
-                "fullInfo": {
-                  "caregory": "Категория В",
-                  "characteristics": [
-                    {
-                      "name": "Длинна внутренняя/внешняя",
-                      "value": "600/606 см"
-                    },
-                    {
-                      "name": "Ширина внутренняя/внешняя",
-                      "value": "600/606 см"
-                    },
-                    {
-                      "name": "Высота прицепа от земли",
-                      "value": "80 см"
-                    },
-                    {
-                      "name": "Высота прицепа от пола до верха",
-                      "value": "35 см"
-                    },
-                    {
-                      "name": "Высота от борта",
-                      "value": "35 см"
-                    },
-                    {
-                      "name": "Резина",
-                      "value": "усиленная"
-                    },
-                    {
-                      "name": "Полная масса",
-                      "value": "750 кг"
-                    },
-                    {
-                      "name": "Тип подвески",
-                      "value": "задняя"
-                    },
-                    {
-                      "name": "Открывающийся задний борт",
-                      "value": ""
-                    },
-                    {
-                      "name": "Зелёная карта",
-                      "value": ""
-                    }
-                  ],
-                  "textHtml": "<p class='textBlock-text--italic orange'>Цена</p><p>40 руб/сутки</p><p>24 руб/3-7 суток</p><p>20 руб/10+ суток</p>"
-                },
-                "price": "34 руб",
-                "availibilityLabel": "нет (до 3 марта)",
-                "availibility": false,
-                "discount": false,
-                "href": "/#!/machines/3",
-                "nextHref": "/#!/machines/4",
-                "previousHref": "/#!/machines/2"
-              },
-              {
-                "imgSrc": "static/content/pr4.jpg",
-                "secondaryImages": [
-                  { "imgSrc": "static/content/pr4.jpg" },
-                  { "imgSrc": "static/content/pr5.jpg" },
-                  { "imgSrc": "static/content/pr6.jpg" }
-                ],
-                "description": "Прицеп Rydwan Euro R-EU-L2",
-                "name": "Прицеп Rydwan Euro R-EU-L2",
-                "fullInfo": {
-                  "caregory": "Категория В",
-                  "characteristics": [
-                    {
-                      "name": "Длинна внутренняя/внешняя",
-                      "value": "600/606 см"
-                    },
-                    {
-                      "name": "Ширина внутренняя/внешняя",
-                      "value": "600/606 см"
-                    },
-                    {
-                      "name": "Высота прицепа от земли",
-                      "value": "80 см"
-                    },
-                    {
-                      "name": "Высота прицепа от пола до верха",
-                      "value": "35 см"
-                    },
-                    {
-                      "name": "Высота от борта",
-                      "value": "35 см"
-                    },
-                    {
-                      "name": "Резина",
-                      "value": "усиленная"
-                    },
-                    {
-                      "name": "Полная масса",
-                      "value": "750 кг"
-                    },
-                    {
-                      "name": "Тип подвески",
-                      "value": "задняя"
-                    },
-                    {
-                      "name": "Открывающийся задний борт",
-                      "value": ""
-                    },
-                    {
-                      "name": "Зелёная карта",
-                      "value": ""
-                    }
-                  ],
-                  "textHtml": "<p class='textBlock-text--italic orange'>Цена</p><p>40 руб/сутки</p><p>24 руб/3-7 суток</p><p>20 руб/10+ суток</p>"
-                },
-                "price": "30 руб",
-                "availibilityLabel": "да",
-                "availibility": true,
-                "discount": false,
-                "href": "/#!/machines/4",
-                "nextHref": "/#!/machines/5",
-                "previousHref": "/#!/machines/3"
-              },
-              {
-                "imgSrc": "static/content/pr5.jpg",
-                "secondaryImages": [
-                  { "imgSrc": "static/content/pr5.jpg" },
-                  { "imgSrc": "static/content/pr6.jpg" },
-                  { "imgSrc": "static/content/pr1.jpg" }
-                ],
-                "description": "Прицеп Rydwan Euro B2600/0/L8",
-                "name": "Прицеп Rydwan Euro B2600/0/L8",
-                "fullInfo": {
-                  "caregory": "Категория В",
-                  "characteristics": [
-                    {
-                      "name": "Длинна внутренняя/внешняя",
-                      "value": "600/606 см"
-                    },
-                    {
-                      "name": "Ширина внутренняя/внешняя",
-                      "value": "600/606 см"
-                    },
-                    {
-                      "name": "Высота прицепа от земли",
-                      "value": "80 см"
-                    },
-                    {
-                      "name": "Высота прицепа от пола до верха",
-                      "value": "35 см"
-                    },
-                    {
-                      "name": "Высота от борта",
-                      "value": "35 см"
-                    },
-                    {
-                      "name": "Резина",
-                      "value": "усиленная"
-                    },
-                    {
-                      "name": "Полная масса",
-                      "value": "750 кг"
-                    },
-                    {
-                      "name": "Тип подвески",
-                      "value": "задняя"
-                    },
-                    {
-                      "name": "Открывающийся задний борт",
-                      "value": ""
-                    },
-                    {
-                      "name": "Зелёная карта",
-                      "value": ""
-                    }
-                  ],
-                  "textHtml": "<p class='textBlock-text--italic orange'>Цена</p><p>40 руб/сутки</p><p>24 руб/3-7 суток</p><p>20 руб/10+ суток</p>"
-                },
-                "price": "60 руб",
-                "availibilityLabel": "да",
-                "availibility": true,
-                "discount": true,
-                "href": "/#!/machines/5",
-                "nextHref": "/#!/machines/6",
-                "previousHref": "/#!/machines/4"
-              },
-              {
-                "imgSrc": "static/content/pr6.jpg",
-                "secondaryImages": [
-                  { "imgSrc": "static/content/pr6.jpg" },
-                  { "imgSrc": "static/content/pr1.jpg" },
-                  { "imgSrc": "static/content/pr2.jpg" }
-                ],
-                "description": "Прицеп Rydwan Euro B2600\\0\\Р3",
-                "name": "Прицеп Rydwan Euro B2600\\0\\Р3",
-                "fullInfo": {
-                  "caregory": "Категория В",
-                  "characteristics": [
-                    {
-                      "name": "Длинна внутренняя/внешняя",
-                      "value": "600/606 см"
-                    },
-                    {
-                      "name": "Ширина внутренняя/внешняя",
-                      "value": "600/606 см"
-                    },
-                    {
-                      "name": "Высота прицепа от земли",
-                      "value": "80 см"
-                    },
-                    {
-                      "name": "Высота прицепа от пола до верха",
-                      "value": "35 см"
-                    },
-                    {
-                      "name": "Высота от борта",
-                      "value": "35 см"
-                    },
-                    {
-                      "name": "Резина",
-                      "value": "усиленная"
-                    },
-                    {
-                      "name": "Полная масса",
-                      "value": "750 кг"
-                    },
-                    {
-                      "name": "Тип подвески",
-                      "value": "задняя"
-                    },
-                    {
-                      "name": "Открывающийся задний борт",
-                      "value": ""
-                    },
-                    {
-                      "name": "Зелёная карта",
-                      "value": ""
-                    }
-                  ],
-                  "textHtml": "<p class='textBlock-text--italic orange'>Цена</p><p>40 руб/сутки</p><p>24 руб/3-7 суток</p><p>20 руб/10+ суток</p>"
-                },
-                "price": "60 руб",
-                "availibilityLabel": "нет (до 3 февраля)",
-                "availibility": false,
-                "discount": false,
-                "href": "/#!/machines/6",
-                "nextHref": "/#!/machines/5",
-                "previousHref": "/#!/machines/1"
-              }
-            ]
-        }
-    },
-    arenda: {
-        content: {
-            background: "alternate",
-            headline: "Полезная информация",
-            textHtml: "<p class='textBlock-text--highlited textBlock-text--uppercased'>требования к арендатору</p><p>Перечень документов, необходимых при заключении договора аренды:</p><ul class='textBlock-list'><li>водительское удостоверение соответствующее классу прицепа (В,Е)</li><li>Паспорт гражданина Республики Беларусь</li></ul><p class='textBlock-text--highlited textBlock-text--uppercased'>Порядок оплаты</p><p>При оплате по безналичному расчету к стоимости добавляется 10%.</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Постоянным Клиентам</p><p>Для постоянныъх клиентов предусмотрены дополнительные скидки, а также возможность бронирования прицепов по договоренности без внесения предоплаты.</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Время Работы</p><p>Выдача прицепов осуществляется с 8.00 до 21.00 ежедневно без выходных, а также по дополнительной договоренности в удобное для Вас время.</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Правила Эксплуатации</p><p>Обращаем Ваше внимание, что при выборе прицепа в аренду важно учитывать габариты и массу перевозимого груза. Запрещена перегрузка прицепа, а также перевозка грузов выступающих за габариты прицепа более чем это установлено действующими правилами дорожного движения. При эксплуатации прицепа оборудованного тентом необходимо размещать груз таким образом, чтобы при движении не произошло порыва либо протирания тента.</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Бронирование</p><p>Бронирование прицепов осуществляется при составлении договора аренды на конкретную дату и внесении предоплаты в размере 100%. Обращаем Ваше внимание, что для постоянных клиентов возможно бронирование без предоплаты</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Скорость Движения</p><p>Легковым и грузовым автомобилям при их движении с прицепом на автомагистралях — не более 90 км/ч, на остальных дорогах — не более 70 км/ч</p>",
-            imgSrc: "static/content/2.jpg"
-        }
-    },
-    contacts: {
-        banner: {
-            subheadline: "Наши преимущества:",
-            items: [
-                {title: "Возможность аренды на 5 часов"},
-                {title: "Категории Б и Е"},
-                {title: "Акции и скидки"},
-                {title: "Бонусы постоянным клиентам"},
-                {title: "Безналичный и наличный расчёт"}
-            ]
-        },
-        form: {
-            background: "alternate",
-            headline: "Свяжитесь с нами",
-            innerText: "Пожалуйста, заполните предложенные поля, чтобы мы могли ответить на ваши вопросы",
-            inputs: {
-                nameLabel: "Ваше Имя",
-                emailLabel: "Ваш email",
-                messageLabel: "Сообщение",
-                submitLabel: "Отправить"
-            },
-            imageSrc: "static/content/1.jpg"
-        },
-        successView: {
-            background: "alternate",
-            textHtml: "<h3 class='textBlock-subheadline'>Спасибо за Ваше сообщение</h3><p>Сотрудники Big Trailler свяжутся с Вами в самое ближайшее время.</p><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>",
-            imgSrc: "static/content/1.jpg"
-        },
-        errorView: {
-            background: "alternate",
-            textHtml: "<h3 class='textBlock-subheadline'>К сожалению, Ваше сообщение не было отправлено</h3><p>Приносим свои извинени, на нашем сервере произошла ошибка. Мы постараемся оперативно её исправить.</p><p>Пожалуйста, свяжитесь с нашими сотрудниками по телефону</p><p><a href='tel:+365 3453453'>+375 3453453</a></p><p>или отправьте Ваше сообщение на электронную почту</p><p><a href='mailto:marenda2015@gmail.com'>marenda2015@gmail.com</a></p>",
-            imgSrc: "static/content/1.jpg"
-        },
-        mapView: {
-            background: "default",
-            textHtml: "<h3 class='textBlock-subheadline orange'>Спасибо, что выбрали нас!</h3><p>Все Наши прицепы в эксплуатации с 2015 года, постоянно проходят своевременное обслуживание, укомплектованы тентами, запасными колесами, усиленными осями и резиной, помимо этого весь парк застрахован по системе международного страхования и готов к выезду в страны Европейского и Таможенного союзов. Мы предлагаем прицепы от 4 до 6 метров в длину, объемом от 10 до 24 м<sup>3</sup>, категорий В, ВЕ, СЕ, грузоподъемностью от 750 до 2500 кг.</p><p>Мы ценим каждого из наших клиентов и с уважением относимся к Вашим пожеланиям, и с удовольствием поможем выбрать необходимый прицеп, а также дадим консультации по эксплуатации, размещению груза и другим интересующим Вас вопросам.</p><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>"
-        }
-    },
-    footer: {
-        leftColumn: {
-            tels: [
-			    {type: "tel", href: "tel:+375 3453453", title: "+375 3453453"}
-            ],
-            emails: [
-			    {type: "email", href: "mailto:marenda2015@gmail.com", title: "marenda2015@gmail.com" }
-            ],
-            paragraphs: [
-			    {type: "text", class: "textBlock-text--highlited", title: "8.00 - 21.00 Без выходных" },
-			    {type: "text", title: "Наличный и безналичный расчёт"}
-            ]
-        },
-        middleColumn: [
-			{type: "text", title: "Беларусь, Минский район"},
-			{type: "text", title: "г.п. Мачулищи, 7 км от МКАД по Слуцкому шоссе"},
-			{type: "text", title: "ИП Бобок Светлана Петровна"},
-			{type: "text", title: "УНП 691782209"},
-			{type: "text", title: "р\\с 3013247940011 ЗАО Банк ВТБ"}
-        ],
-        socialBar: [
-			{type: "vkontakte", class: "fa-vk", href: "https://vk.com/share.php?url=http%3A%2F%2Fwww.bigtrailer-minsk.net"},
-			{type: "twitter", class: "fa-twitter", href: "http://twitter.com/share?text=Самые надёжные прицепы в твоём городе&url=http://BigTrailler-Minsk.net&#BigTrailler-Minsk"},
-			{type: "facebook", class: "fa-facebook", href: "https://www.facebook.com/Bigtrailer-minsk-1037970656247038/"},
-        ],
-        copyright: {title: "kimi_finland@hotmail.com"}
+    "sections": [
+      {
+        "background": "alternate",
+        "textHtml": "<h3 class='textBlock-headline'>Акция</h3><p class='textBlock-text--highlited'>Зимние скидки!!!</p><p>С 1 декабря 2016 года по 2 февраля 2017 года предоставляется скидка на все прицепы в размере 15%!<p/><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p><p> Мы работаем для Вас ежедневно с 8-00 до 17-00.</p>",
+        "imgSrc": "static/content/4.jpg"
+      },
+      {
+        "background": "default",
+        "textHtml": "<h3 class='textBlock-subheadline'>У нас пополнение парка!</h3><p>С 26 декабря в нашем парке пополнение! Для Вас теперь доступен Младший брат, новый прицеп Rydwan Euro С750/T4. Размеры кузова 2.65 метра на 1.45 метра, высота тента 1.5 метра, торсионная подвеска, зеленая карта с выездом во все страны, полная масса 750 кг, категория В. С полными характеристиками новинки Вы можете ознакомиться <a href='#!/machines/6'>здесь</a>.</p><p>Первые 3 арендатора получат скидку 10% при условии бронирования более чем на сутки. Спешите получить свою скидку!</p><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>",
+        "imgSrc": "static/content/pr6.jpg"
+      },
+      {
+        "background": "alternate",
+        "textHtml": "<h3 class='textBlock-subheadline'>Новая услуга!</h3><p class='textBlock-text--highlited'>Прицеп на 5 часов</p><p>Информируем Вас, что с 14 ноября Вам доступна новая услуга: аренда любого прицепа на 5 часов. Предварительное бронирование обязательно.</p><p>Доступность прицепов а также более подробную информацию о нашем парке можно найти в разделе <a href='#!/machines'>Парк</a>, а также по телефону +375 3453453.<p/><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>",
+        "imgSrc": "static/content/1.jpg"
+      }
+    ],
+    "mapView": {
+      "background": "default",
+      "textHtml": "<h3 class='textBlock-subheadline orange'>Спасибо, что выбрали нас!</h3><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p><p>Мы находимся по адресу: Минский район, г.п. Мачулищи, 7 км от МКАД по Слуцкому шоссе</p>"
     }
+  },
+  "machine": {
+    "banner": {
+      "subheadline": "Наши преимущества:",
+      "items": [
+        { "title": "Возможность аренды прицепа на 5 часов" },
+        { "title": "Категории Б и Е" },
+        { "title": "Акции и скидки" },
+        { "title": "Бонусы постоянным клиентам" },
+        { "title": "Безналичный и наличный расчёт" }
+      ]
+    },
+    "section": {
+      "background": "alternate",
+      "nextLinkLabel": "Следующий",
+      "previousLinkLabel": "Предыдущий"
+    }
+  },
+  "machines": {
+    "content": {
+      "background": "alternate",
+      "headline": "Бонусы для постоянных клиентов",
+      "textHtml": "<p class='textBlock-text--highlited'>Бонусы для постоянных клиентов</p><p>Для постоянныъх клиентов у нас предусмотрены дополнительные скидки, а также возможность бронирования прицепов по договоренности без внесения предоплаты.</p>",
+      "imgSrc": "static/content/2.jpg"
+    },
+    "gallery": {
+      "headline": "Наша Техника",
+      "priceLabel": "Цена:",
+      "availabilityLabel": "Доступен:",
+      "moreLabel": "Подробнее",
+
+      "items": [
+        {
+          "imgSrc": "static/content/pr1.jpg",
+          "secondaryImages": [
+            { "imgSrc": "static/content/pr1.jpg" },
+            { "imgSrc": "static/content/pr2.jpg" },
+            { "imgSrc": "static/content/pr3.jpg" }
+          ],
+          "description": "Прицеп Rydwan Euro С750\\T4",
+          "name": "Прицеп Rydwan Euro С750\\T4",
+          "fullInfo": {
+            "caregory": "Категория В",
+            "characteristics": [
+              {
+                "name": "Длинна внутренняя/внешняя",
+                "value": "600/606 см"
+              },
+              {
+                "name": "Ширина внутренняя/внешняя",
+                "value": "600/606 см"
+              },
+              {
+                "name": "Высота прицепа от земли",
+                "value": "80 см"
+              },
+              {
+                "name": "Высота прицепа от пола до верха",
+                "value": "35 см"
+              },
+              {
+                "name": "Высота от борта",
+                "value": "35 см"
+              },
+              {
+                "name": "Резина",
+                "value": "усиленная"
+              },
+              {
+                "name": "Полная масса",
+                "value": "750 кг"
+              },
+              {
+                "name": "Тип подвески",
+                "value": "задняя"
+              },
+              {
+                "name": "Открывающийся задний борт",
+                "value": ""
+              },
+              {
+                "name": "Зелёная карта",
+                "value": ""
+              }
+            ],
+            "textHtml": "<p class='textBlock-text--italic orange'>Цена</p><p>40 руб/сутки</p><p>24 руб/3-7 суток</p><p>20 руб/10+ суток</p>"
+          },
+          "price": "30 руб",
+          "availibilityLabel": "да",
+          "availibility": true,
+          "discount": false,
+          "href": "/#!/machines/1",
+          "nextHref": "/#!/machines/2",
+          "previousHref": "/#!/machines/6"
+        },
+        {
+          "imgSrc": "static/content/pr2.jpg",
+          "secondaryImages": [
+            { "imgSrc": "static/content/pr2.jpg" },
+            { "imgSrc": "static/content/pr3.jpg" },
+            { "imgSrc": "static/content/pr4.jpg" }
+          ],
+          "description": "Прицеп Rydwan Euro A750\\L4",
+          "name": "Прицеп Rydwan Euro A750\\L4",
+          "fullInfo": {
+            "caregory": "Категория В",
+            "characteristics": [
+              {
+                "name": "Длинна внутренняя/внешняя",
+                "value": "600/606 см"
+              },
+              {
+                "name": "Ширина внутренняя/внешняя",
+                "value": "600/606 см"
+              },
+              {
+                "name": "Высота прицепа от земли",
+                "value": "80 см"
+              },
+              {
+                "name": "Высота прицепа от пола до верха",
+                "value": "35 см"
+              },
+              {
+                "name": "Высота от борта",
+                "value": "35 см"
+              },
+              {
+                "name": "Резина",
+                "value": "усиленная"
+              },
+              {
+                "name": "Полная масса",
+                "value": "750 кг"
+              },
+              {
+                "name": "Тип подвески",
+                "value": "задняя"
+              },
+              {
+                "name": "Открывающийся задний борт",
+                "value": ""
+              },
+              {
+                "name": "Зелёная карта",
+                "value": ""
+              }
+            ],
+            "textHtml": "<p class='textBlock-text--italic orange'>Цена</p><p>40 руб/сутки</p><p>24 руб/3-7 суток</p><p>20 руб/10+ суток</p>"
+          },
+          "price": "60 руб",
+          "availibilityLabel": "нет (до 27 января)",
+          "availibility": false,
+          "discount": false,
+          "href": "/#!/machines/2",
+          "nextHref": "/#!/machines/3",
+          "previousHref": "/#!/machines/1"
+        },
+        {
+          "imgSrc": "static/content/pr3.jpg",
+          "secondaryImages": [
+            { "imgSrc": "static/content/pr3.jpg" },
+            { "imgSrc": "static/content/pr4.jpg" },
+            { "imgSrc": "static/content/pr5.jpg" }
+          ],
+          "description": "Прицеп Rydwan Euro C750\\L8",
+          "name": "Прицеп Rydwan Euro C750\\L8",
+          "fullInfo": {
+            "caregory": "Категория В",
+            "characteristics": [
+              {
+                "name": "Длинна внутренняя/внешняя",
+                "value": "600/606 см"
+              },
+              {
+                "name": "Ширина внутренняя/внешняя",
+                "value": "600/606 см"
+              },
+              {
+                "name": "Высота прицепа от земли",
+                "value": "80 см"
+              },
+              {
+                "name": "Высота прицепа от пола до верха",
+                "value": "35 см"
+              },
+              {
+                "name": "Высота от борта",
+                "value": "35 см"
+              },
+              {
+                "name": "Резина",
+                "value": "усиленная"
+              },
+              {
+                "name": "Полная масса",
+                "value": "750 кг"
+              },
+              {
+                "name": "Тип подвески",
+                "value": "задняя"
+              },
+              {
+                "name": "Открывающийся задний борт",
+                "value": ""
+              },
+              {
+                "name": "Зелёная карта",
+                "value": ""
+              }
+            ],
+            "textHtml": "<p class='textBlock-text--italic orange'>Цена</p><p>40 руб/сутки</p><p>24 руб/3-7 суток</p><p>20 руб/10+ суток</p>"
+          },
+          "price": "34 руб",
+          "availibilityLabel": "нет (до 3 марта)",
+          "availibility": false,
+          "discount": false,
+          "href": "/#!/machines/3",
+          "nextHref": "/#!/machines/4",
+          "previousHref": "/#!/machines/2"
+        },
+        {
+          "imgSrc": "static/content/pr4.jpg",
+          "secondaryImages": [
+            { "imgSrc": "static/content/pr4.jpg" },
+            { "imgSrc": "static/content/pr5.jpg" },
+            { "imgSrc": "static/content/pr6.jpg" }
+          ],
+          "description": "Прицеп Rydwan Euro R-EU-L2",
+          "name": "Прицеп Rydwan Euro R-EU-L2",
+          "fullInfo": {
+            "caregory": "Категория В",
+            "characteristics": [
+              {
+                "name": "Длинна внутренняя/внешняя",
+                "value": "600/606 см"
+              },
+              {
+                "name": "Ширина внутренняя/внешняя",
+                "value": "600/606 см"
+              },
+              {
+                "name": "Высота прицепа от земли",
+                "value": "80 см"
+              },
+              {
+                "name": "Высота прицепа от пола до верха",
+                "value": "35 см"
+              },
+              {
+                "name": "Высота от борта",
+                "value": "35 см"
+              },
+              {
+                "name": "Резина",
+                "value": "усиленная"
+              },
+              {
+                "name": "Полная масса",
+                "value": "750 кг"
+              },
+              {
+                "name": "Тип подвески",
+                "value": "задняя"
+              },
+              {
+                "name": "Открывающийся задний борт",
+                "value": ""
+              },
+              {
+                "name": "Зелёная карта",
+                "value": ""
+              }
+            ],
+            "textHtml": "<p class='textBlock-text--italic orange'>Цена</p><p>40 руб/сутки</p><p>24 руб/3-7 суток</p><p>20 руб/10+ суток</p>"
+          },
+          "price": "30 руб",
+          "availibilityLabel": "да",
+          "availibility": true,
+          "discount": false,
+          "href": "/#!/machines/4",
+          "nextHref": "/#!/machines/5",
+          "previousHref": "/#!/machines/3"
+        },
+        {
+          "imgSrc": "static/content/pr5.jpg",
+          "secondaryImages": [
+            { "imgSrc": "static/content/pr5.jpg" },
+            { "imgSrc": "static/content/pr6.jpg" },
+            { "imgSrc": "static/content/pr1.jpg" }
+          ],
+          "description": "Прицеп Rydwan Euro B2600/0/L8",
+          "name": "Прицеп Rydwan Euro B2600/0/L8",
+          "fullInfo": {
+            "caregory": "Категория В",
+            "characteristics": [
+              {
+                "name": "Длинна внутренняя/внешняя",
+                "value": "600/606 см"
+              },
+              {
+                "name": "Ширина внутренняя/внешняя",
+                "value": "600/606 см"
+              },
+              {
+                "name": "Высота прицепа от земли",
+                "value": "80 см"
+              },
+              {
+                "name": "Высота прицепа от пола до верха",
+                "value": "35 см"
+              },
+              {
+                "name": "Высота от борта",
+                "value": "35 см"
+              },
+              {
+                "name": "Резина",
+                "value": "усиленная"
+              },
+              {
+                "name": "Полная масса",
+                "value": "750 кг"
+              },
+              {
+                "name": "Тип подвески",
+                "value": "задняя"
+              },
+              {
+                "name": "Открывающийся задний борт",
+                "value": ""
+              },
+              {
+                "name": "Зелёная карта",
+                "value": ""
+              }
+            ],
+            "textHtml": "<p class='textBlock-text--italic orange'>Цена</p><p>40 руб/сутки</p><p>24 руб/3-7 суток</p><p>20 руб/10+ суток</p>"
+          },
+          "price": "60 руб",
+          "availibilityLabel": "да",
+          "availibility": true,
+          "discount": true,
+          "href": "/#!/machines/5",
+          "nextHref": "/#!/machines/6",
+          "previousHref": "/#!/machines/4"
+        },
+        {
+          "imgSrc": "static/content/pr6.jpg",
+          "secondaryImages": [
+            { "imgSrc": "static/content/pr6.jpg" },
+            { "imgSrc": "static/content/pr1.jpg" },
+            { "imgSrc": "static/content/pr2.jpg" }
+          ],
+          "description": "Прицеп Rydwan Euro B2600\\0\\Р3",
+          "name": "Прицеп Rydwan Euro B2600\\0\\Р3",
+          "fullInfo": {
+            "caregory": "Категория В",
+            "characteristics": [
+              {
+                "name": "Длинна внутренняя/внешняя",
+                "value": "600/606 см"
+              },
+              {
+                "name": "Ширина внутренняя/внешняя",
+                "value": "600/606 см"
+              },
+              {
+                "name": "Высота прицепа от земли",
+                "value": "80 см"
+              },
+              {
+                "name": "Высота прицепа от пола до верха",
+                "value": "35 см"
+              },
+              {
+                "name": "Высота от борта",
+                "value": "35 см"
+              },
+              {
+                "name": "Резина",
+                "value": "усиленная"
+              },
+              {
+                "name": "Полная масса",
+                "value": "750 кг"
+              },
+              {
+                "name": "Тип подвески",
+                "value": "задняя"
+              },
+              {
+                "name": "Открывающийся задний борт",
+                "value": ""
+              },
+              {
+                "name": "Зелёная карта",
+                "value": ""
+              }
+            ],
+            "textHtml": "<p class='textBlock-text--italic orange'>Цена</p><p>40 руб/сутки</p><p>24 руб/3-7 суток</p><p>20 руб/10+ суток</p>"
+          },
+          "price": "60 руб",
+          "availibilityLabel": "нет (до 3 февраля)",
+          "availibility": false,
+          "discount": false,
+          "href": "/#!/machines/6",
+          "nextHref": "/#!/machines/5",
+          "previousHref": "/#!/machines/1"
+        }
+      ]
+    }
+  },
+  "arenda": {
+    "content": {
+      "background": "alternate",
+      "headline": "Полезная информация",
+      "textHtml": "<p class='textBlock-text--highlited textBlock-text--uppercased'>требования к арендатору</p><p>Перечень документов, необходимых при заключении договора аренды:</p><ul class='textBlock-list'><li>водительское удостоверение соответствующее классу прицепа (В,Е)</li><li>Паспорт гражданина Республики Беларусь</li></ul><p class='textBlock-text--highlited textBlock-text--uppercased'>Порядок оплаты</p><p>При оплате по безналичному расчету к стоимости добавляется 10%.</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Постоянным Клиентам</p><p>Для постоянныъх клиентов предусмотрены дополнительные скидки, а также возможность бронирования прицепов по договоренности без внесения предоплаты.</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Время Работы</p><p>Выдача прицепов осуществляется с 8.00 до 21.00 ежедневно без выходных, а также по дополнительной договоренности в удобное для Вас время.</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Правила Эксплуатации</p><p>Обращаем Ваше внимание, что при выборе прицепа в аренду важно учитывать габариты и массу перевозимого груза. Запрещена перегрузка прицепа, а также перевозка грузов выступающих за габариты прицепа более чем это установлено действующими правилами дорожного движения. При эксплуатации прицепа оборудованного тентом необходимо размещать груз таким образом, чтобы при движении не произошло порыва либо протирания тента.</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Бронирование</p><p>Бронирование прицепов осуществляется при составлении договора аренды на конкретную дату и внесении предоплаты в размере 100%. Обращаем Ваше внимание, что для постоянных клиентов возможно бронирование без предоплаты</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Скорость Движения</p><p>Легковым и грузовым автомобилям при их движении с прицепом на автомагистралях — не более 90 км/ч, на остальных дорогах — не более 70 км/ч</p>",
+      "imgSrc": "static/content/2.jpg"
+    }
+  },
+  "contacts": {
+    "banner": {
+      "subheadline": "Наши преимущества:",
+      "items": [
+        { "title": "Возможность аренды на 5 часов" },
+        { "title": "Категории Б и Е" },
+        { "title": "Акции и скидки" },
+        { "title": "Бонусы постоянным клиентам" },
+        { "title": "Безналичный и наличный расчёт" }
+      ]
+    },
+    "form": {
+      "background": "alternate",
+      "headline": "Свяжитесь с нами",
+      "innerText": "Пожалуйста, заполните предложенные поля, чтобы мы могли ответить на ваши вопросы",
+      "inputs": {
+        "nameLabel": "Ваше Имя",
+        "emailLabel": "Ваш email",
+        "messageLabel": "Сообщение",
+        "submitLabel": "Отправить"
+      },
+      "imageSrc": "static/content/1.jpg"
+    },
+    "successView": {
+      "background": "alternate",
+      "textHtml": "<h3 class='textBlock-subheadline'>Спасибо за Ваше сообщение</h3><p>Сотрудники Big Trailler свяжутся с Вами в самое ближайшее время.</p><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>",
+      "imgSrc": "static/content/1.jpg"
+    },
+    "errorView": {
+      "background": "alternate",
+      "textHtml": "<h3 class='textBlock-subheadline'>К сожалению, Ваше сообщение не было отправлено</h3><p>Приносим свои извинени, на нашем сервере произошла ошибка. Мы постараемся оперативно её исправить.</p><p>Пожалуйста, свяжитесь с нашими сотрудниками по телефону</p><p><a href='tel:+365 3453453'>+375 3453453</a></p><p>или отправьте Ваше сообщение на электронную почту</p><p><a href='mailto:marenda2015@gmail.com'>marenda2015@gmail.com</a></p>",
+      "imgSrc": "static/content/1.jpg"
+    },
+    "mapView": {
+      "background": "default",
+      "textHtml": "<h3 class='textBlock-subheadline orange'>Спасибо, что выбрали нас!</h3><p>Все Наши прицепы в эксплуатации с 2015 года, постоянно проходят своевременное обслуживание, укомплектованы тентами, запасными колесами, усиленными осями и резиной, помимо этого весь парк застрахован по системе международного страхования и готов к выезду в страны Европейского и Таможенного союзов. Мы предлагаем прицепы от 4 до 6 метров в длину, объемом от 10 до 24 м<sup>3</sup>, категорий В, ВЕ, СЕ, грузоподъемностью от 750 до 2500 кг.</p><p>Мы ценим каждого из наших клиентов и с уважением относимся к Вашим пожеланиям, и с удовольствием поможем выбрать необходимый прицеп, а также дадим консультации по эксплуатации, размещению груза и другим интересующим Вас вопросам.</p><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>"
+    }
+  },
+  "signin": {
+    "form": {
+      "background": "alternate",
+      "headline": "From content Config",
+      "inputs": {
+        "nameLabel": "Ваше Имя",
+        "passwordLabel": "Пароль",
+        "submitLabel": "Отправить"
+      },
+      "errorLabel": "Проверьте введённые Вами данные",
+      "imageSrc": "static/content/1.jpg"
+    }
+  },
+  "footer": {
+    "leftColumn": {
+      "tels": [
+        {
+          "type": "tel",
+          "href": "tel:+375 3453453",
+          "title": "+375 3453453"
+        }
+      ],
+      "emails": [
+        {
+          "type": "email",
+          "href": "mailto:marenda2015@gmail.com",
+          "title": "marenda2015@gmail.com"
+        }
+      ],
+      "paragraphs": [
+        {
+          "type": "text",
+          "class": "textBlock-text--highlited",
+          "title": "8.00 - 21.00 Без выходных"
+        },
+        {
+          "type": "text",
+          "title": "Наличный и безналичный расчёт"
+        }
+      ]
+    },
+    "middleColumn": [
+      {
+        "type": "text",
+        "title": "Беларусь, Минский район"
+      },
+      {
+        "type": "text",
+        "title": "г.п. Мачулищи, 7 км от МКАД по Слуцкому шоссе"
+      },
+      {
+        "type": "text",
+        "title": "ИП Бобок Светлана Петровна"
+      },
+      {
+        "type": "text",
+        "title": "УНП 691782209"
+      },
+      {
+        "type": "text",
+        "title": "р\\с 3013247940011 ЗАО Банк ВТБ"
+      }
+    ],
+    "socialBar": [
+      {
+        "type": "vkontakte",
+        "class": "fa-vk",
+        "href": "https://vk.com/share.php?url=http%3A%2F%2Fwww.bigtrailer-minsk.net"
+      },
+      {
+        "type": "twitter",
+        "class": "fa-twitter",
+        "href": "http://twitter.com/share?text=Самые надёжные прицепы в твоём городе&url=http://BigTrailler-Minsk.net&#BigTrailler-Minsk"
+      },
+      {
+        "type": "facebook",
+        "class": "fa-facebook",
+        "href": "https://www.facebook.com/Bigtrailer-minsk-1037970656247038/"
+      }
+    ],
+    "copyright": { "title": "kimi_finland@hotmail.com" }
+  }
 }
