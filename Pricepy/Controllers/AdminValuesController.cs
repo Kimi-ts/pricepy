@@ -29,7 +29,7 @@ namespace Pricepy.Controllers
         //but the sections return from content file
         public object Get(string sectionName)
         {
-            object jsonObject = new object();
+            object jsonObject = null;
 
             if (!string.IsNullOrEmpty(sectionName))
             {

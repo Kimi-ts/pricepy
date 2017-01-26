@@ -2,10 +2,14 @@
     console.log("gallery controller runs");
     $scope.$parent.path = "/gallery";
 
-    getData.getContent().then(function(data){
-
+    getData.getContent("/api/AdminValues", "machines").then(function(data){
+        console.log("in gallery controller");
         console.log(data);
-        $scope.data = data.gallery;
-        console.log($scope.data);
+        if (data == null){
+            $location.path("/");
+        }
+        else{
+            $scope.data = data;
+        }
     })
 })

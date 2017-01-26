@@ -23,7 +23,7 @@ namespace Pricepy.Controllers
         // GET api/values
         public object Get(string sectionName)
         {
-            var sectionObject = new object();
+            object sectionObject = null;
             if (!string.IsNullOrEmpty(sectionName))
             {
                 sectionObject = _dbService.GetNode(_contentFile, sectionName);

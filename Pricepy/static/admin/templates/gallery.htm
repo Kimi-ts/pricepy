@@ -1,8 +1,29 @@
-﻿    <div class="row row--darkbackground has-background-image imaged well">
+﻿    <div class="row well cell">
         <div class="textBlock textBlock--centered">
-            <p class="textBlock-subheadline">{{data.banner.subheadline}}</p>
-            <ul class="textBlock-list textBlock-list--ticked">
-                <li ng-repeat="item in data.banner.items">{{item.title}}</li>
+            <h3 class="textBlock-headline">{{data.gallery.headline}}</h3>
+        </div>
+        <div class="gallery" match-height>
+            <ul>
+                <li ng-repeat="item in data.gallery.items" class="gallery-item">
+                    <img class="item-img" ng-src="{{item.imgSrc}}" />
+                    <span ng-if="item.discount" class="gallery-diccountIcon">
+                        <img src="static/icons/orange transparent discount icon.png" alt="discount!" title="image title" />
+                    </span>
+                    <div class="textBlock">
+                        <p class="gallery-item-description">{{item.description}}</p>
+                        <div class="textBlock-contentBlock inGallery">
+                            <h5 class="textBlock-contentBlock-title">{{data.gallery.priceLabel}}</h5>
+                            <p class="textBlock-contentBlock-value">{{item.price}}</p>
+                        </div>
+                        <div class="textBlock-contentBlock inGallery">
+                            <h5 class="textBlock-contentBlock-title">{{data.gallery.availabilityLabel}}</h5>
+                            <p class="textBlock-contentBlock-value textBlock-contentBlock-value--highlighted" ng-class="item.availibility == true ? 'green' : 'red'">{{item.availibilityLabel}}</p>
+                        </div>
+                        <div class="gallery-link-wrapper">
+                            <a ng-href="{{item.href}}" class="gallery-link">{{data.gallery.moreLabel}}</a>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
