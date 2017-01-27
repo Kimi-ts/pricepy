@@ -1,4 +1,4 @@
-﻿adminApp.controller('signinController', ['$scope', '$http', '$location', 'getData', 'myVars', function signinController($scope, $http, $location, getData, myVars){
+﻿adminApp.controller('signinController', ['$scope', '$http', '$location', '$cookies', 'getData', 'myVars', function signinController($scope, $http, $location, $cookies, getData, myVars){
     console.log("sign in controller runs");
     $scope.$parent.path = "/sign in";
     
@@ -22,6 +22,7 @@
                     console.log("true")
                     $scope.isError = false;
                     myVars.tokenValue = response.data.Value;
+                    $cookies.put('X-Token', myVars.tokenValue);
                     $location.path("/gallery")
                 }
                 else{

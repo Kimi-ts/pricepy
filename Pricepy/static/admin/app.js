@@ -1,4 +1,4 @@
-﻿var adminApp = angular.module("adminApp", ["ngRoute", "ngSanitize"]);
+﻿var adminApp = angular.module("adminApp", ["ngRoute", "ngSanitize", "ngCookies"]);
 
 adminApp.config(function ($routeProvider) {
     //TO DO
@@ -13,23 +13,6 @@ adminApp.config(function ($routeProvider) {
         templateUrl: "static/admin/templates/gallery.htm",
         controller: "galleryController"
     })
-    // .when("/machines/:machineId", {
-    //     templateUrl: "static/app/templates/machine.htm",
-    //     controller: "machineController",
-    //     machineId: "machineId"
-    // })
-    // .when("/machines", {
-    //     templateUrl: "static/app/templates/machines.htm",
-    //     controller: "machinesController"
-    // })
-    // .when("/arenda", {
-    //     templateUrl: "static/app/templates/arenda.htm",
-    //     controller: "arendaController"
-    // })
-    // .when("/contact", {
-    //     templateUrl: "static/app/templates/contact.htm",
-    //     controller: "contactController"
-    // });
 });
 
 adminApp.controller("adminController", function ($scope, $location, $http, getData) {

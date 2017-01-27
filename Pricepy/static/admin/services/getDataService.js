@@ -1,4 +1,4 @@
-﻿adminApp.service("getData", ['$http', 'myVars',function($http, myVars){
+﻿adminApp.service("getData", ['$http', '$cookies', 'myVars',function($http, $cookies, myVars){
         // var promise = $http({
         //      method: 'Get',
         //      url: '/api/adminValues',
@@ -15,7 +15,11 @@
             var tokenValue = myVars.tokenValue;
             console.log("token value inside GETDATA service:");
             console.log(tokenValue);
-            
+            if (!tokenValue){
+                tokenValue = $cookies.get("X-Token");
+            }
+            console.log("X-token");
+            console.log(tokenValue);
             var promise = $http({
                 method: 'Get',
                 url: url,
