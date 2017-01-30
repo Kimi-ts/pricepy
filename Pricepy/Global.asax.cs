@@ -28,6 +28,7 @@ namespace Pricepy
             builder.RegisterWebApiFilterProvider(config);
 
             builder.RegisterType<JsonService>().As<IDBService>();
+            builder.RegisterType<MessageService>().As<IMessageClient>();
 
             // Set the dependency resolver to be Autofac.
             var container = builder.Build();

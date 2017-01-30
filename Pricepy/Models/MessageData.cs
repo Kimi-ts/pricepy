@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Pricepy.Models
 {
-    public class FormData
+    public class MessageData
     {
         public string UserName { get; set; }
         public string UserEmail { get; set; }
