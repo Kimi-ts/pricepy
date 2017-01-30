@@ -24,7 +24,7 @@
 
         $scope.save = function(){
             console.log("save called");
-            if ($scope.galleryForm.$invalid){
+            if ($scope.galleryForm.$invalid || $scope.galleryForm.$pristine){
                     return;
             };
 
