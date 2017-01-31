@@ -1,4 +1,4 @@
-﻿{
+{
   "header": {
     "logo": {
       "src": "static/content/icon.png"
@@ -28,7 +28,7 @@
   },
   "home": {
     "banner": {
-      "subheadline": "Big Trailler - это",
+      "subheadline": "Аренда Прицепов у Big Trailler - это",
       "items": [
         {
           "title": "Надёжные прицепы"
@@ -561,7 +561,7 @@
     "form": {
       "background": "alternate",
       "headline": "Свяжитесь с нами",
-      "innerText": "Пожалуйста, заполните предложенные поля, чтобы мы могли ответить на ваши вопросы",
+      "innerText": "Пожалуйста, заполните предложенные поля, чтобы мы могли ответить на Ваши вопросы",
       "inputs": {
         "nameLabel": "Ваше Имя",
         "emailLabel": "Ваш email",

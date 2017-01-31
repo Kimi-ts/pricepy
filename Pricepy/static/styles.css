@@ -123,6 +123,7 @@ p {
 }
 .textBlock p {
   margin-bottom: 10px;
+  text-align: justify;
 }
 .textBlock .green {
   color: #6ad76a;

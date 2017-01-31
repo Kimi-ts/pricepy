@@ -1,12 +1,12 @@
     <div class="row row--darkbackground has-background-image imaged well">
         <div class="textBlock textBlock--centered">
-            <p class="textBlock-subheadline">{{data.banner.subheadline}}</p>
+            <h3 class="textBlock-subheadline">{{data.banner.subheadline}}</h3>
             <ul class="textBlock-list textBlock-list--ticked">
                 <li ng-repeat="item in data.banner.items">{{item.title}}</li>
             </ul>
         </div>
     </div>
-    <div class="row cell well" ng-class="data.section.background == 'alternate' ? 'row--alternate' : ''">
+    <div class="row cell well well--larger" ng-class="data.section.background == 'alternate' ? 'row--alternate' : ''">
         <div class="bucket bucket--notCentered">
             <div class="bucket-media" match-height>
                 <img ng-src="{{activeImg.imgSrc}}" class="bucket-media--main" />
