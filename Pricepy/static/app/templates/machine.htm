@@ -1,12 +1,12 @@
     <div class="row row--darkbackground has-background-image imaged well">
         <div class="textBlock textBlock--centered">
-            <h3 class="textBlock-subheadline">{{data.banner.subheadline}}</h3>
+            <h3 class="textBlock-subheadline">{{banner.banner.subheadline}}</h3>
             <ul class="textBlock-list textBlock-list--ticked">
-                <li ng-repeat="item in data.banner.items">{{item.title}}</li>
+                <li ng-repeat="item in banner.banner.items">{{item.title}}</li>
             </ul>
         </div>
     </div>
-    <div class="row cell well well--larger" ng-class="data.section.background == 'alternate' ? 'row--alternate' : ''">
+    <div class="row cell well well--larger" ng-class="banner.section.background == 'alternate' ? 'row--alternate' : ''">
         <div class="bucket bucket--notCentered">
             <div class="bucket-media" match-height>
                 <img ng-src="{{activeImg.imgSrc}}" class="bucket-media--main" />
@@ -14,8 +14,10 @@
                     <img ng-repeat="image in machine.secondaryImages" ng-src="{{image.imgSrc}}"  class="bucket-media--secondary item-img"  ng-click="setActive(image)" ng-class="image.imgSrc==activeImg.imgSrc ? 'active' : ''"/>
                 </div>
                 <div class="bucket-media-links-wrapper textBlock">
-                    <a href="{{machine.previousHref}}" class="prev left" title="{{data.section.previousLinkLabel}}"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
-                    <a href="{{machine.nextHref}}" class="right next" title="{{data.section.nextLinkLabel}}"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    <!--<button href="{{machine.previousHref}}" class="prev left" title="{{banner.section.previousLinkLabel}}"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                    <a href="{{machine.nextHref}}" class="right next" title="{{banner.section.nextLinkLabel}}"><i class="fa fa-angle-right" aria-hidden="true"></i></a>-->
+                    <button ng-click="setPreviousImageActive()" class="btn--link prev left" title="{{banner.section.previousLinkLabel}}"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                    <button ng-click="setNextImageActive()" class="btn--link right next" title="{{banner.section.nextLinkLabel}}"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
                 </div>
             </div>
             <div class="bucket-content textBlock">
@@ -31,5 +33,35 @@
                 <p>24 руб/3-7 суток</p>
                 <p>20 руб/10+ суток</p>-->
             </div>
+        </div>
+    </div>
+    <div class="row well cell">
+        <div class="textBlock textBlock--centered">
+             <h3 class="textBlock-headline">{{banner.machinesSection.headline}}</h3>
+        </div>
+        <div class="gallery" match-height>
+            <ul>
+                <li ng-repeat="item in machines.gallery.items" class="gallery-item">
+                    <img class="item-img" ng-src="{{item.imgSrc}}" />
+                    <span ng-if="item.discount" class="gallery-diccountIcon">
+                        <img src="static/icons/orange transparent discount icon.png" alt="discount!" title="image title" />
+                    </span>
+                    <div class="textBlock">
+                        <p class="gallery-item-description">{{item.description}}</p>
+                        <div class="textBlock-contentBlock inGallery">
+                            <h5 class="textBlock-contentBlock-title">{{machines.gallery.priceLabel}}</h5>
+                            <p class="textBlock-contentBlock-value">{{item.price}}</p>
+                        </div>
+                        <div class="textBlock-contentBlock inGallery">
+                            <h5 class="textBlock-contentBlock-title">{{machines.gallery.availabilityLabel}}</h5>
+                            <p class="textBlock-contentBlock-value textBlock-contentBlock-value--highlighted" ng-class="item.availibility == true ? 'green' : 'red'">{{item.availibilityLabel}}</p>
+                        </div>
+                        <div class="gallery-link-wrapper">
+                            <a ng-href="{{item.href}}" class="gallery-link">{{machines.gallery.moreLabel}}</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div ng-controller="scrollToAnchorController" class="back-to-top" ng-click="gotoElement('top')"><i class="fa fa-chevron-up"></i></div>
         </div>
     </div>

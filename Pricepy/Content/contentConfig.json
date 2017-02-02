@@ -97,6 +97,10 @@
       "background": "alternate",
       "nextLinkLabel": "Следующий",
       "previousLinkLabel": "Предыдущий"
+    },
+    "machinesSection": {
+      "background": "default",
+      "headline": "Другие предложения"
     }
   },
   "machines": {

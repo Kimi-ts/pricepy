@@ -26,7 +26,7 @@ namespace Pricepy.DB
             {
                 SmtpServer.Send(mail);
             }
-            catch
+            catch (Exception ex)
             {
                 return false;
             }

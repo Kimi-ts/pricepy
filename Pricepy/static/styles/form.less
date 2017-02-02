@@ -39,6 +39,25 @@ a.btn:hover{
     border-color: @headlinedarkertextcolor;
 }
 
+.btn--link{
+     background:none!important;
+     border:none; 
+     padding:0!important;
+     font: inherit;
+     line-height: 1;
+     color: @orangecolor;
+     /*border is optional*/
+     cursor: pointer;
+
+     &:hover{
+         border-bottom: 1px solid @orangecolor;
+     }
+
+     &:focus{
+         outline: none;
+     }
+}
+
 .form-label{
     display: block;
 }
