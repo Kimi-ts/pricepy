@@ -175,7 +175,7 @@
                 "value": ""
               }
             ],
-            "textHtml": "<p class='textBlock-text--italic orange'>Цена</p><p>40 руб/сутки</p><p>24 руб/3-7 суток</p><p>20 руб/10+ суток</p>"
+            "textHtml": "<p class='textBlock-text--highlited'>Цена</p><p>40 руб/сутки</p><p>24 руб/3-7 суток</p><p>20 руб/10+ суток</p>"
           },
           "price": "30 руб",
           "availibilityLabel": "нет (до завтра)",
@@ -244,7 +244,7 @@
                 "value": ""
               }
             ],
-            "textHtml": "<p class='textBlock-text--italic orange'>Цена</p><p>40 руб/сутки</p><p>24 руб/3-7 суток</p><p>20 руб/10+ суток</p>"
+            "textHtml": "<p class='textBlock-text--highlited'>Цена</p><p>40 руб/сутки</p><p>24 руб/3-7 суток</p><p>20 руб/10+ суток</p>"
           },
           "price": "60 руб",
           "availibilityLabel": "нет (до 27 января)",
@@ -313,7 +313,7 @@
                 "value": ""
               }
             ],
-            "textHtml": "<p class='textBlock-text--italic orange'>Цена</p><p>40 руб/сутки</p><p>24 руб/3-7 суток</p><p>20 руб/10+ суток</p>"
+            "textHtml": "<p class='textBlock-text--highlited'>Цена</p><p>40 руб/сутки</p><p>24 руб/3-7 суток</p><p>20 руб/10+ суток</p>"
           },
           "price": "34 руб",
           "availibilityLabel": "нет (до 4 марта)",
@@ -382,7 +382,7 @@
                 "value": ""
               }
             ],
-            "textHtml": "<p class='textBlock-text--italic orange'>Цена</p><p>40 руб/сутки</p><p>24 руб/3-7 суток</p><p>20 руб/10+ суток</p>"
+            "textHtml": "<p class='textBlock-text--highlited'>Цена</p><p>40 руб/сутки</p><p>24 руб/3-7 суток</p><p>20 руб/10+ суток</p>"
           },
           "price": "30 руб",
           "availibilityLabel": "да",
@@ -451,7 +451,7 @@
                 "value": ""
               }
             ],
-            "textHtml": "<p class='textBlock-text--italic orange'>Цена</p><p>40 руб/сутки</p><p>24 руб/3-7 суток</p><p>20 руб/10+ суток</p>"
+            "textHtml": "<p class='textBlock-text--highlited'>Цена</p><p>40 руб/сутки</p><p>24 руб/3-7 суток</p><p>20 руб/10+ суток</p>"
           },
           "price": "60 руб",
           "availibilityLabel": "да",
@@ -520,7 +520,7 @@
                 "value": ""
               }
             ],
-            "textHtml": "<p class='textBlock-text--italic orange'>Цена</p><p>40 руб/сутки</p><p>24 руб/3-7 суток</p><p>20 руб/10+ суток</p>"
+            "textHtml": "<p class='textBlock-text--highlited'>Цена</p><p>40 руб/сутки</p><p>24 руб/3-7 суток</p><p>20 руб/10+ суток</p>"
           },
           "price": "60 руб",
           "availibilityLabel": "нет (до 3 февраля)",

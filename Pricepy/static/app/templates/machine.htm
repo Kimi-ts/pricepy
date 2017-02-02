@@ -42,7 +42,7 @@
         <div class="gallery" match-height>
             <ul>
                 <li ng-repeat="item in machines.gallery.items" class="gallery-item">
-                    <img class="item-img" ng-src="{{item.imgSrc}}" />
+                    <a href="{{item.href}}"><img class="item-img" ng-src="{{item.imgSrc}}" /></a>
                     <span ng-if="item.discount" class="gallery-diccountIcon">
                         <img src="static/icons/orange transparent discount icon.png" alt="discount!" title="image title" />
                     </span>
