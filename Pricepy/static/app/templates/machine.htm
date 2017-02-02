@@ -47,7 +47,7 @@
                         <img src="static/icons/orange transparent discount icon.png" alt="discount!" title="image title" />
                     </span>
                     <div class="textBlock">
-                        <p class="gallery-item-description">{{item.description}}</p>
+                        <a ng-href="{{item.href}}" class="gallery-item-description">{{item.description}}</a>
                         <div class="textBlock-contentBlock inGallery">
                             <h5 class="textBlock-contentBlock-title">{{machines.gallery.priceLabel}}</h5>
                             <p class="textBlock-contentBlock-value">{{item.price}}</p>
