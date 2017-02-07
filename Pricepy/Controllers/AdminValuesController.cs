@@ -15,13 +15,14 @@ namespace Pricepy.Controllers
         private IDBService _dbService;
         private string _contentFile = "~\\Content\\contentConfig.json";
 
-        //TO DO
-        //Create separate file for sensitive admin data and read it, if authenticated
-        private string _securityDataFile = "~\\Content\\adminSecurityInfo.json";
+        private IUserModel _user;
+        private ITokenModel _token;
 
-        public AdminValuesController(IDBService dbService)
+        public AdminValuesController(IDBService dbService, IUserModel userModel, ITokenModel token)
         {
             _dbService = dbService;
+            _user = userModel;
+            _token = token;
         }
 
         //NOTE:
@@ -42,23 +43,10 @@ namespace Pricepy.Controllers
 
                 if (!string.IsNullOrEmpty(tokenValue))
                 {
-                    var token = _dbService.GetNodeValue(_securityDataFile, "token");
-
-                    if (tokenValue == token)
+                    if (_token.IsValid(tokenValue))
                     {
-                        var expires = _dbService.GetNodeValue(_securityDataFile, "expires");
-                        DateTime expiredate = DateTime.Parse(expires);
-                        Token securityToken = new Token { Value = token, Expiredate = expiredate };
-                        if (securityToken.IsValid)
-                        {
-                            var newDateValue = DateTime.Now.AddHours(1);
-                            _dbService.UpdateNodeValue(_securityDataFile,
-                                new Dictionary<string, string>()
-                            {
-                            { "expires", newDateValue.ToString() }
-                            });
-                            jsonObject = _dbService.GetNode(_contentFile, sectionName);
-                        }
+                        _token.UpdateToken(tokenValue, DateTime.Now.AddHours(1));
+                        jsonObject = _dbService.GetNode(_contentFile, sectionName);
                     }
                 }
             }
@@ -66,29 +54,20 @@ namespace Pricepy.Controllers
 
         }
 
-        public Token Post(User userData)
+        public TokenRequestModel Post(UserRequestModel user)
         {
-            if (userData == null)
+            if (user != null)
             {
-                return null;
-            }
-
-            var name = _dbService.GetNodeValue(_securityDataFile, "name");
-            var password = _dbService.GetNodeValue(_securityDataFile, "password");
-
-            if (userData.Name == name && userData.Password == password)
-            {
-                Random random = new Random();
-                var value = random.Next(100, 1000);
-                Token token = new Token { Value = value.ToString(), Expiredate = DateTime.Now.AddHours(1) };
-                _dbService.UpdateNodeValue(_securityDataFile, 
-                    new Dictionary<string, string>()
+                if (_user.IsValid(user.Name, user.Password))
                 {
-                    { "token", token.Value },
-                    { "expires", token.Expiredate.ToString() }
-                });
+                    Random random = new Random();
+                    var value = random.Next(100, 1000);
+                    TokenRequestModel token = new TokenRequestModel { Value = value.ToString(), Expiredate = DateTime.Now.AddHours(1) };
 
-                return token;
+                    _token.UpdateToken(value.ToString(), DateTime.Now.AddHours(1));
+
+                    return token;
+                }
             }
             return null;
         }

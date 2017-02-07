@@ -1,6 +1,7 @@
 ﻿using Autofac;
 using Autofac.Integration.WebApi;
 using Pricepy.DB;
+using Pricepy.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,6 +30,8 @@ namespace Pricepy
 
             builder.RegisterType<JsonService>().As<IDBService>();
             builder.RegisterType<MessageService>().As<IMessageClient>();
+            builder.RegisterType<JsonUser>().As<IUserModel> ();
+            builder.RegisterType<JsonToken>().As<ITokenModel>();
 
             // Set the dependency resolver to be Autofac.
             var container = builder.Build();

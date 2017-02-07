@@ -5,9 +5,9 @@ using System.Web;
 
 namespace Pricepy.Models
 {
-    public class User
+    public class TokenRequestModel
     {
-        public string Name { get; set; }
-        public string Password { get; set; }
+        public string Value { get; set; }
+        public DateTime Expiredate { get; set; }
     }
 }

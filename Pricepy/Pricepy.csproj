@@ -132,6 +132,8 @@
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="DB\IDBService.cs" />
     <Compile Include="DB\IMessageClient.cs" />
+    <Compile Include="DB\ITokenModel.cs" />
+    <Compile Include="DB\IUserModel.cs" />
     <Compile Include="DB\JsonService.cs" />
     <Compile Include="DB\MessageService.cs" />
     <Compile Include="Global.asax.cs">
@@ -140,7 +142,9 @@
     <Compile Include="Models\MessageData.cs" />
     <Compile Include="Models\Machine.cs" />
     <Compile Include="Models\Token.cs" />
-    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\JsonUser.cs" />
+    <Compile Include="Models\TokenRequestModel.cs" />
+    <Compile Include="Models\UserRequestModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
