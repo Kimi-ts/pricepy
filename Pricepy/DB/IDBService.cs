@@ -10,10 +10,8 @@ namespace Pricepy.DB
 {
     public interface IDBService
     {
-        object GetAllContent(string filename);
         object GetNode(string filename, string nodeName);
         string GetNodeValue(string filename, string nodeName);
         void UpdateNodeValue(string filename, Dictionary<string, string> newValues);
-        bool UpdateGallery(string filename, List<Machine> newProperties);
     }
 }

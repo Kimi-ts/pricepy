@@ -12,15 +12,13 @@ namespace Pricepy.Controllers
 {
     public class AdminValuesController : ApiController
     {
-        private IDBService _dbService;
-        private string _contentFile = "~\\Content\\contentConfig.json";
-
         private IUserModel _user;
         private ITokenModel _token;
+        private IPageModel _page;
 
-        public AdminValuesController(IDBService dbService, IUserModel userModel, ITokenModel token)
+        public AdminValuesController(IUserModel userModel, ITokenModel token, IPageModel page)
         {
-            _dbService = dbService;
+            _page = page;
             _user = userModel;
             _token = token;
         }
@@ -46,12 +44,11 @@ namespace Pricepy.Controllers
                     if (_token.IsValid(tokenValue))
                     {
                         _token.UpdateToken(tokenValue, DateTime.Now.AddHours(1));
-                        jsonObject = _dbService.GetNode(_contentFile, sectionName);
+                        jsonObject = _page.GetData(sectionName);
                     }
                 }
             }
             return jsonObject;
-
         }
 
         public TokenRequestModel Post(UserRequestModel user)

@@ -20,7 +20,7 @@ namespace Pricepy.Models
         public bool IsValid(string tokenValue)
         {
             var token = _dbService.GetNodeValue(_securityDataFile, "token");
-            return token == tokenValue;
+            return token == tokenValue && !IsExpired();
         }
 
         public bool IsExpired()

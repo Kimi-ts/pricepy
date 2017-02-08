@@ -11,13 +11,10 @@ namespace Pricepy.DB
     public class JsonService : IDBService
     {
         //NOTE
+        //to make it reusable - pass connection string to every method as parameter
+
+        //NOTE
         //JSON service returns values only on the top document-level
-        public object GetAllContent(string filename)
-        {
-            string allText = ReadFileContent(filename);
-            object jsonObject = JsonConvert.DeserializeObject(allText);
-            return jsonObject;
-        }
 
         public object GetNode(string filename, string nodeName)
         {
@@ -35,39 +32,10 @@ namespace Pricepy.DB
             return nodeValue;
         }
 
-        public bool UpdateGallery(string filename, List<Machine> machines)
-        {
-            var json = ReadFileContent(filename);
-
-            JObject rss = JObject.Parse(json);
-
-            var galleryItems = from p in rss["machines"]["gallery"]["items"]
-                               select p;
-
-            foreach (var sourceItem in machines)
-            {
-                foreach (var item in galleryItems)
-                {
-                    if ((string)item["name"] == sourceItem.Name)
-                    {
-                        item["availibility"] = sourceItem.IsAvailable;
-                        item["availibilityLabel"] = sourceItem.AvailibilityLabel;
-                        item["discount"] = sourceItem.IsDiscount;
-                    }
-                }
-            }
-
-            //updated json object
-            var newFileContent = rss.ToString();
-            WriteFileContent(filename, newFileContent);
-            return true;
-        }
-
         public void UpdateNodeValue(string filename, Dictionary<string,string> newValues)
         {
             string allText = ReadFileContent(filename);
             JObject jObject = JObject.Parse(allText);
-            //jObject[nodeName] = newValue;
             foreach (var item in newValues)
             {
                 jObject[item.Key] = item.Value;
@@ -76,14 +44,14 @@ namespace Pricepy.DB
             WriteFileContent(filename, strContent);
         }
 
-        private string ReadFileContent(string filename)
+        protected string ReadFileContent(string filename)
         {
             var path = System.Web.HttpContext.Current.Request.MapPath(filename);
             string allText = System.IO.File.ReadAllText(path);
             return allText;
         }
 
-        private void WriteFileContent(string filename, string newContent)
+        protected void WriteFileContent(string filename, string newContent)
         {
             var path = System.Web.HttpContext.Current.Request.MapPath(filename);
             System.IO.File.WriteAllText(path, newContent);

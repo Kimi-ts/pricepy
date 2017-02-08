@@ -130,8 +130,12 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MessagesController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="DB\GalleryJsonService.cs" />
     <Compile Include="DB\IDBService.cs" />
+    <Compile Include="DB\IGalleryService.cs" />
+    <Compile Include="DB\IMachineModel.cs" />
     <Compile Include="DB\IMessageClient.cs" />
+    <Compile Include="DB\IPageModel.cs" />
     <Compile Include="DB\ITokenModel.cs" />
     <Compile Include="DB\IUserModel.cs" />
     <Compile Include="DB\JsonService.cs" />
@@ -139,9 +143,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\JsonPage.cs" />
     <Compile Include="Models\MessageData.cs" />
     <Compile Include="Models\Machine.cs" />
-    <Compile Include="Models\Token.cs" />
+    <Compile Include="Models\JsonToken.cs" />
     <Compile Include="Models\JsonUser.cs" />
     <Compile Include="Models\TokenRequestModel.cs" />
     <Compile Include="Models\UserRequestModel.cs" />

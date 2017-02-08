@@ -32,6 +32,8 @@ namespace Pricepy
             builder.RegisterType<MessageService>().As<IMessageClient>();
             builder.RegisterType<JsonUser>().As<IUserModel> ();
             builder.RegisterType<JsonToken>().As<ITokenModel>();
+            builder.RegisterType<JsonPage>().As<IPageModel>();
+            builder.RegisterType<GalleryJsonService>().As<IGalleryService>();
 
             // Set the dependency resolver to be Autofac.
             var container = builder.Build();

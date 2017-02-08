@@ -11,11 +11,11 @@ namespace Pricepy.Controllers
 {
     public class GalleryController : ApiController
     {
-        private IDBService _dbService;
+        private IGalleryService _dbService;
 
         private string _contentFile = "~\\Content\\contentConfig.json";
 
-        public GalleryController(IDBService dbService)
+        public GalleryController(IGalleryService dbService)
         {
             _dbService = dbService;
         }
