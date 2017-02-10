@@ -8,40 +8,12 @@ namespace Pricepy.Models
 {
     public class JsonUser : IUserModel
     {
-        private string _name;
-        private string _password;
-
         private IDBService _dbService;
         private string _securityDataFile = "~\\Content\\adminSecurityInfo.json";
 
         public JsonUser(IDBService dbService)
         {
             _dbService = dbService;
-        }
-        public string Name
-        {
-            get
-            {
-                return _name;
-            }
-
-            set
-            {
-                _name = value;
-            }
-        }
-
-        public string Password
-        {
-            get
-            {
-                return _password;
-            }
-
-            set
-            {
-                _password = value;
-            }
         }
 
         public bool IsValid(string name, string pass)

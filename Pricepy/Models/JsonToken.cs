@@ -14,18 +14,18 @@ namespace Pricepy.Models
         {
             _dbService = dbService;
         }
-        public string Value { get; set; }
-        public DateTime Expiredate { get; set; }
 
         public bool IsValid(string tokenValue)
         {
             var token = _dbService.GetNodeValue(_securityDataFile, "token");
-            return token == tokenValue && !IsExpired();
+            return token == tokenValue && IsExpired();
         }
 
         public bool IsExpired()
         {
-            return DateTime.Now < Expiredate;
+            var expireDateString = _dbService.GetNodeValue(_securityDataFile, "expires");
+            DateTime expireDate = DateTime.Parse(expireDateString);
+            return DateTime.Now < expireDate;
         }
 
         public void UpdateToken(string value, DateTime expiredate)
