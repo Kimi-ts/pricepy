@@ -1,9 +1,6 @@
 ﻿var adminApp = angular.module("adminApp", ["ngRoute", "ngSanitize", "ngCookies"]);
 
 adminApp.config(function ($routeProvider) {
-    //TO DO
-    //Do we really need Messages controller on Admin View?
-    //We can send the messages immediately to email, not to any system on the Site
     $routeProvider
     .when("/", {
         templateUrl: "static/admin/templates/signin.htm",

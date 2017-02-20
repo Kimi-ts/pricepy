@@ -4,6 +4,7 @@
 }
 html {
   height: 100%;
+  font-family: "Proxima Nova Regular", "Segoe UI", Roboto, "Droid Sans", "Helvetica Neue", Arial, sans-serif;
 }
 body {
   height: 100%;
@@ -410,6 +411,16 @@ ul.nav--horizontal {
 ul.nav li {
   display: table-cell;
   padding: 10px 0;
+}
+@media screen and (max-width: 630px) {
+  ul.nav li {
+    padding: 10px 5px;
+  }
+  ul.nav li a {
+    font-size: 12px;
+    padding: 5px;
+    margin: 0;
+  }
 }
 ul.nav--horizontal li {
   display: inline-block;
