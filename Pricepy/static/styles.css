@@ -22,11 +22,12 @@ p {
   padding: 0;
 }
 .mainLogo {
-  float: left;
-  line-height: 18px;
+  position: relative;
 }
 .mainLogo img {
   height: 40px;
+  position: absolute;
+  left: 0;
 }
 .row {
   background-color: white;
@@ -412,18 +413,21 @@ ul.nav li {
   display: table-cell;
   padding: 10px 0;
 }
-@media screen and (max-width: 630px) {
-  ul.nav li {
-    padding: 10px 5px;
-  }
-  ul.nav li a {
-    font-size: 12px;
-    padding: 5px;
-    margin: 0;
+ul.nav li.desktop-hidden {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  ul.nav li.desktop-hidden {
+    display: block;
   }
 }
 ul.nav--horizontal li {
   display: inline-block;
+}
+@media screen and (max-width: 768px) {
+  ul.nav--horizontal li {
+    display: block;
+  }
 }
 .gallery ul {
   list-style-type: none;

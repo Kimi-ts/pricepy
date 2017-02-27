@@ -169,8 +169,10 @@
     <Content Include="static\app\controllers\machineController.js" />
     <Content Include="static\app\controllers\machinesController.js" />
     <Content Include="static\app\controllers\scrollToAnchorController.js" />
+    <Content Include="static\app\controllers\toggleMenuController.js" />
     <Content Include="static\app\directives\matchHeight.js" />
     <Content Include="static\app\directives\setMap.js" />
+    <Content Include="static\app\directives\showWhen.js" />
     <Content Include="static\app\services\anchorSmoothScrollService.js" />
     <Content Include="static\app\services\getDataService.js" />
     <Content Include="static\app\templates\arenda.htm" />
