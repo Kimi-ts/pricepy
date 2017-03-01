@@ -97,6 +97,9 @@ p {
   width: 25%;
 }
 @media screen and (max-width: 768px) {
+  .col {
+    width: 100%;
+  }
   .col--quoter {
     width: 50%;
   }
@@ -334,7 +337,7 @@ p {
 }
 @media screen and (max-width: 768px) {
   .bucket-content {
-    padding: 0 10px;
+    padding: 0 20px;
   }
 }
 .btn {
