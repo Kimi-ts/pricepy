@@ -1,5 +1,6 @@
 .bucket{
     font-size: @primaryfontsize;
+    clear: both;
 }
 
 .bucket--centered{
@@ -21,6 +22,11 @@
     width: 33%;
 }
 
+.bucket--notFixed .bucket-media{
+    width: auto;
+    max-width: 50%;
+}
+
 @media screen and (max-width: 768px){
     .bucket--notCentered .bucket-media{
         width: 75%;
@@ -40,6 +46,10 @@
     .bucket-media.mobile-hidden{
         display: none;
     }
+}
+
+.bucket-media--hasIcon{
+    width: 80px !important;
 }
 
 .bucket-media--main{
@@ -87,8 +97,17 @@
     background: rgba(255, 255, 255, 0.7);
 }
 
+.bucket-icon{
+    font-size: 5rem;
+    color: @graycolor;
+}
+
 .bucket-content{
     padding-left: 40px;
+}
+
+.bucket-content--larger{
+    width: 67%;
 }
 
 @media screen and (max-width: 768px){

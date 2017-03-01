@@ -254,6 +254,7 @@ p {
 }
 .bucket {
   font-size: 20px;
+  clear: both;
 }
 .bucket--centered {
   margin: 0 auto;
@@ -272,6 +273,10 @@ p {
 .bucket--notCentered .bucket-media {
   width: 33%;
 }
+.bucket--notFixed .bucket-media {
+  width: auto;
+  max-width: 50%;
+}
 @media screen and (max-width: 768px) {
   .bucket--notCentered .bucket-media {
     width: 75%;
@@ -288,6 +293,9 @@ p {
   .bucket-media.mobile-hidden {
     display: none;
   }
+}
+.bucket-media--hasIcon {
+  width: 80px !important;
 }
 .bucket-media--main {
   width: 100%;
@@ -314,8 +322,15 @@ p {
   width: 100%;
   background: rgba(255, 255, 255, 0.7);
 }
+.bucket-icon {
+  font-size: 5rem;
+  color: #807b7b;
+}
 .bucket-content {
   padding-left: 40px;
+}
+.bucket-content--larger {
+  width: 67%;
 }
 @media screen and (max-width: 768px) {
   .bucket-content {

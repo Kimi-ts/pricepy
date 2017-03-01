@@ -1,4 +1,4 @@
-    <div class="row cell well well--larger" ng-class="data.content.background == 'alternate' ? 'row--alternate' : ''">
+    <!--<div class="row cell well well--larger" ng-class="data.content.background == 'alternate' ? 'row--alternate' : ''">
         <div class="bucket bucket--notCentered">
             <div class="bucket-media mobile-hidden">
                 <img ng-src="{{data.content.imgSrc}}" class="bucket-media--main" />
@@ -24,6 +24,35 @@
                 <p>Бронирование прицепов осуществляется при составлении договора аренды на конкретную дату и внесении предоплаты в размере 100%. Обращаем Ваше внимание, что для постоянных клиентов возможно бронирование без предоплаты</p>
                 <p class="textBlock-text--highlited textBlock-text--uppercased">Скорость Движения</p>
                 <p>Легковым и грузовым автомобилям при их движении с прицепом на автомагистралях — не более 90 км/ч, на остальных дорогах — не более 70 км/ч</p>-->
+            <!--</div>
+        </div>
+    </div>-->
+
+    <div class="row cell well well--larger" ng-class="data.content.background == 'alternate' ? 'row--alternate' : ''">
+        <div class="textBlock col">
+            <div ng-repeat="item in data.content.rules.col1" class="bucket bucket--notFixed">
+                <div class="bucket-media bucket-media--hasIcon mobile-hidden">
+                    <span class="bucket-icon">
+                        <i class={{item.iconClass}} aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="bucket-content bucket-content--larger textBlock">
+                    <h3>{{item.headline}}</h3>
+                    <span ng-bind-html="item.textHtml"></span>
+                </div>
+            </div>
+        </div>
+        <div class="textBlock col">
+            <div ng-repeat="item in data.content.rules.col2" class="bucket bucket--notFixed">
+                <div class="bucket-media bucket-media--hasIcon mobile-hidden">
+                    <span class="bucket-icon">
+                        <i class={{item.iconClass}} aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="bucket-content bucket-content--larger textBlock">
+                    <h3>{{item.headline}}</h3>
+                    <span ng-bind-html="item.textHtml"></span>
+                </div>
             </div>
         </div>
     </div>
