@@ -117,7 +117,7 @@ p {
   }
 }
 .textBlock--smallertext {
-  font-size: 16px;
+  font-size: 14px;
 }
 @media screen and (max-width: 480px) {
   .textBlock--smallertext {
@@ -135,6 +135,9 @@ p {
 .textBlock p {
   margin-bottom: 10px;
   text-align: justify;
+}
+.textBlock--leftAligned p {
+  text-align: left;
 }
 .textBlock .green {
   color: #6ad76a;
