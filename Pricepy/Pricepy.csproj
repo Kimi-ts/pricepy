@@ -133,7 +133,6 @@
     <Compile Include="DB\GalleryJsonService.cs" />
     <Compile Include="DB\IDBService.cs" />
     <Compile Include="DB\IGalleryService.cs" />
-    <Compile Include="DB\IMachineModel.cs" />
     <Compile Include="DB\IMessageClient.cs" />
     <Compile Include="DB\IPageModel.cs" />
     <Compile Include="DB\ITokenModel.cs" />
