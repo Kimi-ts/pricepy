@@ -92,6 +92,7 @@ p {
 .col {
   float: left;
   width: 50%;
+  padding-right: 20px;
 }
 .col--quoter {
   width: 25%;

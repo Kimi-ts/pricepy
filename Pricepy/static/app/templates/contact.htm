@@ -65,6 +65,10 @@
                 <!--<h3 class="textBlock-subheadline">Спасибо, что выбрали нас!</h3>
                 <p class="textBlock-text--italic">Big Trailler - самые надёжные прицепы твоего города!</p>
                 <p>Мы находимся по адресу: Минский район, г.п. Мачулищи, 7 км от МКАД по Слуцкому шоссе</p>-->
+                <p>{{data.social.description}}</p>
+                <ul class="textBlock-list">
+                    <li ng-repeat="item in data.social.links"><a href="{{item.link}}" target="_blank">{{item.name}}</a></li>
+                </ul>
             </div>
         </div>
         <div ng-controller="scrollToAnchorController" class="back-to-top" ng-click="gotoElement('top')"><i class="fa fa-chevron-up"></i></div>
