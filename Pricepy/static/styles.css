@@ -113,7 +113,7 @@ p {
 }
 @media screen and (max-width: 480px) {
   .textBlock {
-    font-size: 10px;
+    font-size: 15px;
   }
 }
 .textBlock--smallertext {
