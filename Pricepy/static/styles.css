@@ -94,6 +94,9 @@ p {
   width: 50%;
   padding-right: 20px;
 }
+.col--nopadding {
+  padding: 0;
+}
 .col--quoter {
   width: 25%;
 }
@@ -113,7 +116,7 @@ p {
 }
 @media screen and (max-width: 480px) {
   .textBlock {
-    font-size: 15px;
+    font-size: 18px;
   }
 }
 .textBlock--smallertext {
@@ -177,7 +180,7 @@ p {
 .textBlock-headline {
   font-size: 40px;
   margin-bottom: 30px;
-  line-height: 30px;
+  line-height: 40px;
   font-weight: bold;
 }
 .textBlock-subheadline {
@@ -280,6 +283,7 @@ p {
   .bucket-media,
   .bucket-content {
     width: 100%;
+    padding: 0 20px;
   }
 }
 .bucket--notCentered .bucket-media {
@@ -346,7 +350,8 @@ p {
 }
 @media screen and (max-width: 768px) {
   .bucket-content {
-    padding: 0 20px;
+    padding: 0 0 0 20px;
+    background-color: red;
   }
 }
 .btn {
@@ -363,9 +368,9 @@ p {
 }
 @media screen and (max-width: 480px) {
   .btn {
-    font-size: 12px;
+    font-size: 15px;
     margin: 1px;
-    padding: 2px;
+    padding: 5px;
   }
 }
 a.btn:hover {
@@ -439,6 +444,11 @@ ul.nav--horizontal {
 ul.nav li {
   display: table-cell;
   padding: 10px 0;
+}
+@media screen and (max-width: 768px) {
+  ul.nav li {
+    padding: 5px 0;
+  }
 }
 ul.nav li.desktop-hidden {
   display: none;
