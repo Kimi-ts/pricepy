@@ -29,6 +29,11 @@ p {
   position: absolute;
   left: 0;
 }
+@media screen and (max-width: 768px) {
+  .mainLogo img {
+    height: 30px;
+  }
+}
 .row {
   background-color: white;
   color: #807b7b;
@@ -365,7 +370,7 @@ p {
   font-style: italic;
   cursor: pointer;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .btn {
     font-size: 15px;
     margin: 1px;
