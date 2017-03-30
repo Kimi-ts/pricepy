@@ -33,9 +33,6 @@
             </div>
             <div class="bucket-content textBlock">
                 <span ng-bind-html="data.successView.textHtml"></span>
-                <!--<h3 class="textBlock-subheadline">Спасибо за Ваше сообщение</h3>
-                <p>Сотрудники Big Trailler свяжутся с Вами в самое ближайшее время.</p>
-                <p class="textBlock-text--italic">Big Trailler - самые надёжные прицепы твоего города!</p>-->
             </div>
         </div>
     </div>
@@ -46,12 +43,6 @@
             </div>
             <div class="bucket-content textBlock">
                 <span ng-bind-html="data.errorView.textHtml"></span>
-                <!--<h3 class="textBlock-subheadline">К сожалению, Ваше сообщение не было отправлено</h3>
-                <p>Приносим свои извинени, на нашем сервере произошла ошибка. Мы постараемся оперативно её исправить.</p>
-                <p>Пожалуйста, свяжитесь с нашими сотрудниками по телефону</p>
-                <p><a href="tel:+365 3453453">+375 3453453</a></p>
-                <p>или отправьте Ваше сообщение на электронную почту</p>
-                <p><a href="mailto:marenda2015@gmail.com">marenda2015@gmail.com</a></p>-->
             </div>
         </div>
     </div>
@@ -62,9 +53,6 @@
             </div>
             <div class="bucket-content textBlock">
                 <span ng-bind-html="data.mapView.textHtml"></span>
-                <!--<h3 class="textBlock-subheadline">Спасибо, что выбрали нас!</h3>
-                <p class="textBlock-text--italic">Big Trailler - самые надёжные прицепы твоего города!</p>
-                <p>Мы находимся по адресу: Минский район, г.п. Мачулищи, 7 км от МКАД по Слуцкому шоссе</p>-->
                 <p>{{data.social.description}}</p>
                 <ul class="textBlock-list">
                     <li ng-repeat="item in data.social.links"><a href="{{item.link}}" target="_blank">{{item.name}}</a></li>

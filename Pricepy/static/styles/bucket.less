@@ -53,6 +53,12 @@
     width: 80px !important;
 }
 
+@media screen and (max-width: 768px){
+    .bucket-media--hasIcon{
+        width: 100px !important;
+    }
+}
+
 .bucket-media--main{
     width: 100%;
 }
@@ -60,7 +66,7 @@
 .bucket-media--secondary{
     width: 33%;
     float: left;
-    cursor: pointer;
+    cursor: pointe;
 }
 
 .bucket-media--secondary.active{
@@ -101,6 +107,7 @@
 .bucket-icon{
     font-size: 5rem;
     color: @graycolor;
+    vertical-align: top;
 }
 
 .bucket-content{
@@ -113,6 +120,7 @@
 
 @media screen and (max-width: 768px){
     .bucket-content{
-        padding: 0 0 0 20px;
+         padding: 0 0 0 20px;
+        //padding: 0;
     }
 }

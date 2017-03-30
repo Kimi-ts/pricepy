@@ -146,11 +146,17 @@
     margin: 10px 0;
     clear: both;
     overflow: hidden;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 2px solid #c1c1c1;
 }
 
 .textBlock-contentBlock-title{
     float: left;
-    max-width: 40%;
+    //max-width: 40%;
 }
 
 @media screen and (max-width: 768px){
@@ -162,17 +168,13 @@
 .textBlock-contentBlock-value{
     float: right;
     text-align: right;
-    max-width: 60%;
+    //max-width: 60%;
+    flex-shrink: 0;
     margin-bottom: 0 !important;
 }
 
 .textBlock-contentBlock.inGallery{
-    .textBlock-contentBlock-value{
-        max-width: 70%;
-    }
-    .textBlock-contentBlock-title{
-        max-width: 30%;
-    }
+    border-bottom: none;
 }
 
 .textBlock-contentBlock-value--highlighted{
