@@ -16,7 +16,7 @@ app.directive("matchHeight", function($timeout, $window){
                     for(var i = 0; i< images.length; i++){
                         images[i].style.height = max + "px";
                     };
-                },500);
+                },900);
             };
             scope.matchHeight();
             angular.element($window).bind('resize', function() {
