@@ -3,11 +3,11 @@
     ViewBag.Title = "Index";
 }
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" ng-app="myApp">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="myApp" ng-controller="appController">
 <head>
     <link rel="stylesheet" href="static/styles.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Аренда Прицепов в Минске</title>
+    <title>{{pageTitle}}</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <base href="/">
     <style>
@@ -39,7 +39,7 @@
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkNKAC_frei_BLZ0zphi92XjvIkGzudBA" async defer></script>
 </head>
-<body ng-app="myApp" ng-controller="appController">
+<body>
     <div class="row cell well well--smaller">
         <a href="/" name="top" id="top" class="mainLogo"><img ng-src="{{data.header.logo.src}}"></a>
             <ul class="nav nav--horizontal menu" ng-controller="toggleMenuController">

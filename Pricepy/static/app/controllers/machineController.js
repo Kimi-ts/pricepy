@@ -8,10 +8,12 @@ app.controller('machineController', function machineController($scope, $routePar
 
     getData.getContent("/api/Values", "machine").then(function(data){
         $scope.banner = data;
+        var pageTitle = data.pageTitle;
         getData.getContent("/api/Values", "machines").then(function(data){
             $scope.machines = data;
             $scope.machine = data.gallery.items[$scope.index-1];
             $scope.machines.gallery.items.splice($scope.index-1, 1);
+            $scope.$parent.pageTitle = $scope.machine.name + " " + pageTitle;
             console.log($scope.data);
 
             //first item active by default
