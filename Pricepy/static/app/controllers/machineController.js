@@ -14,6 +14,7 @@ app.controller('machineController', function machineController($scope, $routePar
             $scope.machine = data.gallery.items[$scope.index-1];
             $scope.machines.gallery.items.splice($scope.index-1, 1);
             $scope.$parent.pageTitle = $scope.machine.name + " " + pageTitle;
+            $scope.$parent.pageDescription = $scope.machine.name + " " + data.gallery.priceLabel + " " + $scope.machine.price;
             console.log($scope.data);
 
             //first item active by default

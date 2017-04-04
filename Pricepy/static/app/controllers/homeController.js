@@ -5,6 +5,7 @@ app.controller('homeController', function homeController($scope, $location, getD
     getData.getContent("/api/Values", "home").then(function(data){
         $scope.data = data;
         $scope.$parent.pageTitle = data.pageTitle;
+        $scope.$parent.pageDescription = data.pageDescription;
         console.log($scope.data);
     })
 })
