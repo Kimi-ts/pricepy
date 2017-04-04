@@ -9,7 +9,7 @@
     <div ng-repeat="section in data.sections" class="row cell well" ng-class="section.background == 'alternate' ? 'row--alternate' : ''">
         <div class="bucket bucket--notCentered">
             <div class="bucket-media mobile-hidden">
-                <img ng-src="{{section.imgSrc}}" class="bucket-media--main" />
+                <img ng-src="{{section.img.imgSrc}}" alt="{{section.img.imgAlt}}" title="{{section.img.imgTitle}}" class="bucket-media--main" />
             </div>
             <div class="bucket-content textBlock">
                 <span ng-bind-html="section.textHtml"></span>

@@ -9,7 +9,7 @@
     <div class="row cell well well--larger" ng-show="!isSucceeded && !isError" ng-class="data.form.background == 'alternate' ? 'row--alternate' : ''">
         <div class="bucket bucket--notCentered">
             <div class="bucket-media mobile-hidden">
-                <img ng-src="{{data.form.imageSrc}}" class="bucket-media--main" />
+                <img ng-src="{{data.form.img.imageSrc}}" title="{{data.form.img.imgTitle}}" alt="{{data.form.img.imgAlt}}" class="bucket-media--main" />
             </div>
             <div class="bucket-content textBlock">
                 <form novalidate name="messagesForm">
@@ -29,7 +29,7 @@
     <div class="row cell well well-larger" ng-show="isSucceeded" ng-class="data.successView.background == 'alternate' ? 'row--alternate' : ''">
         <div class="bucket bucket--notCentered">
             <div class="bucket-media mobile-hidden">
-                <img ng-src="{{data.successView.imgSrc}}" class="bucket-media--main" />
+                <img ng-src="{{data.successView.img.imgSrc}}" title="{{data.successView.img.imgTitle}}" alt="{{data.successView.img.imgAlt}}" class="bucket-media--main" />
             </div>
             <div class="bucket-content textBlock">
                 <span ng-bind-html="data.successView.textHtml"></span>
@@ -39,7 +39,7 @@
     <div class="row cell well well-larger" ng-show="isError" ng-class="data.successView.background == 'alternate' ? 'row--alternate' : ''">
         <div class="bucket bucket--notCentered">
             <div class="bucket-media mobile-hidden">
-                <img ng-src="{{data.errorView.imgSrc}}" class="bucket-media--main" />
+                <img ng-src="{{data.errorView.img.imgSrc}}" title="{{data.errowView.img.imgTitle}}" alt="{{data.errorView.img.imgAlt}}" class="bucket-media--main" />
             </div>
             <div class="bucket-content textBlock">
                 <span ng-bind-html="data.errorView.textHtml"></span>

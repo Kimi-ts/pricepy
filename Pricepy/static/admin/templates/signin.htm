@@ -1,7 +1,7 @@
 ﻿    <div class="row cell well well--larger" ng-class="data.form.background == 'alternate' ? 'row--alternate' : ''">
         <div class="bucket bucket--notCentered">
             <div class="bucket-media mobile-hidden">
-                <img ng-src="{{data.form.imageSrc}}" class="bucket-media--main" />
+                <img ng-src="{{data.form.img.imageSrc}}" title="{{data.form.img.imgTitle}}" alt="{{data.form.img.imgAlt}}" class="bucket-media--main" />
             </div>
             <div class="bucket-content textBlock">
                 <form novalidate name="messagesForm">
