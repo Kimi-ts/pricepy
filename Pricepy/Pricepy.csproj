@@ -226,6 +226,9 @@
     <Content Include="Content\adminSecurityInfo.json" />
     <None Include="Project_Readme.html" />
     <None Include="Properties\PublishProfiles\priceps.pubxml" />
+    <Content Include="static\node_modules\angular-cookies\angular-cookies.js" />
+    <Content Include="static\node_modules\angular-cookies\angular-cookies.min.js" />
+    <Content Include="static\node_modules\angular-cookies\index.js" />
     <Content Include="static\node_modules\angular-route\angular-route.js" />
     <Content Include="static\node_modules\angular-route\angular-route.min.js" />
     <Content Include="static\node_modules\angular-route\index.js" />
@@ -1287,6 +1290,11 @@
     <Content Include="static\package.json" />
     <Content Include="static\styles.less" />
     <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="static\node_modules\angular-cookies\angular-cookies.min.js.map" />
+    <Content Include="static\node_modules\angular-cookies\bower.json" />
+    <Content Include="static\node_modules\angular-cookies\LICENSE.md" />
+    <Content Include="static\node_modules\angular-cookies\package.json" />
+    <Content Include="static\node_modules\angular-cookies\README.md" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
