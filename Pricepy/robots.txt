@@ -1,0 +1,7 @@
+﻿User-agent: *
+Disallow: /bin/
+Disallow: /tmp/
+Disallow: /Admin/
+Disallow: /static/content/1.jpg
+Disallow: /static/content/2.jpg
+Disallow: /static/content/4.jpg

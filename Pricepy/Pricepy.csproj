@@ -154,6 +154,7 @@
   <ItemGroup>
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="robots.txt" />
     <Content Include="static\admin\app.js" />
     <Content Include="static\admin\controllers\galleryController.js" />
     <Content Include="static\admin\controllers\signinController.js" />
