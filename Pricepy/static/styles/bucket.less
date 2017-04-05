@@ -15,7 +15,7 @@
 @media screen and (max-width: 768px){
     .bucket-media, .bucket-content{
         width: 100%;
-        padding: 0 20px;
+        padding: 0;
     }
 }
 
@@ -30,18 +30,20 @@
 
 @media screen and (max-width: 768px){
     .bucket--notCentered .bucket-media{
-        width: 75%;
+        width: 100%;
     }
 }
 
 .bucket-media{
     text-align: right;
     position: relative;
+    margin-right: 40px;
 }
 
 @media screen and (max-width: 768px){
     .bucket-media{
         padding-bottom: 20px;
+        margin-right: 0;
     }
 
     .bucket-media.mobile-hidden{
@@ -66,7 +68,7 @@
 .bucket-media--secondary{
     width: 33%;
     float: left;
-    cursor: pointe;
+    cursor: pointer;
 }
 
 .bucket-media--secondary.active{
@@ -110,17 +112,16 @@
     vertical-align: top;
 }
 
-.bucket-content{
-    padding-left: 40px;
-}
+// .bucket-content{
+//     padding-left: 40px;
+// }
 
 .bucket-content--larger{
     width: 67%;
 }
 
 @media screen and (max-width: 768px){
-    .bucket-content{
-         padding: 0 0 0 20px;
-        //padding: 0;
+    .bucket-content--larger{
+        width: 100%;
     }
 }

@@ -114,7 +114,7 @@ p {
   }
   .col--quoter,
   .col--third {
-    width: 50%;
+    width: 100%;
   }
 }
 .textBlock {
@@ -286,7 +286,7 @@ p {
   .bucket-media,
   .bucket-content {
     width: 100%;
-    padding: 0 20px;
+    padding: 0;
   }
 }
 .bucket--notCentered .bucket-media {
@@ -298,16 +298,18 @@ p {
 }
 @media screen and (max-width: 768px) {
   .bucket--notCentered .bucket-media {
-    width: 75%;
+    width: 100%;
   }
 }
 .bucket-media {
   text-align: right;
   position: relative;
+  margin-right: 40px;
 }
 @media screen and (max-width: 768px) {
   .bucket-media {
     padding-bottom: 20px;
+    margin-right: 0;
   }
   .bucket-media.mobile-hidden {
     display: none;
@@ -327,7 +329,7 @@ p {
 .bucket-media--secondary {
   width: 33%;
   float: left;
-  cursor: pointe;
+  cursor: pointer;
 }
 .bucket-media--secondary.active {
   border: 4px solid orange;
@@ -351,15 +353,12 @@ p {
   color: #807b7b;
   vertical-align: top;
 }
-.bucket-content {
-  padding-left: 40px;
-}
 .bucket-content--larger {
   width: 67%;
 }
 @media screen and (max-width: 768px) {
-  .bucket-content {
-    padding: 0 0 0 20px;
+  .bucket-content--larger {
+    width: 100%;
   }
 }
 .btn {
@@ -555,4 +554,9 @@ ul.nav--horizontal li {
   position: absolute;
   bottom: 30px;
   right: 180px;
+}
+@media screen and (max-width: 768px) {
+  .back-to-top {
+    bottom: 15px;
+  }
 }
