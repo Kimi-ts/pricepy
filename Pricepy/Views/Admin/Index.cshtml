@@ -39,15 +39,15 @@
     </div>
     <div ng-view></div>
     <div class="row row--darkbackground cell well grid">
-        <div class="textBlock textBlock--smallertext textBlock--leftAligned col col--quoter">
+        <div class="textBlock textBlock--smallertext textBlock--leftAligned col col--third">
             <p ng-repeat="item in data.footer.leftColumn.tels" class="textBlock-text--highlited"><a href="{{item.href}}">{{item.title}}</a></p>
             <p ng-repeat="item in data.footer.leftColumn.emails"><a href="{{item.href}}">{{item.title}}</a></p>
             <p ng-repeat="item in data.footer.leftColumn.paragraphs" class="{{item.class}}">{{item.title}}</p>
         </div>
-        <div class="textBlock textBlock--smallertext textBlock--leftAligned col col--quoter">
+        <div class="textBlock textBlock--smallertext textBlock--leftAligned col col--third">
             <p ng-repeat="item in data.footer.middleColumn">{{item.title}}</p>
         </div>
-        <div class="col textBlock textBlock--smallertext social">
+        <div class="textBlock textBlock--smallertext social col col--third">
             <a ng-repeat="item in data.footer.socialBar" href="{{item.href}}" target="_blank"><i class="fa {{item.class}}" aria-hidden="true"></i></a>
         </div>
         <div class="textBlock">
