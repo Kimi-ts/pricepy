@@ -29,7 +29,7 @@ app.controller('machineController', function machineController($scope, $routePar
     $scope.setPreviousImageActive = function(){
         for(var i = 0; i< $scope.machine.secondaryImages.length; i++){
             var item = $scope.machine.secondaryImages[i];
-            if (item.imgSrc == $scope.activeImg.imgSrc){
+            if (item.img.imgSrc == $scope.activeImg.img.imgSrc){
                 if (i != 0){
                     $scope.setActive($scope.machine.secondaryImages[i-1]);
                     break;
@@ -41,7 +41,7 @@ app.controller('machineController', function machineController($scope, $routePar
     $scope.setNextImageActive = function(){
         for(var i = 0; i< $scope.machine.secondaryImages.length; i++){
             var item = $scope.machine.secondaryImages[i];
-            if (item.imgSrc == $scope.activeImg.imgSrc){
+            if (item.img.imgSrc == $scope.activeImg.img.imgSrc){
                 if (i != $scope.machine.secondaryImages.length-1){
                     console.log(i);
                     $scope.setActive($scope.machine.secondaryImages[i+1]);
