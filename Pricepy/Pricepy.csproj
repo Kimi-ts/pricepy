@@ -155,13 +155,16 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="robots.txt" />
+    <Content Include="static\admin\all.min.js" />
     <Content Include="static\admin\app.js" />
     <Content Include="static\admin\controllers\galleryController.js" />
     <Content Include="static\admin\controllers\signinController.js" />
+    <Content Include="static\admin\ngModules.min.js" />
     <Content Include="static\admin\services\getDataService.js" />
     <Content Include="static\admin\services\valuesService.js" />
     <Content Include="static\admin\templates\gallery.htm" />
     <Content Include="static\admin\templates\signin.htm" />
+    <Content Include="static\app\all.min.js" />
     <Content Include="static\app\app.js" />
     <Content Include="static\app\controllers\arendaController.js" />
     <Content Include="static\app\controllers\contactController.js" />
@@ -173,6 +176,7 @@
     <Content Include="static\app\directives\matchHeight.js" />
     <Content Include="static\app\directives\setMap.js" />
     <Content Include="static\app\directives\showWhen.js" />
+    <Content Include="static\app\ngModules.min.js" />
     <Content Include="static\app\services\anchorSmoothScrollService.js" />
     <Content Include="static\app\services\getDataService.js" />
     <Content Include="static\app\templates\arenda.htm" />

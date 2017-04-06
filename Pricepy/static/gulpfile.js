@@ -1,13 +1,11 @@
-﻿/*
-This file in the main entry point for defining Gulp tasks and using Gulp plugins.
-Click here to learn more. http://go.microsoft.com/fwlink/?LinkId=518007
-*/
-
-var gulp = require('gulp');
+﻿var gulp = require('gulp');
 
 var cleanCSS = require('gulp-clean-css');
 var sourcemaps = require('gulp-sourcemaps');
 var rename = require('gulp-rename');
+var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
+var ngAnnotate = require('gulp-ng-annotate');
 
 gulp.task('minify-css', function () {
     return gulp.src('styles.css')
@@ -17,3 +15,44 @@ gulp.task('minify-css', function () {
         .pipe(rename("styles.min.css"))
         .pipe(gulp.dest(''))
 });
+
+gulp.task('concat-modules-js', function(){
+    return gulp.src([
+        'node_modules/angular/angular.js', 
+        'node_modules/angular-route/angular-route.js',
+        'node_modules/angular-sanitize/angular-sanitize.js'
+        ])
+        .pipe(concat('ngModules.min.js'))
+        .pipe(ngAnnotate())
+        .pipe(uglify())
+        .pipe(gulp.dest('app'))
+});
+
+gulp.task('concat-js', function(){
+    return gulp.src(['app/app.js', 'app/*/*.js'])
+        .pipe(concat('all.min.js'))
+        .pipe(ngAnnotate())
+        .pipe(uglify())
+        .pipe(gulp.dest('app'))
+});
+
+gulp.task('concat-admin-modules-js', function(){
+    return gulp.src([
+        'node_modules/angular/angular.js', 
+        'node_modules/angular-route/angular-route.js',
+        'node_modules/angular-sanitize/angular-sanitize.js',
+        'node_modules/angular-cookies/angular-cookies.js'
+        ])
+        .pipe(concat('ngModules.min.js'))
+        .pipe(ngAnnotate())
+        .pipe(uglify())
+        .pipe(gulp.dest('admin'))
+});
+
+gulp.task('concat-admin-js', function(){
+        return gulp.src(['admin/app.js', 'admin/*/*.js'])
+        .pipe(concat('all.min.js'))
+        .pipe(ngAnnotate())
+        .pipe(uglify())
+        .pipe(gulp.dest('admin'))
+})
