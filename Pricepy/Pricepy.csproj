@@ -214,6 +214,7 @@
     <Content Include="static\content\R-EU-L2\image_410.jpg" />
     <Content Include="static\content\vQdx-E_baTc.jpg" />
     <Content Include="static\content\xKyd6c1tPkQ.jpg" />
+    <Content Include="static\gulpfile.js" />
     <Content Include="static\icons\orange transparent discount icon.png" />
     <Content Include="static\icons\transparent discount icon.png" />
     <Content Include="static\icons\yellow discrount icon.png" />
@@ -774,6 +775,7 @@
     <Content Include="static\node_modules\source-map\lib\util.js" />
     <Content Include="static\node_modules\source-map\source-map.js" />
     <Content Include="static\styles.css" />
+    <Content Include="static\styles.min.css" />
     <Content Include="web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -1276,17 +1278,6 @@
     <Content Include="static\node_modules\source-map\LICENSE" />
     <Content Include="static\node_modules\source-map\package.json" />
     <Content Include="static\node_modules\source-map\README.md" />
-    <Content Include="static\styles\arrow.less" />
-    <Content Include="static\styles\bucket.less" />
-    <Content Include="static\styles\form.less" />
-    <Content Include="static\styles\gallery.less" />
-    <Content Include="static\styles\grid.less" />
-    <Content Include="static\styles\layout.less" />
-    <Content Include="static\styles\mainLogo.less" />
-    <Content Include="static\styles\menu.less" />
-    <Content Include="static\styles\reset.less" />
-    <Content Include="static\styles\social.less" />
-    <Content Include="static\styles\textBlock.less" />
     <Content Include="static\package.json" />
     <Content Include="static\styles.less" />
     <Content Include="Views\Admin\Index.cshtml" />
