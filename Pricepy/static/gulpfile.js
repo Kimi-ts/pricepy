@@ -10,6 +10,8 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var ngAnnotate = require('gulp-ng-annotate');
 
+var imagemin = require('gulp-imagemin');
+
 gulp.task('compile-css', function(){
     return gulp.src('styles.less')
         .pipe(less({
@@ -67,3 +69,9 @@ gulp.task('concat-admin-js', function(){
         .pipe(uglify())
         .pipe(gulp.dest('admin'))
 });
+
+gulp.task('minify-images', function(){
+    return gulp.src('images/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('content'))
+})
