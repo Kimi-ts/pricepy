@@ -57,7 +57,7 @@
         "background": "alternate",
         "textHtml": "<h3 class='textBlock-headline'>Акция</h3><p class='textBlock-text--highlited'>Зимние скидки!!!</p><p>С 1 декабря 2016 года по 2 февраля 2017 года предоставляется скидка на все прицепы в размере 15%!<p/><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p><p> Мы работаем для Вас ежедневно с 8-00 до 17-00.</p>",
         "img": {
-          "imgSrc": "static/content/4.jpg",
+          "imgSrc": "static/content/news/3.jpg",
           "imgAlt": "Акция! Зимние скидки 15%",
           "imgTitle": "Акция! Зимние скидки 15%"
         }
@@ -75,7 +75,7 @@
         "background": "alternate",
         "textHtml": "<h3 class='textBlock-subheadline'>Новая услуга!</h3><p class='textBlock-text--highlited'>Прицеп на 5 часов</p><p>Информируем Вас, что с 14 ноября Вам доступна новая услуга: аренда любого прицепа на 5 часов. Предварительное бронирование обязательно.</p><p>Доступность прицепов а также более подробную информацию о нашем парке можно найти в разделе <a href='/#!/machines'>Наша Техника</a>, а также по телефону +375 3453453.<p/><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>",
         "img": {
-          "imgSrc": "static/content/1.jpg",
+          "imgSrc": "static/content/news/5.jpg",
           "imgAlt": "Новая услуга: прицеп на 5 часов!",
           "imgTitle": "Новая услуга: прицеп на 5 часов!"
         }
@@ -689,7 +689,7 @@
       "background": "alternate",
       "headline": "Полезная информация",
       "textHtml": "<p class='textBlock-text--highlited textBlock-text--uppercased'>требования к арендатору</p><p>Перечень документов, необходимых при заключении договора аренды:</p><ul class='textBlock-list'><li>водительское удостоверение соответствующее классу прицепа (В,Е)</li><li>Паспорт гражданина Республики Беларусь</li></ul><p class='textBlock-text--highlited textBlock-text--uppercased'>Порядок оплаты</p><p>При оплате по безналичному расчету к стоимости добавляется 10%.</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Постоянным Клиентам</p><p>Для постоянныъх клиентов предусмотрены дополнительные скидки, а также возможность бронирования прицепов по договоренности без внесения предоплаты.</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Время Работы</p><p>Выдача прицепов осуществляется с 8.00 до 21.00 ежедневно без выходных, а также по дополнительной договоренности в удобное для Вас время.</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Правила Эксплуатации</p><p>Обращаем Ваше внимание, что при выборе прицепа в аренду важно учитывать габариты и массу перевозимого груза. Запрещена перегрузка прицепа, а также перевозка грузов выступающих за габариты прицепа более чем это установлено действующими правилами дорожного движения. При эксплуатации прицепа оборудованного тентом необходимо размещать груз таким образом, чтобы при движении не произошло порыва либо протирания тента.</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Бронирование</p><p>Бронирование прицепов осуществляется при составлении договора аренды на конкретную дату и внесении предоплаты в размере 100%. Обращаем Ваше внимание, что для постоянных клиентов возможно бронирование без предоплаты</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Скорость Движения</p><p>Легковым и грузовым автомобилям при их движении с прицепом на автомагистралях — не более 90 км/ч, на остальных дорогах — не более 70 км/ч</p>",
-      "imgSrc": "static/content/2.jpg",
+      "imgSrc": "static/content/news/2.jpg",
       "rules": {
         "col1": [
           {
@@ -762,7 +762,7 @@
         "submitLabel": "Отправить"
       },
       "img": {
-        "imageSrc": "static/content/vQdx-E_baTc.jpg",
+        "imageSrc": "static/content/news/5.jpg",
         "imgTitle": "",
         "imgAlt": "Свяжитесь с нами"
       }
@@ -771,7 +771,7 @@
       "background": "alternate",
       "textHtml": "<h3 class='textBlock-subheadline'>Спасибо за Ваше сообщение</h3><p>Сотрудники Big Trailler свяжутся с Вами в самое ближайшее время.</p><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>",
       "img": {
-        "imgSrc": "static/content/1.jpg",
+        "imgSrc": "static/content/news/6.jpg",
         "imgTitle": "",
         "imgAlt": "Спасибо за Ваше сообщение"
       }
@@ -780,7 +780,7 @@
       "background": "alternate",
       "textHtml": "<h3 class='textBlock-subheadline'>К сожалению, Ваше сообщение не было отправлено</h3><p>Приносим свои извинени, на нашем сервере произошла ошибка. Мы постараемся оперативно её исправить.</p><p>Пожалуйста, свяжитесь с нашими сотрудниками по телефону</p><p><a href='tel:+375 44 7669269'>+375 44 7669269</a></p><p>или отправьте Ваше сообщение на электронную почту</p><p><a href='mailto:marenda2015@gmail.com'>marenda2015@gmail.com</a></p>",
       "img": {
-        "imgSrc": "static/content/vQdx-E_baTc.jpg",
+        "imgSrc": "static/content/news/6.jpg",
         "imgTitle": "",
         "imgAlt": "Ваше сообщение не было отправлено"
       }
@@ -816,7 +816,7 @@
       },
       "errorLabel": "Проверьте введённые Вами данные",
       "img": {
-        "imageSrc": "static/content/1.jpg",
+        "imageSrc": "static/content/news/5.jpg",
         "imgTitle": "",
         "imgAlt": "Введите данные для входа"
       }

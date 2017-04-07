@@ -2,6 +2,7 @@
 Disallow: /bin/
 Disallow: /tmp/
 Disallow: /Admin/
-Disallow: /static/content/1.jpg
+Disallow: /static/content/news
 Disallow: /static/content/2.jpg
-Disallow: /static/content/4.jpg
+Disallow: /static/content/b2600.png
+Disallow: /static/content/icon.png
