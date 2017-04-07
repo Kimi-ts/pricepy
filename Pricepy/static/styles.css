@@ -35,14 +35,14 @@ p {
   }
 }
 .row {
-  background-color: white;
+  background-color: #f9f9f9;
   color: #807b7b;
   width: 100%;
   display: inline-table;
   position: relative;
 }
 .row--alternate {
-  background-color: #eae8e4;
+  background-color: #fff;
 }
 .row--darkbackground {
   background-color: #807b7b;
