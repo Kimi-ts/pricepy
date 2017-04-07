@@ -181,7 +181,6 @@
     <Content Include="static\content\A750\image_246.jpg" />
     <Content Include="static\content\A750\image_247.jpg" />
     <Content Include="static\content\b2600.PNG" />
-    <Content Include="static\content\icon.png" />
     <Content Include="static\content\news\3.jpg" />
     <Content Include="static\content\news\4.jpg" />
     <Content Include="static\content\news\5.jpg" />
@@ -190,6 +189,7 @@
     <Content Include="static\content\R-EU-L2\image_407.jpg" />
     <Content Include="static\content\R-EU-L2\image_410.jpg" />
     <Content Include="static\gulpfile.js" />
+    <Content Include="static\icons\icon.png" />
     <Content Include="static\icons\orange transparent discount icon.png" />
     <Content Include="static\icons\transparent discount icon.png" />
     <Content Include="static\icons\yellow discrount icon.png" />
