@@ -3,15 +3,26 @@
 var cleanCSS = require('gulp-clean-css');
 var sourcemaps = require('gulp-sourcemaps');
 var rename = require('gulp-rename');
+var less = require('gulp-less');
+var path = require('path');
+
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var ngAnnotate = require('gulp-ng-annotate');
 
+gulp.task('compile-css', function(){
+    return gulp.src('styles.less')
+        .pipe(less({
+            paths: [path.join(__dirname, 'less', 'includes')]
+        }))
+        .pipe(gulp.dest(''))
+})
+
 gulp.task('minify-css', function () {
     return gulp.src('styles.css')
-        .pipe(sourcemaps.init())
+        //.pipe(sourcemaps.init())
         .pipe(cleanCSS())
-        .pipe(sourcemaps.write())
+        //.pipe(sourcemaps.write())
         .pipe(rename("styles.min.css"))
         .pipe(gulp.dest(''))
 });
@@ -55,4 +66,4 @@ gulp.task('concat-admin-js', function(){
         .pipe(ngAnnotate())
         .pipe(uglify())
         .pipe(gulp.dest('admin'))
-})
+});
