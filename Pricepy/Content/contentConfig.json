@@ -11,17 +11,17 @@
       },
       {
         "title": "Наша Техника",
-        "href": "/#!/machines",
+        "href": "/machines",
         "path": "/machines"
       },
       {
         "title": "Аренда",
-        "href": "/#!/arenda",
+        "href": "/arenda",
         "path": "/arenda"
       },
       {
         "title": "Контакты",
-        "href": "/#!/contact",
+        "href": "/contact",
         "path": "/contact"
       }
     ]
@@ -64,7 +64,7 @@
       },
       {
         "background": "default",
-        "textHtml": "<h3 class='textBlock-subheadline'>У нас пополнение парка!</h3><p>С 26 декабря в нашем парке пополнение! Для Вас теперь доступен Младший брат, новый прицеп Rydwan Euro С750/T4. С полными характеристиками новинки Вы можете ознакомиться <a href='/#!/machines/7'>здесь</a>.</p><p>Первые 3 арендатора получат скидку 10% при условии бронирования более чем на сутки. Спешите получить свою скидку!</p><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>",
+        "textHtml": "<h3 class='textBlock-subheadline'>У нас пополнение парка!</h3><p>С 26 декабря в нашем парке пополнение! Для Вас теперь доступен Младший брат, новый прицеп Rydwan Euro С750/T4. С полными характеристиками новинки Вы можете ознакомиться <a href='/machines/7'>здесь</a>.</p><p>Первые 3 арендатора получат скидку 10% при условии бронирования более чем на сутки. Спешите получить свою скидку!</p><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>",
         "img": {
           "imgSrc": "static/content/4х2(2)/image_503.jpg",
           "imgAlt": "Прицеп Rydwan Euro С750/T4",
@@ -73,7 +73,7 @@
       },
       {
         "background": "alternate",
-        "textHtml": "<h3 class='textBlock-subheadline'>Новая услуга!</h3><p class='textBlock-text--highlited'>Прицеп на 5 часов</p><p>Информируем Вас, что с 14 ноября Вам доступна новая услуга: аренда любого прицепа на 5 часов. Предварительное бронирование обязательно.</p><p>Доступность прицепов а также более подробную информацию о нашем парке можно найти в разделе <a href='/#!/machines'>Наша Техника</a>, а также по телефону +375 3453453.<p/><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>",
+        "textHtml": "<h3 class='textBlock-subheadline'>Новая услуга!</h3><p class='textBlock-text--highlited'>Прицеп на 5 часов</p><p>Информируем Вас, что с 14 ноября Вам доступна новая услуга: аренда любого прицепа на 5 часов. Предварительное бронирование обязательно.</p><p>Доступность прицепов а также более подробную информацию о нашем парке можно найти в разделе <a href='/machines'>Наша Техника</a>, а также по телефону +375 3453453.<p/><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>",
         "img": {
           "imgSrc": "static/content/news/5.jpg",
           "imgAlt": "Новая услуга: прицеп на 5 часов!",
@@ -201,9 +201,9 @@
           "availibilityLabel": "нет (до завтра)",
           "availibility": false,
           "discount": false,
-          "href": "/#!/machines/1",
-          "nextHref": "/#!/machines/2",
-          "previousHref": "/#!/machines/7"
+          "href": "/machines/1",
+          "nextHref": "/machines/2",
+          "previousHref": "/machines/7"
         },
         {
           "img": {
@@ -286,9 +286,9 @@
           "availibilityLabel": "нет (до 27 января)",
           "availibility": false,
           "discount": true,
-          "href": "/#!/machines/2",
-          "nextHref": "/#!/machines/3",
-          "previousHref": "/#!/machines/1"
+          "href": "/machines/2",
+          "nextHref": "/machines/3",
+          "previousHref": "/machines/1"
         },
         {
           "img": {
@@ -371,9 +371,9 @@
           "availibilityLabel": "нет (до 4 марта)",
           "availibility": false,
           "discount": true,
-          "href": "/#!/machines/3",
-          "nextHref": "/#!/machines/4",
-          "previousHref": "/#!/machines/2"
+          "href": "/machines/3",
+          "nextHref": "/machines/4",
+          "previousHref": "/machines/2"
         },
         {
           "img": {
@@ -460,9 +460,9 @@
           "availibilityLabel": "да",
           "availibility": true,
           "discount": true,
-          "href": "/#!/machines/4",
-          "nextHref": "/#!/machines/5",
-          "previousHref": "/#!/machines/3"
+          "href": "/machines/4",
+          "nextHref": "/machines/5",
+          "previousHref": "/machines/3"
         },
         {
           "img": {
@@ -527,9 +527,9 @@
           "availibilityLabel": "да",
           "availibility": true,
           "discount": false,
-          "href": "/#!/machines/5",
-          "nextHref": "/#!/machines/6",
-          "previousHref": "/#!/machines/4"
+          "href": "/machines/5",
+          "nextHref": "/machines/6",
+          "previousHref": "/machines/4"
         },
         {
           "img": {
@@ -590,9 +590,9 @@
           "availibilityLabel": "нет (до 3 февраля)",
           "availibility": false,
           "discount": false,
-          "href": "/#!/machines/6",
-          "nextHref": "/#!/machines/5",
-          "previousHref": "/#!/machines/7"
+          "href": "/machines/6",
+          "nextHref": "/machines/5",
+          "previousHref": "/machines/7"
         },
         {
           "img": {
@@ -675,9 +675,9 @@
           "availibilityLabel": "доступен",
           "availibility": true,
           "discount": true,
-          "href": "/#!/machines/7",
-          "nextHref": "/#!/machines/6",
-          "previousHref": "/#!/machines/1"
+          "href": "/machines/7",
+          "nextHref": "/machines/6",
+          "previousHref": "/machines/1"
         }
       ]
     }
