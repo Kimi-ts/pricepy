@@ -24,7 +24,7 @@ app.config(function ($routeProvider, $locationProvider) {
         controller: "contactController"
     });
 
-    //$locationProvider.html5Mode(true);
+    $locationProvider.html5Mode(true);
 });
 
 app.controller("appController", function($scope, $location, $http, getData){
