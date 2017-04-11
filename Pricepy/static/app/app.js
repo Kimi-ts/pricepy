@@ -22,7 +22,15 @@ app.config(function ($routeProvider, $locationProvider) {
     .when("/contact", {
         templateUrl: "static/app/templates/contact.htm",
         controller: "contactController"
-    });
+    })
+    .when("/notFound", {
+        templateUrl: "static/app/templates/notFound.htm",
+        controller: "notFoundController"
+    })
+    .otherwise("/notFound", {
+        templateUrl: "static/app/templates/notFound.htm",
+        controller: "notFoundController"
+    })
 
     $locationProvider.html5Mode(true);
 });

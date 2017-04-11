@@ -152,6 +152,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="404.html" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="robots.txt" />
@@ -166,6 +167,7 @@
     <Content Include="static\app\templates\home.htm" />
     <Content Include="static\app\templates\machine.htm" />
     <Content Include="static\app\templates\machines.htm" />
+    <Content Include="static\app\templates\notFound.htm" />
     <Content Include="static\content\2.jpg" />
     <Content Include="static\content\4х2%282%29\image_502.jpg" />
     <Content Include="static\content\4х2%282%29\image_503.jpg" />

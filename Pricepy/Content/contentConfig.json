@@ -822,6 +822,17 @@
       }
     }
   },
+  "notFound": {
+    "content": {
+      "background": "alternate",
+      "img": {
+        "imgSrc": "static/content/news/3.jpg",
+        "imgAlt": "",
+        "imgTitle": "Страница не найдена"
+      },
+      "textHtml": "<p class='textBlock-text--highlited'>Страница не найдена.</p><p>К сожалению, запрашиваемая Вами страница не найдена. <p/>"
+    }
+  },
   "adminGallery": {
     "content": {
       "background": "default",
