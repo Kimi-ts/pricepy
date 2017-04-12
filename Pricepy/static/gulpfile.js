@@ -71,7 +71,7 @@ gulp.task('concat-admin-js', function(){
 });
 
 gulp.task('minify-images', function(){
-    return gulp.src('images/*')
+    return gulp.src('images/*/*')
         .pipe(imagemin())
         .pipe(gulp.dest('content'))
 })

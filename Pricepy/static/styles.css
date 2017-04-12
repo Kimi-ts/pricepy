@@ -140,6 +140,7 @@ p {
 .textBlock p {
   margin-bottom: 10px;
   text-align: justify;
+  line-height: 1.3;
 }
 .textBlock--leftAligned p {
   text-align: left;
@@ -276,6 +277,9 @@ p {
 }
 .bucket--centered {
   margin: 0 auto;
+}
+.bucket-content {
+  padding-bottom: 20px;
 }
 .bucket-media,
 .bucket-content {

@@ -125,7 +125,7 @@
     "content": {
       "background": "alternate",
       "headline": "Бонусы для постоянных клиентов",
-      "textHtml": "<p class='textBlock-text--highlited'>Бонусы для постоянных клиентов</p><p>Для постоянныъх клиентов у нас предусмотрены дополнительные скидки, а также возможность бронирования прицепов по договоренности без внесения предоплаты.</p>",
+      "textHtml": "<p class='textBlock-text--highlited'>Бонусы для постоянных клиентов</p><p>Для постоянных клиентов у нас предусмотрены дополнительные скидки, а также возможность бронирования прицепов по договоренности без внесения предоплаты.</p>",
       "imgSrc": ""
     },
     "gallery": {
@@ -533,14 +533,28 @@
         },
         {
           "img": {
-            "imgSrc": "static/content/b2600.png",
+            "imgSrc": "static/content/b2600/4.jpg",
             "imgTitle": "",
             "imgAlt": "Прицеп Rydwan Euro B2600\\0\\Р3"
           },
           "secondaryImages": [
             {
               "img": {
-                "imgSrc": "static/content/b2600.png",
+                "imgSrc": "static/content/B2600/4.jpg",
+                "imgTitle": "",
+                "imgAlt": "Прицеп Rydwan Euro B2600\\0\\Р3"
+              }
+            },
+            {
+              "img": {
+                "imgSrc": "static/content/B2600/1.jpg",
+                "imgTitle": "",
+                "imgAlt": "Прицеп Rydwan Euro B2600\\0\\Р3"
+              }
+            },
+            {
+              "img": {
+                "imgSrc": "static/content/B2600/2.jpg",
                 "imgTitle": "",
                 "imgAlt": "Прицеп Rydwan Euro B2600\\0\\Р3"
               }

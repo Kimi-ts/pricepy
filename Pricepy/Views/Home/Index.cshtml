@@ -34,7 +34,7 @@
                 <li show-when="large" ng-show="isOpen" ng-repeat="item in data.header.menu"><a href="{{item.href}}" class="btn btn--noborder menu-item" ng-class="path == item.path? 'btn--active': ''">{{item.title}}</a></li>
             </ul>
     </div>
-    <div ng-view></div>
+    <div ng-view style="min-height:75%"></div>
     <div class="row row--darkbackground cell well grid">
         <div class="textBlock textBlock--smallertext textBlock--leftAligned col col--third">
             <p ng-repeat="item in data.footer.leftColumn.tels" class="textBlock-text--highlited"><a href="{{item.href}}">{{item.title}}</a></p>
