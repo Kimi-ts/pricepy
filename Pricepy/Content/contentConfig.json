@@ -55,6 +55,24 @@
     "sections": [
       {
         "background": "alternate",
+        "textHtml": "<h3 class='textBlock-subheadline'>Мы переехали</h3><p>Уважаемые клиенты! Информируем Вас, что с апреля мы переехали на новый адрес, теперь мы располагаемся по адресу г. Минск, ул Корженевского 16б (автостоянка). Подробную информацию ищите в разделе <a href='/contact'>Контакты</a>.</p><p>Как и прежде, мы работаем ежедневно с 8-00 до 17-00.</p><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>",
+        "img": {
+          "imgSrc": "static/content/news/8.jpg",
+          "imgAlt": "Мы переехали",
+          "imgTitle": "У нас новый адрес"
+        }
+      },
+      {
+        "background": "default",
+        "textHtml": "<h3 class='textBlock-subheadline'>Специальная программа</h3><p>Приглашаем к сотрудничеству организации, производящие и реализующие изделия из металла, дерева на условиях доставки либо самовывоза. Скидки для Вас и Ваших клиентов <span class='textBlock-text--highlited'>до 30%</span>.</p>",
+        "img": {
+          "imgSrc": "static/content/news/collaboration.jpg",
+          "imgAlt": "Приглашаем к сотрудничеству организации",
+          "imgTitle": "Приглашаем к сотрудничеству"
+        }
+      },
+      {
+        "background": "alternate",
         "textHtml": "<h3 class='textBlock-headline'>Акция</h3><p class='textBlock-text--highlited'>Зимние скидки!!!</p><p>С 1 декабря 2016 года по 2 февраля 2017 года предоставляется скидка на все прицепы в размере 15%!<p/><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p><p> Мы работаем для Вас ежедневно с 8-00 до 17-00.</p>",
         "img": {
           "imgSrc": "static/content/news/3.jpg",
@@ -83,7 +101,7 @@
     ],
     "mapView": {
       "background": "default",
-      "textHtml": "<h3 class='textBlock-subheadline'>Спасибо, что выбрали нас!</h3><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p><p>Мы находимся по адресу: Минский район, г.п. Мачулищи, 7 км от МКАД по Слуцкому шоссе</p>"
+      "textHtml": "<h3 class='textBlock-subheadline'>Спасибо, что выбрали нас!</h3><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p><p>Мы находимся по адресу: г. Минск, ул Корженевского 16б, автостоянка</p>"
     }
   },
   "machine": {
@@ -198,8 +216,8 @@
             "textHtml": "<p class='textBlock-text--highlited'>Цена</p><p>35 руб/сутки</p><p>32 руб/3-7 суток</p><p>30 руб/от 7 суток</p>"
           },
           "price": "35 руб",
-          "availibilityLabel": "нет (до завтра)",
-          "availibility": false,
+          "availibilityLabel": "да",
+          "availibility": true,
           "discount": false,
           "href": "/machines/1",
           "nextHref": "/machines/2",
@@ -283,8 +301,8 @@
             "textHtml": "<p class='textBlock-text--highlited'>Цена</p><p>20 руб/сутки</p><p>18 руб/3-7 суток</p><p>16 руб/от 7 суток</p><p>18 руб до 5 часов</p>"
           },
           "price": "20 руб",
-          "availibilityLabel": "нет (до 27 января)",
-          "availibility": false,
+          "availibilityLabel": "да",
+          "availibility": true,
           "discount": true,
           "href": "/machines/2",
           "nextHref": "/machines/3",
@@ -368,8 +386,8 @@
             "textHtml": "<p class='textBlock-text--highlited'>Цена</p><p>35 руб/сутки</p><p>33 руб/3-7 суток</p><p>30 руб/от 7 суток</p><p>20 руб до 5 часов</p>"
           },
           "price": "35 руб",
-          "availibilityLabel": "нет (до 4 марта)",
-          "availibility": false,
+          "availibilityLabel": "да",
+          "availibility": true,
           "discount": true,
           "href": "/machines/3",
           "nextHref": "/machines/4",
@@ -601,7 +619,7 @@
             "textHtml": "<p class='textBlock-text--highlited'>Цена</p><p>55 руб/сутки</p><p>53 руб/3-7 суток</p><p>50 руб/более 7 суток</p>"
           },
           "price": "55 руб",
-          "availibilityLabel": "нет (до 3 февраля)",
+          "availibilityLabel": "нет (до 14 апреля)",
           "availibility": false,
           "discount": false,
           "href": "/machines/6",
@@ -744,7 +762,7 @@
   },
   "contacts": {
     "pageTitle": "Аренда прицепов в Минске. Доступные цены. Индивидуальный подход | Bigtrailer",
-    "pageDescription": "Мы находимся по адресу Беларусь, Минский район г.п. Мачулищи, 7 км по МКАД по Слуцкому шоссе. Телефон +375 44 7669269. Работаем с 8-00 до 21-00 без выходных",
+    "pageDescription": "Мы находимся по адресу г. Минск, ул Корженевского 16б автостоянка. Телефон +375 44 7669269. Работаем с 8-00 до 21-00 без выходных",
     "banner": {
       "subheadline": "Наши преимущества:",
       "items": [
@@ -808,12 +826,12 @@
       "links": [
         {
           "name": "Facebook",
-          "link": "http://facebook.com",
+          "link": "https://www.facebook.com/Bigtrailer-minsk-1037970656247038",
           "class": "fa fa-fb"
         },
         {
           "name": "Vkontakte",
-          "link": "http://vk.com",
+          "link": "https://vk.com/id395551614",
           "class": "fa fa-vk"
         }
       ]
@@ -887,11 +905,7 @@
     "middleColumn": [
       {
         "type": "text",
-        "title": "Беларусь, Минский район"
-      },
-      {
-        "type": "text",
-        "title": "г.п. Мачулищи, 7 км от МКАД по Слуцкому шоссе"
+        "title": "г. Минск, ул. Корженевского 16б автостоянка"
       },
       {
         "type": "text",
@@ -915,12 +929,12 @@
       {
         "type": "twitter",
         "class": "fa-twitter",
-        "href": "http://twitter.com/share?text=Самые надёжные прицепы в твоём городе!&url=http://BigTrailler-Minsk.net&#BigTrailler-Minsk"
+        "href": "http://twitter.com/share?text=Самые надёжные прицепы в твоём городе!&url=http://bigtrailer-minsk.somee.com/"
       },
       {
         "type": "facebook",
         "class": "fa-facebook",
-        "href": "https://www.facebook.com/sharer/sharer.php?u=http%3A//www.bigtrailer-minsk.net/"
+        "href": "https://www.facebook.com/sharer/sharer.php?u=http%3A//bigtrailer-minsk.somee.com/"
       }
     ],
     "copyright": {
