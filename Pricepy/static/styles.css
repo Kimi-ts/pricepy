@@ -506,6 +506,11 @@ ul.nav--horizontal li {
     width: 100%;
   }
 }
+a.gallery-item-description {
+  font-size: 18px;
+  font-weight: bold;
+  color: #807b7b;
+}
 .gallery-item img {
   width: 100%;
   cursor: pointer;

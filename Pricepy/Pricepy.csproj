@@ -190,6 +190,9 @@
     <Content Include="static\content\news\4.jpg" />
     <Content Include="static\content\news\5.jpg" />
     <Content Include="static\content\news\6.jpg" />
+    <Content Include="static\content\news\7.jpg" />
+    <Content Include="static\content\news\8.jpg" />
+    <Content Include="static\content\news\collaboration.jpg" />
     <Content Include="static\content\R-EU-L2\image_405.jpg" />
     <Content Include="static\content\R-EU-L2\image_407.jpg" />
     <Content Include="static\content\R-EU-L2\image_410.jpg" />

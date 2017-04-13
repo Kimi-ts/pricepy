@@ -10,16 +10,18 @@
     <title ng-bind="pageTitle">Аренда Прицепов в Минске | Bigtrailler</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <base href="/">
-    <meta name="description" content="Bigtrailer предоставляет услуги по аренде прицепов в городе Минске. Все Наши прицепы в эксплуатации с 2015 года, постоянно проходят своевременное обслуживание, укомплектованы тентами, запасными колесами, усиленными осями и резиной, помимо этого весь парк застрахован по системе международного страхования и готов к выезду в страны Европейского и Таможенного союзов">
+    <meta name="description" content="Bigtrailer предоставляет услуги по аренде прицепов в городе Минске. Все Наши прицепы в эксплуатации с 2015 года, постоянно проходят своевременное обслуживание, укомплектованы тентами, запасными колесами, усиленными осями и резиной, помимо этого весь парк застрахован по системе международного страхования и готов к выезду в страны Европейского и Таможенного союзов" ng-attr-content="{{pageDescription}}">
+    <link id="favicon" href="~/static/icons/icon.png" type="image/x-icon" rel="shortcut icon">
     <style>
-         .map {
-             height: 300px;
-         }
-         html, body {
-             height: 100%;
-             margin: 0;
-             padding: 0;
-         }
+        .map {
+            height: 300px;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
     </style>
     <script type="text/javascript" src="~/static/app/ngModules.min.js"></script>
     <script type="text/javascript" src="~/static/app/all.min.js"></script>
@@ -29,10 +31,10 @@
 <body>
     <div class="row cell well well--smaller">
         <a href="/" name="top" id="top" class="mainLogo"><img ng-src="{{data.header.logo.src}}"></a>
-            <ul class="nav nav--horizontal menu" ng-controller="toggleMenuController">
-                <li class="desktop-hidden" ng-click="toggleMenu()"><a class="btn btn--noborder menu-item"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
-                <li show-when="large" ng-show="isOpen" ng-repeat="item in data.header.menu"><a href="{{item.href}}" class="btn btn--noborder menu-item" ng-class="path == item.path? 'btn--active': ''">{{item.title}}</a></li>
-            </ul>
+        <ul class="nav nav--horizontal menu" ng-controller="toggleMenuController">
+            <li class="desktop-hidden" ng-click="toggleMenu()"><a class="btn btn--noborder menu-item"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+            <li show-when="large" ng-show="isOpen" ng-repeat="item in data.header.menu"><a href="{{item.href}}" class="btn btn--noborder menu-item" ng-class="path == item.path? 'btn--active': ''">{{item.title}}</a></li>
+        </ul>
     </div>
     <div ng-view style="min-height:75%"></div>
     <div class="row row--darkbackground cell well grid">
