@@ -4,3 +4,5 @@ Disallow: /tmp/
 Disallow: /Admin/
 Disallow: /static/content/news
 Disallow: /static/content/2.jpg
+Disallow: /static/
+Disallow: /api/

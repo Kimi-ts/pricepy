@@ -55,7 +55,7 @@
     "sections": [
       {
         "background": "alternate",
-        "textHtml": "<h3 class='textBlock-subheadline'>Мы переехали</h3><p>Уважаемые клиенты! Информируем Вас, что с апреля мы переехали на новый адрес, теперь мы располагаемся по адресу г. Минск, ул Корженевского 16б (автостоянка). Подробную информацию ищите в разделе <a href='/contact'>Контакты</a>.</p><p>Как и прежде, мы работаем ежедневно с 8-00 до 17-00.</p><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>",
+        "textHtml": "<h3 class='textBlock-subheadline'>Мы переехали</h3><p>Уважаемые клиенты! Информируем Вас, что с апреля мы переехали, теперь мы располагаемся по адресу г. Минск, ул Корженевского 16б (автостоянка). Подробную информацию ищите в разделе <a href='/contact'>Контакты</a>.</p><p>Как и прежде, мы работаем ежедневно с 8-00 до 21-00.</p><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>",
         "img": {
           "imgSrc": "static/content/news/8.jpg",
           "imgAlt": "Мы переехали",
@@ -73,7 +73,7 @@
       },
       {
         "background": "alternate",
-        "textHtml": "<h3 class='textBlock-headline'>Акция</h3><p class='textBlock-text--highlited'>Зимние скидки!!!</p><p>С 1 декабря 2016 года по 2 февраля 2017 года предоставляется скидка на все прицепы в размере 15%!<p/><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p><p> Мы работаем для Вас ежедневно с 8-00 до 17-00.</p>",
+        "textHtml": "<h3 class='textBlock-headline'>Акция</h3><p class='textBlock-text--highlited'>Зимние скидки!!!</p><p>С 1 декабря 2016 года по 2 февраля 2017 года предоставляется скидка на все прицепы в размере 15%!<p/><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p><p> Мы работаем для Вас ежедневно с 8-00 до 21-00.</p>",
         "img": {
           "imgSrc": "static/content/news/3.jpg",
           "imgAlt": "Акция! Зимние скидки 15%",
@@ -303,7 +303,7 @@
           "price": "20 руб",
           "availibilityLabel": "да",
           "availibility": true,
-          "discount": true,
+          "discount": false,
           "href": "/machines/2",
           "nextHref": "/machines/3",
           "previousHref": "/machines/1"
@@ -388,7 +388,7 @@
           "price": "35 руб",
           "availibilityLabel": "да",
           "availibility": true,
-          "discount": true,
+          "discount": false,
           "href": "/machines/3",
           "nextHref": "/machines/4",
           "previousHref": "/machines/2"
@@ -477,7 +477,7 @@
           "price": "20 руб",
           "availibilityLabel": "да",
           "availibility": true,
-          "discount": true,
+          "discount": false,
           "href": "/machines/4",
           "nextHref": "/machines/5",
           "previousHref": "/machines/3"
@@ -619,8 +619,8 @@
             "textHtml": "<p class='textBlock-text--highlited'>Цена</p><p>55 руб/сутки</p><p>53 руб/3-7 суток</p><p>50 руб/более 7 суток</p>"
           },
           "price": "55 руб",
-          "availibilityLabel": "нет (до 14 апреля)",
-          "availibility": false,
+          "availibilityLabel": "да",
+          "availibility": true,
           "discount": false,
           "href": "/machines/6",
           "nextHref": "/machines/5",
@@ -704,7 +704,7 @@
             "textHtml": "<p class='textBlock-text--highlited'>Цена</p><p>38 руб/сутки</p><p>35 руб/3-7 суток</p><p>32 руб/более 7 суток</p>"
           },
           "price": "38 руб",
-          "availibilityLabel": "доступен",
+          "availibilityLabel": "да",
           "availibility": true,
           "discount": true,
           "href": "/machines/7",
@@ -727,11 +727,11 @@
           {
             "headline": "Требования к арендатору",
             "textHtml": "<p>Перечень документов, необходимых при заключении договора аренды:</p><ul class='textBlock-list'><li>водительское удостоверение соответствующее классу прицепа (В,Е)</li><li>Паспорт гражданина Республики Беларусь</li></ul>",
-            "iconClass": "fa fa-file-text-o"
+            "iconClass": "fa fa-id-card-o"
           },
           {
             "headline": "Время работы",
-            "textHtml": "<p>Выдача прицепов осуществляется с 8.00 до 21.00 ежедневно без выходных, а также по дополнительной договоренности в удобное для Вас время.</p>",
+            "textHtml": "<p>Выдача прицепов осуществляется с 8.00 до 21.00 ежедневно без выходных, а также по дополнительной договоренности в удобное для Вас время.</p><p>Стоимость выдачи/приёма прицепа в нерабочее время составляет 10 рублей.</p>",
             "iconClass": " fa fa-clock-o"
           },
           {
