@@ -7,7 +7,7 @@ app.controller('machineController', function machineController($scope, $routePar
     $scope.index = $routeParams.machineId;
 
     getData.getContent("/api/Values", "machine").then(function(data){
-        $scope.banner = data;
+        $scope.data = data;
         var pageTitle = data.pageTitle;
         getData.getContent("/api/Values", "machines").then(function(data){
             $scope.machines = data;

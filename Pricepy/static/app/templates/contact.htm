@@ -1,10 +1,5 @@
     <div class="row row--darkbackground has-background-image imaged well cell">
-        <div class="textBlock textBlock--centered">
-            <h3 class="textBlock-subheadline">{{data.banner.subheadline}}</h3>
-            <ul class="textBlock-list textBlock-list--ticked">
-                <li ng-repeat="item in data.banner.items">{{item.title}}</li>
-            </ul>
-        </div>
+            <ng-include src="'static/app/templates/banner.htm'"></ng-include>
     </div>
     <div class="row cell well well--larger" ng-show="!isSucceeded && !isError" ng-class="data.form.background == 'alternate' ? 'row--alternate' : ''">
         <div class="bucket bucket--notCentered">

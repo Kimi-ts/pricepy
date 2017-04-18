@@ -7,13 +7,18 @@ app.config(function ($routeProvider, $locationProvider) {
         controller: "homeController"
     })
     .when("/machines/:machineId", {
-        templateUrl: "static/app/templates/machine.htm",
+        templateUrl: "static/app/templates/machinePage.htm",
         controller: "machineController",
         machineId: "machineId"
     })
     .when("/machines", {
         templateUrl: "static/app/templates/machines.htm",
         controller: "machinesController"
+    })
+    .when("/gallery/:machineId", {
+        templateUrl: "static/app/templates/gallery.htm",
+        controller: "galleryController",
+        machineId: "machineId"
     })
     .when("/arenda", {
         templateUrl: "static/app/templates/arenda.htm",

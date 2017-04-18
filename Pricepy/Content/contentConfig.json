@@ -484,14 +484,28 @@
         },
         {
           "img": {
-            "imgSrc": "static/content/6х2Е/46.jpg",
+            "imgSrc": "static/content/6х2Е/2.jpg",
             "imgTitle": "",
             "imgAlt": "Прицеп Rydwan Euro B2600/0/L8"
           },
           "secondaryImages": [
             {
               "img": {
-                "imgSrc": "static/content/6х2Е/46.jpg",
+                "imgSrc": "static/content/6х2Е/2.jpg",
+                "imgTitle": "",
+                "imgAlt": "Прицеп Rydwan Euro B2600/0/L8"
+              }
+            },
+            {
+              "img": {
+                "imgSrc": "static/content/6х2Е/3.jpg",
+                "imgTitle": "",
+                "imgAlt": "Прицеп Rydwan Euro B2600/0/L8"
+              }
+            },
+            {
+              "img": {
+                "imgSrc": "static/content/6х2Е/1.jpg",
                 "imgTitle": "",
                 "imgAlt": "Прицеп Rydwan Euro B2600/0/L8"
               }

@@ -1,0 +1,36 @@
+    <div class="row row--darkbackground has-background-image imaged well cell">
+            <ng-include src="'static/app/templates/banner.htm'"></ng-include>
+    </div>
+    <div class="row cell well well--larger" ng-class="data.section.background == 'alternate' ? 'row--alternate' : ''">
+        <ng-include src="'static/app/templates/machine.htm'"></ng-include>
+    </div>
+    <div class="row well cell">
+        <div class="textBlock textBlock--centered">
+             <h3 class="textBlock-headline">{{data.machinesSection.headline}}</h3>
+        </div>
+        <div class="gallery" match-height>
+            <ul>
+                <li ng-repeat="item in machines.gallery.items" class="gallery-item">
+                    <a href="{{item.href}}"><img class="item-img" ng-src="{{item.img.imgSrc}}" title="{{item.img.imgTitle}}" alt="{{item.img.imgAlt}}" /></a>
+                    <span ng-if="item.discount" class="gallery-diccountIcon">
+                        <img src="static/icons/orange transparent discount icon.png" alt="discount!" title="image title" />
+                    </span>
+                    <div class="textBlock">
+                        <a ng-href="{{item.href}}" class="gallery-item-description">{{item.description}}</a>
+                        <div class="textBlock-contentBlock inGallery">
+                            <h5 class="textBlock-contentBlock-title">{{machines.gallery.priceLabel}}</h5>
+                            <p class="textBlock-contentBlock-value">{{item.price}}</p>
+                        </div>
+                        <div class="textBlock-contentBlock inGallery">
+                            <h5 class="textBlock-contentBlock-title">{{machines.gallery.availabilityLabel}}</h5>
+                            <p class="textBlock-contentBlock-value textBlock-contentBlock-value--highlighted" ng-class="item.availibility == true ? 'green' : 'red'">{{item.availibilityLabel}}</p>
+                        </div>
+                        <div class="gallery-link-wrapper">
+                            <a ng-href="{{item.href}}" class="gallery-link">{{machines.gallery.moreLabel}}</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div ng-controller="scrollToAnchorController" class="back-to-top" ng-click="gotoElement('top')"><i class="fa fa-chevron-up"></i></div>
+        </div>
+    </div>
