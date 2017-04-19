@@ -41,6 +41,11 @@ p {
   display: inline-table;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .row.mobile-hidden {
+    display: none !important;
+  }
+}
 .row--alternate {
   background-color: #fff;
 }

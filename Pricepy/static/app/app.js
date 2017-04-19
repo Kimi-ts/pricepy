@@ -1,4 +1,4 @@
-var app = angular.module("myApp", ["ngRoute", "ngSanitize"]);
+var app = angular.module("myApp", ["ngRoute", "ngSanitize", "ngAnimate", "ngTouch"]);
 
 app.config(function ($routeProvider, $locationProvider) {
     $routeProvider
@@ -14,11 +14,6 @@ app.config(function ($routeProvider, $locationProvider) {
     .when("/machines", {
         templateUrl: "static/app/templates/machines.htm",
         controller: "machinesController"
-    })
-    .when("/gallery/:machineId", {
-        templateUrl: "static/app/templates/gallery.htm",
-        controller: "galleryController",
-        machineId: "machineId"
     })
     .when("/arenda", {
         templateUrl: "static/app/templates/arenda.htm",

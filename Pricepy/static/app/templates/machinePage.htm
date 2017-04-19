@@ -1,10 +1,10 @@
-    <div class="row row--darkbackground has-background-image imaged well cell">
+    <div class="row row--darkbackground has-background-image imaged well cell mobile-hidden">
             <ng-include src="'static/app/templates/banner.htm'"></ng-include>
     </div>
     <div class="row cell well well--larger" ng-class="data.section.background == 'alternate' ? 'row--alternate' : ''">
         <ng-include src="'static/app/templates/machine.htm'"></ng-include>
     </div>
-    <div class="row well cell">
+    <div class="row well cell mobile-hidden">
         <div class="textBlock textBlock--centered">
              <h3 class="textBlock-headline">{{data.machinesSection.headline}}</h3>
         </div>

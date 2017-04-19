@@ -165,7 +165,6 @@
     <Content Include="static\app\templates\arenda.htm" />
     <Content Include="static\app\templates\banner.htm" />
     <Content Include="static\app\templates\contact.htm" />
-    <Content Include="static\app\templates\gallery.htm" />
     <Content Include="static\app\templates\home.htm" />
     <Content Include="static\app\templates\machine.htm" />
     <Content Include="static\app\templates\machinePage.htm" />

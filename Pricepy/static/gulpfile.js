@@ -33,7 +33,9 @@ gulp.task('concat-modules-js', function(){
     return gulp.src([
         'node_modules/angular/angular.js', 
         'node_modules/angular-route/angular-route.js',
-        'node_modules/angular-sanitize/angular-sanitize.js'
+        'node_modules/angular-sanitize/angular-sanitize.js',
+        'node_modules/angular-animate/angular-animate.js',
+        'node_modules/angular-touch/angular-touch.js'
         ])
         .pipe(concat('ngModules.min.js'))
         .pipe(ngAnnotate())
