@@ -9,7 +9,7 @@ app.directive("matchHeight", function($timeout, $window){
                     for(var i = 0; i< images.length; i++){
                         images[i].style.height = 'auto';
                         var height = images[i].height;
-                        console.log("height: " + height);
+                        //console.log("height: " + height);
                         //if img hasn't been loaded yet
                         if (height == 0){
                             height = 200;

@@ -6,6 +6,6 @@ app.controller('arendaController', function arendaController($scope, $location, 
         $scope.data = data;
         $scope.$parent.pageTitle = data.pageTitle;
         $scope.$parent.pageDescription = data.pageDescription;
-        console.log($scope.data);
+        //console.log($scope.data);
     })
 })

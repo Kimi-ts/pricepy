@@ -4,13 +4,14 @@
     <div class="row cell well well--larger" ng-class="data.section.background == 'alternate' ? 'row--alternate' : ''">
         <ng-include src="'static/app/templates/machine.htm'"></ng-include>
     </div>
+    <!--"SEE OTHER" section-->
     <div class="row well cell mobile-hidden">
         <div class="textBlock textBlock--centered">
              <h3 class="textBlock-headline">{{data.machinesSection.headline}}</h3>
         </div>
         <div class="gallery" match-height>
             <ul>
-                <li ng-repeat="item in machines.gallery.items" class="gallery-item">
+                <li ng-repeat="item in machines.gallery.items" class="gallery-item" ng-show="item.isVisible != false">
                     <a href="{{item.href}}"><img class="item-img" ng-src="{{item.img.imgSrc}}" title="{{item.img.imgTitle}}" alt="{{item.img.imgAlt}}" /></a>
                     <span ng-if="item.discount" class="gallery-diccountIcon">
                         <img src="static/icons/orange transparent discount icon.png" alt="discount!" title="image title" />

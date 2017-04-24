@@ -2,7 +2,6 @@ app.controller('machineController', function machineController($scope, $routePar
     console.log("single machine controller runs");
     //to make section active in main menu
     $scope.$parent.path = "/machines";
-    console.log($routeParams);
 
     $scope.index = $routeParams.machineId;
 
@@ -12,11 +11,12 @@ app.controller('machineController', function machineController($scope, $routePar
         getData.getContent("/api/Values", "machines").then(function(data){
             $scope.machines = data;
             $scope.machine = data.gallery.items[$scope.index-1];
-            $scope.machines.gallery.items.splice($scope.index-1, 1);
+            $scope.machines.gallery.items[$scope.index-1].isVisible = false;
             $scope.isShowSecondaryImages = $scope.machine.secondaryImages.length > 1;
             $scope.$parent.pageTitle = $scope.machine.name + " " + pageTitle;
             $scope.$parent.pageDescription = $scope.machine.name + " " + data.gallery.priceLabel + " " + $scope.machine.price;
 
+            console.log($scope.machines.gallery);
             //first item active by default
             $scope.activeImg = $scope.machine.secondaryImages[0];
         });

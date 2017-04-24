@@ -3,7 +3,6 @@ app.service("getData", ['$http',function($http){
             getContent: function (url, sectionName) {
                 var promise = $http({
                     method: 'Get',
-                    //url: '/api/adminValues',
                     url: url,
                     params: {sectionName: sectionName}, 
                 }).then(function successCallback(response) {

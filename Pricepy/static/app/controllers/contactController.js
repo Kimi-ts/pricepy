@@ -6,7 +6,7 @@ app.controller('contactController', function contactController($scope, $http, ge
         $scope.data = data;
         $scope.$parent.pageTitle = data.pageTitle;
         $scope.$parent.pageDescription = data.pageDescription;
-        console.log($scope.data);
+        //console.log($scope.data);
 
         $scope.isSucceeded = false;
         $scope.isError = false;
@@ -19,7 +19,7 @@ app.controller('contactController', function contactController($scope, $http, ge
                 url: '/api/Messages',
                 data: $scope.form,
             }).then(function successCallback(response) {
-                console.log(response);
+                //console.log(response);
                 if (response.data){
                     $scope.isSucceeded = true;
                 }

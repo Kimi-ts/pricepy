@@ -45,6 +45,16 @@ app.controller("appController", function($scope, $location, $http, getData){
         getData.getContent("/api/Values", "footer").then(function(data){
             $scope.data.footer = data;
             console.log($scope.data);
-        })
+        });
+
+        if ($scope.machines != null){
+            //async get data for machines
+            getData.getContent("/api/Values", "machines").then(function(data){
+                console.log("[asynk] app machines loaded!");
+                $scope.machines = data;
+                console.log("machines in app:");
+                console.log($scope.data);
+            });
+        }
     })
 })
