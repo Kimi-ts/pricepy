@@ -1,5 +1,4 @@
 app.controller('contactController', function contactController($scope, $http, getData){
-    console.log("contact controller runs");
     $scope.$parent.path = "/contact";
 
     getData.getContent("/api/Values", "contacts").then(function(data){
