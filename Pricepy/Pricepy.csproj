@@ -203,6 +203,7 @@
     <Content Include="static\content\R-EU-L2\image_407.jpg" />
     <Content Include="static\content\R-EU-L2\image_410.jpg" />
     <Content Include="static\gulpfile.js" />
+    <Content Include="static\icons\icon.ico" />
     <Content Include="static\icons\icon.png" />
     <Content Include="static\icons\orange transparent discount icon.png" />
     <Content Include="static\icons\transparent discount icon.png" />
