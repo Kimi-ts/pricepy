@@ -8,6 +8,7 @@ var path = require('path');
 
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
+var stripDebug = require('gulp-strip-debug');
 var ngAnnotate = require('gulp-ng-annotate');
 
 var imagemin = require('gulp-imagemin');
@@ -48,6 +49,7 @@ gulp.task('concat-js', function(){
         .pipe(concat('all.min.js'))
         .pipe(ngAnnotate())
         .pipe(uglify())
+        //.pipe(stripDebug())
         .pipe(gulp.dest('app'))
 });
 
