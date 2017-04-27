@@ -938,17 +938,17 @@
       {
         "type": "vkontakte",
         "class": "fa-vk",
-        "href": "https://vk.com/share.php?url=http://bigtrailer-minsk.somee.com/"
+        "href": "https://vk.com/share.php?url=http://bigtrailer-minsk.by/"
       },
       {
         "type": "twitter",
         "class": "fa-twitter",
-        "href": "http://twitter.com/share?text=Самые надёжные прицепы в твоём городе!&url=http://bigtrailer-minsk.somee.com/"
+        "href": "http://twitter.com/share?text=Самые надёжные прицепы в твоём городе!&url=http://bigtrailer-minsk.by/"
       },
       {
         "type": "facebook",
         "class": "fa-facebook",
-        "href": "https://www.facebook.com/sharer/sharer.php?u=http%3A//bigtrailer-minsk.somee.com/"
+        "href": "https://www.facebook.com/sharer/sharer.php?u=http%3A//bigtrailer-minsk.by/"
       }
     ],
     "copyright": {
