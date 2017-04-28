@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>http://bigtrailer-minsk.by/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+    <loc>http://bigtrailer-minsk.by/machines</loc>
+    <changefreq>monthly</changefreq>
+</url>
+<url>
+    <loc>http://bigtrailer-minsk.by/machines/1</loc>
+    <changefreq>monthly</changefreq>
+</url>
+  <url>
+    <loc>http://bigtrailer-minsk.by/machines/2</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://bigtrailer-minsk.by/machines/3</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://bigtrailer-minsk.by/machines/4</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://bigtrailer-minsk.by/machines/5</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://bigtrailer-minsk.by/machines/6</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://bigtrailer-minsk.by/machines/7</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://bigtrailer-minsk.by/arenda</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://bigtrailer-minsk.by/contact</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+</urlset>
