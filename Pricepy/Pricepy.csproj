@@ -156,6 +156,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="robots.txt" />
+    <Content Include="sitemap.xml" />
     <Content Include="static\admin\all.min.js" />
     <Content Include="static\admin\ngModules.min.js" />
     <Content Include="static\admin\templates\gallery.htm" />
