@@ -11,6 +11,7 @@
                                 <th>Availibility</th>
                                 <th></th>
                                 <th>Discount</th>
+                                <th>Price</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -19,6 +20,7 @@
                                 <td><input type="checkbox" ng-model="item.availibility" ng-change="clearAvailibilityTextBox(item)" /></td>
                                 <td><input type="text" ng-model="item.availibilityLabel" required /></td>
                                 <td><input type="checkbox" ng-model="item.discount" /></td>
+                                <td><input type="text" ng-model="item.price" required /></td>
                             </tr>
                         </tbody>
                     </table>

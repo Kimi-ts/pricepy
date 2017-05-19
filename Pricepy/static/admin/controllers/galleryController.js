@@ -41,6 +41,7 @@
                 newMachine.IsAvailable = item.availibility;
                 newMachine.AvailibilityLabel = item.availibilityLabel;
                 newMachine.IsDiscount = item.discount;
+                newMachine.Price = item.price;
                 $scope.updatedMachines.push(newMachine);
             };
 

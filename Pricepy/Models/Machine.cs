@@ -11,5 +11,6 @@ namespace Pricepy.Models
         public bool IsAvailable { get; set; }
         public string AvailibilityLabel { get; set; }
         public bool IsDiscount { get; set; }
+        public string Price { get; set; }
     }
 }
