@@ -218,15 +218,12 @@
     <None Include="Project_Readme.html" />
     <None Include="Properties\PublishProfiles\priceps.pubxml" />
     <Content Include="static\styles.min.css" />
-    <Content Include="web.config">
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="static\package.json" />
     <Content Include="Views\Admin\Index.cshtml" />
-    <Content Include="web%28no redirect%29.config" />
-    <Content Include="web%28redirect to non-www%29.config" />
-    <Content Include="web%28redirect to www%29.config" />
+    <Content Include="web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
