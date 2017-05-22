@@ -12,5 +12,6 @@ namespace Pricepy.Models
         public string AvailibilityLabel { get; set; }
         public bool IsDiscount { get; set; }
         public string Price { get; set; }
+        public string FullInfo { get; set; }
     }
 }

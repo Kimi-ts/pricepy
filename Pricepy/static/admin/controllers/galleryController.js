@@ -22,9 +22,13 @@
             item.availibilityLabel = "";
         };
 
+        $scope.editFullInfo = function(item){
+            $scope.activeItem = item;
+        };
+
         $scope.save = function(){
             console.log("save called");
-            if ($scope.galleryForm.$invalid || $scope.galleryForm.$pristine){
+            if (($scope.galleryForm.$invalid || $scope.galleryForm.$pristine) && ($scope.fullInfoForm.$invalid || $scope.fullInfoForm.$pristine)){
                     return;
             };
 
@@ -37,11 +41,14 @@
             for(var i = 0; i< $scope.machines.gallery.items.length; i++){
                 var newMachine = {};
                 var item = $scope.machines.gallery.items[i];
+                console.log("iiiitem:");
+                console.log(item);
                 newMachine.Name = item.name;
                 newMachine.IsAvailable = item.availibility;
                 newMachine.AvailibilityLabel = item.availibilityLabel;
                 newMachine.IsDiscount = item.discount;
                 newMachine.Price = item.price;
+                newMachine.FullInfo = item.fullInfo;
                 $scope.updatedMachines.push(newMachine);
             };
 
@@ -69,5 +76,9 @@
                 }
             });
         };
+
+        $scope.fullInfoSave = function(){
+
+        }
     }
 ])

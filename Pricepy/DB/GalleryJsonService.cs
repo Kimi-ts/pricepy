@@ -28,6 +28,7 @@ namespace Pricepy.DB
                         item["availibilityLabel"] = sourceItem.AvailibilityLabel;
                         item["discount"] = sourceItem.IsDiscount;
                         item["price"] = sourceItem.Price;
+                        item["fullInfo"] = sourceItem.FullInfo;
                     }
                 }
             }
