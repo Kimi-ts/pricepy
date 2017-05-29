@@ -1,4 +1,4 @@
-﻿        <div class="bucket bucket--notCentered" ng-swipe-left="gotoPage(machine.nextHref)" ng-swipe-right = "gotoPage(machine.previousHref)">
+﻿        <div class="bucket bucket--notCentered" ng-swipe-disable-mouse ng-swipe-left="gotoPage(machine.nextHref)" ng-swipe-right = "gotoPage(machine.previousHref)">
             <div class="bucket-media">
                 <img ng-src="{{activeImg.img.imgSrc}}" title="{{activeImg.img.imgTitle}}" alt="{{activeImg.img.imgAlt}}" class="bucket-media--main" />
                 <div class="bucket-media-wrapper" match-height ng-show="isShowSecondaryImages">
