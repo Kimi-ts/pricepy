@@ -1,12 +1,12 @@
 ﻿        <div class="gallery" match-height>
             <ul>
                 <li ng-repeat="item in machines.gallery.items" class="gallery-item" ng-show="item.isVisible != false">
-                    <a href="{{item.href}}"><img class="item-img" ng-src="{{item.img.imgSrc}}" title="{{item.img.imgTitle}}" alt="{{item.img.imgAlt}}" /></a>
+                    <a href="{{item.href}}"><img class="item-img" ng-src="{{item.img.imgSrc}}" title="{{item.img.imgTitle}}" alt="{{item.img.imgAlt}}" ng-controller="scrollToAnchorController" ng-click="gotoElement('top')" /></a>
                     <span ng-if="item.discount" class="gallery-diccountIcon">
                         <img src="static/icons/orange transparent discount icon.png" alt="discount!" title="image title" />
                     </span>
                     <div class="textBlock">
-                        <a ng-href="{{item.href}}" class="gallery-item-description">{{item.description}}</a>
+                        <a ng-href="{{item.href}}" class="gallery-item-description" ng-controller="scrollToAnchorController" ng-click="gotoElement('top')">{{item.description}}</a>
                         <div class="textBlock-contentBlock inGallery">
                             <h5 class="textBlock-contentBlock-title">{{machines.gallery.priceLabel}}</h5>
                             <p class="textBlock-contentBlock-value">{{item.price}}</p>
@@ -16,7 +16,7 @@
                             <p class="textBlock-contentBlock-value textBlock-contentBlock-value--highlighted" ng-class="item.availibility == true ? 'green' : 'red'">{{item.availibilityLabel}}</p>
                         </div>
                         <div class="gallery-link-wrapper">
-                            <a ng-href="{{item.href}}" class="gallery-link">{{machines.gallery.moreLabel}}</a>
+                            <a ng-href="{{item.href}}" class="gallery-link" ng-controller="scrollToAnchorController" ng-click="gotoElement('top')">{{machines.gallery.moreLabel}}</a>
                         </div>
                     </div>
                 </li>

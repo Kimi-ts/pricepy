@@ -180,21 +180,21 @@
         },
         {
           "img": {
-            "imgSrc": "static/content/A750/image_246.jpg",
+            "imgSrc": "static/content/A750/image_248.jpg",
             "imgAlt": "Прицеп Rydwan Euro A750\\L4",
             "imgTitle": "Прицеп Rydwan Euro A750\\L4"
           },
           "secondaryImages": [
             {
               "img": {
-                "imgSrc": "static/content/A750/image_246.jpg",
+                "imgSrc": "static/content/A750/image_248.jpg",
                 "imgTitle": "",
                 "imgAlt": "Прицеп Rydwan Euro A750\\L4"
               }
             },
             {
               "img": {
-                "imgSrc": "static/content/A750/image_245.jpg",
+                "imgSrc": "static/content/A750/image_246.jpg",
                 "imgTitle": "",
                 "imgAlt": "Прицеп Rydwan Euro A750\\L4"
               }
@@ -354,7 +354,7 @@
             },
             {
               "img": {
-                "imgSrc": "static/content/B2600/1.jpg",
+                "imgSrc": "static/content/B2600/3.jpg",
                 "imgTitle": "",
                 "imgAlt": "Прицеп Rydwan Euro B2600\\0\\Р3"
               }
