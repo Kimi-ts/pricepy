@@ -41,14 +41,12 @@
             for(var i = 0; i< $scope.machines.gallery.items.length; i++){
                 var newMachine = {};
                 var item = $scope.machines.gallery.items[i];
-                console.log("iiiitem:");
-                console.log(item);
                 newMachine.Name = item.name;
                 newMachine.IsAvailable = item.availibility;
                 newMachine.AvailibilityLabel = item.availibilityLabel;
                 newMachine.IsDiscount = item.discount;
                 newMachine.Price = item.price;
-                newMachine.FullInfo = item.fullInfo;
+                newMachine.FullInfo = JSON.stringify(item.fullInfo);
                 $scope.updatedMachines.push(newMachine);
             };
 
@@ -76,9 +74,5 @@
                 }
             });
         };
-
-        $scope.fullInfoSave = function(){
-
-        }
     }
 ])

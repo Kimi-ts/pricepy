@@ -276,6 +276,9 @@ p {
   padding: 5px;
   border: 1px solid #807b7b;
 }
+.textBlock-table-input {
+  width: 100%;
+}
 .bucket {
   font-size: 20px;
   clear: both;

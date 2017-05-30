@@ -34,6 +34,7 @@
     <div class="row well cell">
         <div class="bucket">
             <div class="bucket-content textBlock">
+                <h3 class="textBlock-headline">{{activeItem.name}}</h3>
                 <p ng-show="isDataUpdated" class="textBlock-text--italic green">{{data.content.successSavedLabel}}</p>
                 <form novalidate name="fullInfoForm">
                     <table class="textBlock-table">
@@ -45,8 +46,20 @@
                         </thead>
                         <tbody>
                             <tr ng-repeat="item in activeItem.fullInfo.characteristics">
-                                <td><input type="text" ng-model="item.name" required /></td>
-                                <td><input type="text" ng-model="item.value" required /></td>
+                                <td><input type="text" ng-model="item.name" class="textBlock-table-input" required /></td>
+                                <td><input type="text" ng-model="item.value" class="textBlock-table-input" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="textBlock-table">
+                        <thead>
+                            <tr>
+                                <th>Цена</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="price in activeItem.fullInfo.prices">
+                                <td><input type="text" ng-model="price.title" class="textBlock-table-input" required /></td>
                             </tr>
                         </tbody>
                     </table>
@@ -55,32 +68,3 @@
             </div>
         </div>
     </div>
-    <!--<div class="row well cell">
-        <div class="textBlock textBlock--centered">
-            <h3 class="textBlock-headline">{{data.gallery.headline}}</h3>
-        </div>
-        <div class="gallery" match-height>
-            <ul>
-                <li ng-repeat="item in data.gallery.items" class="gallery-item">
-                    <img class="item-img" ng-src="{{item.imgSrc}}" />
-                    <span ng-if="item.discount" class="gallery-diccountIcon">
-                        <img src="static/icons/orange transparent discount icon.png" alt="discount!" title="image title" />
-                    </span>
-                    <div class="textBlock">
-                        <p class="gallery-item-description">{{item.description}}</p>
-                        <div class="textBlock-contentBlock inGallery">
-                            <h5 class="textBlock-contentBlock-title">{{data.gallery.priceLabel}}</h5>
-                            <p class="textBlock-contentBlock-value">{{item.price}}</p>
-                        </div>
-                        <div class="textBlock-contentBlock inGallery">
-                            <h5 class="textBlock-contentBlock-title">{{data.gallery.availabilityLabel}}</h5>
-                            <p class="textBlock-contentBlock-value textBlock-contentBlock-value--highlighted" ng-class="item.availibility == true ? 'green' : 'red'">{{item.availibilityLabel}}</p>
-                        </div>
-                        <div class="gallery-link-wrapper">
-                            <a ng-href="{{item.href}}" class="gallery-link">{{data.gallery.moreLabel}}</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>-->

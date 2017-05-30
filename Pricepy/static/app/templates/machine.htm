@@ -16,6 +16,7 @@
                     <h5 class="textBlock-contentBlock-title">{{item.name}}</h5>
                     <p class="textBlock-contentBlock-value">{{item.value}}</p>
                 </div>
-                <span ng-bind-html="machine.fullInfo.textHtml"></span>
+                <p class='textBlock-text--highlited'>{{machine.priceLabel}}</p>
+                <p ng-repeat="priceItem in machine.fullInfo.prices">{{priceItem.title}}</p>
             </div>
         </div>

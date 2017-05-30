@@ -13,6 +13,7 @@ app.controller('machineController', function machineController($scope, $routePar
             var data = $scope.$parent.machines;
             $scope.machines = data;
             $scope.machine = data.gallery.items[$scope.index-1];
+            $scope.machine.priceLabel = data.gallery.priceLabel;
             //reset visibility;
             $scope.machines.gallery.items.map(function(a){
                 a.isVisible = true;
@@ -31,6 +32,7 @@ app.controller('machineController', function machineController($scope, $routePar
 
                 $scope.machines = data;
                 $scope.machine = data.gallery.items[$scope.index-1];
+                $scope.machine.priceLabel = data.gallery.priceLabel;
                 $scope.machines.gallery.items[$scope.index-1].isVisible = false;
                 $scope.isShowSecondaryImages = $scope.machine.secondaryImages.length > 1;
                 $scope.$parent.pageTitle = $scope.machine.name + " " + pageTitle;
