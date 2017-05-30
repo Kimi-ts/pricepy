@@ -23,6 +23,7 @@
         };
 
         $scope.editFullInfo = function(item){
+            $scope.isDisplayFullInfoPanel = true;
             $scope.activeItem = item;
         };
 
