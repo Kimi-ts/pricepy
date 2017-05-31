@@ -21,7 +21,7 @@ gulp.task('compile-css', function(){
         .pipe(gulp.dest(''))
 })
 
-gulp.task('minify-css', function () {
+gulp.task('minify-css', ['compile-css'], function () {
     return gulp.src('styles.css')
         //.pipe(sourcemaps.init())
         .pipe(cleanCSS())
@@ -49,7 +49,7 @@ gulp.task('concat-js', function(){
         .pipe(concat('all.min.js'))
         .pipe(ngAnnotate())
         .pipe(uglify())
-        //.pipe(stripDebug())
+        .pipe(stripDebug())
         .pipe(gulp.dest('app'))
 });
 
@@ -75,7 +75,11 @@ gulp.task('concat-admin-js', function(){
 });
 
 gulp.task('minify-images', function(){
-    return gulp.src(['images/*/*', 'images/*'])
-        .pipe(imagemin())
+    return gulp.src('images/**/*')
+        .pipe(imagemin({
+            interlaced: true,
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}]
+        }))
         .pipe(gulp.dest('content'))
 })
