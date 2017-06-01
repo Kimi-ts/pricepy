@@ -9,7 +9,7 @@ namespace Pricepy.Models
     public class JsonUser : IUserModel
     {
         private IDBService _dbService;
-        private string _securityDataFile = "~\\Content\\adminSecurityInfo.json";
+        private string _securityDataFile = "~\\Data\\adminSecurityInfo.json";
 
         public JsonUser(IDBService dbService)
         {

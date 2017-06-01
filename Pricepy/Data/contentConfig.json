@@ -57,7 +57,7 @@
         "background": "alternate",
         "textHtml": "<h3 class='textBlock-subheadline'>Мы переехали</h3><p>Уважаемые клиенты! Информируем Вас, что с апреля мы переехали, теперь мы располагаемся по адресу г. Минск, ул Корженевского 16б (автостоянка). Подробную информацию ищите в разделе <a href='/contact'>Контакты</a>.</p><p>Как и прежде, мы работаем ежедневно с 8-00 до 21-00.</p><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>",
         "img": {
-          "imgSrc": "static/content/news/8.jpg",
+          "imgSrc": "Content/Images/news/8.jpg",
           "imgAlt": "Мы переехали",
           "imgTitle": "У нас новый адрес"
         }
@@ -66,7 +66,7 @@
         "background": "default",
         "textHtml": "<h3 class='textBlock-subheadline'>Специальная программа</h3><p>Приглашаем к сотрудничеству организации, производящие и реализующие изделия из металла, дерева на условиях доставки либо самовывоза. Скидки для Вас и Ваших клиентов <span class='textBlock-text--highlited'>до 30%</span>.</p>",
         "img": {
-          "imgSrc": "static/content/news/collaboration.jpg",
+          "imgSrc": "Content/Images/news/collaboration.jpg",
           "imgAlt": "Приглашаем к сотрудничеству организации",
           "imgTitle": "Приглашаем к сотрудничеству"
         }
@@ -75,7 +75,7 @@
         "background": "alternate",
         "textHtml": "<h3 class='textBlock-headline'>Акция</h3><p class='textBlock-text--highlited'>Зимние скидки!!!</p><p>С 1 декабря 2016 года по 2 февраля 2017 года предоставляется скидка на все прицепы в размере 15%!<p/><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p><p> Мы работаем для Вас ежедневно с 8-00 до 21-00.</p>",
         "img": {
-          "imgSrc": "static/content/news/3.jpg",
+          "imgSrc": "Content/Images/news/3.jpg",
           "imgAlt": "Акция! Зимние скидки 15%",
           "imgTitle": "Акция! Зимние скидки 15%"
         }
@@ -93,7 +93,7 @@
         "background": "alternate",
         "textHtml": "<h3 class='textBlock-subheadline'>Новая услуга!</h3><p class='textBlock-text--highlited'>Прицеп на 5 часов</p><p>Информируем Вас, что с 14 ноября Вам доступна новая услуга: аренда любого прицепа на 5 часов. Предварительное бронирование обязательно.</p><p>Доступность прицепов а также более подробную информацию о нашем парке можно найти в разделе <a href='/machines'>Наша Техника</a>, а также по телефону +375 3453453.<p/><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>",
         "img": {
-          "imgSrc": "static/content/news/5.jpg",
+          "imgSrc": "Content/Images/news/5.jpg",
           "imgAlt": "Новая услуга: прицеп на 5 часов!",
           "imgTitle": "Новая услуга: прицеп на 5 часов!"
         }
@@ -904,7 +904,7 @@
         "submitLabel": "Отправить"
       },
       "img": {
-        "imageSrc": "static/content/news/5.jpg",
+        "imageSrc": "Content/Images/news/5.jpg",
         "imgTitle": "",
         "imgAlt": "Свяжитесь с нами"
       }
@@ -913,7 +913,7 @@
       "background": "alternate",
       "textHtml": "<h3 class='textBlock-subheadline'>Спасибо за Ваше сообщение</h3><p>Сотрудники Big Trailler свяжутся с Вами в самое ближайшее время.</p><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>",
       "img": {
-        "imgSrc": "static/content/news/6.jpg",
+        "imgSrc": "Content/Images/news/6.jpg",
         "imgTitle": "",
         "imgAlt": "Спасибо за Ваше сообщение"
       }
@@ -922,7 +922,7 @@
       "background": "alternate",
       "textHtml": "<h3 class='textBlock-subheadline'>К сожалению, Ваше сообщение не было отправлено</h3><p>Приносим свои извинени, на нашем сервере произошла ошибка. Мы постараемся оперативно её исправить.</p><p>Пожалуйста, свяжитесь с нашими сотрудниками по телефону</p><p><a href='tel:+375 44 7669269'>+375 44 7669269</a></p><p>или отправьте Ваше сообщение на электронную почту</p><p><a href='mailto:marenda2015@gmail.com'>marenda2015@gmail.com</a></p>",
       "img": {
-        "imgSrc": "static/content/news/6.jpg",
+        "imgSrc": "Content/Images/news/6.jpg",
         "imgTitle": "",
         "imgAlt": "Ваше сообщение не было отправлено"
       }
@@ -958,7 +958,7 @@
       },
       "errorLabel": "Проверьте введённые Вами данные",
       "img": {
-        "imageSrc": "static/content/news/5.jpg",
+        "imageSrc": "Content/Images/news/5.jpg",
         "imgTitle": "",
         "imgAlt": "Введите данные для входа"
       }
@@ -968,7 +968,7 @@
     "content": {
       "background": "alternate",
       "img": {
-        "imgSrc": "static/content/news/3.jpg",
+        "imgSrc": "Content/Images/news/3.jpg",
         "imgAlt": "",
         "imgTitle": "Страница не найдена"
       },

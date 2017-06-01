@@ -118,6 +118,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\Images\" />
     <Folder Include="Utils\" />
   </ItemGroup>
   <ItemGroup>
@@ -216,8 +217,8 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
-    <Content Include="Content\contentConfig.json" />
-    <Content Include="Content\adminSecurityInfo.json" />
+    <Content Include="Data\contentConfig.json" />
+    <Content Include="Data\adminSecurityInfo.json" />
     <None Include="Project_Readme.html" />
     <None Include="Properties\PublishProfiles\priceps.pubxml" />
     <Content Include="static\styles.min.css" />

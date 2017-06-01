@@ -9,7 +9,7 @@ namespace Pricepy.Models
     public class JsonPage : IPageModel
     {
         private IDBService _dbService;
-        private string _contentFile = "~\\Content\\contentConfig.json";
+        private string _contentFile = "~\\Data\\contentConfig.json";
 
         public JsonPage(IDBService dbService)
         {

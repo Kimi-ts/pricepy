@@ -9,7 +9,7 @@ namespace Pricepy.Models
     public class JsonToken:ITokenModel
     {
         private IDBService _dbService;
-        private string _securityDataFile = "~\\Content\\adminSecurityInfo.json";
+        private string _securityDataFile = "~\\Data\\adminSecurityInfo.json";
         public JsonToken(IDBService dbService)
         {
             _dbService = dbService;
