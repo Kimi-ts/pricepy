@@ -11,20 +11,19 @@ namespace Pricepy.Controllers
 {
     public class GalleryController : ApiController
     {
-        private IGalleryService _dbService;
+        private IGalleryService _galleryService;
 
         private string _contentFile = "~\\Data\\contentConfig.json";
 
-        public GalleryController(IGalleryService dbService)
+        public GalleryController(IGalleryService galleryService)
         {
-            _dbService = dbService;
+            _galleryService = galleryService;
         }
         public bool Post(Machine[] machines)
         {
             var machinesList = new List<Machine>();
             machinesList = machines.ToList();
-
-            return _dbService.UpdateGallery(_contentFile, machinesList);
+            return _galleryService.UpdateGallery(_contentFile, machinesList);
         }
     }
 }

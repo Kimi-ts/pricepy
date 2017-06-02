@@ -10,6 +10,10 @@ adminApp.config(function ($routeProvider) {
         templateUrl: "static/admin/templates/gallery.htm",
         controller: "galleryController"
     })
+    .when("/news", {
+        templateUrl: "static/admin/templates/news.htm",
+        controller: "newsController"
+    })
 });
 
 adminApp.controller("adminController", function ($scope, $location, $http, getData) {

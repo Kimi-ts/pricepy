@@ -11,24 +11,22 @@ namespace Pricepy.Controllers
 {
     public class ValuesController : ApiController
     {
-        private IDBService _dbService;
+        private ISectionService _sectionService;
 
         private string _contentFile = "~\\Data\\contentConfig.json";
 
-        public ValuesController(IDBService dbService)
+        public ValuesController(ISectionService sectionService)
         {
-            _dbService = dbService;
+            _sectionService = sectionService;
         }
 
         // GET api/values
         public object Get(string sectionName)
         {
-
-            //_dbService.Update(_contentFile, "");
             object sectionObject = null;
             if (!string.IsNullOrEmpty(sectionName))
             {
-                sectionObject = _dbService.GetNode(_contentFile, sectionName);
+                sectionObject = _sectionService.GetSection(_contentFile, sectionName);
             }
             return sectionObject;
         }

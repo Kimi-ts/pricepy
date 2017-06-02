@@ -30,7 +30,7 @@ namespace Pricepy.Models
 
         public void UpdateToken(string value, DateTime expiredate)
         {
-            _dbService.UpdateNodeValue(_securityDataFile,
+            _dbService.UpdateTopLevelNode(_securityDataFile,
                 new Dictionary<string, string>()
                 {
                                     { "token", value },

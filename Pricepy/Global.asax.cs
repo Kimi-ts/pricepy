@@ -33,6 +33,7 @@ namespace Pricepy
             builder.RegisterType<JsonUser>().As<IUserModel> ();
             builder.RegisterType<JsonToken>().As<ITokenModel>();
             builder.RegisterType<JsonPage>().As<IPageModel>();
+            builder.RegisterType<SectionJsonService>().As<ISectionService>();
             builder.RegisterType<GalleryJsonService>().As<IGalleryService>();
 
             // Set the dependency resolver to be Autofac.

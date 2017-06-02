@@ -118,7 +118,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\Images\" />
+    <Folder Include="Content\Images\news\" />
     <Folder Include="Utils\" />
   </ItemGroup>
   <ItemGroup>
@@ -129,17 +129,21 @@
     <Compile Include="Controllers\AdminValuesController.cs" />
     <Compile Include="Controllers\GalleryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ImageController.cs" />
     <Compile Include="Controllers\MessagesController.cs" />
+    <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="DB\GalleryJsonService.cs" />
     <Compile Include="DB\IDBService.cs" />
     <Compile Include="DB\IGalleryService.cs" />
     <Compile Include="DB\IMessageClient.cs" />
     <Compile Include="DB\IPageModel.cs" />
+    <Compile Include="DB\ISectionService.cs" />
     <Compile Include="DB\ITokenModel.cs" />
     <Compile Include="DB\IUserModel.cs" />
     <Compile Include="DB\JsonService.cs" />
     <Compile Include="DB\MessageService.cs" />
+    <Compile Include="DB\SectionJsonService.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -161,6 +165,7 @@
     <Content Include="static\admin\all.min.js" />
     <Content Include="static\admin\ngModules.min.js" />
     <Content Include="static\admin\templates\gallery.htm" />
+    <Content Include="static\admin\templates\news.htm" />
     <Content Include="static\admin\templates\signin.htm" />
     <Content Include="static\app\all.min.js" />
     <Content Include="static\app\ngModules.min.js" />
@@ -197,13 +202,6 @@
     <Content Include="static\content\B2600\2.jpg" />
     <Content Include="static\content\B2600\3.jpg" />
     <Content Include="static\content\B2600\4.jpg" />
-    <Content Include="static\content\news\3.jpg" />
-    <Content Include="static\content\news\4.jpg" />
-    <Content Include="static\content\news\5.jpg" />
-    <Content Include="static\content\news\6.jpg" />
-    <Content Include="static\content\news\7.jpg" />
-    <Content Include="static\content\news\8.jpg" />
-    <Content Include="static\content\news\collaboration.jpg" />
     <Content Include="static\content\R-EU-L2\image_405.jpg" />
     <Content Include="static\content\R-EU-L2\image_407.jpg" />
     <Content Include="static\content\R-EU-L2\image_410.jpg" />
