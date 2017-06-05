@@ -282,6 +282,7 @@ p {
 .bucket {
   font-size: 20px;
   clear: both;
+  overflow: hidden;
 }
 .bucket--centered {
   margin: 0 auto;

@@ -1,4 +1,10 @@
-﻿    <div class="row cell well well--larger" ng-class="data.content.background == 'alternate' ? 'row--alternate' : ''">
+﻿    <div class="row cell well" ng-class="data.content.background == 'alternate' ? 'row--alternate' : ''">
+        <ul>
+            <li><a href="/Admin#!/gallery">Техника</a></li>
+            <li><a href="/Admin#!/news">Новости</a></li>
+        </ul>
+    </div>
+    <div class="row cell well well--larger" ng-class="data.content.background == 'alternate' ? 'row--alternate' : ''">
         <div class="textBlock col col--nopadding">
             <p ng-show="isDataUpdated" class="textBlock-text--italic green">Данные успешно сохранены</p>
             <p ng-show="isError" class="textBlock-text--italic red">Произошла Ошибка. Обновите страницу</p>
@@ -11,10 +17,21 @@
                     </div>
                     <div class="bucket-content bucket-content--larger textBlock">
                         <textarea rows="10" cols="50" ng-model="section.textHtml" required></textarea>
-                        <span ng-bind-html="section.textHtml"></span>
                     </div>
                 </div>
-                <input type="submit" ng-click="postToServer(); gotoElement('top')" value="Save" ng-controller="scrollToAnchorController" />
+                <input type="submit" class="btn btn--secondary form-button" ng-click="postToServer(); gotoElement('top')" value="Save" ng-controller="scrollToAnchorController" />
             </form>
+        </div>
+        <div class="textBlock col col--nopadding">
+            <div ng-repeat="section in data.sections" class="bucket bucket--notFixed">
+                <div class="bucket-media bucket-media--hasIcon">
+                    <span class="bucket-icon">
+                        <img ng-src="{{section.img.imgSrc}}" alt="{{section.img.imgAlt}}" title="{{section.img.imgTitle}}" class="bucket-media--main" />
+                    </span>
+                </div>
+                <div class="bucket-content bucket-content--larger textBlock">
+                    <span ng-bind-html="section.textHtml"></span>
+                </div>
+            </div>
         </div>
     </div>
