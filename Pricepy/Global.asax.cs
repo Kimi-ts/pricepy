@@ -35,6 +35,7 @@ namespace Pricepy
             builder.RegisterType<JsonPage>().As<IPageModel>();
             builder.RegisterType<SectionJsonService>().As<ISectionService>();
             builder.RegisterType<GalleryJsonService>().As<IGalleryService>();
+            builder.RegisterType<NewsJsonService>().As<INewsService>();
 
             // Set the dependency resolver to be Autofac.
             var container = builder.Build();

@@ -10,25 +10,25 @@ namespace Pricepy.Controllers
 {
     public class NewsController : ApiController
     {
-        private IDBService _dbService;
+        private INewsService _newsService;
 
         private string _contentFile = "~\\Data\\contentConfig.json";
 
-        public NewsController(IDBService dbService)
+        public NewsController(INewsService newsService)
         {
-            _dbService = dbService;
+            _newsService = newsService;
         }
 
         // GET api/values
-        public object Post(string newsArray)
+        [HttpPost]
+        public object Post([FromBody]string newsArrayObject)
         {
             object sectionObject = null;
-            //if (!string.IsNullOrEmpty(sectionName))
-            //{
-            //    sectionObject = _dbService.GetNode(_contentFile, sectionName);
-            //}
+            if (!string.IsNullOrEmpty(newsArrayObject))
+            {
+                sectionObject = _newsService.UpdateNewsArray(_contentFile, newsArrayObject);
+            }
 
-           // _dbService.UpdateNodeValue(_contentFile, 
             return sectionObject;
         }
     }

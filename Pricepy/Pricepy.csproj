@@ -137,10 +137,12 @@
     <Compile Include="DB\IDBService.cs" />
     <Compile Include="DB\IGalleryService.cs" />
     <Compile Include="DB\IMessageClient.cs" />
+    <Compile Include="DB\INewsService.cs" />
     <Compile Include="DB\IPageModel.cs" />
     <Compile Include="DB\ISectionService.cs" />
     <Compile Include="DB\ITokenModel.cs" />
     <Compile Include="DB\IUserModel.cs" />
+    <Compile Include="DB\JsonNewsService.cs" />
     <Compile Include="DB\JsonService.cs" />
     <Compile Include="DB\MessageService.cs" />
     <Compile Include="DB\SectionJsonService.cs" />

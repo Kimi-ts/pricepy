@@ -1,39 +1,20 @@
-﻿    <!--<div ng-repeat="section in data.sections" class="row cell well" ng-class="section.background == 'alternate' ? 'row--alternate' : ''">
-        <div class="bucket bucket--notCentered">
-            <div class="bucket-media mobile-hidden">
-                <img ng-src="{{section.img.imgSrc}}" alt="{{section.img.imgAlt}}" title="{{section.img.imgTitle}}" class="bucket-media--main" />
-            </div>
-            <div class="bucket-content textBlock">
-                <span ng-bind-html="section.textHtml"></span>
-            </div>
-        </div>
-    </div>-->
-
-    <div class="row cell well well--larger" ng-class="data.content.background == 'alternate' ? 'row--alternate' : ''">
+﻿    <div class="row cell well well--larger" ng-class="data.content.background == 'alternate' ? 'row--alternate' : ''">
         <div class="textBlock col col--nopadding">
-            <div ng-repeat="section in data.sections" class="bucket bucket--notFixed">
-                <div class="bucket-media bucket-media--hasIcon">
-                    <span class="bucket-icon">
-                        <img ng-src="{{section.img.imgSrc}}" alt="{{section.img.imgAlt}}" title="{{section.img.imgTitle}}" class="bucket-media--main" />
-                    </span>
+            <p ng-show="isDataUpdated" class="textBlock-text--italic green">Данные успешно сохранены</p>
+            <p ng-show="isError" class="textBlock-text--italic red">Произошла Ошибка. Обновите страницу</p>
+            <form name="newsForm" novalidate>
+                <div ng-repeat="section in data.sections" class="bucket bucket--notFixed">
+                    <div class="bucket-media bucket-media--hasIcon">
+                        <span class="bucket-icon">
+                            <img ng-src="{{section.img.imgSrc}}" alt="{{section.img.imgAlt}}" title="{{section.img.imgTitle}}" class="bucket-media--main" />
+                        </span>
+                    </div>
+                    <div class="bucket-content bucket-content--larger textBlock">
+                        <textarea rows="10" cols="50" ng-model="section.textHtml" required></textarea>
+                        <span ng-bind-html="section.textHtml"></span>
+                    </div>
                 </div>
-                <div class="bucket-content bucket-content--larger textBlock">
-                    <textarea rows="10" cols="50" required>{{section.textHtml}}</textarea>
-                    <span ng-bind-html="section.textHtml"></span>
-                </div>
-            </div>
+                <input type="submit" ng-click="postToServer(); gotoElement('top')" value="Save" ng-controller="scrollToAnchorController" />
+            </form>
         </div>
-        <!--<div class="textBlock col col--nopadding">
-            <div ng-repeat="item in data.content.rules.col2" class="bucket bucket--notFixed">
-                <div class="bucket-media bucket-media--hasIcon">
-                    <span class="bucket-icon">
-                        <i class={{item.iconClass}} aria-hidden="true"></i>
-                    </span>
-                </div>
-                <div class="bucket-content bucket-content--larger textBlock">
-                    <p class="textBlock-text--highlited">{{item.headline}}</p>
-                    <span ng-bind-html="item.textHtml"></span>
-                </div>
-            </div>
-        </div>-->
     </div>

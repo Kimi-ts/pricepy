@@ -32,18 +32,13 @@ namespace Pricepy.DB
             return nodeValue;
         }
 
-        public void UpdateNodeValue(string filename, JToken nodeToUpdate, JToken newNodeValue)
-        {
-            throw new NotImplementedException();
-        }
-
         public void UpdateTopLevelNode(string filename, Dictionary<string,string> newValues)
         {
             string allText = ReadFileContent(filename);
             JObject jObject = JObject.Parse(allText);
             foreach (var item in newValues)
             {
-                jObject[item.Key] = item.Value;
+                jObject[item.Key] = item.Value;                                                                                               
             }
             string strContent = jObject.ToString();
             WriteFileContent(filename, strContent);
