@@ -3,7 +3,7 @@ app.controller('machineController', function machineController($scope, $routePar
     //to make section active in main menu
     $scope.$parent.path = "/machines";
 
-    $scope.index = $routeParams.machineId;
+    $scope.machineName = $routeParams.machineId;
 
     getData.getContent("/api/Values", "machine").then(function(data){
         $scope.data = data;
@@ -12,16 +12,26 @@ app.controller('machineController', function machineController($scope, $routePar
         if ($scope.$parent.machines){
             var data = $scope.$parent.machines;
             $scope.machines = data;
-            $scope.machine = data.gallery.items[$scope.index-1];
-            $scope.machine.priceLabel = data.gallery.priceLabel;
+            $scope.machine = {};
             //reset visibility;
+            var isFound = false;
             $scope.machines.gallery.items.map(function(a){
                 a.isVisible = true;
+                if (a.name == $scope.machineName){
+                    $scope.machine = a;
+                    $scope.index = a.id;
+                    isFound = true;
+                }
             });
+            //redirect to 1st if not found
+            if (!isFound){
+                $location.url($scope.machines.gallery.items[0].href)
+            }
+            $scope.machine.priceLabel = data.gallery.priceLabel;
             $scope.machines.gallery.items[$scope.index-1].isVisible = false;
             $scope.isShowSecondaryImages = $scope.machine.secondaryImages.length > 1;
-            $scope.$parent.pageTitle = $scope.machine.name + " " + pageTitle;
-            $scope.$parent.pageDescription = $scope.machine.name + " " + data.gallery.priceLabel + " " + $scope.machine.price;
+            $scope.$parent.pageTitle = $scope.machine.description + " " + pageTitle;
+            $scope.$parent.pageDescription = $scope.machine.description + " " + data.gallery.priceLabel + " " + $scope.machine.price;
 
             //first item active by default
             $scope.activeImg = $scope.machine.secondaryImages[0];
@@ -31,12 +41,24 @@ app.controller('machineController', function machineController($scope, $routePar
                 $scope.$parent.machines = data;
 
                 $scope.machines = data;
-                $scope.machine = data.gallery.items[$scope.index-1];
+                $scope.machine = {};
+                var isFound = false;
+                $scope.machines.gallery.items.map(function(a){
+                    if (a.name == $scope.machineName){
+                        $scope.machine = a;
+                        $scope.index = a.id;
+                        isFound = true;
+                    }
+                });
+                //redirect to 1st if not found
+                if (!isFound){
+                    $location.url($scope.machines.gallery.items[0].href)
+                }
                 $scope.machine.priceLabel = data.gallery.priceLabel;
                 $scope.machines.gallery.items[$scope.index-1].isVisible = false;
                 $scope.isShowSecondaryImages = $scope.machine.secondaryImages.length > 1;
-                $scope.$parent.pageTitle = $scope.machine.name + " " + pageTitle;
-                $scope.$parent.pageDescription = $scope.machine.name + " " + data.gallery.priceLabel + " " + $scope.machine.price;
+                $scope.$parent.pageTitle = $scope.machine.description + " " + pageTitle;
+                $scope.$parent.pageDescription = $scope.machine.description + " " + data.gallery.priceLabel + " " + $scope.machine.price;
 
                 //first item active by default
                 $scope.activeImg = $scope.machine.secondaryImages[0];

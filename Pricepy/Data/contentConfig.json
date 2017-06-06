@@ -82,7 +82,7 @@
       },
       {
         "background": "default",
-        "textHtml": "<h3 class='textBlock-subheadline'>У нас пополнение парка!</h3><p>С 26 декабря в нашем парке пополнение! Для Вас теперь доступен Младший брат, новый прицеп Rydwan Euro С750/T4. С полными характеристиками новинки Вы можете ознакомиться <a href='/machines/7'>здесь</a>.</p><p>Первые 3 арендатора получат скидку 10% при условии бронирования более чем на сутки. Спешите получить свою скидку!</p><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>",
+        "textHtml": "<h3 class='textBlock-subheadline'>У нас пополнение парка!</h3><p>С 26 декабря в нашем парке пополнение! Для Вас теперь доступен Младший брат, новый прицеп Rydwan Euro С750/T4. С полными характеристиками новинки Вы можете ознакомиться <a href='/machines/rydwan-euro-c750-l5'>здесь</a>.</p><p>Первые 3 арендатора получат скидку 10% при условии бронирования более чем на сутки. Спешите получить свою скидку!</p><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>",
         "img": {
           "imgSrc": "static/content/4х2(2)/image_503.jpg",
           "imgAlt": "Прицеп Rydwan Euro С750/T4",
@@ -167,8 +167,9 @@
               }
             }
           ],
+          "id": 1,
           "description": "Прицеп Rydwan Euro С750\\T4",
-          "name": "Прицеп Rydwan Euro С750\\T4",
+          "name": "rydwan-euro-c750-t4",
           "fullInfo": {
             "category": "Категория В",
             "characteristics": [
@@ -242,9 +243,9 @@
           "availibilityLabel": "да",
           "availibility": true,
           "discount": false,
-          "href": "/machines/1",
-          "nextHref": "/machines/2",
-          "previousHref": "/machines/7"
+          "href": "/machines/rydwan-euro-c750-t4",
+          "nextHref": "/machines/rydwan-euro-a750-l4",
+          "previousHref": "/machines/rydwan-euro-c750-l5"
         },
         {
           "img": {
@@ -275,8 +276,9 @@
               }
             }
           ],
+          "id": 2,
           "description": "Прицеп Rydwan Euro A750\\L4",
-          "name": "Прицеп Rydwan Euro A750\\L4",
+          "name": "rydwan-euro-a750-l4",
           "fullInfo": {
             "category": "Категория В",
             "characteristics": [
@@ -350,9 +352,9 @@
           "availibilityLabel": "да",
           "availibility": true,
           "discount": false,
-          "href": "/machines/2",
-          "nextHref": "/machines/3",
-          "previousHref": "/machines/1"
+          "href": "/machines/rydwan-euro-a750-l4",
+          "nextHref": "/machines/rydwan-euro-c750-l8",
+          "previousHref": "/machines/rydwan-euro-c750-t4"
         },
         {
           "img": {
@@ -383,8 +385,9 @@
               }
             }
           ],
+          "id": 3,
           "description": "Прицеп Rydwan Euro C750\\L8",
-          "name": "Прицеп Rydwan Euro C750\\L8",
+          "name": "rydwan-euro-c750-l8",
           "fullInfo": {
             "category": "Категория В",
             "characteristics": [
@@ -448,9 +451,9 @@
           "availibilityLabel": "да",
           "availibility": true,
           "discount": false,
-          "href": "/machines/3",
-          "nextHref": "/machines/4",
-          "previousHref": "/machines/2"
+          "href": "/machines/rydwan-euro-c750-l8",
+          "nextHref": "/machines/rydwan-euro-r-eu-l2",
+          "previousHref": "/machines/rydwan-euro-a750-l4"
         },
         {
           "img": {
@@ -481,8 +484,9 @@
               }
             }
           ],
+          "id": 4,
           "description": "Прицеп Rydwan Euro R-EU-L2",
-          "name": "Прицеп Rydwan Euro R-EU-L2",
+          "name": "rydwan-euro-r-eu-l2",
           "fullInfo": {
             "category": "Категория В",
             "characteristics": [
@@ -550,9 +554,9 @@
           "availibilityLabel": "да",
           "availibility": true,
           "discount": false,
-          "href": "/machines/4",
-          "nextHref": "/machines/5",
-          "previousHref": "/machines/3"
+          "href": "/machines/rydwan-euro-r-eu-l2",
+          "nextHref": "/machines/rydwan-euro-b2600-0-l8",
+          "previousHref": "/machines/rydwan-euro-c750-l8"
         },
         {
           "img": {
@@ -583,8 +587,9 @@
               }
             }
           ],
+          "id": 5,
           "description": "Прицеп Rydwan Euro B2600/0/L8",
-          "name": "Прицеп Rydwan Euro B2600/0/L8",
+          "name": "rydwan-euro-b2600-0-l8",
           "fullInfo": {
             "category": "Категория E",
             "characteristics": [
@@ -641,9 +646,9 @@
           "availibilityLabel": "да",
           "availibility": true,
           "discount": false,
-          "href": "/machines/5",
-          "nextHref": "/machines/6",
-          "previousHref": "/machines/4"
+          "href": "/machines/rydwan-euro-b2600-0-l8",
+          "nextHref": "/machines/rydwan-euro-b2600-0-p3",
+          "previousHref": "/machines/rydwan-euro-r-eu-l2"
         },
         {
           "img": {
@@ -674,8 +679,9 @@
               }
             }
           ],
+          "id": 6,
           "description": "Прицеп Rydwan Euro B2600\\0\\Р3",
-          "name": "Прицеп Rydwan Euro B2600\\0\\Р3",
+          "name": "rydwan-euro-b2600-0-p3",
           "fullInfo": {
             "category": "Категория E",
             "characteristics": [
@@ -728,9 +734,9 @@
           "availibilityLabel": "да",
           "availibility": true,
           "discount": false,
-          "href": "/machines/6",
-          "nextHref": "/machines/7",
-          "previousHref": "/machines/5"
+          "href": "/machines/rydwan-euro-b2600-0-p3",
+          "nextHref": "/machines/rydwan-euro-c750-l5",
+          "previousHref": "/machines/rydwan-euro-b2600-0-l8"
         },
         {
           "img": {
@@ -761,8 +767,9 @@
               }
             }
           ],
+          "id": 7,
           "description": "Прицеп Rydwan Euro C750\\L5",
-          "name": "Прицеп Rydwan Euro C750\\L5",
+          "name": "rydwan-euro-c750-l5",
           "fullInfo": {
             "category": "Категория B",
             "characteristics": [
@@ -808,18 +815,18 @@
               }
             ],
             "prices": [
-              {"title": "38 руб/сутки"},
-              {"title": "35 руб/3-7 суток"},
-              {"title": "32 руб/более 7 суток"}
+              { "title": "38 руб/сутки" },
+              { "title": "35 руб/3-7 суток" },
+              { "title": "32 руб/более 7 суток" }
             ]
           },
           "price": "38 руб",
           "availibilityLabel": "да",
           "availibility": true,
           "discount": true,
-          "href": "/machines/7",
-          "nextHref": "/machines/1",
-          "previousHref": "/machines/6"
+          "href": "/machines/rydwan-euro-c750-l5",
+          "nextHref": "/machines/rydwan-euro-c750-t4",
+          "previousHref": "/machines/rydwan-euro-b2600-0-p3"
         }
       ]
     }
