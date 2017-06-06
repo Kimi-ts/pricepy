@@ -3,6 +3,18 @@
     color: @secondarytextcolor;
 }
 
+.menu-item{
+    margin: 10px;
+}
+
+.menu-item:first-child{
+    margin-left: 0;
+}
+
+.menu-item:last-child{
+    margin-right: 0;
+}
+
 ul.nav{
     list-style: none;
 }
@@ -40,4 +52,21 @@ ul.nav--horizontal li{
     ul.nav--horizontal li{
         display: block;
     }
+}
+
+.nav--white{
+    margin: 10px 0;
+}
+
+.nav--white a{
+    color: @primarytextcolor;
+}
+
+.nav--white a:hover{
+    color: @orangecolor; 
+}
+
+.nav--white a.link-active{
+    color: @orangecolor;
+    background: none;
 }

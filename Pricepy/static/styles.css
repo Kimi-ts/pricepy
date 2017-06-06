@@ -113,6 +113,9 @@ p {
 .col--third {
   width: 33%;
 }
+.col--fullwidth {
+  width: 100%;
+}
 @media screen and (max-width: 768px) {
   .col {
     width: 100%;
@@ -125,6 +128,7 @@ p {
 .textBlock {
   font-size: 20px;
   font-family: sans;
+  overflow: hidden;
 }
 @media screen and (max-width: 480px) {
   .textBlock {
@@ -457,6 +461,15 @@ form.ng-submitted textarea.ng-invalid {
   font-weight: bold;
   color: #807b7b;
 }
+.menu-item {
+  margin: 10px;
+}
+.menu-item:first-child {
+  margin-left: 0;
+}
+.menu-item:last-child {
+  margin-right: 0;
+}
 ul.nav {
   list-style: none;
 }
@@ -487,6 +500,19 @@ ul.nav--horizontal li {
   ul.nav--horizontal li {
     display: block;
   }
+}
+.nav--white {
+  margin: 10px 0;
+}
+.nav--white a {
+  color: white;
+}
+.nav--white a:hover {
+  color: orange;
+}
+.nav--white a.link-active {
+  color: orange;
+  background: none;
 }
 .gallery ul {
   list-style-type: none;

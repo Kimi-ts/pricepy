@@ -106,13 +106,18 @@
         <div class="textBlock textBlock--smallertext textBlock--leftAligned col col--third">
             <p ng-repeat="item in data.footer.middleColumn">{{item.title}}</p>
         </div>
-        <div class="textBlock textBlock--smallertext social col col--third">
-            <a ng-repeat="item in data.footer.socialBar" href="{{item.href}}" target="_blank"><i class="fa {{item.class}}" aria-hidden="true"></i></a>
+        <div class="textBlock textBlock--smallertext col col--third">
+            <div class="social">
+                <a ng-repeat="item in data.footer.socialBar" href="{{item.href}}" target="_blank"><i class="fa {{item.class}}" aria-hidden="true"></i></a>
+            </div>
+            <nav class="nav nav--white">
+               <a ng-repeat="item in data.header.menu" href="{{item.href}}" class="menu-item" ng-class="path == item.path? 'link-active': ''">{{item.title}}</a>
+            </nav>
         </div>
-        <div class="textBlock">
+        <div class="textBlock col col--fullwidth">
             <hr class="textBlock-horizontalline" />
         </div>
-        <div class="textBlock">
+        <div class="textBlock col col--fullwidth">
             <p class="textBlock--smallertext textBlock-text--rightaligned">{{data.footer.copyright.title}}</p>
         </div>
     </div>
