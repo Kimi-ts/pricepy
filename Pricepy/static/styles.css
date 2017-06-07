@@ -462,13 +462,7 @@ form.ng-submitted textarea.ng-invalid {
   color: #807b7b;
 }
 .menu-item {
-  margin: 10px;
-}
-.menu-item:first-child {
-  margin-left: 0;
-}
-.menu-item:last-child {
-  margin-right: 0;
+  margin-right: 10px;
 }
 ul.nav {
   list-style: none;
@@ -506,6 +500,7 @@ ul.nav--horizontal li {
 }
 .nav--white a {
   color: white;
+  display: inline-block;
 }
 .nav--white a:hover {
   color: orange;
