@@ -4,38 +4,38 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <url>
     <loc>http://www.bigtrailer-minsk.by/</loc>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>http://www.bigtrailer-minsk.by/machines</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://www.bigtrailer-minsk.by/machines/1</loc>
+    <loc>http://www.bigtrailer-minsk.by/machines/rydwan-euro-c750-t4</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://www.bigtrailer-minsk.by/machines/2</loc>
+    <loc>http://www.bigtrailer-minsk.by/machines/rydwan-euro-a750-l4</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://www.bigtrailer-minsk.by/machines/3</loc>
+    <loc>http://www.bigtrailer-minsk.by/machines/rydwan-euro-c750-l8</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://www.bigtrailer-minsk.by/machines/4</loc>
+    <loc>http://www.bigtrailer-minsk.by/machines/rydwan-euro-r-eu-l2</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://www.bigtrailer-minsk.by/machines/5</loc>
+    <loc>http://www.bigtrailer-minsk.by/machines/rydwan-euro-b2600-0-l8</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://www.bigtrailer-minsk.by/machines/6</loc>
+    <loc>http://www.bigtrailer-minsk.by/machines/rydwan-euro-b2600-0-p3</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://www.bigtrailer-minsk.by/machines/7</loc>
+    <loc>http://www.bigtrailer-minsk.by/machines/rydwan-euro-c750-l5</loc>
     <changefreq>monthly</changefreq>
   </url>
   <url>
