@@ -1,4 +1,4 @@
-﻿adminApp.controller('galleryController', [ '$scope', '$location', '$http', 'getData', 'myVars', function galleryController($scope, $location, $http, getData, myVars){
+﻿adminApp.controller('galleryController', [ '$scope', '$location', '$http', 'getData', 'myVars', 'dateService', function galleryController($scope, $location, $http, getData, myVars, dateService){
         console.log("gallery controller runs");
         $scope.$parent.path = "/gallery";
 
@@ -20,11 +20,17 @@
 
         $scope.clearAvailibilityTextBox = function(item){
             item.availibilityLabel = "";
+            item.availibilityDate = null;
         };
 
         $scope.editFullInfo = function(item){
             $scope.isDisplayFullInfoPanel = true;
             $scope.activeItem = item;
+        };
+
+        $scope.isExpired = function(dateToCompare){
+            //return dateToCompare && dateService.isExpired(dateToCompare);
+            return dateService.isExpired(dateToCompare);
         };
 
         $scope.save = function(){
@@ -45,6 +51,7 @@
                 newMachine.Name = item.name;
                 newMachine.IsAvailable = item.availibility;
                 newMachine.AvailibilityLabel = item.availibilityLabel;
+                newMachine.AvailibilityDate = item.availibilityDate;
                 newMachine.IsDiscount = item.discount;
                 newMachine.Price = item.price;
                 newMachine.FullInfo = JSON.stringify(item.fullInfo);

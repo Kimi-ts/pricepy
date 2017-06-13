@@ -159,6 +159,7 @@
       "headline": "Наша Техника",
       "priceLabel": "Цена:",
       "availabilityLabel": "Доступен:",
+      "availibilityTrueLabel": "да",
       "moreLabel": "Подробнее",
       "items": [
         {

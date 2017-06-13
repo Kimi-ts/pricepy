@@ -5,6 +5,7 @@
   "main": "index.js",
   "devDependencies": {
     "angular": "1.6.1",
+    "angularjs-datepicker": "^2.1.21",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.0.4",
     "gulp-concat": "^2.6.1",

@@ -35,7 +35,7 @@ app.config(function ($routeProvider, $locationProvider) {
     $locationProvider.html5Mode(true);
 });
 
-app.controller("appController", function($scope, $location, $http, getData){
+app.controller("appController", function($scope, $location, $http, getData, dateService){
     $scope.path = $location.path();
 
     getData.getContent("/api/Values", "header").then(function(data){

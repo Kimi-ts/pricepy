@@ -30,6 +30,14 @@ gulp.task('minify-css', ['compile-css'], function () {
         .pipe(gulp.dest(''))
 });
 
+gulp.task('minify-admin-css', function(){
+    return gulp.src([
+        'node_modules/angularjs-datepicker/dist/angular-datepicker.min.css'
+    ])
+    .pipe(rename('libraries.min.css'))
+    .pipe(gulp.dest(''))
+});
+
 gulp.task('concat-modules-js', function(){
     return gulp.src([
         'node_modules/angular/angular.js', 
@@ -58,7 +66,8 @@ gulp.task('concat-admin-modules-js', function(){
         'node_modules/angular/angular.js', 
         'node_modules/angular-route/angular-route.js',
         'node_modules/angular-sanitize/angular-sanitize.js',
-        'node_modules/angular-cookies/angular-cookies.js'
+        'node_modules/angular-cookies/angular-cookies.js',
+        'node_modules/angularjs-datepicker/dist/angular-datepicker.js'
         ])
         .pipe(concat('ngModules.min.js'))
         .pipe(ngAnnotate())

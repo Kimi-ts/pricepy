@@ -599,3 +599,14 @@ a.gallery-item-description {
     bottom: 15px;
   }
 }
+._720kb-datepicker-calendar-day._720kb-datepicker-today {
+  background: red;
+  color: white;
+}
+._720kb-datepicker-calendar._720kb-datepicker-open {
+  position: relative;
+  margin-top: 10px;
+}
+td.orange {
+  background-color: orange;
+}

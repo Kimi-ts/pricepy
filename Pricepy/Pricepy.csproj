@@ -221,6 +221,7 @@
     <Content Include="Data\adminSecurityInfo.json" />
     <None Include="Project_Readme.html" />
     <None Include="Properties\PublishProfiles\priceps.pubxml" />
+    <Content Include="static\libraries.min.css" />
     <Content Include="static\styles.min.css" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="static\package.json" />

@@ -16,6 +16,7 @@
                                 <th>Name</th>
                                 <th>Availibility</th>
                                 <th></th>
+                                <th>Date</th>
                                 <th>Discount</th>
                                 <th>Price</th>
                                 <th>Full Info</th>
@@ -26,6 +27,11 @@
                                 <td>{{item.name}}</td>
                                 <td><input type="checkbox" ng-model="item.availibility" ng-change="clearAvailibilityTextBox(item)" /></td>
                                 <td><input type="text" ng-model="item.availibilityLabel" required /></td>
+                                <td ng-class="isExpired(item.availibilityDate) ? 'orange' : ''">
+                                    <datepicker date-week-start-day="1" date-format="yyyy-MM-dd HH:MM">
+                                        <input type="text" ng-model="item.availibilityDate"/>
+                                    </datepicker>
+                                </td>
                                 <td><input type="checkbox" ng-model="item.discount" /></td>
                                 <td><input type="text" ng-model="item.price" required /></td>
                                 <td><button ng-click="editFullInfo(item)">Edit</button></td>

@@ -1,4 +1,4 @@
-﻿var adminApp = angular.module("adminApp", ["ngRoute", "ngSanitize", "ngCookies"]);
+﻿var adminApp = angular.module("adminApp", ["ngRoute", "ngSanitize", "ngCookies", "720kb.datepicker"]);
 
 adminApp.config(function ($routeProvider) {
     $routeProvider
@@ -16,7 +16,7 @@ adminApp.config(function ($routeProvider) {
     })
 });
 
-adminApp.controller("adminController", function ($scope, $location, $http, getData) {
+adminApp.controller("adminController", function ($scope, $location, $http, getData, dateService) {
     $scope.path = $location.path();
     console.log("hello from Admin");
 

@@ -1,4 +1,4 @@
-app.controller('machinesController', function machinesController($scope, getData){
+app.controller('machinesController', function machinesController($scope, getData, dateService){
     $scope.$parent.path = "/machines";
 
     if ($scope.$parent.machines){
@@ -7,6 +7,19 @@ app.controller('machinesController', function machinesController($scope, getData
         //reset visibility;
         $scope.data.gallery.items.map(function(a){
             a.isVisible = true;
+
+            //checkAvailibility
+            //if selected date is expired - set avalibility to true
+            if (a.availibility == false){
+                if (a.availibilityDate){
+                    if (dateService.isExpired(a.availibilityDate)){
+                        console.log(a.id);
+                        console.log("exriped");
+                        a.availibility = true;
+                        a.availibilityLabel = $scope.data.gallery.availibilityTrueLabel;
+                    }
+                }
+            }
         });
         $scope.$parent.pageTitle = data.pageTitle;
         $scope.$parent.pageDescription = data.pageDescription;
@@ -16,6 +29,21 @@ app.controller('machinesController', function machinesController($scope, getData
             $scope.$parent.machines = data;
             
             $scope.data = data;
+
+            $scope.data.gallery.items.map(function(a){
+                //checkAvailibility
+                //if selected date is expired - set avalibility to true
+                if (a.availibility == false){
+                    if (a.availibilityDate){
+                        if (dateService.isExpired(a.availibilityDate)){
+                            console.log(a.id);
+                            console.log("exriped");
+                            a.availibility = true;
+                            a.availibilityLabel = $scope.data.gallery.availibilityTrueLabel;
+                        }
+                    }
+                }
+            });
             $scope.$parent.pageTitle = data.pageTitle;
             $scope.$parent.pageDescription = data.pageDescription;
         })

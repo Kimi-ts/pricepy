@@ -26,6 +26,7 @@ namespace Pricepy.DB
                     {
                         item["availibility"] = sourceItem.IsAvailable;
                         item["availibilityLabel"] = sourceItem.AvailibilityLabel;
+                        item["availibilityDate"] = sourceItem.AvailibilityDate;
                         item["discount"] = sourceItem.IsDiscount;
                         item["price"] = sourceItem.Price;
                         item["fullInfo"] = JToken.Parse(sourceItem.FullInfo);
