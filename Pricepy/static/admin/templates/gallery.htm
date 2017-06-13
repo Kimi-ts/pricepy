@@ -28,7 +28,7 @@
                                 <td><input type="checkbox" ng-model="item.availibility" ng-change="clearAvailibilityTextBox(item)" /></td>
                                 <td><input type="text" ng-model="item.availibilityLabel" required /></td>
                                 <td ng-class="isExpired(item.availibilityDate) ? 'orange' : ''">
-                                    <datepicker date-week-start-day="1" date-format="yyyy-MM-dd HH:MM">
+                                    <datepicker date-week-start-day="1" date-format="yyyy-MM-dd HH:MM" datepicker-mobile="true">
                                         <input type="text" ng-model="item.availibilityDate"/>
                                     </datepicker>
                                 </td>
