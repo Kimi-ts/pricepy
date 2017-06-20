@@ -1,13 +1,4 @@
 ﻿adminApp.service("getData", ['$http', '$cookies', 'myVars',function($http, $cookies, myVars){
-        // var promise = $http({
-        //      method: 'Get',
-        //      url: '/api/adminValues',
-        // }).then(function successCallback(response) {
-        //     return response.data;
-        // }, function errorCallback(response) {
-        //     console.log("error");
-        // });
-
     return {
             getContent: function (url, sectionName) {
 

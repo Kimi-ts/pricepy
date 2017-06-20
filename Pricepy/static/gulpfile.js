@@ -43,6 +43,7 @@ gulp.task('concat-modules-js', function(){
         'node_modules/angular/angular.js', 
         'node_modules/angular-route/angular-route.js',
         'node_modules/angular-sanitize/angular-sanitize.js',
+        'node_modules/angular-cookies/angular-cookies.js',
         'node_modules/angular-animate/angular-animate.js',
         'node_modules/angular-touch/angular-touch.js'
         ])

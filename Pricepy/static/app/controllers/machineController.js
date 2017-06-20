@@ -1,17 +1,29 @@
-app.controller('machineController', function machineController($scope, $routeParams, $location, getData, filterService){
+app.controller('machineController', function machineController($scope, $routeParams, $location, $cookies, getData, filterService){
     console.log("single machine controller runs");
     $scope.$parent.path = "/machines";
 
     $scope.machineName = $routeParams.machineId;
 
-    $scope.categories = [
-        CategoryB = true,
-        CategoryE = true
-    ];
-
-    $scope.availibilityFilter = {
-        useFilter: false
+    var cookieCategories = $cookies.get("categories");
+    if (cookieCategories){
+        $scope.categories = JSON.parse(cookieCategories);
+    }
+    else{
+        $scope.categories = {
+            CategoryB: true,
+            CategoryE: true
+        }
     };
+
+    var cookieAvailibilityFilterValue = $cookies.get("availibilityFilterValue");
+    if (cookieAvailibilityFilterValue){
+        $scope.availibilityFilterValue = JSON.parse(cookieAvailibilityFilterValue);
+    }
+    else{
+        $scope.availibilityFilterValue = {
+            useFilter: false
+        };
+    }
 
     getData.getContent("/api/Values", "machine").then(function(data){
         $scope.data = data;
@@ -105,6 +117,14 @@ app.controller('machineController', function machineController($scope, $routePar
 
     $scope.gotoPage = function(page){
         $location.url(page);
+    };
+
+    $scope.saveCategoryFilter = function(){
+        $cookies.put("categories", JSON.stringify($scope.categories));
+    };
+
+    $scope.saveAvailibilityFilterValue = function(){
+        $cookies.put("availibilityFilterValue", JSON.stringify($scope.availibilityFilterValue));
     };
 
     $scope.categoryFilter = filterService.categoryFilter;
