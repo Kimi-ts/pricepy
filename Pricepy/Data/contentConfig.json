@@ -181,7 +181,7 @@
           "description": "Прицеп Rydwan Euro С750\\T4",
           "name": "rydwan-euro-c750-t4",
           "fullInfo": {
-            "category": "Категория В",
+            "category": "Категория B",
             "characteristics": [
               {
                 "name": "Длинна внутренняя/внешняя",
@@ -255,7 +255,8 @@
           "discount": false,
           "href": "/machines/rydwan-euro-c750-t4",
           "nextHref": "/machines/rydwan-euro-a750-l4",
-          "previousHref": "/machines/rydwan-euro-c750-l5"
+          "previousHref": "/machines/rydwan-euro-c750-l5",
+          "availibilityDate": null
         },
         {
           "img": {
@@ -290,7 +291,7 @@
           "description": "Прицеп Rydwan Euro A750\\L4",
           "name": "rydwan-euro-a750-l4",
           "fullInfo": {
-            "category": "Категория В",
+            "category": "Категория B",
             "characteristics": [
               {
                 "name": "Длинна внутренняя/внешняя",
@@ -364,7 +365,8 @@
           "discount": false,
           "href": "/machines/rydwan-euro-a750-l4",
           "nextHref": "/machines/rydwan-euro-c750-l8",
-          "previousHref": "/machines/rydwan-euro-c750-t4"
+          "previousHref": "/machines/rydwan-euro-c750-t4",
+          "availibilityDate": null
         },
         {
           "img": {
@@ -399,7 +401,7 @@
           "description": "Прицеп Rydwan Euro C750\\L8",
           "name": "rydwan-euro-c750-l8",
           "fullInfo": {
-            "category": "Категория В",
+            "category": "Категория B",
             "characteristics": [
               {
                 "name": "Длинна внутренняя/внешняя",
@@ -458,12 +460,13 @@
             ]
           },
           "price": "35 руб",
-          "availibilityLabel": "да",
-          "availibility": true,
+          "availibilityLabel": "нет до 21 июня",
+          "availibility": false,
           "discount": false,
           "href": "/machines/rydwan-euro-c750-l8",
           "nextHref": "/machines/rydwan-euro-r-eu-l2",
-          "previousHref": "/machines/rydwan-euro-a750-l4"
+          "previousHref": "/machines/rydwan-euro-a750-l4",
+          "availibilityDate": "2017-06-21 00:06"
         },
         {
           "img": {
@@ -498,7 +501,7 @@
           "description": "Прицеп Rydwan Euro R-EU-L2",
           "name": "rydwan-euro-r-eu-l2",
           "fullInfo": {
-            "category": "Категория В",
+            "category": "Категория B",
             "characteristics": [
               {
                 "name": "Длинна внутренняя/внешняя",
@@ -561,12 +564,13 @@
             ]
           },
           "price": "20 руб",
-          "availibilityLabel": "да",
-          "availibility": true,
+          "availibilityLabel": "нет до сегодня 15-30",
+          "availibility": false,
           "discount": false,
           "href": "/machines/rydwan-euro-r-eu-l2",
           "nextHref": "/machines/rydwan-euro-b2600-0-l8",
-          "previousHref": "/machines/rydwan-euro-c750-l8"
+          "previousHref": "/machines/rydwan-euro-c750-l8",
+          "availibilityDate": "2017-06-20 15:30"
         },
         {
           "img": {
@@ -658,7 +662,8 @@
           "discount": false,
           "href": "/machines/rydwan-euro-b2600-0-l8",
           "nextHref": "/machines/rydwan-euro-b2600-0-p3",
-          "previousHref": "/machines/rydwan-euro-r-eu-l2"
+          "previousHref": "/machines/rydwan-euro-r-eu-l2",
+          "availibilityDate": null
         },
         {
           "img": {
@@ -746,7 +751,8 @@
           "discount": false,
           "href": "/machines/rydwan-euro-b2600-0-p3",
           "nextHref": "/machines/rydwan-euro-c750-l5",
-          "previousHref": "/machines/rydwan-euro-b2600-0-l8"
+          "previousHref": "/machines/rydwan-euro-b2600-0-l8",
+          "availibilityDate": null
         },
         {
           "img": {
@@ -825,9 +831,15 @@
               }
             ],
             "prices": [
-              { "title": "38 руб/сутки" },
-              { "title": "35 руб/3-7 суток" },
-              { "title": "32 руб/более 7 суток" }
+              {
+                "title": "38 руб/сутки"
+              },
+              {
+                "title": "35 руб/3-7 суток"
+              },
+              {
+                "title": "32 руб/более 7 суток"
+              }
             ]
           },
           "price": "38 руб",
@@ -836,7 +848,8 @@
           "discount": true,
           "href": "/machines/rydwan-euro-c750-l5",
           "nextHref": "/machines/rydwan-euro-c750-t4",
-          "previousHref": "/machines/rydwan-euro-b2600-0-p3"
+          "previousHref": "/machines/rydwan-euro-b2600-0-p3",
+          "availibilityDate": null
         }
       ]
     }

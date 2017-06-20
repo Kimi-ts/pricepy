@@ -1,9 +1,17 @@
-app.controller('machineController', function machineController($scope, $routeParams, $location, getData){
+app.controller('machineController', function machineController($scope, $routeParams, $location, getData, filterService){
     console.log("single machine controller runs");
-    //to make section active in main menu
     $scope.$parent.path = "/machines";
 
     $scope.machineName = $routeParams.machineId;
+
+    $scope.categories = [
+        CategoryB = true,
+        CategoryE = true
+    ];
+
+    $scope.availibilityFilter = {
+        useFilter: false
+    };
 
     getData.getContent("/api/Values", "machine").then(function(data){
         $scope.data = data;
@@ -97,5 +105,8 @@ app.controller('machineController', function machineController($scope, $routePar
 
     $scope.gotoPage = function(page){
         $location.url(page);
-    }
+    };
+
+    $scope.categoryFilter = filterService.categoryFilter;
+    $scope.availibilityFilter = filterService.availibilityFilter;
 })

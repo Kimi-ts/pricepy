@@ -1,5 +1,14 @@
-app.controller('machinesController', function machinesController($scope, getData, dateService){
+app.controller('machinesController', function machinesController($scope, getData, dateService, filterService){
     $scope.$parent.path = "/machines";
+
+    $scope.categories = [
+        CategoryB = true,
+        CategoryE = true
+    ];
+
+    $scope.availibilityFilter = {
+        useFilter: false
+    };
 
     if ($scope.$parent.machines){
         var data = $scope.$parent.machines;
@@ -13,8 +22,6 @@ app.controller('machinesController', function machinesController($scope, getData
             if (a.availibility == false){
                 if (a.availibilityDate){
                     if (dateService.isExpired(a.availibilityDate)){
-                        console.log(a.id);
-                        console.log("exriped");
                         a.availibility = true;
                         a.availibilityLabel = $scope.data.gallery.availibilityTrueLabel;
                     }
@@ -36,8 +43,6 @@ app.controller('machinesController', function machinesController($scope, getData
                 if (a.availibility == false){
                     if (a.availibilityDate){
                         if (dateService.isExpired(a.availibilityDate)){
-                            console.log(a.id);
-                            console.log("exriped");
                             a.availibility = true;
                             a.availibilityLabel = $scope.data.gallery.availibilityTrueLabel;
                         }
@@ -47,5 +52,9 @@ app.controller('machinesController', function machinesController($scope, getData
             $scope.$parent.pageTitle = data.pageTitle;
             $scope.$parent.pageDescription = data.pageDescription;
         })
-    }
+    };
+
+    $scope.categoryFilter = filterService.categoryFilter;
+
+    $scope.availibilityFilter = filterService.availibilityFilter;
 })
