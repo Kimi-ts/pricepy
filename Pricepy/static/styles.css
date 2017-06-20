@@ -599,6 +599,14 @@ a.gallery-item-description {
     bottom: 15px;
   }
 }
+.filter {
+  margin: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.filter-label {
+  margin: 0 5px;
+}
 ._720kb-datepicker-calendar-day._720kb-datepicker-today {
   background: red;
   color: white;

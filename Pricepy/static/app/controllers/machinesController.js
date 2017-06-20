@@ -1,27 +1,14 @@
-app.controller('machinesController', function machinesController($scope, $cookies, getData, dateService, filterService){
+app.controller('machinesController', function machinesController($scope, getData, dateService, filterService, cookiesService){
     $scope.$parent.path = "/machines";
 
-    var cookieCategories = $cookies.get("categories");
-    if (cookieCategories){
-        $scope.categories = JSON.parse(cookieCategories);
-    }
-    else{
-        $scope.categories = {
-            CategoryB: true,
-            CategoryE: true
-        }
-    };
+    $scope.categories = cookiesService.getObject("categories", {
+        CategoryB: true,
+        CategoryE: true
+    });
 
-    var cookieAvailibilityFilterValue = $cookies.get("availibilityFilterValue");
-    if (cookieAvailibilityFilterValue){
-        $scope.availibilityFilterValue = JSON.parse(cookieAvailibilityFilterValue);
-    }
-    else{
-        console.log("use default");
-        $scope.availibilityFilterValue = {
-            useFilter: false
-        }
-    };
+    $scope.availibilityFilterValue = cookiesService.getObject("availibilityFilterValue", {
+        useFilter: false
+    });
 
     if ($scope.$parent.machines){
         var data = $scope.$parent.machines;
@@ -68,11 +55,11 @@ app.controller('machinesController', function machinesController($scope, $cookie
     };
 
     $scope.saveCategoryFilter = function(){
-        $cookies.put("categories", JSON.stringify($scope.categories));
+        cookiesService.saveObject("categories", $scope.categories);
     };
 
     $scope.saveAvailibilityFilterValue = function(){
-        $cookies.put("availibilityFilterValue", JSON.stringify($scope.availibilityFilterValue));
+        cookiesService.saveObject("availibilityFilterValue", $scope.availibilityFilterValue);
     };
 
     $scope.categoryFilter = filterService.categoryFilter;

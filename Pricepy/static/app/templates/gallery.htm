@@ -1,13 +1,13 @@
 ﻿        <div class="gallery" match-height>
-            <div class="filters">
-                <label>Категория B
+            <div class="filter">
+                <label class="filter-label">Категория B
                     <input type="checkbox" ng-model="categories.CategoryB" ng-change="saveCategoryFilter()" />
                 </label>
-                <label>Категория E
+                <label class="filter-label">Категория E
                     <input type="checkbox" ng-model="categories.CategoryE" ng-change="saveCategoryFilter()" />
                 </label>
 
-                <label>Показать только доступные
+                <label class="filter-label">Показать только доступные
                     <input type="checkbox" ng-model="availibilityFilterValue.useFilter" ng-change="saveAvailibilityFilterValue()" />
                 </label>
             </div>
