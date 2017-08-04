@@ -45,7 +45,8 @@ gulp.task('concat-modules-js', function(){
         'node_modules/angular-sanitize/angular-sanitize.js',
         'node_modules/angular-cookies/angular-cookies.js',
         'node_modules/angular-animate/angular-animate.js',
-        'node_modules/angular-touch/angular-touch.js'
+        'node_modules/angular-touch/angular-touch.js',
+        'node_modules/ng-youtube-embed/src/ng-youtube-embed.js'
         ])
         .pipe(concat('ngModules.min.js'))
         .pipe(ngAnnotate())

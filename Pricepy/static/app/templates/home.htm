@@ -1,10 +1,21 @@
     <div class="row row--darkbackground has-background-image imaged well cell">
             <ng-include src="'static/app/templates/banner.htm'"></ng-include>
     </div>
-    <div ng-repeat="section in data.sections" class="row cell well" ng-class="section.background == 'alternate' ? 'row--alternate' : ''">
+    <div ng-repeat="section in data.sections" class="row cell well" ng-class="{'row--alternate': section.background == 'alternate',
+                                                                                'mobile-hidden': section.mobileHidden == 'true'}">
         <div class="bucket bucket--notCentered">
             <div class="bucket-media mobile-hidden">
-                <img ng-src="{{section.img.imgSrc}}" alt="{{section.img.imgAlt}}" title="{{section.img.imgTitle}}" class="bucket-media--main" />
+                <img ng-show="{{section.img}}" ng-src="{{section.img.imgSrc}}" alt="{{section.img.imgAlt}}" title="{{section.img.imgTitle}}" class="bucket-media--main" />
+                <div class="bucket-media-main"  ng-show="{{section.video}}">
+                    <ng-youtube-embed
+                        video="section.video.url" 
+                        autoplay="false"
+                        color="white"
+                        disablekb="true"
+                        class="bucket-media--main"
+                        width ="100%">
+                    </ng-youtube-embed>
+                </div>
             </div>
             <div class="bucket-content textBlock">
                 <span ng-bind-html="section.textHtml"></span>
