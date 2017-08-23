@@ -59,7 +59,8 @@
         "video": {
           "url": "https://youtu.be/Eo7OC6UCbUQ"
         },
-        "mobileHidden":  "true"
+        "mobileHidden": "true",
+        "$$hashKey": "object:559"
       },
       {
         "background": "default",
@@ -68,7 +69,8 @@
           "imgSrc": "Content/Images/news/calendar.jpg",
           "imgAlt": "Рассписание обновляется ежедневно",
           "imgTitle": "Мы ежедневно обновляем информацию о доступности прицепов"
-        }
+        },
+        "$$hashKey": "object:560"
       },
       {
         "background": "alternate",
@@ -77,7 +79,8 @@
           "imgSrc": "Content/Images/news/8.jpg",
           "imgAlt": "Мы переехали",
           "imgTitle": "У нас новый адрес"
-        }
+        },
+        "$$hashKey": "object:561"
       },
       {
         "background": "default",
@@ -86,7 +89,8 @@
           "imgSrc": "Content/Images/news/collaboration.jpg",
           "imgAlt": "Приглашаем к сотрудничеству организации",
           "imgTitle": "Приглашаем к сотрудничеству"
-        }
+        },
+        "$$hashKey": "object:562"
       },
       {
         "background": "alternate",
@@ -95,7 +99,8 @@
           "imgSrc": "Content/Images/news/3.jpg",
           "imgAlt": "Акция! Зимние скидки 15%",
           "imgTitle": "Акция! Зимние скидки 15%"
-        }
+        },
+        "$$hashKey": "object:563"
       },
       {
         "background": "default",
@@ -104,7 +109,8 @@
           "imgSrc": "static/content/4х2(2)/image_503.jpg",
           "imgAlt": "Прицеп Rydwan Euro С750/T4",
           "imgTitle": "Прицеп Rydwan Euro С750/T4"
-        }
+        },
+        "$$hashKey": "object:564"
       },
       {
         "background": "alternate",
@@ -113,7 +119,8 @@
           "imgSrc": "Content/Images/news/5.jpg",
           "imgAlt": "Новая услуга: прицеп на 5 часов!",
           "imgTitle": "Новая услуга: прицеп на 5 часов!"
-        }
+        },
+        "$$hashKey": "object:565"
       }
     ],
     "mapView": {
@@ -799,58 +806,71 @@
             "characteristics": [
               {
                 "name": "Длинна внутренняя/внешняя",
-                "value": "395/400 см"
+                "value": "395/400 см",
+                "$$hashKey": "object:555"
               },
               {
                 "name": "Ширина внутренняя/внешняя",
-                "value": "195/200 см"
+                "value": "195/200 см",
+                "$$hashKey": "object:556"
               },
               {
                 "name": "Высота прицепа от земли",
-                "value": "255 см"
+                "value": "255 см",
+                "$$hashKey": "object:557"
               },
               {
                 "name": "Высота тента",
-                "value": "170 см"
+                "value": "170 см",
+                "$$hashKey": "object:558"
               },
               {
                 "name": "Высота прицепа от пола до верха",
-                "value": "200 см"
+                "value": "200 см",
+                "$$hashKey": "object:559"
               },
               {
                 "name": "Высота борта",
-                "value": "35 см"
+                "value": "35 см",
+                "$$hashKey": "object:560"
               },
               {
                 "name": "Резина",
-                "value": "R 14C"
+                "value": "R 14C",
+                "$$hashKey": "object:561"
               },
               {
                 "name": "Полная масса",
-                "value": "750 кг"
+                "value": "751 кг",
+                "$$hashKey": "object:562"
               },
               {
                 "name": "Открывающийся борт и тент (спереди нет)",
-                "value": ""
+                "value": "",
+                "$$hashKey": "object:563"
               },
               {
                 "name": "Зелёная карта",
-                "value": ""
+                "value": "",
+                "$$hashKey": "object:564"
               }
             ],
             "prices": [
               {
-                "title": "38 руб/сутки"
+                "title": "38 руб/сутки",
+                "$$hashKey": "object:575"
               },
               {
-                "title": "35 руб/3-7 суток"
+                "title": "35 руб/3-7 суток",
+                "$$hashKey": "object:576"
               },
               {
-                "title": "32 руб/более 7 суток"
+                "title": "32 руб/более 7 суток",
+                "$$hashKey": "object:577"
               }
             ]
           },
-          "price": "38 руб",
+          "price": "333 руб",
           "availibilityLabel": "да",
           "availibility": true,
           "discount": true,

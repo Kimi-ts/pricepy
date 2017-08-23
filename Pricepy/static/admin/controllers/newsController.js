@@ -1,4 +1,4 @@
-adminApp.controller('newsController', [ '$scope', '$location', '$http', 'getData', 'myVars', function newsController($scope, $location, $http, getData, myVars){
+adminApp.controller('newsController', [ '$scope', '$location', 'getData', 'postData', function newsController($scope, $location, getData, postData){
         console.log("news controller runs");
         $scope.$parent.path = "/news";
         $scope.isDataUpdated = false;
@@ -13,21 +13,13 @@ adminApp.controller('newsController', [ '$scope', '$location', '$http', 'getData
                     return;
             };
 
-            var tokenValue = myVars.tokenValue;
             //NOTE: use two stringify methods to wrap object first into "" and second '' 
             //to be accepted by [post] method in Web Api
             var dataToSend = JSON.stringify(JSON.stringify($scope.data.sections));
 
-            $http({
-                method: 'POST',
-                url: '/api/News',
-                data: dataToSend,
-                contentType: 'application/x-www-form-urlencoded',
-                headers: {
-                    "X-Token": tokenValue
-                }
-            }).then(function successCallback(response) {
-                if (response.data){
+            //postData.postContent('/api/News', dataToSend, {"Content-Type": 'application/x-www-form-urlencoded'}).then(function(response) {
+            postData.postContent('/api/News', dataToSend).then(function(response) {
+                if (!response.isError && response.data){
                     $scope.isDataUpdated = true;
                     $scope.isError = false;
                 }
@@ -35,6 +27,19 @@ adminApp.controller('newsController', [ '$scope', '$location', '$http', 'getData
                     $scope.isError = true;
                 }
             });
-        }
+        };
+
+        $scope.postImage = function(){
+            if ($scope.myFile){
+                postData.postFile('/api/Image', $scope.myFile).then(function(response) {
+                    if (!response.isError && response.data){
+                        console.log(response.data);
+                    }
+                    else{
+                        console.log(response);
+                    }
+                });
+            }
+        };
     }
 ])

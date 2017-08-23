@@ -1,7 +1,6 @@
 ﻿adminApp.service("getData", ['$http', '$cookies', 'myVars',function($http, $cookies, myVars){
     return {
             getContent: function (url, sectionName) {
-
             //console.log(TokenValue);
             var tokenValue = myVars.tokenValue;
             console.log("token value inside GETDATA service:");

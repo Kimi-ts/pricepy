@@ -1,4 +1,4 @@
-﻿adminApp.controller('galleryController', [ '$scope', '$location', '$http', 'getData', 'myVars', 'dateService', function galleryController($scope, $location, $http, getData, myVars, dateService){
+﻿adminApp.controller('galleryController', [ '$scope', '$location', '$http', 'getData', 'postData', 'myVars', 'dateService', function galleryController($scope, $location, $http, getData, postData, myVars, dateService){
         console.log("gallery controller runs");
         $scope.$parent.path = "/gallery";
 
@@ -38,9 +38,6 @@
             if (($scope.galleryForm.$invalid || $scope.galleryForm.$pristine) && ($scope.fullInfoForm.$invalid || $scope.fullInfoForm.$pristine)){
                     return;
             };
-
-            var tokenValue = myVars.tokenValue;
-            console.log("im sensing data");
             
             $scope.updatedMachines = [];
             //TO DO
@@ -61,19 +58,8 @@
             console.log("short collection:");
             console.log($scope.updatedMachines);
 
-            $http({
-                method: 'POST',
-                url: '/api/Gallery',
-                data: $scope.updatedMachines,
-                contentType: 'application/x-www-form-urlencoded',
-                headers: {
-                    "X-Token": tokenValue
-                }
-            }).then(function successCallback(response) {
-                console.log("finally returned:");
-                console.log(response);
-                if (response.data){
-                    console.log("true")
+            postData.postContent('/api/Gallery', $scope.updatedMachines).then(function(response) {
+                if (!response.isError && response.data){
                     $scope.isDataUpdated = true;
                     $scope.isError = false;
                 }
