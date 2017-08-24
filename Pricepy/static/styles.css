@@ -291,6 +291,9 @@ p {
 .bucket--centered {
   margin: 0 auto;
 }
+.bucket--wrapped {
+  border: 2px solid red;
+}
 .bucket-content {
   padding-bottom: 20px;
 }

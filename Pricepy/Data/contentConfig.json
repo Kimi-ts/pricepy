@@ -55,9 +55,23 @@
     "sections": [
       {
         "img": {
+          "imgSrc": "Content/Images/news/Untitled2.png"
+        },
+        "textHtml": "<h3 class='textBlock-subheadline'>Привет Максим</h3><p>Текст новости</p><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>",
+        "$$hashKey": "object:83"
+      },
+      {
+        "img": {
+          "imgSrc": "Content/Images/news/t5Y_c1wEed4.jpg"
+        },
+        "textHtml": "<h3 class='textBlock-subheadline'>Заголовок новости</h3><p>Текст новости</p><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города</p>",
+        "$$hashKey": "object:77"
+      },
+      {
+        "img": {
           "imgSrc": "Content/Images/news/photo_2016-07-08_13-21-05.jpg"
         },
-        "textHtml": "<h3 class='textBlock-subheadline'>З аголовок новости</h3><p>Текст новости</p><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>",
+        "textHtml": "<h3 class='textBlock-subheadline'>Заголовок новости</h3><p>Текст новости</p><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>",
         "$$hashKey": "object:73"
       },
       {

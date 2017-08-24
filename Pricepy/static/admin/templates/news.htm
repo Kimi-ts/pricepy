@@ -5,18 +5,27 @@
         </ul>
     </div>
     <div class="row cell well" ng-class="data.content.background == 'alternate' ? 'row--alternate' : ''">
-        <div>Add News</div>
-        <form name="imageForm" clear-file-input="imageFile" novalidate>
-            <input type="file" name="imageFile" file-model="myFile" required />
-            <input type="submit" ng-click="postImage()" value="Save Image" />
-        </form>
+        <div class="textBlock col col--nopadding">
+            <div>Добавление изображения</div>
+            <p ng-show="isImageUploadError" class="textBlock-text--italic red">Ошибка при загрузке файла. Перезагрузите страницу и повторите попытку</p>
+            <form name="imageForm" clear-file-input="imageFile" novalidate>
+                <input type="file" name="imageFile" file-model="myFile" required />
+                <input type="submit" ng-click="postImage()" value="Save Image" />
+            </form>
+        </div>
+        <div class="textBlock col col--nopadding">
+            <p>Инструкция по добавлению новости:</p>
+            <p>1. Сначала загружаешь изображение (Choose File кнопка выбора файла, затем нажимай Save Image).</p>
+            <p>2. Если на первом пункте всё прошло без ошибок, то в списке всех новостей первой появится новость с твоей загруженной картинкой. Эта новость будет выделена красной рамкой.</p>
+            <p>3. Слева находится панель, где ты можешь редактировать текст новости. Справа - то, как будет выглядеть новость на сайте (как только ты изменяешь текст слева - текст справа сразу же меняется). Обрати внимание, что для красоты текст новости должен быть заключён в специальные html-тэги. Изучи внимательно пример новостей, которые уже есть на сайте. Например, каждая новая строчка должна начинаться с '<'p'>'' и заканчиваться '<'/p'>. Заголовок должен начинаться с '<'h3 class=textBlock-subheadline'>' и заканчиваться '<'/h3'>' и т.д.</p>
+        </div>
     </div>
     <div class="row cell well well--larger" ng-class="data.content.background == 'alternate' ? 'row--alternate' : ''">
         <div class="textBlock col col--nopadding">
             <p ng-show="isDataUpdated" class="textBlock-text--italic green">Данные успешно сохранены</p>
             <p ng-show="isError" class="textBlock-text--italic red">Произошла Ошибка. Обновите страницу</p>
             <form name="newsForm" novalidate>
-                <div ng-repeat="section in data.sections" class="bucket bucket--notFixed">
+                <div ng-repeat="section in data.sections" class="bucket bucket--notFixed" ng-class="isHiglightFirstNewsItem == true && $index == 0 ? 'bucket--wrapped' : ''">
                     <div class="bucket-media bucket-media--hasIcon">
                         <span class="bucket-icon">
                             <img ng-src="{{section.img.imgSrc}}" alt="{{section.img.imgAlt}}" title="{{section.img.imgTitle}}" class="bucket-media--main" />
@@ -30,7 +39,7 @@
             </form>
         </div>
         <div class="textBlock col col--nopadding">
-            <div ng-repeat="section in data.sections" class="bucket bucket--notFixed">
+            <div ng-repeat="section in data.sections" class="bucket bucket--notFixed" ng-class="isHiglightFirstNewsItem == true && $index == 0 ? 'bucket--wrapped' : ''">
                 <div class="bucket-media bucket-media--hasIcon">
                     <span class="bucket-icon">
                         <img ng-src="{{section.img.imgSrc}}" alt="{{section.img.imgAlt}}" title="{{section.img.imgTitle}}" class="bucket-media--main" />

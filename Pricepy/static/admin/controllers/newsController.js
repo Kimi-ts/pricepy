@@ -13,6 +13,8 @@ adminApp.controller('newsController', [ '$scope', '$location', 'getData', 'postD
                     return;
             };
 
+            $scope.isHiglightFirstNewsItem = false;
+
             //NOTE: use two stringify methods to wrap object first into "" and second '' 
             //to be accepted by [post] method in Web Api
             var dataToSend = JSON.stringify(JSON.stringify($scope.data.sections));
@@ -34,6 +36,7 @@ adminApp.controller('newsController', [ '$scope', '$location', 'getData', 'postD
                 postData.postFile('/api/Image', $scope.myFile).then(function(response) {
                     if (!response.isError && response.data){
                         if (response.data.Message){
+                            $scope.isImageUploadError = false;
                             var newSection = {};
                             newSection.img = {};
                             newSection.img.imgSrc = response.data.Message;
@@ -41,9 +44,11 @@ adminApp.controller('newsController', [ '$scope', '$location', 'getData', 'postD
 
                             //push the new one at the beginning of the list
                             $scope.data.sections.splice(0, 0, newSection);
+                            $scope.isHiglightFirstNewsItem = true;
                         }
                     }
                     else{
+                        $scope.isImageUploadError = true;
                         console.log(response);
                     }
                 });
