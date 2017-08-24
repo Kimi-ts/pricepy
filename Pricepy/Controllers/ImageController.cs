@@ -54,15 +54,15 @@ namespace Pricepy.Controllers
                             //if needed write the code to update the table
 
                             //var filePath = HttpContext.Current.Server.MapPath("~/Userimage/" + userInfo.email_id + extension);
-                            var filePath = HttpContext.Current.Server.MapPath("~/Content/Images/news/" + filename + extension);
+                            var filePath = HttpContext.Current.Server.MapPath("~/Content/Images/news/" + filename);
                             //Userimage myfolder name where i want to save my image
                             postedFile.SaveAs(filePath);
-
                         }
                     }
 
                     var message1 = string.Format("Image Updated Successfully.");
-                    return Request.CreateErrorResponse(HttpStatusCode.Created, message1); ;
+                    var relativeFilePath = "Content/Images/news/" + postedFile.FileName;
+                    return Request.CreateErrorResponse(HttpStatusCode.Created, relativeFilePath); ;
                 }
                 var res = string.Format("Please Upload a image.");
                 dict.Add("error", res);

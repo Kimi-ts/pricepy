@@ -54,6 +54,34 @@
     },
     "sections": [
       {
+        "img": {
+          "imgSrc": "Content/Images/news/photo_2016-07-08_13-21-05.jpg"
+        },
+        "textHtml": "<h3 class='textBlock-subheadline'>З аголовок новости</h3><p>Текст новости</p><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>",
+        "$$hashKey": "object:73"
+      },
+      {
+        "img": {
+          "imgSrc": "Content/Images/news/bTmR1umySOc.jpg"
+        },
+        "textHtml": "<p>Kimi Raikkonen3</p>",
+        "$$hashKey": "object:629"
+      },
+      {
+        "img": {
+          "imgSrc": "Content/Images/news/settings.jpg"
+        },
+        "textHtml": "<p>Kimi Raikkone43534n</p>",
+        "$$hashKey": "object:625"
+      },
+      {
+        "img": {
+          "imgSrc": "Content/Images/news/settings.jpg"
+        },
+        "textHtml": "<p>Kimi Raikkonen</p>",
+        "$$hashKey": "object:621"
+      },
+      {
         "background": "alternate",
         "textHtml": "<p>Дорогие Друзья, в общеобразовательных целях размещаем на нашем сайте видеоролик, который показывает как важно правильное размещение груза и соблюдение скоростного режима при использовании прицепов к легковым автомобилям и микроавтобусам. Искренне надеемся, что данное видео поможет Вам правильно выбирать габариты прицепа под груз, а также следить за скоростным режимом при движении с прицепом.</p><p>С Уважением, команда Big Trailer</p>",
         "video": {

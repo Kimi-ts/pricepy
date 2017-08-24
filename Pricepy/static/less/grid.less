@@ -4,6 +4,12 @@
     width: 100%;
     display: inline-table;
     position: relative;
+
+    &:not(.menu){
+        &:nth-child(2n+1){
+            background-color: @secondarybackgroundcolor;
+        }
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -12,12 +18,12 @@
     }
 }
 
-.row--alternate {
-    background-color: @secondarybackgroundcolor;
-}
+// .row--alternate {
+//     background-color: @secondarybackgroundcolor;
+// }
 
 .row--darkbackground{
-    background-color: @darkbackgroundcolor;
+    background-color: @darkbackgroundcolor !important;
     color: @primarytextcolor;
 }
 

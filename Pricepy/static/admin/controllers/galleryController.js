@@ -1,10 +1,9 @@
-﻿adminApp.controller('galleryController', [ '$scope', '$location', '$http', 'getData', 'postData', 'myVars', 'dateService', function galleryController($scope, $location, $http, getData, postData, myVars, dateService){
+﻿adminApp.controller('galleryController', [ '$scope', '$location', 'getData', 'postData', 'dateService', function galleryController($scope, $location, getData, postData, dateService){
         console.log("gallery controller runs");
         $scope.$parent.path = "/gallery";
 
         $scope.isDataUpdated = false;
         getData.getContent("/api/AdminValues", "adminGallery").then(function(data){
-            console.log("in gallery controller");
             console.log(data);
             $scope.data = data;
             getData.getContent("/api/AdminValues", "machines").then(function(data){

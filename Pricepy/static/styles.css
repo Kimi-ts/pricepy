@@ -41,16 +41,16 @@ p {
   display: inline-table;
   position: relative;
 }
+.row:not(.menu):nth-child(2n+1) {
+  background-color: #fff;
+}
 @media screen and (max-width: 768px) {
   .row.mobile-hidden {
     display: none !important;
   }
 }
-.row--alternate {
-  background-color: #fff;
-}
 .row--darkbackground {
-  background-color: #807b7b;
+  background-color: #807b7b !important;
   color: white;
 }
 .row--borderBottom {

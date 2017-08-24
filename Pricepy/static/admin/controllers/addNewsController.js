@@ -1,5 +1,5 @@
-adminApp.controller('newsController', [ '$scope', '$location', 'getData', 'postData', function newsController($scope, $location, getData, postData){
-        console.log("news controller runs");
+adminApp.controller('addNewsController', [ '$scope', '$location', 'getData', 'postData', function newsController($scope, $location, getData, postData){
+        console.log("add news controller runs");
         $scope.$parent.path = "/news";
         $scope.isDataUpdated = false;
 
@@ -30,18 +30,10 @@ adminApp.controller('newsController', [ '$scope', '$location', 'getData', 'postD
         };
 
         $scope.postImage = function(){
-            if ($scope.imageForm.$invalid || $scope.imageForm.$pristine && $scope.myFile){
+            if ($scope.myFile){
                 postData.postFile('/api/Image', $scope.myFile).then(function(response) {
                     if (!response.isError && response.data){
-                        if (response.data.Message){
-                            var newSection = {};
-                            newSection.img = {};
-                            newSection.img.imgSrc = response.data.Message;
-                            newSection.textHtml = "<h3 class='textBlock-subheadline'>Заголовок новости</h3><p>Текст новости</p><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>";
-
-                            //push the new one at the beginning of the list
-                            $scope.data.sections.splice(0, 0, newSection);
-                        }
+                        console.log(response.data);
                     }
                     else{
                         console.log(response);
