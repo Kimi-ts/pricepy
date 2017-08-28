@@ -1,7 +1,9 @@
-adminApp.controller('newsController', [ '$scope', '$location', 'getData', 'postData', function newsController($scope, $location, getData, postData){
+adminApp.controller('newsController', [ '$scope', '$location', 'getData', 'postData', '$timeout', function newsController($scope, $location, getData, postData, $timeout){
         console.log("news controller runs");
         $scope.$parent.path = "/news";
         $scope.isDataUpdated = false;
+        $scope.videoUrl = "";
+        $scope.isShowInstructions = true;
 
         getData.getContent("/api/Values", "home").then(function(data){
             console.log(data);
@@ -14,6 +16,9 @@ adminApp.controller('newsController', [ '$scope', '$location', 'getData', 'postD
             };
 
             $scope.isHiglightFirstNewsItem = false;
+            $scope.isDataUpdated = false;
+            $scope.isError = false;
+            $scope.isImageUploadError = false;
 
             //NOTE: use two stringify methods to wrap object first into "" and second '' 
             //to be accepted by [post] method in Web Api
@@ -22,11 +27,11 @@ adminApp.controller('newsController', [ '$scope', '$location', 'getData', 'postD
             //postData.postContent('/api/News', dataToSend, {"Content-Type": 'application/x-www-form-urlencoded'}).then(function(response) {
             postData.postContent('/api/News', dataToSend).then(function(response) {
                 if (!response.isError && response.data){
-                    $scope.isDataUpdated = true;
+                    toggleVariableBlinking("isDataUpdated");
                     $scope.isError = false;
                 }
                 else{
-                    $scope.isError = true;
+                    toggleVariableBlinking("isError");
                 }
             });
         };
@@ -48,11 +53,42 @@ adminApp.controller('newsController', [ '$scope', '$location', 'getData', 'postD
                         }
                     }
                     else{
-                        $scope.isImageUploadError = true;
+                        toggleVariableBlinking("isImageUploadError");
                         console.log(response);
                     }
                 });
             }
         };
+
+        $scope.postVideo = function()
+        {
+            if ($scope.videoUrl){
+                var newSection = {};
+                newSection.video = {};
+                newSection.video.url = $scope.videoUrl; 
+                newSection.textHtml = "<h3 class='textBlock-subheadline'>Заголовок новости</h3><p>Текст новости</p><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>";
+
+                //push the new one at the beginning of the list
+                $scope.data.sections.splice(0, 0, newSection);
+                $scope.isHiglightFirstNewsItem = true;
+                $scope.videoUrl = "";
+            }
+        }
+
+        $scope.removeItem = function(indexToRemove){
+            $scope.data.sections.splice(indexToRemove, 1);
+            $scope.newsForm.$setDirty();
+        }
+
+        $scope.toggleInstructionVisibility = function(){
+            $scope.isShowInstructions = !$scope.isShowInstructions;
+        }
+
+        var toggleVariableBlinking = function(variableName){
+            $scope[variableName] = true;
+            $timeout(function(){
+                $scope[variableName] = false;
+            }, 4000)
+        }
     }
 ])

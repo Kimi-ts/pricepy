@@ -146,6 +146,17 @@ p {
 .textBlock--verticallycentered {
   display: table-cell;
 }
+.textBlock--blinking {
+  -webkit-transition: 4s linear all;
+  transition: 4s linear all;
+  opacity: 1;
+}
+.textBlock--blinking.ng-hide {
+  opacity: 0;
+}
+.textBlock--blinking.ng-hide-add {
+  display: block !important;
+}
 .textBlock p {
   margin-bottom: 10px;
   text-align: justify;

@@ -54,54 +54,12 @@
     },
     "sections": [
       {
-        "img": {
-          "imgSrc": "Content/Images/news/Untitled2.png"
-        },
-        "textHtml": "<h3 class='textBlock-subheadline'>Привет Максим</h3><p>Текст новости</p><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>",
-        "$$hashKey": "object:83"
-      },
-      {
-        "img": {
-          "imgSrc": "Content/Images/news/t5Y_c1wEed4.jpg"
-        },
-        "textHtml": "<h3 class='textBlock-subheadline'>Заголовок новости</h3><p>Текст новости</p><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города</p>",
-        "$$hashKey": "object:77"
-      },
-      {
-        "img": {
-          "imgSrc": "Content/Images/news/photo_2016-07-08_13-21-05.jpg"
-        },
-        "textHtml": "<h3 class='textBlock-subheadline'>Заголовок новости</h3><p>Текст новости</p><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>",
-        "$$hashKey": "object:73"
-      },
-      {
-        "img": {
-          "imgSrc": "Content/Images/news/bTmR1umySOc.jpg"
-        },
-        "textHtml": "<p>Kimi Raikkonen3</p>",
-        "$$hashKey": "object:629"
-      },
-      {
-        "img": {
-          "imgSrc": "Content/Images/news/settings.jpg"
-        },
-        "textHtml": "<p>Kimi Raikkone43534n</p>",
-        "$$hashKey": "object:625"
-      },
-      {
-        "img": {
-          "imgSrc": "Content/Images/news/settings.jpg"
-        },
-        "textHtml": "<p>Kimi Raikkonen</p>",
-        "$$hashKey": "object:621"
-      },
-      {
         "background": "alternate",
-        "textHtml": "<p>Дорогие Друзья, в общеобразовательных целях размещаем на нашем сайте видеоролик, который показывает как важно правильное размещение груза и соблюдение скоростного режима при использовании прицепов к легковым автомобилям и микроавтобусам. Искренне надеемся, что данное видео поможет Вам правильно выбирать габариты прицепа под груз, а также следить за скоростным режимом при движении с прицепом.</p><p>С Уважением, команда Big Trailer</p>",
+        "textHtml": "<p>Дорогие Друзья, в общеобразовательных целях размещаем на нашем сайте видеоролик, который показывает как важно правильное размещение груза и соблюдение скоростного режима при использовании прицепов к легковым автомобилям и микроавтобусам. Искренне надеемся, что данное видео поможет Вам правильно выбирать габариты прицепа под груз, а также следить за скоростным режимом при движении с прицепом.</p><p>С Уважением, команда Big Trailer :)</p>",
         "video": {
           "url": "https://youtu.be/Eo7OC6UCbUQ"
         },
-        "mobileHidden": "true",
+        "mobileHidden": "false",
         "$$hashKey": "object:559"
       },
       {
@@ -146,7 +104,7 @@
       },
       {
         "background": "default",
-        "textHtml": "<h3 class='textBlock-subheadline'>У нас пополнение парка!</h3><p>С 26 декабря в нашем парке пополнение! Для Вас теперь доступен Младший брат, новый прицеп Rydwan Euro С750/T4. С полными характеристиками новинки Вы можете ознакомиться <a href='/machines/rydwan-euro-c750-l5'>здесь</a>.</p><p>Первые 3 арендатора получат скидку 10% при условии бронирования более чем на сутки. Спешите получить свою скидку!</p><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>",
+        "textHtml": "<h3 class='textBlock-subheadline'>У нас пополнение парка!</h3><p>С 26 декабря в нашем парке пополнение! Для Вас теперь доступен Младший брат, новый прицеп Rydwan Euro С750/T4. С полными характеристиками новинки Вы можете ознакомиться <a h ref='/machines/rydwan-euro-c750-l5'>здесь</a>.</p><p>Первые 3 арендатора получат скидку 10% при условии бронирования более чем на сутки. Спешите получить свою скидку!</p><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>",
         "img": {
           "imgSrc": "static/content/4х2(2)/image_503.jpg",
           "imgAlt": "Прицеп Rydwan Euro С750/T4",

@@ -7,23 +7,34 @@
     <div class="row cell well" ng-class="data.content.background == 'alternate' ? 'row--alternate' : ''">
         <div class="textBlock col col--nopadding">
             <div>Добавление изображения</div>
-            <p ng-show="isImageUploadError" class="textBlock-text--italic red">Ошибка при загрузке файла. Перезагрузите страницу и повторите попытку</p>
+            <p ng-show="isImageUploadError" class="textBlock-text--italic textBlock--blinking red">Ошибка при загрузке файла. Перезагрузите страницу и повторите попытку</p>
             <form name="imageForm" clear-file-input="imageFile" novalidate>
                 <input type="file" name="imageFile" file-model="myFile" required />
-                <input type="submit" ng-click="postImage()" value="Save Image" />
+                <input type="submit" ng-click="postImage()" value="Добавить картинку" />
+            </form>
+            <div>Добавление видео</div>
+            <form name="videoForm" novalidate>
+                <input type="text" name="videoUrl" ng-model="videoUrl" />
+                <input type="submit" ng-click="postVideo()" value="Добавить видео" />
             </form>
         </div>
         <div class="textBlock col col--nopadding">
-            <p>Инструкция по добавлению новости:</p>
-            <p>1. Сначала загружаешь изображение (Choose File кнопка выбора файла, затем нажимай Save Image).</p>
-            <p>2. Если на первом пункте всё прошло без ошибок, то в списке всех новостей первой появится новость с твоей загруженной картинкой. Эта новость будет выделена красной рамкой.</p>
-            <p>3. Слева находится панель, где ты можешь редактировать текст новости. Справа - то, как будет выглядеть новость на сайте (как только ты изменяешь текст слева - текст справа сразу же меняется). Обрати внимание, что для красоты текст новости должен быть заключён в специальные html-тэги. Изучи внимательно пример новостей, которые уже есть на сайте. Например, каждая новая строчка должна начинаться с '<'p'>'' и заканчиваться '<'/p'>. Заголовок должен начинаться с '<'h3 class=textBlock-subheadline'>' и заканчиваться '<'/h3'>' и т.д.</p>
+            <p>Инструкция по добавлению новости: <a ng-click="toggleInstructionVisibility()">Показать/Скрыть</a></p>
+            <div ng-show="isShowInstructions">
+            <p>1. Если у новости будет картинка, то загружаешь изображение (Choose File кнопка выбора файла, затем нажимай Добавить картинку), если у новости будет видео, то копируй ссылку с ютуба в текстовое поле и нажимаешь кнопку "Добавить видео".</p>
+            <p>2. Если на первом пункте всё прошло без ошибок, то в списке всех новостей первой появится новость с твоей загруженной картинкой (либо пустая область, если ты добавлял видео). Эта новость будет выделена красной рамкой.</p>
+            <p>3. Слева находится панель, где ты можешь редактировать текст новости. Справа - то, как будет выглядеть новость на сайте (как только ты изменяешь текст слева - текст справа сразу же меняется). Обрати внимание, что для красоты текст новости должен быть заключён в специальные html-тэги. Изучи внимательно пример новостей, которые уже есть на сайте. Например, каждая новая строчка должна начинаться с '<'p'>'' и заканчиваться '<'/p'>. Заголовок должен начинаться с '<'h3 class=textBlock-subheadline'>' и заканчиваться '<'/h3'>' и т.д. Смотри на блок справа, чтобы увидеть, как твоя новость будет выглядеть на сайте. Если что-то не получается, где-то какие-то непонятные кракозябры вылазят - лучше скопируй шаблон из уже существующей новости и просто замени текст.</p>
+            <p>4. Ты редактируешь новость, как тебе угодно, затем нажимаешь внизу страницы оранжевую кнопку Save. Если всё прошло хорошо, то страница прокрутися вверх, и ты увидишь зелёное сообщение "данные успешно сохранены", и новость, которая была в красной рамке, теперь появится на сервере. До тех пор, пока ты не нажмёшь кнопку Save - новость на сайте не появится. Если ты добавишь картику или видео, а затем сразу нажмёшь кнопку Save (не изменив текста новости), новость не будет сохранена.</p>
+            <p>5. Чтобы удалить новость - нажми кнопку "Удалить", а затем нажми внизу страницы кнопку Save. Если ты нажал Удалить по ошибке и ещё не успел нажать Save, то можешь просто перезагрузить страницу, чтобы вернуть новость. После того, как ты нажал Save, вернуть удалённые новости уже никак нельзя.</p>
+            <p>6. Если ты сделал что-то неправильно или на странице начался хаос - обнови страницу - и она придёт в тот вид, который сохранён на сервере.</p>
+            <p>7. Будь внимателен, когда сохраняешь новость (кнопкой Save), т.к. то, что ты сохраняешь - сразу же могут видеть пользователи сайта.</p>
+            </div>
         </div>
     </div>
     <div class="row cell well well--larger" ng-class="data.content.background == 'alternate' ? 'row--alternate' : ''">
         <div class="textBlock col col--nopadding">
-            <p ng-show="isDataUpdated" class="textBlock-text--italic green">Данные успешно сохранены</p>
-            <p ng-show="isError" class="textBlock-text--italic red">Произошла Ошибка. Обновите страницу</p>
+            <p ng-show="isDataUpdated" class="textBlock-text--italic textBlock--blinking green" blink>Данные успешно сохранены</p>
+            <p ng-show="isError" class="textBlock-text--italic textBlock--blinking red">Произошла Ошибка. Обновите страницу</p>
             <form name="newsForm" novalidate>
                 <div ng-repeat="section in data.sections" class="bucket bucket--notFixed" ng-class="isHiglightFirstNewsItem == true && $index == 0 ? 'bucket--wrapped' : ''">
                     <div class="bucket-media bucket-media--hasIcon">
@@ -34,6 +45,7 @@
                     <div class="bucket-content bucket-content--larger textBlock">
                         <textarea rows="10" cols="50" ng-model="section.textHtml" required></textarea>
                     </div>
+                    <input type="button" class="btn form-button" value = "Удалить" ng-click="removeItem($index)" />
                 </div>
                 <input type="submit" class="btn btn--secondary form-button" ng-click="postToServer(); gotoElement('top')" value="Save" ng-controller="scrollToAnchorController" />
             </form>

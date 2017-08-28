@@ -14,12 +14,6 @@
     font-size: @smallerfontsize;
 }
 
-// @media screen and (max-width: 480px){
-//     .textBlock--smallertext{
-//         font-size: 10px;
-//     }
-// }
-
 .textBlock--centered{
     vertical-align: middle;
     margin: 0 auto;
@@ -28,6 +22,20 @@
 
 .textBlock--verticallycentered{
     display: table-cell;
+}
+
+.textBlock--blinking{
+    -webkit-transition: 4s linear all;
+    transition:  4s linear all;
+    opacity: 1;
+
+    &.ng-hide{
+        opacity: 0;
+    }
+
+    &.ng-hide-add{
+        display: block !important;
+    }
 }
 
 .textBlock p {

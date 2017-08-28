@@ -1,4 +1,4 @@
-﻿var adminApp = angular.module("adminApp", ["ngRoute", "ngSanitize", "ngCookies", "720kb.datepicker"]);
+﻿var adminApp = angular.module("adminApp", ["ngRoute", "ngSanitize", "ngCookies", "ngAnimate", "720kb.datepicker"]);
 
 adminApp.config(function ($routeProvider) {
     $routeProvider
