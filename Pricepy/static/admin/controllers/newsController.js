@@ -3,7 +3,7 @@ adminApp.controller('newsController', [ '$scope', '$location', 'getData', 'postD
         $scope.$parent.path = "/news";
         $scope.isDataUpdated = false;
         $scope.videoUrl = "";
-        $scope.isShowInstructions = true;
+        $scope.isShowInstructions = false;
 
         getData.getContent("/api/Values", "home").then(function(data){
             console.log(data);
