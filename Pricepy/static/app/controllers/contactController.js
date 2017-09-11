@@ -1,4 +1,4 @@
-app.controller('contactController', function contactController($scope, $http, getData){
+app.controller('contactController', ["$scope", "$http", "getData", function contactController($scope, $http, getData){
     $scope.$parent.path = "/contact";
 
     getData.getContent("/api/Values", "contacts").then(function(data){
@@ -30,4 +30,4 @@ app.controller('contactController', function contactController($scope, $http, ge
             });
         };
     })
-})
+}])

@@ -1,6 +1,6 @@
 var app = angular.module("myApp", ["ngRoute", "ngSanitize", "ngCookies", "ngAnimate", "ngTouch", "ngYoutubeEmbed"]);
 
-app.config(function ($routeProvider, $locationProvider) {
+app.config(["$routeProvider", "$locationProvider", function ($routeProvider, $locationProvider) {
     $routeProvider
     .when("/", {
         templateUrl: "static/app/templates/home.htm",
@@ -33,9 +33,9 @@ app.config(function ($routeProvider, $locationProvider) {
     })
 
     $locationProvider.html5Mode(true);
-});
+}]);
 
-app.controller("appController", function($scope, $location, $http, getData, dateService){
+app.controller("appController", ["$scope", "$location", "$http", "getData", "dateService", function($scope, $location, $http, getData, dateService){
     $scope.path = $location.path();
 
     getData.getContent("/api/Values", "header").then(function(data){
@@ -57,4 +57,4 @@ app.controller("appController", function($scope, $location, $http, getData, date
             });
         }
     })
-})
+}])

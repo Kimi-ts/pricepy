@@ -1,4 +1,4 @@
-app.controller('notFoundController', function notFoundController($scope, getData){
+app.controller('notFoundController', ["$scope", "getData", function notFoundController($scope, getData){
     //console.log("NotFound controller runs");
 
     getData.getContent("/api/Values", "notFound").then(function(data){
@@ -7,4 +7,4 @@ app.controller('notFoundController', function notFoundController($scope, getData
         $scope.$parent.pageDescription = data.pageDescription;
         //console.log($scope.data);
     })
-})
+}])

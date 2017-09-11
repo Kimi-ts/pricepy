@@ -1,4 +1,4 @@
-app.controller('machinesController', function machinesController($scope, getData, dateService, filterService, cookiesService){
+app.controller('machinesController', ["$scope", "getData", "dateService", "filterService", "cookiesService", function machinesController($scope, getData, dateService, filterService, cookiesService){
     $scope.$parent.path = "/machines";
 
     $scope.categories = cookiesService.getObject("categories", {
@@ -65,4 +65,4 @@ app.controller('machinesController', function machinesController($scope, getData
     $scope.categoryFilter = filterService.categoryFilter;
 
     $scope.availibilityFilter = filterService.availibilityFilter;
-})
+}])

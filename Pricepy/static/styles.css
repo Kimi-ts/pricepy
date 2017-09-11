@@ -59,9 +59,6 @@ p {
 .row.has-background-image {
   display: table;
 }
-.row.has-background-image.imaged {
-  background-image: url('content/2.jpg');
-}
 .cell {
   padding-left: 150px;
   padding-right: 150px;

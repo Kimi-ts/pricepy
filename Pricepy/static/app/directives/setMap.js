@@ -1,4 +1,4 @@
-app.directive("setMap", function($timeout){
+app.directive("setMap", ["$timeout", function($timeout){
     return {
         restrict: "A",
         link: function(scope, element, attrs) {
@@ -26,4 +26,4 @@ app.directive("setMap", function($timeout){
             }, 500)
         }
     }
-});
+}]);

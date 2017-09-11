@@ -63,6 +63,13 @@ gulp.task('concat-js', function(){
         .pipe(gulp.dest('app'))
 });
 
+gulp.task('concat-js-dev', function(){
+    return gulp.src(['app/app.js', 'app/*/*.js'])
+        .pipe(concat('all.min.js'))
+        .pipe(ngAnnotate())
+        .pipe(gulp.dest('app'))
+});
+
 gulp.task('concat-admin-modules-js', function(){
     return gulp.src([
         'node_modules/angular/angular.js', 

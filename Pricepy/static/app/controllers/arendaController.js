@@ -1,4 +1,4 @@
-app.controller('arendaController', function arendaController($scope, $location, getData){
+app.controller('arendaController', ["$scope", "$location", "getData", function arendaController($scope, $location, getData){
     $scope.$parent.path = "/arenda";
 
     getData.getContent("/api/Values", "arenda").then(function(data){
@@ -6,4 +6,4 @@ app.controller('arendaController', function arendaController($scope, $location, 
         $scope.$parent.pageTitle = data.pageTitle;
         $scope.$parent.pageDescription = data.pageDescription;
     })
-})
+}])

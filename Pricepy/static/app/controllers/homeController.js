@@ -1,4 +1,4 @@
-app.controller('homeController', function homeController($scope, $location, getData){
+app.controller('homeController', ["$scope", "$location", "getData", function homeController($scope, $location, getData){
     console.log("home controller runs");
     $scope.$parent.path = "/";
 
@@ -7,4 +7,4 @@ app.controller('homeController', function homeController($scope, $location, getD
         $scope.$parent.pageTitle = data.pageTitle;
         $scope.$parent.pageDescription = data.pageDescription;
     })
-})
+}])
