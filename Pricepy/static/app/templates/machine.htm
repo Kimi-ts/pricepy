@@ -11,12 +11,19 @@
             </div>
             <div class="bucket-content textBlock">
                 <h3 class="textBlock-headline">{{machine.description}}</h3>
-                <p class="textBlock-text--highlited">{{machine.fullInfo.category}}</p>
-                <div ng-repeat="item in machine.fullInfo.characteristics" class="textBlock-contentBlock">
-                    <h5 class="textBlock-contentBlock-title">{{item.name}}</h5>
-                    <p class="textBlock-contentBlock-value">{{item.value}}</p>
+                <div class="col">
+                    <p class="textBlock-text--highlited">{{machine.fullInfo.category}}</p>
+                    <div ng-repeat="item in machine.fullInfo.characteristics" class="textBlock-contentBlock">
+                        <h5 class="textBlock-contentBlock-title">{{item.name}}</h5>
+                        <p class="textBlock-contentBlock-value">{{item.value}}</p>
+                    </div>
                 </div>
-                <p class='textBlock-text--highlited'>{{machine.priceLabel}}</p>
-                <p ng-repeat="priceItem in machine.fullInfo.prices">{{priceItem.title}}</p>
+                <div class="col">
+                    <p class='textBlock-text--highlited'>{{machine.priceLabel}}</p>
+                    <div ng-repeat="item in machine.fullInfo.prices" class="textBlock-contentBlock">
+                        <h5 class="textBlock-contentBlock-title">{{item.name}}</h5>
+                        <p class="textBlock-contentBlock-value">{{item.value}}</p>
+                    </div>
+                </div>
             </div>
         </div>

@@ -5,8 +5,7 @@
         </ul>
     </div>
     <div class="row cell well" ng-class="data.content.background == 'alternate' ? 'row--alternate' : ''">
-        <div class="bucket">
-            <div class="bucket-content textBlock">
+            <div class="textBlock">
                 <h3 class="textBlock-headline">{{data.content.headline}}</h3>
                 <p ng-show="isDataUpdated" class="textBlock-text--italic green">{{data.content.successSavedLabel}}</p>
                 <form novalidate name="galleryForm">
@@ -41,7 +40,6 @@
                     <input type="submit" class="btn btn--secondary form-button" ng-click="save()" value="{{data.content.saveButtonLabel}}" />
                 </form>
             </div>
-        </div>
     </div>
     <div class="row well cell" ng-show="isDisplayFullInfoPanel">
         <div class="bucket">
@@ -71,7 +69,8 @@
                         </thead>
                         <tbody>
                             <tr ng-repeat="price in activeItem.fullInfo.prices">
-                                <td><input type="text" ng-model="price.title" class="textBlock-table-input" required /></td>
+                                <td><input type="text" ng-model="price.name" class="textBlock-table-input" required /></td>
+                                <td><input type="text" ng-model="price.value" class="textBlock-table-input" required /></td>
                             </tr>
                         </tbody>
                     </table>
