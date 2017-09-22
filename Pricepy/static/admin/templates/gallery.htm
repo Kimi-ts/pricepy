@@ -71,6 +71,10 @@
                             <tr ng-repeat="price in activeItem.fullInfo.prices">
                                 <td><input type="text" ng-model="price.name" class="textBlock-table-input" required /></td>
                                 <td><input type="text" ng-model="price.value" class="textBlock-table-input" required /></td>
+                                <td><a class="red" ng-click="removePriceRow($index)">Удалить</a></td>
+                            </tr>
+                            <tr>
+                                <td ><a class="green" ng-click="addNewPriceRow()">+Добавить</a></td>
                             </tr>
                         </tbody>
                     </table>
