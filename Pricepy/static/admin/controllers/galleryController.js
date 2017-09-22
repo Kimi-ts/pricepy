@@ -27,16 +27,6 @@
             $scope.activeItem = item;
         };
 
-        $scope.addNewPriceRow = function(){
-            var newItem = {name: "", value: ""};
-            $scope.activeItem.fullInfo.prices.push(newItem);
-        };
-
-        $scope.removePriceRow = function(indexToRemove){
-            $scope.activeItem.fullInfo.prices.splice(indexToRemove, 1);
-            $scope.fullInfoForm.$setDirty();
-        };
-
         $scope.isExpired = function(dateToCompare){
             //return dateToCompare && dateService.isExpired(dateToCompare);
             return dateService.isExpired(dateToCompare);
