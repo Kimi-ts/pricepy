@@ -1,5 +1,8 @@
-    <div class="row row--darkbackground has-background-image imaged well cell">
+<div class="row row--darkbackground has-background-image imaged well cell" ng-style="{'background-image': 'url(' + data.banner.backgroundImageUrl + ')'}">
             <ng-include src="'static/app/templates/banner.htm'"></ng-include>
+</div>
+    <div class="row row--darkbackground has-background-image imaged well cell" ng-if="isDisplayAction" ng-style="{'background-image': 'url(' + data.action.backgroundImageUrl + ')'}">
+        <ng-include src="'static/app/templates/action.htm'"></ng-include>
     </div>
     <div ng-repeat="section in data.sections" class="row cell well" ng-class="{'row--alternate': section.background == 'alternate',
                                                                                 'mobile-hidden': section.mobileHidden == 'true'}">

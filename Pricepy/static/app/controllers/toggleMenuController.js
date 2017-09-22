@@ -1,4 +1,4 @@
-﻿app.controller('toggleMenuController', function($scope, $rootScope, $window) {
+app.controller('toggleMenuController', ["$scope", "$rootScope", "$window", function($scope, $rootScope, $window) {
   //console.log("toggle controller runs");
 
   $scope.isMobile = $window.innerWidth < 768;
@@ -17,4 +17,4 @@
     $scope.isMobile = $window.innerWidth < 768;
       $scope.isOpen = !$scope.isMobile;
     });
-});
+}]);

@@ -1,4 +1,4 @@
-app.directive("matchHeight", function($timeout, $window){
+app.directive("matchHeight", ["$timeout", "$window", function($timeout, $window){
     return {
         restrict: "A",
         link: function(scope, element, attrs) {
@@ -29,4 +29,4 @@ app.directive("matchHeight", function($timeout, $window){
             })
         }
     }
-});
+}]);

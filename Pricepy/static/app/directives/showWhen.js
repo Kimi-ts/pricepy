@@ -1,6 +1,4 @@
-﻿app.directive('showWhen', ['$window', function ($window) {
-
-
+app.directive('showWhen', ['$window', function ($window) {
     return {
         restrict: 'A',
         link: function ($scope, $element, $attr) {

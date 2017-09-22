@@ -1,4 +1,4 @@
-app.controller('machineController', function machineController($scope, $routeParams, $location, getData, filterService, cookiesService){
+app.controller('machineController', ["$scope", "$routeParams", "$location", "getData", "filterService", "cookiesService", function machineController($scope, $routeParams, $location, getData, filterService, cookiesService){
     console.log("single machine controller runs");
     $scope.$parent.path = "/machines";
 
@@ -117,4 +117,4 @@ app.controller('machineController', function machineController($scope, $routePar
 
     $scope.categoryFilter = filterService.categoryFilter;
     $scope.availibilityFilter = filterService.availibilityFilter;
-})
+}])
