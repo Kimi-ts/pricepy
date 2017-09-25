@@ -1,4 +1,4 @@
-adminApp.service('calendarService', function(){
+app.service('calendarService', function(){
     return {
         getFirstDayOfMonth: function(dateStr){
             var dd = new Date(dateStr);
