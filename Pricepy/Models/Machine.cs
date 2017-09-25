@@ -14,5 +14,6 @@ namespace Pricepy.Models
         public bool IsDiscount { get; set; }
         public string Price { get; set; }
         public string FullInfo { get; set; }
+		public string BookedDates {get; set; }
     }
 }

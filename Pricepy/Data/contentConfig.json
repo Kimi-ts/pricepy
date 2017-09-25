@@ -276,7 +276,8 @@
           "href": "/machines/rydwan-euro-c750-t4",
           "nextHref": "/machines/rydwan-euro-a750-l4",
           "previousHref": "/machines/rydwan-euro-c750-l5",
-          "availibilityDate": null
+          "availibilityDate": "2017-09-05 00:09",
+          "bookedDates": ""
         },
         {
           "img": {
@@ -392,7 +393,8 @@
           "href": "/machines/rydwan-euro-a750-l4",
           "nextHref": "/machines/rydwan-euro-c750-l8",
           "previousHref": "/machines/rydwan-euro-c750-t4",
-          "availibilityDate": null
+          "availibilityDate": null,
+          "bookedDates": ""
         },
         {
           "img": {
@@ -500,7 +502,8 @@
           "href": "/machines/rydwan-euro-c750-l8",
           "nextHref": "/machines/rydwan-euro-r-eu-l2",
           "previousHref": "/machines/rydwan-euro-a750-l4",
-          "availibilityDate": "2017-06-21 00:06"
+          "availibilityDate": "2017-06-21 00:06",
+          "bookedDates": ""
         },
         {
           "img": {
@@ -612,7 +615,8 @@
           "href": "/machines/rydwan-euro-r-eu-l2",
           "nextHref": "/machines/rydwan-euro-b2600-0-l8",
           "previousHref": "/machines/rydwan-euro-c750-l8",
-          "availibilityDate": "2017-06-20 15:30"
+          "availibilityDate": "2017-06-20 15:30",
+          "bookedDates": ""
         },
         {
           "img": {
@@ -711,7 +715,8 @@
           "href": "/machines/rydwan-euro-b2600-0-l8",
           "nextHref": "/machines/rydwan-euro-b2600-0-p3",
           "previousHref": "/machines/rydwan-euro-r-eu-l2",
-          "availibilityDate": null
+          "availibilityDate": null,
+          "bookedDates": ""
         },
         {
           "img": {
@@ -817,7 +822,8 @@
           "href": "/machines/rydwan-euro-b2600-0-p3",
           "nextHref": "/machines/rydwan-euro-c750-l5",
           "previousHref": "/machines/rydwan-euro-b2600-0-l8",
-          "availibilityDate": null
+          "availibilityDate": null,
+          "bookedDates": "2017-09-24"
         },
         {
           "img": {
@@ -931,7 +937,8 @@
           "href": "/machines/rydwan-euro-c750-l5",
           "nextHref": "/machines/rydwan-euro-c750-t4",
           "previousHref": "/machines/rydwan-euro-b2600-0-p3",
-          "availibilityDate": null
+          "availibilityDate": null,
+          "bookedDates": "2017-09-23, 2017-09-24"
         }
       ]
     }
