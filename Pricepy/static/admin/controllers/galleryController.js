@@ -60,6 +60,7 @@
                 newMachine.AvailibilityDate = item.availibilityDate;
                 newMachine.IsDiscount = item.discount;
                 newMachine.Price = item.price;
+                newMachine.BookedDates = item.bookedDates;
                 newMachine.FullInfo = JSON.stringify(item.fullInfo);
                 $scope.updatedMachines.push(newMachine);
             };

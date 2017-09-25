@@ -17,6 +17,7 @@
                                 <th></th>
                                 <th>Date</th>
                                 <th>Discount</th>
+                                <th>Booked</th>
                                 <th>Price</th>
                                 <th>Full Info</th>
                             </tr>
@@ -32,6 +33,7 @@
                                     </datepicker>
                                 </td>
                                 <td><input type="checkbox" ng-model="item.discount" /></td>
+                                <td><textarea rows="3" cols="20" ng-model="item.bookedDates"></textarea></td>
                                 <td><input type="text" ng-model="item.price" required /></td>
                                 <td><button ng-click="editFullInfo(item)">Edit</button></td>
                             </tr>
