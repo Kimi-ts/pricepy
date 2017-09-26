@@ -24,17 +24,22 @@
                         <h5 class="textBlock-contentBlock-title">{{item.name}}</h5>
                         <p class="textBlock-contentBlock-value">{{item.value}}</p>
                     </div>
-                    <div ng-controller ="calendarController" ng-if="contentLoaded">
-                            <p class='textBlock-text--highlited'>Календарь</p>
-                            <p>Апрель 2017</p>
-                            <table>
+                    <div ng-controller ="calendarController" ng-if="contentLoaded" class="calendar">
+                        <p class='textBlock-text--highlited'>Календарь</p>
+                            <!-- <div class="textBlock-text--italic calendar-monthTitle"><span>< </span>Апрель 2017<span> ></span></div> -->
+                            <div class="textBlock-text--italic calendar-monthTitle">
+                                <button class="btn--link prev calendar-link left" ng-click="prevMonth()"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                                 {{monthTitle}}
+                                <button class="btn--link next calendar-link right" ng-click="nextMonth()"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                            </div>
+                            <table class="calendar-body">
                                 <thead>
-                                    <tr>
+                                    <tr class="calendar-body-head">
                                         <td>Пн</td>
                                         <td>Вт</td>
                                         <td>Ср</td>
                                         <td>Чт</td>
-                                        <td>Пн</td>
+                                        <td>Пт</td>
                                         <td>Сб</td>
                                         <td>Вс</td>
                                     </tr>
@@ -45,6 +50,7 @@
                                     </tr>
                                 </tbody>
                             </table>
+                            <p class="textBlock--smallertext"><span class="red"><i class="fa fa-square" aria-hidden="true"></i></span> прицеп забронирован</p>
                     </div>
                 </div>
             </div>

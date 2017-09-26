@@ -629,3 +629,29 @@ a.gallery-item-description {
 td.orange {
   background-color: orange;
 }
+.calendar {
+  min-width: 250px;
+  max-width: 250px;
+  padding-top: 10px;
+}
+.calendar-monthTitle {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.calendar-body {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.calendar-body-item--booked {
+  color: red;
+}
+.calendar-body-head {
+  font-weight: bold;
+}
+.calendar-link {
+  color: #807b7b;
+}
+.calendar-link:hover {
+  border-bottom: 1px solid #807b7b;
+}
