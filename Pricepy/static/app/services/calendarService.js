@@ -69,15 +69,15 @@ app.service('calendarService', function(){
                     arr.push([]);
                     for (var colNumber = 0; colNumber <= 6; colNumber++){
                         if (rowNumber == 0 && colNumber+ 1 < firstDayOfMonth){
-                            arr[rowNumber][colNumber] = emptyPlaceholder;
+                            arr[rowNumber][colNumber] = {value: emptyPlaceholder};
                         }
                         else{
                             if (index > numberofDaysInMonths){
-                                arr[rowNumber][colNumber] = emptyPlaceholder;
+                                arr[rowNumber][colNumber] = {value:emptyPlaceholder};
                                 exitRows = true;
                             }
                             else{
-                                arr[rowNumber][colNumber] = index;
+                                arr[rowNumber][colNumber] = {value: index};
                                 index++;
                             }
                         }

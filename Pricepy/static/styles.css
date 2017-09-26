@@ -642,9 +642,16 @@ td.orange {
 .calendar-body {
   width: 100%;
   margin-bottom: 10px;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #807b7b;
 }
-.calendar-body-item--booked {
+.calendar-body-item--marked {
   color: red;
+}
+.calendar-body-item--highlighted {
+  padding: 2px;
+  border: 1px solid #807b7b;
 }
 .calendar-body-head {
   font-weight: bold;

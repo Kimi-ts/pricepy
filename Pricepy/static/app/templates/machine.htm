@@ -25,14 +25,13 @@
                         <p class="textBlock-contentBlock-value">{{item.value}}</p>
                     </div>
                     <div ng-controller ="calendarController" ng-if="contentLoaded" class="calendar">
-                        <p class='textBlock-text--highlited'>Календарь</p>
-                            <!-- <div class="textBlock-text--italic calendar-monthTitle"><span>< </span>Апрель 2017<span> ></span></div> -->
+                        <p class='textBlock-text--highlited'>Забронированные даты</p>
                             <div class="textBlock-text--italic calendar-monthTitle">
                                 <button class="btn--link prev calendar-link left" ng-click="prevMonth()"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
                                  {{monthTitle}}
                                 <button class="btn--link next calendar-link right" ng-click="nextMonth()"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
                             </div>
-                            <table class="calendar-body">
+                            <table class="calendar-body textBlock--smallertext">
                                 <thead>
                                     <tr class="calendar-body-head">
                                         <td>Пн</td>
@@ -46,7 +45,7 @@
                                 </thead>
                                 <tbody>
                                     <tr ng-repeat="row in arr">
-                                        <td ng-repeat="column in row track by $index">{{column}}</td>
+                                        <td ng-repeat="column in row track by $index"><span ng-class="{'calendar-body-item--highlighted' : column.today == true, 'calendar-body-item--marked': column.booked == true}">{{column.value}}</span></td>
                                     </tr>
                                 </tbody>
                             </table>
