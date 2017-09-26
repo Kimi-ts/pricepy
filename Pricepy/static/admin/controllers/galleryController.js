@@ -1,4 +1,4 @@
-﻿adminApp.controller('galleryController', [ '$scope', '$location', 'getData', 'postData', 'dateService', function galleryController($scope, $location, getData, postData, dateService){
+﻿adminApp.controller('galleryController', [ '$scope', '$location', '$timeout', 'getData', 'postData', 'dateService', function galleryController($scope, $location, $timeout, getData, postData, dateService){
         console.log("gallery controller runs");
         $scope.$parent.path = "/gallery";
 
@@ -70,7 +70,7 @@
 
             postData.postContent('/api/Gallery', $scope.updatedMachines).then(function(response) {
                 if (!response.isError && response.data){
-                    $scope.isDataUpdated = true;
+                    toggleVariableBlinking("isDataUpdated");
                     $scope.isError = false;
                 }
                 else{
@@ -78,5 +78,12 @@
                 }
             });
         };
+
+        var toggleVariableBlinking = function(variableName){
+            $scope[variableName] = true;
+            $timeout(function(){
+                $scope[variableName] = false;
+            }, 4000)
+        }
     }
 ])

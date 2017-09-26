@@ -7,7 +7,7 @@
     <div class="row cell well" ng-class="data.content.background == 'alternate' ? 'row--alternate' : ''">
             <div class="textBlock">
                 <h3 class="textBlock-headline">{{data.content.headline}}</h3>
-                <p ng-show="isDataUpdated" class="textBlock-text--italic green">{{data.content.successSavedLabel}}</p>
+                <p ng-show="isDataUpdated" class="textBlock-text--italic textBlock--blinking green">{{data.content.successSavedLabel}}</p>
                 <form novalidate name="galleryForm">
                     <table class="textBlock-table">
                         <thead>
@@ -47,7 +47,7 @@
         <div class="bucket">
             <div class="bucket-content textBlock">
                 <h3 class="textBlock-headline">{{activeItem.name}}</h3>
-                <p ng-show="isDataUpdated" class="textBlock-text--italic green">{{data.content.successSavedLabel}}</p>
+                <p ng-show="isDataUpdated" class="textBlock-text--italic textBlock--blinking green">{{data.content.successSavedLabel}}</p>
                 <form novalidate name="fullInfoForm">
                     <table class="textBlock-table">
                         <thead>
