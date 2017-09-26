@@ -24,18 +24,9 @@
                         <h5 class="textBlock-contentBlock-title">{{item.name}}</h5>
                         <p class="textBlock-contentBlock-value">{{item.value}}</p>
                     </div>
-                    <div ng-controller="calendarController">
+                    <div ng-controller ="calendarController" ng-if="contentLoaded">
                             <p class='textBlock-text--highlited'>Календарь</p>
                             <p>Апрель 2017</p>
-                            <!-- <p>
-                                <span>Пн</span>
-                                <span>Вт</span>
-                                <span>Ср</span>
-                                <span>Чт</span>
-                                <span>Пт</span>
-                                <span>Сб</span>
-                                <span>Вс</span>
-                            </p> -->
                             <table>
                                 <thead>
                                     <tr>
@@ -49,11 +40,9 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr></tr>
-                                    <tr></tr>
-                                    <tr></tr>
-                                    <tr></tr>
-                                    <tr></tr>
+                                    <tr ng-repeat="row in arr">
+                                        <td ng-repeat="column in row track by $index">{{column}}</td>
+                                    </tr>
                                 </tbody>
                             </table>
                     </div>

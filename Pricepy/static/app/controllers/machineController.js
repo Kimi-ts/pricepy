@@ -15,6 +15,7 @@ app.controller('machineController', ["$scope", "$routeParams", "$location", "get
 
     getData.getContent("/api/Values", "machine").then(function(data){
         $scope.data = data;
+        console.log("content loaded");
         var pageTitle = data.pageTitle;
 
         if ($scope.$parent.machines){
@@ -43,6 +44,7 @@ app.controller('machineController', ["$scope", "$routeParams", "$location", "get
 
             //first item active by default
             $scope.activeImg = $scope.machine.secondaryImages[0];
+            $scope.contentLoaded = true;
         }
         else{
             getData.getContent("/api/Values", "machines").then(function(data){
@@ -70,6 +72,7 @@ app.controller('machineController', ["$scope", "$routeParams", "$location", "get
 
                 //first item active by default
                 $scope.activeImg = $scope.machine.secondaryImages[0];
+                $scope.contentLoaded = true;
             });
         }
     });
