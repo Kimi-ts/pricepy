@@ -575,6 +575,10 @@ a.gallery-item-description {
   width: 75px;
   height: 75px;
 }
+.gallery-diccountIcon--right {
+  right: 0;
+  left: auto;
+}
 .gallery-diccountIcon img {
   width: 75px;
   height: 75px;

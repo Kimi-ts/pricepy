@@ -15,7 +15,10 @@
                 <li ng-repeat="item in machines.gallery.items | filter: categoryFilter(categories) | filter: availibilityFilter(availibilityFilterValue.useFilter)" class="gallery-item" ng-show="item.isVisible != false">
                     <a href="{{item.href}}"><img class="item-img" ng-src="{{item.img.imgSrc}}" title="{{item.img.imgTitle}}" alt="{{item.img.imgAlt}}" ng-controller="scrollToAnchorController" ng-click="gotoElement('top')" /></a>
                     <span ng-if="item.discount" class="gallery-diccountIcon">
-                        <img src="static/icons/orange transparent discount icon.png" alt="discount!" title="image title" />
+                        <img src="static/icons/orange transparent discount icon.png" alt="discount!" title="акция!" />
+                    </span>
+                    <span ng-if="item.isSuperAction" class="gallery-diccountIcon  gallery-diccountIcon--right">
+                        <img src="static/icons/5 hour orange transparent.png" alt="discount!" title="возможна аренда на 5 часов!" />
                     </span>
                     <div class="textBlock">
                         <a ng-href="{{item.href}}" class="gallery-item-description" ng-controller="scrollToAnchorController" ng-click="gotoElement('top')">{{item.description}}</a>
