@@ -30,6 +30,7 @@ namespace Pricepy.DB
                         item["discount"] = sourceItem.IsDiscount;
                         item["price"] = sourceItem.Price;
                         item["bookedDates"] = sourceItem.BookedDates;
+                        item["isSuperAction"] = sourceItem.IsSuperAction;
                         item["fullInfo"] = JToken.Parse(sourceItem.FullInfo);
                     }
                 }

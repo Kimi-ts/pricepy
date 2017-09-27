@@ -282,7 +282,8 @@
           "nextHref": "/machines/rydwan-euro-a750-l4",
           "previousHref": "/machines/rydwan-euro-c750-l5",
           "availibilityDate": "2017-09-05 00:09",
-          "bookedDates": ""
+          "bookedDates": "",
+          "isSuperAction": true
         },
         {
           "img": {
@@ -399,7 +400,8 @@
           "nextHref": "/machines/rydwan-euro-c750-l8",
           "previousHref": "/machines/rydwan-euro-c750-t4",
           "availibilityDate": null,
-          "bookedDates": ""
+          "bookedDates": "",
+          "isSuperAction": false
         },
         {
           "img": {
@@ -508,7 +510,8 @@
           "nextHref": "/machines/rydwan-euro-r-eu-l2",
           "previousHref": "/machines/rydwan-euro-a750-l4",
           "availibilityDate": "2017-06-21 00:06",
-          "bookedDates": ""
+          "bookedDates": "",
+          "isSuperAction": false
         },
         {
           "img": {
@@ -621,7 +624,8 @@
           "nextHref": "/machines/rydwan-euro-b2600-0-l8",
           "previousHref": "/machines/rydwan-euro-c750-l8",
           "availibilityDate": "2017-06-20 15:30",
-          "bookedDates": ""
+          "bookedDates": "",
+          "isSuperAction": false
         },
         {
           "img": {
@@ -721,7 +725,8 @@
           "nextHref": "/machines/rydwan-euro-b2600-0-p3",
           "previousHref": "/machines/rydwan-euro-r-eu-l2",
           "availibilityDate": null,
-          "bookedDates": "2017-10-14, 2017-11-12,2017-09-14, 2017-09-26"
+          "bookedDates": "2017-10-14, 2017-11-12,2017-09-14, 2017-09-26",
+          "isSuperAction": false
         },
         {
           "img": {
@@ -828,7 +833,8 @@
           "nextHref": "/machines/rydwan-euro-c750-l5",
           "previousHref": "/machines/rydwan-euro-b2600-0-l8",
           "availibilityDate": null,
-          "bookedDates": "2017-09-24"
+          "bookedDates": "2017-09-24",
+          "isSuperAction": false
         },
         {
           "img": {
@@ -938,12 +944,13 @@
           "price": "333 руб",
           "availibilityLabel": "да",
           "availibility": true,
-          "discount": true,
+          "discount": false,
           "href": "/machines/rydwan-euro-c750-l5",
           "nextHref": "/machines/rydwan-euro-c750-t4",
           "previousHref": "/machines/rydwan-euro-b2600-0-p3",
           "availibilityDate": null,
-          "bookedDates": "2017-09-23, 2017-09-24, 2017-09-28, 2017-08-12,2017-09-27"
+          "bookedDates": "2017-09-23, 2017-09-24, 2017-09-28, 2017-08-12,2017-09-27",
+          "isSuperAction": true
         }
       ]
     }

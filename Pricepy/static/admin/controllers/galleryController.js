@@ -59,6 +59,7 @@
                 newMachine.AvailibilityLabel = item.availibilityLabel;
                 newMachine.AvailibilityDate = item.availibilityDate;
                 newMachine.IsDiscount = item.discount;
+                newMachine.IsSuperAction = item.isSuperAction;
                 newMachine.Price = item.price;
                 newMachine.BookedDates = item.bookedDates;
                 newMachine.FullInfo = JSON.stringify(item.fullInfo);
