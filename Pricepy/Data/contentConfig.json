@@ -137,6 +137,7 @@
     "pageTitle": "Аренда прицепов в Минске | Bigtrailer",
     "pageDescription": "",
     "banner": {
+      "backgroundImageUrl": "static/Content/2.jpg",
       "subheadline": "Наши преимущества:",
       "items": [
         {
