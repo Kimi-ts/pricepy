@@ -278,13 +278,13 @@
           "price": "35 руб",
           "availibilityLabel": "да",
           "availibility": true,
-          "discount": false,
+          "discount": true,
           "href": "/machines/rydwan-euro-c750-t4",
           "nextHref": "/machines/rydwan-euro-a750-l4",
           "previousHref": "/machines/rydwan-euro-c750-l5",
           "availibilityDate": "2017-09-05 00:09",
           "bookedDates": "",
-          "isSuperAction": true
+          "isSuperAction": false
         },
         {
           "img": {

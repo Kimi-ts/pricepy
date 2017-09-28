@@ -1,34 +1,35 @@
 var app = angular.module("myApp", ["ngRoute", "ngSanitize", "ngCookies", "ngAnimate", "ngTouch", "ngYoutubeEmbed"]);
 
 app.config(["$routeProvider", "$locationProvider", function ($routeProvider, $locationProvider) {
+    var templateSourcePath = "static/src/app/templates/";
     $routeProvider
     .when("/", {
-        templateUrl: "static/app/templates/home.htm",
+        templateUrl: templateSourcePath +"home.htm",
         controller: "homeController"
     })
     .when("/machines/:machineId", {
-        templateUrl: "static/app/templates/machinePage.htm",
+        templateUrl: templateSourcePath + "machinePage.htm",
         controller: "machineController",
         machineId: "machineId"
     })
     .when("/machines", {
-        templateUrl: "static/app/templates/machines.htm",
+        templateUrl: templateSourcePath + "machines.htm",
         controller: "machinesController"
     })
     .when("/arenda", {
-        templateUrl: "static/app/templates/arenda.htm",
+        templateUrl: templateSourcePath + "arenda.htm",
         controller: "arendaController"
     })
     .when("/contact", {
-        templateUrl: "static/app/templates/contact.htm",
+        templateUrl: templateSourcePath + "contact.htm",
         controller: "contactController"
     })
     .when("/notFound", {
-        templateUrl: "static/app/templates/notFound.htm",
+        templateUrl: templateSourcePath + "notFound.htm",
         controller: "notFoundController"
     })
     .otherwise("/notFound", {
-        templateUrl: "static/app/templates/notFound.htm",
+        templateUrl: templateSourcePath + "notFound.htm",
         controller: "notFoundController"
     })
 

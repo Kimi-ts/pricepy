@@ -1,17 +1,18 @@
 ﻿var adminApp = angular.module("adminApp", ["ngRoute", "ngSanitize", "ngCookies", "ngAnimate", "720kb.datepicker"]);
 
 adminApp.config(function ($routeProvider) {
+    var templateSourcePath = "static/src/admin/templates/";
     $routeProvider
     .when("/", {
-        templateUrl: "static/admin/templates/signin.htm",
+        templateUrl: templateSourcePath + "signin.htm",
         controller: "signinController"
     })
     .when("/gallery", {
-        templateUrl: "static/admin/templates/gallery.htm",
+        templateUrl: templateSourcePath + "gallery.htm",
         controller: "galleryController"
     })
     .when("/news", {
-        templateUrl: "static/admin/templates/news.htm",
+        templateUrl: templateSourcePath + "news.htm",
         controller: "newsController"
     })
 });

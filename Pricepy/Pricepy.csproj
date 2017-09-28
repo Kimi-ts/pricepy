@@ -119,7 +119,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\Images\news\" />
-    <Folder Include="Utils\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\FilterConfig.cs" />
@@ -205,22 +204,12 @@
     <Content Include="Global.asax" />
     <Content Include="robots.txt" />
     <Content Include="sitemap.xml" />
-    <Content Include="static\admin\all.min.js" />
-    <Content Include="static\admin\ngModules.min.js" />
-    <Content Include="static\admin\templates\gallery.htm" />
-    <Content Include="static\admin\templates\news.htm" />
-    <Content Include="static\admin\templates\signin.htm" />
-    <Content Include="static\app\all.min.js" />
-    <Content Include="static\app\ngModules.min.js" />
-    <Content Include="static\app\templates\arenda.htm" />
-    <Content Include="static\app\templates\banner.htm" />
-    <Content Include="static\app\templates\contact.htm" />
-    <Content Include="static\app\templates\gallery.htm" />
-    <Content Include="static\app\templates\home.htm" />
-    <Content Include="static\app\templates\machine.htm" />
-    <Content Include="static\app\templates\machinePage.htm" />
-    <Content Include="static\app\templates\machines.htm" />
-    <Content Include="static\app\templates\notFound.htm" />
+    <Content Include="static\dist\all.admin.min.js" />
+    <Content Include="static\dist\all.min.js" />
+    <Content Include="static\dist\libraries.admin.min.css" />
+    <Content Include="static\dist\ngModules.admin.min.js" />
+    <Content Include="static\dist\ngModules.app.min.js" />
+    <Content Include="static\dist\styles.min.css" />
     <Content Include="static\gulpfile.js" />
   </ItemGroup>
   <ItemGroup />
@@ -236,8 +225,6 @@
     <Content Include="Content\Images\machines\R-EU-L2\Thumbs.db" />
     <None Include="Project_Readme.html" />
     <None Include="Properties\PublishProfiles\priceps.pubxml" />
-    <Content Include="static\libraries.min.css" />
-    <Content Include="static\styles.min.css" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="static\package.json" />
     <Content Include="Views\Admin\Index.cshtml" />
