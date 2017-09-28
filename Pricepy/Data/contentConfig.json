@@ -30,7 +30,7 @@
     "pageTitle": "Аренда прицепов в Минске | Bigtrailer",
     "pageDescription": "Bigtrailer предоставляет услуги по аренде прицепов в городе Минске. Все Наши прицепы в эксплуатации с 2015 года, постоянно проходят своевременное обслуживание, укомплектованы тентами, запасными колесами, усиленными осями и резиной, помимо этого весь парк застрахован по системе международного страхования и готов к выезду в страны Европейского и Таможенного союзов",
     "banner": {
-      "backgroundImageUrl": "static/Content/2.jpg",
+      "backgroundImageUrl": "Content/Images/banners/2.jpg",
       "subheadline": "Аренда Прицепов у Big Trailler - это",
       "items": [
         {
@@ -54,7 +54,7 @@
       ]
     },
     "action": {
-      "backgroundImageUrl": "static/Content/3.jpg",
+      "backgroundImageUrl": "Content/Images/banners/3.jpg",
       "finishDateTime": "September 12, 2017 14:46:00 GMT+0300"
     },
     "sections": [
@@ -111,7 +111,7 @@
         "background": "default",
         "textHtml": "<h3 class='textBlock-subheadline'>У нас пополнение парка!</h3><p>С 26 декабря в нашем парке пополнение! Для Вас теперь доступен Младший брат, новый прицеп Rydwan Euro С750/T4. С полными характеристиками новинки Вы можете ознакомиться <a h ref='/machines/rydwan-euro-c750-l5'>здесь</a>.</p><p>Первые 3 арендатора получат скидку 10% при условии бронирования более чем на сутки. Спешите получить свою скидку!</p><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>",
         "img": {
-          "imgSrc": "static/content/4х2(2)/image_503.jpg",
+          "imgSrc": "Content/Images/machines/4х2(2)/image_503.jpg",
           "imgAlt": "Прицеп Rydwan Euro С750/T4",
           "imgTitle": "Прицеп Rydwan Euro С750/T4"
         },
@@ -137,7 +137,7 @@
     "pageTitle": "Аренда прицепов в Минске | Bigtrailer",
     "pageDescription": "",
     "banner": {
-      "backgroundImageUrl": "static/Content/2.jpg",
+      "backgroundImageUrl": "Content/Images/banners/2.jpg",
       "subheadline": "Наши преимущества:",
       "items": [
         {
@@ -185,14 +185,14 @@
       "items": [
         {
           "img": {
-            "imgSrc": "static/content/6х1.5/EURO-C-750-T4.jpg",
+            "imgSrc": "Content/Images/machines/6х1.5/EURO-C-750-T4.jpg",
             "imgAlt": "Прицеп Rydwan Euro С750\\T4",
             "imgTitle": "Прицеп Rydwan Euro С750\\T4"
           },
           "secondaryImages": [
             {
               "img": {
-                "imgSrc": "static/content/6х1.5/EURO-C-750-T4.jpg",
+                "imgSrc": "Content/Images/machines/6х1.5/EURO-C-750-T4.jpg",
                 "imgAlt": "Прицеп Rydwan Euro С750\\T4",
                 "imgTitle": ""
               }
@@ -288,28 +288,28 @@
         },
         {
           "img": {
-            "imgSrc": "static/content/A750/image_248.jpg",
+            "imgSrc": "Content/Images/machines/A750/image_248.jpg",
             "imgAlt": "Прицеп Rydwan Euro A750\\L4",
             "imgTitle": "Прицеп Rydwan Euro A750\\L4"
           },
           "secondaryImages": [
             {
               "img": {
-                "imgSrc": "static/content/A750/image_248.jpg",
+                "imgSrc": "Content/Images/machines/A750/image_248.jpg",
                 "imgTitle": "",
                 "imgAlt": "Прицеп Rydwan Euro A750\\L4"
               }
             },
             {
               "img": {
-                "imgSrc": "static/content/A750/image_250.jpg",
+                "imgSrc": "Content/Images/machines/A750/image_250.jpg",
                 "imgTitle": "",
                 "imgAlt": "Прицеп Rydwan Euro A750\\L4"
               }
             },
             {
               "img": {
-                "imgSrc": "static/content/A750/image_247.jpg",
+                "imgSrc": "Content/Images/machines/A750/image_247.jpg",
                 "imgTitle": "",
                 "imgAlt": "Прицеп Rydwan Euro A750\\L4"
               }
@@ -406,28 +406,28 @@
         },
         {
           "img": {
-            "imgSrc": "static/content/4х2/image_247.jpg",
+            "imgSrc": "Content/Images/machines/4х2/image_247.jpg",
             "imgTitle": "",
             "imgAlt": "Прицеп Rydwan Euro C750\\L8"
           },
           "secondaryImages": [
             {
               "img": {
-                "imgSrc": "static/content/4х2/image_247.jpg",
+                "imgSrc": "Content/Images/machines/4х2/image_247.jpg",
                 "imgTitle": "",
                 "imgAlt": "Прицеп Rydwan Euro C750\\L8"
               }
             },
             {
               "img": {
-                "imgSrc": "static/content/4х2/image_490.jpg",
+                "imgSrc": "Content/Images/machines/4х2/image_490.jpg",
                 "imgTitle": "",
                 "imgAlt": "Прицеп Rydwan Euro C750\\L8"
               }
             },
             {
               "img": {
-                "imgSrc": "static/content/4х2/image_491.jpg",
+                "imgSrc": "Content/Images/machines/4х2/image_491.jpg",
                 "imgTitle": "",
                 "imgAlt": "Прицеп Rydwan Euro C750\\L8"
               }
@@ -506,38 +506,38 @@
           "price": "35 руб",
           "availibilityLabel": "нет до 21 июня",
           "availibility": false,
-          "discount": false,
+          "discount": true,
           "href": "/machines/rydwan-euro-c750-l8",
           "nextHref": "/machines/rydwan-euro-r-eu-l2",
           "previousHref": "/machines/rydwan-euro-a750-l4",
           "availibilityDate": "2017-06-21 00:06",
-          "bookedDates": "",
-          "isSuperAction": false
+          "bookedDates": "2017-09-28",
+          "isSuperAction": true
         },
         {
           "img": {
-            "imgSrc": "static/content/R-EU-L2/image_405.jpg",
+            "imgSrc": "Content/Images/machines/R-EU-L2/image_405.jpg",
             "imgTitle": "",
             "imgAlt": "Прицеп Rydwan Euro R-EU-L2"
           },
           "secondaryImages": [
             {
               "img": {
-                "imgSrc": "static/content/R-EU-L2/image_405.jpg",
+                "imgSrc": "Content/Images/machines/R-EU-L2/image_405.jpg",
                 "imgTitle": "",
                 "imgAlt": "Прицеп Rydwan Euro R-EU-L2"
               }
             },
             {
               "img": {
-                "imgSrc": "static/content/R-EU-L2/image_407.jpg",
+                "imgSrc": "Content/Images/machines/R-EU-L2/image_407.jpg",
                 "imgTitle": "",
                 "imgAlt": "Прицеп Rydwan Euro R-EU-L2"
               }
             },
             {
               "img": {
-                "imgSrc": "static/content/R-EU-L2/image_410.jpg",
+                "imgSrc": "Content/Images/machines/R-EU-L2/image_410.jpg",
                 "imgTitle": "",
                 "imgAlt": "Прицеп Rydwan Euro R-EU-L2"
               }
@@ -630,28 +630,28 @@
         },
         {
           "img": {
-            "imgSrc": "static/content/6х2Е/2.jpg",
+            "imgSrc": "Content/Images/machines/6х2Е/2.jpg",
             "imgTitle": "",
             "imgAlt": "Прицеп Rydwan Euro B2600/0/L8"
           },
           "secondaryImages": [
             {
               "img": {
-                "imgSrc": "static/content/6х2Е/2.jpg",
+                "imgSrc": "Content/Images/machines/6х2Е/2.jpg",
                 "imgTitle": "",
                 "imgAlt": "Прицеп Rydwan Euro B2600/0/L8"
               }
             },
             {
               "img": {
-                "imgSrc": "static/content/6х2Е/3.jpg",
+                "imgSrc": "Content/Images/machines/6х2Е/3.jpg",
                 "imgTitle": "",
                 "imgAlt": "Прицеп Rydwan Euro B2600/0/L8"
               }
             },
             {
               "img": {
-                "imgSrc": "static/content/6х2Е/1.jpg",
+                "imgSrc": "Content/Images/machines/6х2Е/1.jpg",
                 "imgTitle": "",
                 "imgAlt": "Прицеп Rydwan Euro B2600/0/L8"
               }
@@ -731,28 +731,28 @@
         },
         {
           "img": {
-            "imgSrc": "static/content/b2600/4.jpg",
+            "imgSrc": "Content/Images/machines/b2600/4.jpg",
             "imgTitle": "",
             "imgAlt": "Прицеп Rydwan Euro B2600\\0\\Р3"
           },
           "secondaryImages": [
             {
               "img": {
-                "imgSrc": "static/content/B2600/4.jpg",
+                "imgSrc": "Content/Images/machines/B2600/4.jpg",
                 "imgTitle": "",
                 "imgAlt": "Прицеп Rydwan Euro B2600\\0\\Р3"
               }
             },
             {
               "img": {
-                "imgSrc": "static/content/B2600/3.jpg",
+                "imgSrc": "Content/Images/machines/B2600/3.jpg",
                 "imgTitle": "",
                 "imgAlt": "Прицеп Rydwan Euro B2600\\0\\Р3"
               }
             },
             {
               "img": {
-                "imgSrc": "static/content/B2600/2.jpg",
+                "imgSrc": "Content/Images/machines/B2600/2.jpg",
                 "imgTitle": "",
                 "imgAlt": "Прицеп Rydwan Euro B2600\\0\\Р3"
               }
@@ -839,28 +839,28 @@
         },
         {
           "img": {
-            "imgSrc": "static/content/4х2(2)/image_503.jpg",
+            "imgSrc": "Content/Images/machines/4х2(2)/image_503.jpg",
             "imgTitle": "",
             "imgAlt": "Прицеп Rydwan Euro C750\\L5"
           },
           "secondaryImages": [
             {
               "img": {
-                "imgSrc": "static/content/4х2(2)/image_503.jpg",
+                "imgSrc": "Content/Images/machines/4х2(2)/image_503.jpg",
                 "imgTitle": "",
                 "imgAlt": "Прицеп Rydwan Euro C750\\L5"
               }
             },
             {
               "img": {
-                "imgSrc": "static/content/4х2(2)/image_502.jpg",
+                "imgSrc": "Content/Images/machines/4х2(2)/image_502.jpg",
                 "imgTitle": "",
                 "imgAlt": "Прицеп Rydwan Euro C750\\L5"
               }
             },
             {
               "img": {
-                "imgSrc": "static/content/4х2(2)/image_504.jpg",
+                "imgSrc": "Content/Images/machines/4х2(2)/image_504.jpg",
                 "imgTitle": "",
                 "imgAlt": "Прицеп Rydwan Euro C750\\L5"
               }
@@ -963,7 +963,7 @@
       "background": "alternate",
       "headline": "Полезная информация",
       "textHtml": "<p class='textBlock-text--highlited textBlock-text--uppercased'>требования к арендатору</p><p>Перечень документов, необходимых при заключении договора аренды:</p><ul class='textBlock-list'><li>водительское удостоверение соответствующее классу прицепа (В,Е)</li><li>Паспорт гражданина Республики Беларусь</li></ul><p class='textBlock-text--highlited textBlock-text--uppercased'>Порядок оплаты</p><p>При оплате по безналичному расчету к стоимости добавляется 10%.</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Постоянным Клиентам</p><p>Для постоянныъх клиентов предусмотрены дополнительные скидки, а также возможность бронирования прицепов по договоренности без внесения предоплаты.</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Время Работы</p><p>Выдача прицепов осуществляется с 8.00 до 21.00 ежедневно без выходных, а также по дополнительной договоренности в удобное для Вас время.</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Правила Эксплуатации</p><p>Обращаем Ваше внимание, что при выборе прицепа в аренду важно учитывать габариты и массу перевозимого груза. Запрещена перегрузка прицепа, а также перевозка грузов выступающих за габариты прицепа более чем это установлено действующими правилами дорожного движения. При эксплуатации прицепа оборудованного тентом необходимо размещать груз таким образом, чтобы при движении не произошло порыва либо протирания тента.</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Бронирование</p><p>Бронирование прицепов осуществляется при составлении договора аренды на конкретную дату и внесении предоплаты в размере 100%. Обращаем Ваше внимание, что для постоянных клиентов возможно бронирование без предоплаты</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Скорость Движения</p><p>Легковым и грузовым автомобилям при их движении с прицепом на автомагистралях — не более 90 км/ч, на остальных дорогах — не более 70 км/ч</p>",
-      "imgSrc": "static/content/news/2.jpg",
+      "imgSrc": "Content/Images/machines/news/2.jpg",
       "rules": {
         "col1": [
           {
@@ -1006,7 +1006,7 @@
     "pageTitle": "Аренда прицепов в Минске. Доступные цены. Индивидуальный подход | Bigtrailer",
     "pageDescription": "Мы находимся по адресу г. Минск, ул Корженевского 16б автостоянка. Телефон +375 44 7669269. Работаем с 8-00 до 21-00 без выходных",
     "banner": {
-      "backgroundImageUrl": "static/Content/2.jpg",
+      "backgroundImageUrl": "Content/Images/banners/2.jpg",
       "subheadline": "Наши преимущества:",
       "items": [
         {
