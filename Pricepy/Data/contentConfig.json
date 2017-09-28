@@ -1,7 +1,7 @@
 {
   "header": {
     "logo": {
-      "src": "static/icons/icon.png"
+      "src": "Content/Icons/icon.png"
     },
     "menu": [
       {

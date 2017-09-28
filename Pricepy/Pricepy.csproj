@@ -160,6 +160,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="404.html" />
+    <Content Include="Content\Icons\5 hour orange transparent.png" />
+    <Content Include="Content\Icons\icon.ico" />
+    <Content Include="Content\Icons\icon.png" />
+    <Content Include="Content\Icons\orange transparent discount icon.png" />
+    <Content Include="Content\Icons\transparent discount icon.png" />
+    <Content Include="Content\Icons\yellow discrount icon.png" />
     <Content Include="Content\Images\banners\2.jpg" />
     <Content Include="Content\Images\banners\3.jpg" />
     <Content Include="Content\Images\machines\4х2%282%29\image_502.jpg" />
@@ -216,12 +222,6 @@
     <Content Include="static\app\templates\machines.htm" />
     <Content Include="static\app\templates\notFound.htm" />
     <Content Include="static\gulpfile.js" />
-    <Content Include="static\icons\5 hour orange transparent.png" />
-    <Content Include="static\icons\icon.ico" />
-    <Content Include="static\icons\icon.png" />
-    <Content Include="static\icons\orange transparent discount icon.png" />
-    <Content Include="static\icons\transparent discount icon.png" />
-    <Content Include="static\icons\yellow discrount icon.png" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
