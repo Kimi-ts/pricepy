@@ -1,6 +1,9 @@
 ﻿        <div class="textBlock textBlock--centered">
-            <h3 class="textBlock-subheadline">{{data.banner.subheadline}}</h3>
+            <h3 class="textBlock-subheadline">{{banner.subheadline}}</h3>
             <ul class="textBlock-list textBlock-list--ticked">
-                <li ng-repeat="item in data.banner.items">{{item.title}}</li>
+                <li ng-repeat="item in banner.items">{{item.title}}</li>
             </ul>
+            <div ng-controller="timerController" ng-if="banner.finishDateTime">
+                    <p>Time left: <span>{{hoursLeft | addLeadingZero}}</span> <span>{{minutesLeft | addLeadingZero}}</span> <span>{{secondsLeft | addLeadingZero}}</span></p>
+            </div>
         </div>

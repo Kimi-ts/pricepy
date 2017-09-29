@@ -29,34 +29,39 @@
   "home": {
     "pageTitle": "Аренда прицепов в Минске | Bigtrailer",
     "pageDescription": "Bigtrailer предоставляет услуги по аренде прицепов в городе Минске. Все Наши прицепы в эксплуатации с 2015 года, постоянно проходят своевременное обслуживание, укомплектованы тентами, запасными колесами, усиленными осями и резиной, помимо этого весь парк застрахован по системе международного страхования и готов к выезду в страны Европейского и Таможенного союзов",
-    "banner": {
-      "backgroundImageUrl": "Content/Images/banners/2.jpg",
-      "subheadline": "Аренда Прицепов у Big Trailler - это",
-      "items": [
-        {
-          "title": "Надёжные прицепы"
-        },
-        {
-          "title": "Качественное обслуживание"
-        },
-        {
-          "title": "Индивидуальный подход к каждому клиенту"
-        },
-        {
-          "title": "Возможность наличного и безналичного расчёта"
-        },
-        {
-          "title": "Гибкая система скидок"
-        },
-        {
-          "title": "Бонусы постоянным клиентам"
-        }
-      ]
-    },
-    "action": {
-      "backgroundImageUrl": "Content/Images/banners/3.jpg",
-      "finishDateTime": "September 12, 2017 14:46:00 GMT+0300"
-    },
+    "banners": [
+      {
+        "backgroundImageUrl": "Content/Images/banners/2.jpg",
+        "subheadline": "Аренда Прицепов у Big Trailler - это",
+        "isInSlider": true,
+        "items": [
+          {
+            "title": "Надёжные прицепы"
+          },
+          {
+            "title": "Качественное обслуживание"
+          },
+          {
+            "title": "Индивидуальный подход к каждому клиенту"
+          },
+          {
+            "title": "Возможность наличного и безналичного расчёта"
+          },
+          {
+            "title": "Гибкая система скидок"
+          },
+          {
+            "title": "Бонусы постоянным клиентам"
+          }
+        ]
+      },
+      {
+        "backgroundImageUrl": "Content/Images/banners/3.jpg",
+        "finishDateTime": "September 29, 2017 14:46:00 GMT+0300",
+        "isInSlider": true,
+        "subheadline": "Акция! Прицеп на 3 дня по цене 2"
+      }
+    ],
     "sections": [
       {
         "background": "alternate",

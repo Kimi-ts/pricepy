@@ -1,14 +1,18 @@
 app.controller('timerController',['$scope', "$interval", 'dateFilter', 'getData', function timerController($scope, $interval, dateFilter, getData){
     console.log("timer controlelr runs");
+    console.log($scope);
     console.log($scope.$parent);
-    $scope.data = $scope.$parent.data;
+    //$scope.data = $scope.$parent.data;
+    //$scope.date = $scope.$parent;
 
     $scope.hoursLeft = "zero h";
     $scope.minutesLeft = "zero m";
     $scope.secondsLeft = "zero s";
 
     console.log($scope);
-    var finishstr = $scope.data.action.finishDateTime;
+    //var finishstr = $scope.data.action.finishDateTime;
+    
+    var finishstr = $scope.$parent.banner.finishDateTime;
     var timeInterval = $interval(function(){
         $scope.temp = "updated";
         console.log("<<inside time interval>>");
