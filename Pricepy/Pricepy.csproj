@@ -204,13 +204,6 @@
     <Content Include="Global.asax" />
     <Content Include="robots.txt" />
     <Content Include="sitemap.xml" />
-    <Content Include="static\dist\all.admin.min.js" />
-    <Content Include="static\dist\all.min.js" />
-    <Content Include="static\dist\libraries.admin.min.css" />
-    <Content Include="static\dist\ngModules.admin.min.js" />
-    <Content Include="static\dist\ngModules.app.min.js" />
-    <Content Include="static\dist\styles.min.css" />
-    <Content Include="static\gulpfile.js" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -225,10 +218,17 @@
     <Content Include="Content\Images\machines\R-EU-L2\Thumbs.db" />
     <None Include="Project_Readme.html" />
     <None Include="Properties\PublishProfiles\priceps.pubxml" />
+    <Content Include="static\dist\all.admin.min.js" />
+    <Content Include="static\dist\all.min.js" />
+    <Content Include="static\dist\libraries.admin.min.css" />
+    <Content Include="static\dist\ngModules.admin.min.js" />
+    <Content Include="static\dist\ngModules.app.min.js" />
+    <Content Include="static\dist\styles.min.css" />
+    <Content Include="static\gulpfile.js" />
+    <Content Include="static\package.json" />
     <Content Include="static\src\admin\templates\gallery.htm" />
     <Content Include="static\src\admin\templates\news.htm" />
     <Content Include="static\src\admin\templates\signin.htm" />
-    <Content Include="static\src\app\templates\action.htm" />
     <Content Include="static\src\app\templates\arenda.htm" />
     <Content Include="static\src\app\templates\banner.htm" />
     <Content Include="static\src\app\templates\contact.htm" />
@@ -239,7 +239,6 @@
     <Content Include="static\src\app\templates\machines.htm" />
     <Content Include="static\src\app\templates\notFound.htm" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="static\package.json" />
     <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="web.config">
       <SubType>Designer</SubType>

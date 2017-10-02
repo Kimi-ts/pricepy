@@ -1,5 +1,5 @@
     <div ng-controller="sliderController" ng-if = "showSlides" match-height="toLarger">
-        <div ng-repeat = "banner in data.banners" class="row row--darkbackground has-background-image imaged well cell item-img" ng-style="{'background-image': 'url(' + banner.backgroundImageUrl + ')'}">
+        <div ng-repeat = "banner in data.banners" class="row row--darkbackground has-background-image imaged well cell item-img" ng-style="{'background-image': 'url(' + banner.backgroundImageUrl + ')'}" ng-show ="banner.isActive">
                     <ng-include src="'static/src/app/templates/banner.htm'"></ng-include>
         </div>
     </div>

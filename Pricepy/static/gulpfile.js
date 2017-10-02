@@ -20,6 +20,7 @@ var config = {
 };
 
 gulp.task('compile-css', function(){
+    console.log("styles.min.css changed")
     return gulp.src('src/styles.less')
         .pipe(less({
             paths: [path.join(__dirname, 'less', 'includes')]
