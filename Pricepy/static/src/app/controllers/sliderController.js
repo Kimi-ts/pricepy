@@ -3,16 +3,20 @@ app.controller('sliderController', ["$scope", "$location", "$interval", "getData
     $scope.banners = $scope.$parent.data.banners;
     $scope.activeIndex = 0;
 
+    var timeInterval;
+
     var createSlider = function(){
         setActiveItem($scope.activeIndex);
 
-        $interval(function(){
+        timeInterval = $interval(function(){
+            console.log("time interval callded");
             $scope.activeIndex++;
             if ($scope.activeIndex >= $scope.banners.length){
                 $scope.activeIndex = 0;
             }
             setActiveItem($scope.activeIndex);
-        }, 10000)
+        }, 10000);
+        
     };
 
     var setActiveItem = function(index){
@@ -21,7 +25,16 @@ app.controller('sliderController', ["$scope", "$location", "$interval", "getData
         }
     };
 
-    if ($scope.banners.length > 1){
-        createSlider();
+    if ($scope.banners){
+        if ($scope.banners.length == 1){
+            setActiveItem(0);
+        }
+        if ($scope.banners.length > 1){
+            createSlider();
+        }
     };
+
+    $scope.$on("$destroy", function(){
+        $interval.cancel(timeInterval);
+    })
 }])

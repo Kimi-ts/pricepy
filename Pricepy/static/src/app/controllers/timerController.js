@@ -1,21 +1,22 @@
-app.controller('timerController',['$scope', "$interval", function timerController($scope, $interval){
+app.controller('timerController',['$scope', "$interval", "dateService", function timerController($scope, $interval, dateService){
     console.log("timer controlelr runs");
 
+    $scope.daysLeft = "zero d";
     $scope.hoursLeft = "zero h";
     $scope.minutesLeft = "zero m";
     $scope.secondsLeft = "zero s";
     
     var finishstr = $scope.$parent.banner.finishDateTime;
     var timeInterval = $interval(function(){
-        $scope.temp = "updated";
         console.log("<<inside time interval>>");
         var t = getTimeRemaining(finishstr);
         $scope.hoursLeft = t.hours;
         $scope.minutesLeft = t.minutes;
         $scope.secondsLeft = t.seconds;
+        $scope.daysLeft = t.days;
 
         if (t.total <= 0){
-            clearInterval(timeInterval);
+            $interval.cancel(timeInterval);
         }
     }, 1000);
 
@@ -33,4 +34,10 @@ app.controller('timerController',['$scope', "$interval", function timerControlle
           'seconds': seconds
         };
       }
+
+    $scope.isActionFinished = !dateService.isExpired(finishstr);
+
+    $scope.$on('$destroy', function() {
+        $interval.cancel(timeInterval);
+    });
 }])

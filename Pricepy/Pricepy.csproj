@@ -229,7 +229,6 @@
     <Content Include="static\src\admin\templates\gallery.htm" />
     <Content Include="static\src\admin\templates\news.htm" />
     <Content Include="static\src\admin\templates\signin.htm" />
-    <Content Include="static\src\app\templates\arenda.htm" />
     <Content Include="static\src\app\templates\banner.htm" />
     <Content Include="static\src\app\templates\contact.htm" />
     <Content Include="static\src\app\templates\gallery.htm" />
