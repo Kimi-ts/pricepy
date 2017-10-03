@@ -3,8 +3,17 @@
             <ul class="textBlock-list textBlock-list--ticked">
                 <li ng-repeat="item in banner.items">{{item.title}}</li>
             </ul>
-            <div ng-controller="timerController" ng-if="banner.finishDateTime">
+            <!-- <div ng-controller="timerController" ng-if="banner.finishDateTime">
                     <p ng-show="isActionFinished">Time left: <span>{{daysLeft | addLeadingZero}}</span> <span>{{hoursLeft | addLeadingZero}}</span> <span>{{minutesLeft | addLeadingZero}}</span> <span>{{secondsLeft | addLeadingZero}}</span></p>
                     <p ng-show="!isActionFinished">Акция завершилась</p>
+            </div> -->
+            <div ng-controller="timerController"  class="bucket bucket--notCentered" ng-if="banner.finishDateTime">
+                <div class="bucket-media">
+                        <p ng-show="isActionFinished">Time left: <span>{{daysLeft | addLeadingZero}}</span> <span>{{hoursLeft | addLeadingZero}}</span> <span>{{minutesLeft | addLeadingZero}}</span> <span>{{secondsLeft | addLeadingZero}}</span></p>
+                        <p ng-show="!isActionFinished">Акция завершилась</p>
+                </div>
+                <div class="bucket-content textBlock">
+                    <span ng-bind-html="banner.textHtml"></span>
+                </div>
             </div>
         </div>
