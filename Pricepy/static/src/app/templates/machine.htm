@@ -14,14 +14,14 @@
                 <div class="col">
                     <p class="textBlock-text--highlited">{{machine.fullInfo.category}}</p>
                     <div ng-repeat="item in machine.fullInfo.characteristics" class="textBlock-contentBlock">
-                        <h5 class="textBlock-contentBlock-title">{{item.name}}</h5>
+                        <span class="textBlock-contentBlock-title">{{item.name}}</span>
                         <p class="textBlock-contentBlock-value">{{item.value}}</p>
                     </div>
                 </div>
                 <div class="col">
                     <p class='textBlock-text--highlited'>{{machine.priceLabel}}</p>
                     <div ng-repeat="item in machine.fullInfo.prices" class="textBlock-contentBlock">
-                        <h5 class="textBlock-contentBlock-title">{{item.name}}</h5>
+                        <span class="textBlock-contentBlock-title">{{item.name}}</span>
                         <p class="textBlock-contentBlock-value">{{item.value}}</p>
                     </div>
                     <div ng-controller ="calendarController" ng-if="contentLoaded" class="calendar">
