@@ -15,6 +15,7 @@ app.controller('machineController', ["$scope", "$routeParams", "$location", "get
 
     getData.getContent("/api/Values", "machine").then(function(data){
         $scope.data = data;
+        $scope.banner = $scope.data.banner;
         console.log("content loaded");
         var pageTitle = data.pageTitle;
 

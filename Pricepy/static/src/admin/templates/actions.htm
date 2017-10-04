@@ -10,7 +10,7 @@
         <p ng-show="isDataUpdated" class="textBlock-text--italic textBlock--blinking green" blink>Данные успешно сохранены</p>
         <p ng-show="isError" class="textBlock-text--italic textBlock--blinking red">Произошла Ошибка. Обновите страницу</p>
         <form name="bannersForm" novalidate>
-            <div ng-repeat="banner in data.banners" class="bucket bucket--notFixed" ng-class="isHiglightFirstNewsItem == true && $index == 0 ? 'bucket--wrapped' : ''" ng-show="!banner.items">
+            <div ng-repeat="banner in data.banners track by $index" class="bucket bucket--notFixed" ng-if="!banner.items">
                 <div class="bucket-media bucket-media--hasIcon">
                     <span class="bucket-icon">
                         <img ng-src="{{banner.backgroundImageUrl}}" class="bucket-media--main" />
@@ -24,10 +24,11 @@
                 </div>
                 <div class="bucket-content bucket-content--larger textBlock">
                     <span>Дата завершения акции ("пример: "04 October 2017, 14:36")</span>
-                        <input type="text" ng-model="banner.finishDateTime"/>
+                        <input type="text" ng-model="banner.finishDateTime" required />
                 </div>
                 <input type="button" class="btn form-button" value = "Удалить" ng-click="removeItem($index)" />
             </div>
+            <input type="submit" class="btn btn--secondary form-button" ng-click="addNewBanner();" value="Добавить баннер" />
             <input type="submit" class="btn btn--secondary form-button" ng-click="postToServer(); gotoElement('top')" value="Save" ng-controller="scrollToAnchorController" />
         </form>
     </div>

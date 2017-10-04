@@ -168,6 +168,7 @@
     <Content Include="Content\Icons\yellow discrount icon.png" />
     <Content Include="Content\Images\banners\2.jpg" />
     <Content Include="Content\Images\banners\3.jpg" />
+    <Content Include="Content\Images\banners\4.jpg" />
     <Content Include="Content\Images\machines\4х2%282%29\image_502.jpg" />
     <Content Include="Content\Images\machines\4х2%282%29\image_503.jpg" />
     <Content Include="Content\Images\machines\4х2%282%29\image_504.jpg" />
@@ -227,6 +228,7 @@
     <Content Include="static\dist\styles.min.css" />
     <Content Include="static\gulpfile.js" />
     <Content Include="static\package.json" />
+    <Content Include="static\src\admin\templates\actions.htm" />
     <Content Include="static\src\admin\templates\gallery.htm" />
     <Content Include="static\src\admin\templates\news.htm" />
     <Content Include="static\src\admin\templates\signin.htm" />

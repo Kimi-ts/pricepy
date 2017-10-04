@@ -7,7 +7,6 @@ app.controller('homeController', ["$scope", "$location", "getData", "dateService
         $scope.data = data;
         $scope.$parent.pageTitle = data.pageTitle;
         $scope.$parent.pageDescription = data.pageDescription;
-        // $scope.isDisplayAction = data.action != null && !dateService.isExpired(data.action.finishDateTime);
         $scope.showSlides = true;
     })
 }])

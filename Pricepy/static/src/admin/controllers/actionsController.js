@@ -32,6 +32,14 @@ adminApp.controller('actionsController', ['$scope', '$http', '$location', '$cook
         });
     };
 
+    $scope.addNewBanner = function(){
+        var banner = {};
+        banner.backgroundImageUrl = "Content/Images/banners/2.jpg";
+        //banner.finishDateTime = null;
+        $scope.data.banners.push(banner);
+        $scope.bannersForm.$setDirty();
+    }
+
     $scope.removeItem = function(indexToRemove){
         $scope.data.banners.splice(indexToRemove, 1);
         $scope.bannersForm.$setDirty();
