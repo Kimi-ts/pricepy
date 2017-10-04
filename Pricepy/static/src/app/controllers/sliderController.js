@@ -15,7 +15,7 @@ app.controller('sliderController', ["$scope", "$location", "$interval", "getData
                 $scope.activeIndex = 0;
             }
             setActiveItem($scope.activeIndex);
-        }, 10000);
+        }, 8000);
         
     };
 

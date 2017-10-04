@@ -17,7 +17,16 @@ app.directive("matchHeight", ["$timeout", "$window", function($timeout, $window)
                             }
                             //if img hasn't been loaded yet
                             if (height == 0){
-                                height = 200;
+                                //check if display:none is set
+                                var angularElem = angular.element(images[i]);
+                                if (angularElem.hasClass("ng-hide")){
+                                    angularElem.removeClass("ng-hide")
+                                    height = images[i].clientHeight;
+                                    angularElem.addClass("ng-hide");
+                                }
+                                else{
+                                    height = 200;
+                                }
                             }
                             if (height > max){
                                 max = height;
@@ -37,7 +46,16 @@ app.directive("matchHeight", ["$timeout", "$window", function($timeout, $window)
                             }
                             //if img hasn't been loaded yet
                             if (height == 0){
-                                height = 200;
+                                //check if display:none is set
+                                var angularElem = angular.element(images[i]);
+                                if (angularElem.hasClass("ng-hide")){
+                                    angularElem.removeClass("ng-hide")
+                                    height = images[i].clientHeight;
+                                    angularElem.addClass("ng-hide");
+                                }
+                                else{
+                                    height = 200;
+                                }
                             }
                             if (height < max){
                                 max = height;
