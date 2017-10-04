@@ -15,6 +15,10 @@ adminApp.config(function ($routeProvider) {
         templateUrl: templateSourcePath + "news.htm",
         controller: "newsController"
     })
+    .when("/actions", {
+        templateUrl: templateSourcePath + "actions.htm",
+        controller: "actionsController"
+    })
 });
 
 adminApp.controller("adminController", function ($scope, $location, $http, getData, dateService) {

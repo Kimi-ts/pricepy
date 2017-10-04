@@ -1,0 +1,34 @@
+<div class="row cell well" ng-class="data.content.background == 'alternate' ? 'row--alternate' : ''">
+    <ul>
+        <li><a href="/Admin#!/gallery">Техника</a></li>
+        <li><a href="/Admin#!/news">Новости</a></li>
+        <li><a href="/Admin#!/actions">Акции</a></li>
+    </ul>
+</div>
+<div class="row cell well well--larger" ng-class="data.content.background == 'alternate' ? 'row--alternate' : ''">
+    <div class="textBlock">
+        <p ng-show="isDataUpdated" class="textBlock-text--italic textBlock--blinking green" blink>Данные успешно сохранены</p>
+        <p ng-show="isError" class="textBlock-text--italic textBlock--blinking red">Произошла Ошибка. Обновите страницу</p>
+        <form name="bannersForm" novalidate>
+            <div ng-repeat="banner in data.banners" class="bucket bucket--notFixed" ng-class="isHiglightFirstNewsItem == true && $index == 0 ? 'bucket--wrapped' : ''" ng-show="!banner.items">
+                <div class="bucket-media bucket-media--hasIcon">
+                    <span class="bucket-icon">
+                        <img ng-src="{{banner.backgroundImageUrl}}" class="bucket-media--main" />
+                    </span>
+                </div>
+                <div class="bucket-content bucket-content--larger textBlock">
+                    <textarea rows="3" cols="50" ng-model="banner.subheadline" required></textarea>
+                </div>
+                <div class="bucket-content bucket-content--larger textBlock">
+                    <textarea rows="10" cols="50" ng-model="banner.textHtml"></textarea>
+                </div>
+                <div class="bucket-content bucket-content--larger textBlock">
+                    <span>Дата завершения акции ("пример: "04 October 2017, 14:36")</span>
+                        <input type="text" ng-model="banner.finishDateTime"/>
+                </div>
+                <input type="button" class="btn form-button" value = "Удалить" ng-click="removeItem($index)" />
+            </div>
+            <input type="submit" class="btn btn--secondary form-button" ng-click="postToServer(); gotoElement('top')" value="Save" ng-controller="scrollToAnchorController" />
+        </form>
+    </div>
+</div>
