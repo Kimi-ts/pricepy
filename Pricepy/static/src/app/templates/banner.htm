@@ -3,14 +3,26 @@
             <ul class="textBlock-list textBlock-list--ticked">
                 <li ng-repeat="item in banner.items">{{item.title}}</li>
             </ul>
-            <!-- <div ng-controller="timerController" ng-if="banner.finishDateTime">
-                    <p ng-show="isActionFinished">Time left: <span>{{daysLeft | addLeadingZero}}</span> <span>{{hoursLeft | addLeadingZero}}</span> <span>{{minutesLeft | addLeadingZero}}</span> <span>{{secondsLeft | addLeadingZero}}</span></p>
-                    <p ng-show="!isActionFinished">Акция завершилась</p>
-            </div> -->
             <div ng-controller="timerController"  class="bucket bucket--notCentered" ng-if="banner.finishDateTime">
                 <div class="bucket-media">
-                        <p ng-show="isActionFinished">Time left: <span>{{daysLeft | addLeadingZero}}</span> <span>{{hoursLeft | addLeadingZero}}</span> <span>{{minutesLeft | addLeadingZero}}</span> <span>{{secondsLeft | addLeadingZero}}</span></p>
-                        <p ng-show="!isActionFinished">Акция завершилась</p>
+                    <div ng-show="isActionFinished && isLoaded">
+                        <p>ДО ОКОНЧАНИЯ АКЦИИ ОСТАЛОСЬ:</p>
+                        <table class="bucket-media-table">
+                            <tr>
+                                <td class="bucket-media-table-value">{{daysLeft | addLeadingZero}}</td>
+                                <td class="bucket-media-table-value">{{hoursLeft | addLeadingZero}}</td>
+                                <td class="bucket-media-table-value">{{minutesLeft | addLeadingZero}}</td>
+                                <td class="bucket-media-table-value">{{secondsLeft | addLeadingZero}}</td>
+                            </tr>
+                            <tr>
+                                <td>дней</td>
+                                <td>часов</td>
+                                <td>минут</td>
+                                <td>секунд</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p ng-show="!isActionFinished">Акция завершилась</p>
                 </div>
                 <div class="bucket-content textBlock">
                     <span ng-bind-html="banner.textHtml"></span>

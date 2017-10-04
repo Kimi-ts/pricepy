@@ -1,10 +1,13 @@
 app.controller('timerController',['$scope', "$interval", "dateService", function timerController($scope, $interval, dateService){
     console.log("timer controlelr runs");
+    var emptyPlaceholder = "";
 
-    $scope.daysLeft = "zero d";
-    $scope.hoursLeft = "zero h";
-    $scope.minutesLeft = "zero m";
-    $scope.secondsLeft = "zero s";
+    $scope.daysLeft = emptyPlaceholder;
+    $scope.hoursLeft = emptyPlaceholder;
+    $scope.minutesLeft = emptyPlaceholder;
+    $scope.secondsLeft = emptyPlaceholder;
+
+    $scope.isLoaded = false;
     
     var finishstr = $scope.$parent.banner.finishDateTime;
     var timeInterval = $interval(function(){
@@ -14,6 +17,7 @@ app.controller('timerController',['$scope', "$interval", "dateService", function
         $scope.minutesLeft = t.minutes;
         $scope.secondsLeft = t.seconds;
         $scope.daysLeft = t.days;
+        $scope.isLoaded = true;
 
         if (t.total <= 0){
             $interval.cancel(timeInterval);
