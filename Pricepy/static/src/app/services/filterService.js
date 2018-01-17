@@ -4,12 +4,12 @@ app.service("filterService", [ 'textConstantService', function(textConstantServi
 
             return function(item){
                 if (!categories.CategoryB){
-                    if (item.fullInfo["category"] == textConstantService.categories.categoryB){
+                    if (item.fullInfo["category"].includes(textConstantService.categories.categoryB)){
                         return;
                     }
                 }
                 if(!categories.CategoryE){
-                    if (item.fullInfo["category"] == textConstantService.categories.categoryE){
+                    if (item.fullInfo["category"].includes(textConstantService.categories.categoryE)){
                         return;
                     }
                 }
