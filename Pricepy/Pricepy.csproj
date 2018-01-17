@@ -199,6 +199,9 @@
     <Content Include="Content\Images\machines\news\7.jpg" />
     <Content Include="Content\Images\machines\news\8.jpg" />
     <Content Include="Content\Images\machines\news\collaboration.jpg" />
+    <Content Include="Content\Images\machines\p2600\m1.jpg" />
+    <Content Include="Content\Images\machines\p2600\m2.jpg" />
+    <Content Include="Content\Images\machines\p2600\m3.jpg" />
     <Content Include="Content\Images\machines\R-EU-L2\image_405.jpg" />
     <Content Include="Content\Images\machines\R-EU-L2\image_407.jpg" />
     <Content Include="Content\Images\machines\R-EU-L2\image_410.jpg" />

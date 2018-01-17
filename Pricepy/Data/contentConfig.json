@@ -33,7 +33,6 @@
       {
         "backgroundImageUrl": "Content/Images/banners/4.jpg",
         "subheadline": "Аренда Прицепов у Big Trailler - это",
-        "isInSlider": true,
         "items": [
           {
             "title": "Надёжные прицепы"
@@ -53,89 +52,123 @@
           {
             "title": "Бонусы постоянным клиентам"
           }
-        ],
-        "$$hashKey": "object:74"
+        ]
       },
       {
         "backgroundImageUrl": "Content/Images/banners/2.jpg",
-        "textHtml": "<p>Уважаемые клиенты, при заказе прицепа скажите кодовое слово \"Баннер20\" и получите скидку 20% на весь ваш заказ. Внимание, акция продлится до 10го октября включительно! Спешите получить свою скидку<p>",
+        "textHtml": "<p>Уважаемые клиенты, при заказе прицепа скажите кодовое слово \"BIG TRAILER\" и получите скидку 10% на весь ваш заказ. Внимание, акция продлится до 20го ноября включительно.</p>\n<p>Спешите получить свою скидку!</p>",
         "subheadline": "Акция! Скидки за слова!",
-        "finishDateTime": "10 october 2017, 14:50"
+        "finishDateTime": "20 november 2017, 23:59"
       }
     ],
     "sections": [
       {
-        "background": "alternate",
-        "textHtml": "<p>Дорогие Друзья, в общеобразовательных целях размещаем на нашем сайте видеоролик, который показывает как важно правильное размещение груза и соблюдение скоростного режима при использовании прицепов к легковым автомобилям и микроавтобусам. Искренне надеемся, что данное видео поможет Вам правильно выбирать габариты прицепа под груз, а также следить за скоростным режимом при движении с прицепом.</p><p>С Уважением, команда Big Trailer :))</p>",
-        "video": {
-          "url": "https://youtu.be/Eo7OC6UCbUQ"
+        "img": {
+          "imgSrc": "Content/Images/news/design-3047520_1920.jpg"
         },
-        "mobileHidden": "false",
-        "$$hashKey": "object:559"
+        "textHtml": "<p>Дорогие Друзья от всей души желаем Вам в наступающем году успехов, крепкого здоровья, финансового благополучия и процветания, спасибо, что были с Нами в этом году. Обещаем в 2018 году еще больше скидок, новые прицепы и другие приятные «ништяки» оставайтесь с Нами.\n</p><p>С уважением, команда Big Trailer</p>",
+        "$$hashKey": "object:1259"
+      },
+      {
+        "img": {
+          "imgSrc": "Content/Images/news/sale-2065101_1920.jpg"
+        },
+        "textHtml": "<p>Дорогие Друзья, 11 ноября у нас вновь праздник объявляем СКИДКИ 50% на все прицепы нашего парка, следите за Нашими новостями и наличием прицепов в разделе <a href='/machines'>Наша Техника</a>.\n</p><p>С уважением, команда Big Trailer</p>",
+        "$$hashKey": "object:1476"
+      },
+      {
+        "img": {
+          "imgSrc": "Content/Images/news/trailers-1581033_1920.jpg"
+        },
+        "textHtml": "<p>Дорогие Друзья, теперь еще больше Наших прицепов доступны в АРЕНДУ до 5 ЧАСОВ подробнее в разделе <a href='/machines'>Наша Техника</a>. Обращаем Ваше внимание прицепы на срок до 5 часов бронированию не подлежат и выдаются ТОЛЬКО ПО ФАКТИЧЕСКОМУ НАЛИЧИЮ.\n</p><p>С уважением, команда Big Trailer</p>",
+        "$$hashKey": "object:1211"
+      },
+      {
+        "img": {
+          "imgSrc": "Content/Images/news/скидосы.jpg"
+        },
+        "textHtml": "<p>Дорогие Друзья, 20 сентября в НАШ праздник объявляем МЕГА скидки 50% на все прицепы нашего парка, скидки также распространяются на прицепы которые в этот день будут забронированы на другие даты, следите за Нашими новостями и наличием прицепов в разделе <a href='/machines'>Наша Техника</a>.\n</p><p>С уважением, команда Big Trailer</p>",
+        "$$hashKey": "object:566"
+      },
+      {
+        "img": {
+          "imgSrc": "Content/Images/news/vdomB1Kie14.jpg"
+        },
+        "textHtml": "<p>Дорогие Друзья, теперь мы консультируем на безвозмездной основе по вопросам ремонта и усовершенствования Вашего прицепа, приобретения запчастей. Свои вопросы задавайте на страничках в соцсетях <a href='https://vk.com/id395551614'>vk</a>, <a href='https://www.facebook.com/marenda2015/'>facebook</a> или пишите на электронную почту нашего сайта подробнее <a href='/contact'>Контакты</a>.</p><p>С уважением, команда Big Trailer</p>",
+        "$$hashKey": "object:1201"
       },
       {
         "background": "default",
+        "textHtml": "<p>Дорогие Друзья, в общеобразовательных целях размещаем на нашем сайте видеоролик, который показывает, как важно правильное размещение груза и соблюдение скоростного режима при использовании прицепов к легковым автомобилям и микроавтобусам. Искренне надеемся, что данное видео поможет Вам правильно выбирать габариты прицепа под груз, а также следить за скоростным режимом при движении с прицепом.</p><p>С уважением, команда Big Trailer</p>",
+        "video": {
+          "url": "https://youtu.be/Eo7OC6UCbUQ"
+        },
+        "mobileHidden": "true",
+        "$$hashKey": "object:1146"
+      },
+      {
+        "background": "alternate",
         "textHtml": "<p>Дорогие Друзья!</p><p>Всю самую последнюю информацию по наличию прицепов, а также времени их возврата, можно отслеживать на нашем сайте в разделе <a href='/machines'>Наша Техника</a>. Информация постоянно обновляется.</p><p>С уважением, команда Big Trailer</p>",
         "img": {
           "imgSrc": "Content/Images/news/calendar.jpg",
           "imgAlt": "Рассписание обновляется ежедневно",
           "imgTitle": "Мы ежедневно обновляем информацию о доступности прицепов"
         },
-        "$$hashKey": "object:560"
+        "$$hashKey": "object:1147"
       },
       {
-        "background": "alternate",
+        "background": "default",
         "textHtml": "<h3 class='textBlock-subheadline'>Мы переехали</h3><p>Уважаемые клиенты! Информируем Вас, что с апреля мы переехали, теперь мы располагаемся по адресу г. Минск, ул Корженевского 16б (автостоянка). Подробную информацию ищите в разделе <a href='/contact'>Контакты</a>.</p><p>Как и прежде, мы работаем ежедневно с 8-00 до 21-00.</p><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>",
         "img": {
           "imgSrc": "Content/Images/news/8.jpg",
           "imgAlt": "Мы переехали",
           "imgTitle": "У нас новый адрес"
         },
-        "$$hashKey": "object:561"
+        "$$hashKey": "object:1148"
       },
       {
-        "background": "default",
+        "background": "alternate",
         "textHtml": "<h3 class='textBlock-subheadline'>Специальная программа</h3><p>Приглашаем к сотрудничеству организации, производящие и реализующие изделия из металла, дерева на условиях доставки либо самовывоза. Скидки для Вас и Ваших клиентов <span class='textBlock-text--highlited'>до 30%</span>.</p>",
         "img": {
           "imgSrc": "Content/Images/news/collaboration.jpg",
           "imgAlt": "Приглашаем к сотрудничеству организации",
           "imgTitle": "Приглашаем к сотрудничеству"
         },
-        "$$hashKey": "object:562"
+        "$$hashKey": "object:1149"
       },
       {
-        "background": "alternate",
+        "background": "default",
         "textHtml": "<h3 class='textBlock-headline'>Акция</h3><p class='textBlock-text--highlited'>Зимние скидки!!!</p><p>С 1 декабря 2016 года по 2 февраля 2017 года предоставляется скидка на все прицепы в размере 15%!<p/><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p><p> Мы работаем для Вас ежедневно с 8-00 до 21-00.</p>",
         "img": {
           "imgSrc": "Content/Images/news/3.jpg",
           "imgAlt": "Акция! Зимние скидки 15%",
           "imgTitle": "Акция! Зимние скидки 15%"
         },
-        "$$hashKey": "object:563"
+        "$$hashKey": "object:1150"
       },
       {
-        "background": "default",
-        "textHtml": "<h3 class='textBlock-subheadline'>У нас пополнение парка!</h3><p>С 26 декабря в нашем парке пополнение! Для Вас теперь доступен Младший брат, новый прицеп Rydwan Euro С750/T4. С полными характеристиками новинки Вы можете ознакомиться <a h ref='/machines/rydwan-euro-c750-l5'>здесь</a>.</p><p>Первые 3 арендатора получат скидку 10% при условии бронирования более чем на сутки. Спешите получить свою скидку!</p><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>",
+        "background": "alternate",
+        "textHtml": "<h3 class='textBlock-subheadline'>У нас пополнение парка!</h3><p>С 26 декабря в нашем парке пополнение! Для Вас теперь доступен Младший брат, новый прицеп Rydwan Euro С750/T4. С полными характеристиками новинки Вы можете ознакомиться <a href='/machines/rydwan-euro-c750-l5'>здесь</a>.</p><p>Первые 3 арендатора получат скидку 10% при условии бронирования более чем на сутки. Спешите получить свою скидку!</p><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>",
         "img": {
           "imgSrc": "Content/Images/machines/4х2(2)/image_503.jpg",
           "imgAlt": "Прицеп Rydwan Euro С750/T4",
           "imgTitle": "Прицеп Rydwan Euro С750/T4"
         },
-        "$$hashKey": "object:564"
+        "$$hashKey": "object:1151"
       },
       {
-        "background": "alternate",
-        "textHtml": "<h3 class='textBlock-subheadline'>Новая услуга!</h3><p class='textBlock-text--highlited'>Прицеп на 5 часов</p><p>Информируем Вас, что с 14 ноября Вам доступна новая услуга: аренда любого прицепа на 5 часов. Предварительное бронирование обязательно.</p><p>Доступность прицепов а также более подробную информацию о нашем парке можно найти в разделе <a href='/machines'>Наша Техника</a>, а также по телефону +375 3453453.<p/><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>",
+        "background": "default",
+        "textHtml": "<h3 class='textBlock-subheadline'>Новая услуга!</h3><p class='textBlock-text--highlited'>Прицеп на 5 часов</p><p>Информируем Вас, что с 14 ноября Вам доступна новая услуга: аренда любого прицепа на 5 часов. Предварительное бронирование обязательно.</p><p>Доступность прицепов а также более подробную информацию о нашем парке можно найти в разделе <a href='/machines'>Наша Техника</a>, а также по телефону +375 447669269.<p/><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p>",
         "img": {
           "imgSrc": "Content/Images/news/5.jpg",
           "imgAlt": "Новая услуга: прицеп на 5 часов!",
           "imgTitle": "Новая услуга: прицеп на 5 часов!"
         },
-        "$$hashKey": "object:565"
+        "$$hashKey": "object:1152"
       }
     ],
     "mapView": {
-      "background": "default",
+      "background": "alternate",
       "textHtml": "<h3 class='textBlock-subheadline'>Спасибо, что выбрали нас!</h3><p class='textBlock-text--italic'>Big Trailler - самые надёжные прицепы твоего города!</p><p>Мы находимся по адресу: г. Минск, ул Корженевского 16б, автостоянка</p>"
     }
   },
@@ -143,7 +176,7 @@
     "pageTitle": "Аренда прицепов в Минске | Bigtrailer",
     "pageDescription": "",
     "banner": {
-      "backgroundImageUrl": "Content/Images/banners/2.jpg",
+      "backgroundImageUrl": "/Content/Images/banners/2.jpg",
       "subheadline": "Наши преимущества:",
       "items": [
         {
@@ -275,22 +308,23 @@
                 "$$hashKey": "object:90"
               },
               {
-                "name": "5 часов",
-                "value": "3 руб",
-                "$$hashKey": "object:1199"
+                "title": "30 руб/более 7 суток",
+                "name": "более 7 суток",
+                "value": "30 руб",
+                "$$hashKey": "object:91"
               }
             ]
           },
           "price": "35 руб",
           "availibilityLabel": "да",
           "availibility": true,
-          "discount": true,
+          "discount": false,
+          "isSuperAction": false,
           "href": "/machines/rydwan-euro-c750-t4",
           "nextHref": "/machines/rydwan-euro-a750-l4",
-          "previousHref": "/machines/rydwan-euro-c750-l5",
-          "availibilityDate": "2017-09-05 00:09",
-          "bookedDates": "",
-          "isSuperAction": false
+          "previousHref": "/machines/rydwan-euro-p2600",
+          "availibilityDate": null,
+          "bookedDates": "2018-01-15,2018-01-16"
         },
         {
           "img": {
@@ -381,21 +415,26 @@
             "prices": [
               {
                 "title": "20 руб/сутки",
-                "name": "3-7 суток",
+                "name": "сутки",
                 "value": "20 руб",
-                "$$hashKey": "object:1304"
+                "$$hashKey": "object:1163"
               },
               {
                 "title": "18 руб/3-7 суток",
                 "name": "3-7 суток",
-                "value": "32 руб",
-                "$$hashKey": "object:1305"
+                "value": "18 руб",
+                "$$hashKey": "object:1164"
               },
               {
-                "title": "16 руб/более 7 суток",
-                "name": "3-7 суток",
-                "value": "33 руб",
-                "$$hashKey": "object:1306"
+                "title": "15 руб/более 7 суток",
+                "name": "более 7 суток",
+                "value": "15 руб",
+                "$$hashKey": "object:1165"
+              },
+              {
+                "name": "до 5 часов",
+                "value": "12 руб",
+                "$$hashKey": "object:1409"
               }
             ]
           },
@@ -403,12 +442,12 @@
           "availibilityLabel": "да",
           "availibility": true,
           "discount": false,
+          "isSuperAction": true,
           "href": "/machines/rydwan-euro-a750-l4",
           "nextHref": "/machines/rydwan-euro-c750-l8",
           "previousHref": "/machines/rydwan-euro-c750-t4",
           "availibilityDate": null,
-          "bookedDates": "",
-          "isSuperAction": false
+          "bookedDates": "2018-01-12,"
         },
         {
           "img": {
@@ -447,78 +486,92 @@
             "characteristics": [
               {
                 "name": "Длинна внутренняя/внешняя",
-                "value": "395/400 см"
+                "value": "395/400 см",
+                "$$hashKey": "object:1225"
               },
               {
                 "name": "Ширина внутренняя/внешняя",
-                "value": "195/200 см"
+                "value": "195/200 см",
+                "$$hashKey": "object:1226"
               },
               {
                 "name": "Высота прицепа от земли",
-                "value": "235 см"
+                "value": "235 см",
+                "$$hashKey": "object:1227"
               },
               {
                 "name": "Высота прицепа от пола до верха",
-                "value": "170 см"
+                "value": "170 см",
+                "$$hashKey": "object:1228"
               },
               {
                 "name": "Высота борта",
-                "value": "35 см"
+                "value": "35 см",
+                "$$hashKey": "object:1229"
               },
               {
                 "name": "Резина",
-                "value": "R 13C (усиленная)"
+                "value": "R 13C (усиленная)",
+                "$$hashKey": "object:1230"
               },
               {
                 "name": "Полная масса",
-                "value": "750 кг"
+                "value": "750 кг",
+                "$$hashKey": "object:1231"
               },
               {
                 "name": "Подвеска",
-                "value": "усиленная торсионная"
+                "value": "усиленная торсионная",
+                "$$hashKey": "object:1232"
               },
               {
                 "name": "Открывающийся задний борт и тент",
-                "value": ""
+                "value": "",
+                "$$hashKey": "object:1233"
               },
               {
                 "name": "Зелёная карта",
-                "value": ""
+                "value": "",
+                "$$hashKey": "object:1234"
               }
             ],
             "prices": [
               {
-                "title": "35 руб/сутки",
-                "name": "3-7 суток",
-                "value": "32 руб"
+                "title": "30 руб/сутки",
+                "name": "сутки",
+                "value": "30 руб",
+                "$$hashKey": "object:1255"
               },
               {
-                "title": "33 руб/3-7 суток",
+                "title": "28 руб/3-7 суток",
                 "name": "3-7 суток",
-                "value": "32 руб"
+                "value": "28 руб",
+                "$$hashKey": "object:1256"
               },
               {
-                "title": "30 руб/более 7 суток",
-                "name": "3-7 суток",
-                "value": "32 руб"
+                "title": "25 руб/более 7 суток",
+                "name": "более 7 суток",
+                "value": "25 руб",
+                "$$hashKey": "object:1257"
               },
               {
                 "title": "20 руб до 5 часов",
-                "name": "3-7 суток",
-                "value": "32 руб"
+                "name": "до 5 часов",
+                "value": "20 руб",
+                "$$hashKey": "object:1258"
               }
             ]
           },
-          "price": "35 руб",
-          "availibilityLabel": "нет до 21 июня",
-          "availibility": false,
-          "discount": true,
+          "price": "30 руб",
+          "availibilityLabel": "да",
+          "availibility": true,
+          "discount": false,
+          "isSuperAction": true,
           "href": "/machines/rydwan-euro-c750-l8",
           "nextHref": "/machines/rydwan-euro-r-eu-l2",
           "previousHref": "/machines/rydwan-euro-a750-l4",
-          "availibilityDate": "2017-06-21 00:06",
-          "bookedDates": "2017-09-28",
-          "isSuperAction": true
+          "availibilityDate": null,
+          "bookedDates": ""
         },
         {
           "img": {
@@ -557,82 +610,97 @@
             "characteristics": [
               {
                 "name": "Длинна внутренняя/внешняя",
-                "value": "265/270 см"
+                "value": "265/270 см",
+                "$$hashKey": "object:1315"
               },
               {
                 "name": "Ширина внутренняя/внешняя",
-                "value": "145/150 см"
+                "value": "145/150 см",
+                "$$hashKey": "object:1316"
               },
               {
                 "name": "Высота прицепа от земли",
-                "value": "255 см"
+                "value": "255 см",
+                "$$hashKey": "object:1317"
               },
               {
                 "name": "Высота тента",
-                "value": "150 см"
+                "value": "150 см",
+                "$$hashKey": "object:1318"
               },
               {
                 "name": "Высота прицепа от пола до верха",
-                "value": "160 см"
+                "value": "160 см",
+                "$$hashKey": "object:1319"
               },
               {
                 "name": "Высота борта",
-                "value": "35 см"
+                "value": "35 см",
+                "$$hashKey": "object:1320"
               },
               {
                 "name": "Резина",
-                "value": "R 13"
+                "value": "R 13",
+                "$$hashKey": "object:1321"
               },
               {
                 "name": "Полная масса",
-                "value": "750 кг"
+                "value": "750 кг",
+                "$$hashKey": "object:1322"
               },
               {
                 "name": "Тип подвески",
-                "value": "задняя"
+                "value": "задняя",
+                "$$hashKey": "object:1323"
               },
               {
                 "name": "Открывающийся задний борт и тент (спереди нет)",
-                "value": ""
+                "value": "",
+                "$$hashKey": "object:1324"
               },
               {
                 "name": "Зелёная карта",
-                "value": ""
+                "value": "",
+                "$$hashKey": "object:1325"
               }
             ],
             "prices": [
               {
                 "title": "20 руб/сутки",
-                "name": "3-7 суток",
-                "value": "32 руб"
+                "name": "сутки",
+                "value": "20 руб",
+                "$$hashKey": "object:1348"
               },
               {
                 "title": "17 руб/3-7 суток",
                 "name": "3-7 суток",
-                "value": "32 руб"
+                "value": "17 руб",
+                "$$hashKey": "object:1349"
               },
               {
-                "title": "15 руб/более 7 суток",
-                "name": "3-7 суток",
-                "value": "32 руб"
+                "title": "12 руб/более 7 суток",
+                "name": "более 7 суток",
+                "value": "12 руб",
+                "$$hashKey": "object:1350"
               },
               {
-                "title": "10 руб до 5 часов",
-                "name": "3-7 суток",
-                "value": "32 руб"
+                "title": "15 руб до 5 часов",
+                "name": "до 5 часов",
+                "value": "15 руб",
+                "$$hashKey": "object:1351"
               }
             ]
           },
           "price": "20 руб",
-          "availibilityLabel": "нет до сегодня 15-30",
-          "availibility": false,
+          "availibilityLabel": "да",
+          "availibility": true,
           "discount": false,
+          "isSuperAction": true,
           "href": "/machines/rydwan-euro-r-eu-l2",
           "nextHref": "/machines/rydwan-euro-b2600-0-l8",
           "previousHref": "/machines/rydwan-euro-c750-l8",
-          "availibilityDate": "2017-06-20 15:30",
-          "bookedDates": "",
-          "isSuperAction": true
+          "availibilityDate": null,
+          "bookedDates": "2018-01-12,"
         },
         {
           "img": {
@@ -671,69 +739,81 @@
             "characteristics": [
               {
                 "name": "Длинна внутренняя/внешняя",
-                "value": "600/606 см"
+                "value": "600/606 см",
+                "$$hashKey": "object:1412"
               },
               {
                 "name": "Ширина внутренняя/внешняя",
-                "value": "195/200 см"
+                "value": "195/200 см",
+                "$$hashKey": "object:1413"
               },
               {
                 "name": "Высота прицепа от земли",
-                "value": "300 см"
+                "value": "300 см",
+                "$$hashKey": "object:1414"
               },
               {
                 "name": "Высота прицепа от пола до верха",
-                "value": "235 см"
+                "value": "235 см",
+                "$$hashKey": "object:1415"
               },
               {
                 "name": "Высота борта",
-                "value": "35 см"
+                "value": "35 см",
+                "$$hashKey": "object:1416"
               },
               {
                 "name": "Резина",
-                "value": "R 14C (усиленная)"
+                "value": "R 14C (усиленная)",
+                "$$hashKey": "object:1417"
               },
               {
                 "name": "Полная масса",
-                "value": "2600 кг"
+                "value": "2600 кг",
+                "$$hashKey": "object:1418"
               },
               {
                 "name": "Грузоподъёмность",
-                "value": "2000 кг"
+                "value": "2000 кг",
+                "$$hashKey": "object:1419"
               },
               {
                 "name": "Зелёная карта",
-                "value": ""
+                "value": "",
+                "$$hashKey": "object:1420"
               }
             ],
             "prices": [
               {
                 "title": "65 руб/сутки",
-                "name": "3-7 суток",
-                "value": "32 руб"
+                "name": "сутки",
+                "value": "65 руб",
+                "$$hashKey": "object:1439"
               },
               {
                 "title": "63 руб/3-7 суток",
                 "name": "3-7 суток",
-                "value": "32 руб"
+                "value": "63 руб",
+                "$$hashKey": "object:1440"
               },
               {
                 "title": "60 руб/более 7 суток",
-                "name": "3-7 суток",
-                "value": "32 руб"
+                "name": "более 7 суток",
+                "value": "60 руб",
+                "$$hashKey": "object:1441"
               }
             ]
           },
           "price": "65 руб",
-          "availibilityLabel": "да",
-          "availibility": true,
+          "availibilityLabel": "нет до 26.01",
+          "availibility": false,
           "discount": false,
+          "isSuperAction": false,
           "href": "/machines/rydwan-euro-b2600-0-l8",
           "nextHref": "/machines/rydwan-euro-b2600-0-p3",
           "previousHref": "/machines/rydwan-euro-r-eu-l2",
-          "availibilityDate": null,
-          "bookedDates": "2017-10-14, 2017-11-12,2017-09-14, 2017-09-26",
-          "isSuperAction": false
+          "availibilityDate": "2018-01-26 00:01",
+          "bookedDates": ""
         },
         {
           "img": {
@@ -773,75 +853,75 @@
               {
                 "name": "Длинна внутренняя/внешняя",
                 "value": "600/606 см",
-                "$$hashKey": "object:1131"
+                "$$hashKey": "object:1490"
               },
               {
                 "name": "Ширина внутренняя/внешняя",
                 "value": "150/156 см",
-                "$$hashKey": "object:1132"
+                "$$hashKey": "object:1491"
               },
               {
                 "name": "Высота тента",
                 "value": "120 см",
-                "$$hashKey": "object:1133"
+                "$$hashKey": "object:1492"
               },
               {
                 "name": "Высота прицепа от пола до верха",
                 "value": "150 см",
-                "$$hashKey": "object:1134"
+                "$$hashKey": "object:1493"
               },
               {
                 "name": "Резина",
                 "value": "R 14C (усиленная)",
-                "$$hashKey": "object:1135"
+                "$$hashKey": "object:1494"
               },
               {
                 "name": "Полная масса",
                 "value": "2600 кг",
-                "$$hashKey": "object:1136"
+                "$$hashKey": "object:1495"
               },
               {
                 "name": "Подвеска",
                 "value": "усиленная",
-                "$$hashKey": "object:1137"
+                "$$hashKey": "object:1496"
               },
               {
                 "name": "Зелёная карта",
                 "value": "",
-                "$$hashKey": "object:1138"
+                "$$hashKey": "object:1497"
               }
             ],
             "prices": [
               {
                 "title": "55 руб/сутки",
-                "name": "3-7 суток",
-                "value": "31 руб",
-                "$$hashKey": "object:1158"
+                "name": "сутки",
+                "value": "55 руб",
+                "$$hashKey": "object:1514"
               },
               {
                 "title": "53 руб/3-7 суток",
                 "name": "3-7 суток",
-                "value": "32 руб",
-                "$$hashKey": "object:1159"
+                "value": "53 руб",
+                "$$hashKey": "object:1515"
               },
               {
                 "title": "50 руб/более 7 суток",
-                "name": "3-7 суток",
-                "value": "32 руб",
-                "$$hashKey": "object:1160"
+                "name": "более 7 суток",
+                "value": "50 руб",
+                "$$hashKey": "object:1516"
               }
             ]
           },
           "price": "55 руб",
-          "availibilityLabel": "нет до 28 сентября",
+          "availibilityLabel": "нет ремонт",
           "availibility": false,
           "discount": false,
+          "isSuperAction": false,
           "href": "/machines/rydwan-euro-b2600-0-p3",
           "nextHref": "/machines/rydwan-euro-c750-l5",
           "previousHref": "/machines/rydwan-euro-b2600-0-l8",
-          "availibilityDate": null,
-          "bookedDates": "2017-09-24, 2017-09-28, 2017-09-27",
-          "isSuperAction": false
+          "availibilityDate": "",
+          "bookedDates": ""
         },
         {
           "img": {
@@ -881,83 +961,193 @@
               {
                 "name": "Длинна внутренняя/внешняя",
                 "value": "395/400 см",
-                "$$hashKey": "object:555"
+                "$$hashKey": "object:1561"
               },
               {
                 "name": "Ширина внутренняя/внешняя",
                 "value": "195/200 см",
-                "$$hashKey": "object:556"
+                "$$hashKey": "object:1562"
               },
               {
                 "name": "Высота прицепа от земли",
                 "value": "255 см",
-                "$$hashKey": "object:557"
+                "$$hashKey": "object:1563"
               },
               {
                 "name": "Высота тента",
                 "value": "170 см",
-                "$$hashKey": "object:558"
+                "$$hashKey": "object:1564"
               },
               {
                 "name": "Высота прицепа от пола до верха",
                 "value": "200 см",
-                "$$hashKey": "object:559"
+                "$$hashKey": "object:1565"
               },
               {
                 "name": "Высота борта",
                 "value": "35 см",
-                "$$hashKey": "object:560"
+                "$$hashKey": "object:1566"
               },
               {
                 "name": "Резина",
                 "value": "R 14C",
-                "$$hashKey": "object:561"
+                "$$hashKey": "object:1567"
               },
               {
                 "name": "Полная масса",
-                "value": "751 кг",
-                "$$hashKey": "object:562"
+                "value": "750 кг",
+                "$$hashKey": "object:1568"
               },
               {
                 "name": "Открывающийся борт и тент (спереди нет)",
                 "value": "",
-                "$$hashKey": "object:563"
+                "$$hashKey": "object:1569"
               },
               {
                 "name": "Зелёная карта",
                 "value": "",
-                "$$hashKey": "object:564"
+                "$$hashKey": "object:1570"
               }
             ],
             "prices": [
               {
-                "title": "38 руб/сутки",
-                "$$hashKey": "object:575",
-                "name": "3-7 суток",
-                "value": "32 руб"
-              },
-              {
-                "name": "5-12 суток",
-                "value": "4 руб",
-                "$$hashKey": "object:1199"
-              },
-              {
+                "title": "35 руб/сутки",
                 "name": "сутки",
-                "value": "2 руб",
-                "$$hashKey": "object:1206"
+                "value": "35 руб",
+                "$$hashKey": "object:1591"
+              },
+              {
+                "title": "30 руб/3-7 суток",
+                "name": "3-7 суток",
+                "value": "30 руб",
+                "$$hashKey": "object:1592"
+              },
+              {
+                "title": "28 руб/более 7 суток",
+                "name": "более 7 суток",
+                "value": "28 руб",
+                "$$hashKey": "object:1593"
               }
             ]
           },
-          "price": "333 руб",
-          "availibilityLabel": "да",
-          "availibility": true,
+          "price": "38 руб",
+          "availibilityLabel": "нет",
+          "availibility": false,
           "discount": false,
+          "isSuperAction": true,
           "href": "/machines/rydwan-euro-c750-l5",
-          "nextHref": "/machines/rydwan-euro-c750-t4",
+          "nextHref": "/machines/rydwan-euro-p2600",
           "previousHref": "/machines/rydwan-euro-b2600-0-p3",
-          "availibilityDate": null,
-          "bookedDates": "2017-09-23, 2017-09-24, 2017-09-28, 2017-08-12,2017-09-27",
-          "isSuperAction": true
+          "availibilityDate": "2018-01-30 00:01",
+          "bookedDates": ""
+        },
+        {
+          "img": {
+            "imgSrc": "Content/Images/machines/p2600/m2.jpg",
+            "imgTitle": "",
+            "imgAlt": "Прицеп Rydwan Euro R-EU-H2 B\\2600"
+          },
+          "secondaryImages": [
+            {
+              "img": {
+                "imgSrc": "Content/Images/machines/p2600/m2.jpg",
+                "imgTitle": "",
+                "imgAlt": "Прицеп Rydwan Euro R-EU-H2 B\\2600"
+              }
+            },
+            {
+              "img": {
+                "imgSrc": "Content/Images/machines/p2600/m1.jpg",
+                "imgTitle": "",
+                "imgAlt": "Прицеп Rydwan Euro R-EU-H2 B\\2600"
+              }
+            },
+            {
+              "img": {
+                "imgSrc": "Content/Images/machines/p2600/m3.jpg",
+                "imgTitle": "",
+                "imgAlt": "Прицеп Rydwan Euro R-EU-H2 B\\2600"
+              }
+            }
+          ],
+          "id": 8,
+          "description": "Прицеп Rydwan Euro R-EU-H2 B\\2600",
+          "name": "rydwan-euro-p2600",
+          "fullInfo": {
+            "category": "Категория BE",
+            "characteristics": [
+              {
+                "name": "Длинна внутренняя/внешняя",
+                "value": "600/606 см",
+                "$$hashKey": "object:1490"
+              },
+              {
+                "name": "Ширина внутренняя/внешняя",
+                "value": "150/156 см",
+                "$$hashKey": "object:1491"
+              },
+              {
+                "name": "Высота тента",
+                "value": "120 см",
+                "$$hashKey": "object:1492"
+              },
+              {
+                "name": "Высота прицепа от пола до верха",
+                "value": "150 см",
+                "$$hashKey": "object:1493"
+              },
+              {
+                "name": "Резина",
+                "value": "R 14C (усиленная)",
+                "$$hashKey": "object:1494"
+              },
+              {
+                "name": "Полная масса",
+                "value": "2600 кг",
+                "$$hashKey": "object:1495"
+              },
+              {
+                "name": "Подвеска",
+                "value": "усиленная",
+                "$$hashKey": "object:1496"
+              },
+              {
+                "name": "Зелёная карта",
+                "value": "",
+                "$$hashKey": "object:1497"
+              }
+            ],
+            "prices": [
+              {
+                "title": "55 руб/сутки",
+                "name": "сутки",
+                "value": "55 руб",
+                "$$hashKey": "object:1514"
+              },
+              {
+                "title": "53 руб/3-7 суток",
+                "name": "3-7 суток",
+                "value": "53 руб",
+                "$$hashKey": "object:1515"
+              },
+              {
+                "title": "50 руб/более 7 суток",
+                "name": "более 7 суток",
+                "value": "50 руб",
+                "$$hashKey": "object:1516"
+              }
+            ]
+          },
+          "price": "55 руб",
+          "availibilityLabel": "нет ремонт",
+          "availibility": false,
+          "discount": false,
+          "isSuperAction": false,
+          "href": "/machines/rydwan-euro-p2600",
+          "nextHref": "/machines/rydwan-euro-c750-t4",
+          "previousHref": "/machines/rydwan-euro-c750-l5",
+          "availibilityDate": "",
+          "bookedDates": ""
         }
       ]
     }
@@ -969,7 +1159,7 @@
       "background": "alternate",
       "headline": "Полезная информация",
       "textHtml": "<p class='textBlock-text--highlited textBlock-text--uppercased'>требования к арендатору</p><p>Перечень документов, необходимых при заключении договора аренды:</p><ul class='textBlock-list'><li>водительское удостоверение соответствующее классу прицепа (В,Е)</li><li>Паспорт гражданина Республики Беларусь</li></ul><p class='textBlock-text--highlited textBlock-text--uppercased'>Порядок оплаты</p><p>При оплате по безналичному расчету к стоимости добавляется 10%.</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Постоянным Клиентам</p><p>Для постоянныъх клиентов предусмотрены дополнительные скидки, а также возможность бронирования прицепов по договоренности без внесения предоплаты.</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Время Работы</p><p>Выдача прицепов осуществляется с 8.00 до 21.00 ежедневно без выходных, а также по дополнительной договоренности в удобное для Вас время.</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Правила Эксплуатации</p><p>Обращаем Ваше внимание, что при выборе прицепа в аренду важно учитывать габариты и массу перевозимого груза. Запрещена перегрузка прицепа, а также перевозка грузов выступающих за габариты прицепа более чем это установлено действующими правилами дорожного движения. При эксплуатации прицепа оборудованного тентом необходимо размещать груз таким образом, чтобы при движении не произошло порыва либо протирания тента.</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Бронирование</p><p>Бронирование прицепов осуществляется при составлении договора аренды на конкретную дату и внесении предоплаты в размере 100%. Обращаем Ваше внимание, что для постоянных клиентов возможно бронирование без предоплаты</p><p class='textBlock-text--highlited textBlock-text--uppercased'>Скорость Движения</p><p>Легковым и грузовым автомобилям при их движении с прицепом на автомагистралях — не более 90 км/ч, на остальных дорогах — не более 70 км/ч</p>",
-      "imgSrc": "Content/Images/machines/news/2.jpg",
+      "imgSrc": "Content/Images/news/2.jpg",
       "rules": {
         "col1": [
           {
