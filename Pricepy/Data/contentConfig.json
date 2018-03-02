@@ -316,15 +316,15 @@
             ]
           },
           "price": "35 руб",
-          "availibilityLabel": "да",
-          "availibility": true,
+          "availibilityLabel": "нет до 19.01",
+          "availibility": false,
           "discount": false,
           "isSuperAction": false,
           "href": "/machines/rydwan-euro-c750-t4",
           "nextHref": "/machines/rydwan-euro-a750-l4",
-          "previousHref": "/machines/rydwan-euro-p2600",
+          "previousHref": "/machines/adv-1",
           "availibilityDate": null,
-          "bookedDates": "2018-01-15,2018-01-16"
+          "bookedDates": ""
         },
         {
           "img": {
@@ -447,7 +447,7 @@
           "nextHref": "/machines/rydwan-euro-c750-l8",
           "previousHref": "/machines/rydwan-euro-c750-t4",
           "availibilityDate": null,
-          "bookedDates": "2018-01-12,"
+          "bookedDates": ""
         },
         {
           "img": {
@@ -1078,42 +1078,42 @@
             "characteristics": [
               {
                 "name": "Длинна внутренняя/внешняя",
-                "value": "600/606 см",
+                "value": "4 м",
                 "$$hashKey": "object:1490"
               },
               {
                 "name": "Ширина внутренняя/внешняя",
-                "value": "150/156 см",
+                "value": "2 м",
                 "$$hashKey": "object:1491"
               },
               {
                 "name": "Высота тента",
-                "value": "120 см",
+                "value": "170 см",
                 "$$hashKey": "object:1492"
               },
               {
-                "name": "Высота прицепа от пола до верха",
-                "value": "150 см",
+                "name": "Рабочий объём",
+                "value": "13.5 куб. м",
                 "$$hashKey": "object:1493"
               },
               {
                 "name": "Резина",
-                "value": "R 14C (усиленная)",
+                "value": "R 14C",
                 "$$hashKey": "object:1494"
               },
               {
                 "name": "Полная масса",
-                "value": "2600 кг",
+                "value": "1500 кг",
                 "$$hashKey": "object:1495"
               },
               {
-                "name": "Подвеска",
+                "name": "Торсионная подвеска",
                 "value": "усиленная",
                 "$$hashKey": "object:1496"
               },
               {
                 "name": "Зелёная карта",
-                "value": "",
+                "value": "да",
                 "$$hashKey": "object:1497"
               }
             ],
@@ -1121,32 +1121,85 @@
               {
                 "title": "55 руб/сутки",
                 "name": "сутки",
-                "value": "55 руб",
+                "value": "50 руб",
                 "$$hashKey": "object:1514"
               },
               {
                 "title": "53 руб/3-7 суток",
                 "name": "3-7 суток",
-                "value": "53 руб",
+                "value": "47 руб",
                 "$$hashKey": "object:1515"
               },
               {
                 "title": "50 руб/более 7 суток",
                 "name": "более 7 суток",
-                "value": "50 руб",
+                "value": "45 руб",
                 "$$hashKey": "object:1516"
               }
             ]
           },
-          "price": "55 руб",
-          "availibilityLabel": "нет ремонт",
-          "availibility": false,
+          "price": "50 руб",
+          "availibilityLabel": "да",
+          "availibility": true,
           "discount": false,
           "isSuperAction": false,
           "href": "/machines/rydwan-euro-p2600",
-          "nextHref": "/machines/rydwan-euro-c750-t4",
+          "nextHref": "/machines/adv-1",
           "previousHref": "/machines/rydwan-euro-c750-l5",
-          "availibilityDate": "",
+          "availibilityDate": null,
+          "bookedDates": ""
+        },
+        {
+          "img": {
+            "imgSrc": "Content/Images/machines/adv1/1.jpg",
+            "imgTitle": "",
+            "imgAlt": "Рекламный прицеп"
+          },
+          "secondaryImages": [
+            {
+              "img": {
+                "imgSrc": "Content/Images/machines/adv1/1.jpg",
+                "imgTitle": "",
+                "imgAlt": "Рекламный прицеп"
+              }
+            }
+          ],
+          "id": 9,
+          "description": "Рекламный прицеп",
+          "name": "Рекламный прицеп",
+          "fullInfo": {
+            "category": "Категория BE",
+            "characteristics": [
+              {
+                "name": "Площадь билборда",
+                "value": "31.25 кв.м.",
+                "$$hashKey": "object:1490"
+              }
+            ],
+            "prices": [
+              {
+                "title": "400 руб/месяц",
+                "name": "сутки",
+                "value": "50 руб",
+                "$$hashKey": "object:1514"
+              },
+              {
+                "title": "300 руб/2 недели",
+                "name": "3-7 суток",
+                "value": "47 руб",
+                "$$hashKey": "object:1515"
+              }
+            ]
+          },
+          "price": "400 руб",
+          "availibilityLabel": "да",
+          "availibility": true,
+          "discount": false,
+          "isSuperAction": false,
+          "href": "/machines/adv-1",
+          "nextHref": "/machines/rydwan-euro-c750-t4",
+          "previousHref": "/machines/rydwan-euro-p2600",
+          "availibilityDate": null,
           "bookedDates": ""
         }
       ]

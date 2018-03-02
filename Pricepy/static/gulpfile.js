@@ -60,8 +60,8 @@ gulp.task('compile-js', function(){
     return gulp.src(['src/app/app.js', 'src/app/*/*.js'])
         .pipe(concat('all.min.js'))
         .pipe(ngAnnotate())
-        .pipe(config.production ? uglify() : util.noop())
-        .pipe(config.production? stripDebug() : util.noop())
+        //.pipe(config.production ? uglify() : util.noop())
+        //.pipe(config.production? stripDebug() : util.noop())
         .pipe(gulp.dest('dist'))
 });
 

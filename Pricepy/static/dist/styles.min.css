@@ -62,8 +62,8 @@ p {
   background-size: cover;
 }
 .cell {
-  padding-left: 150px;
-  padding-right: 150px;
+  padding-left: 300px;
+  padding-right: 300px;
 }
 @media screen and (max-width: 1110px) {
   .cell {
