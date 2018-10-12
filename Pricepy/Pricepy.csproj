@@ -193,6 +193,9 @@
     <Content Include="Content\Images\machines\B2600\2.jpg" />
     <Content Include="Content\Images\machines\B2600\3.jpg" />
     <Content Include="Content\Images\machines\B2600\4.jpg" />
+    <Content Include="Content\Images\machines\k8\1.jpg" />
+    <Content Include="Content\Images\machines\k8\2.jpg" />
+    <Content Include="Content\Images\machines\k8\3.jpg" />
     <Content Include="Content\Images\machines\news\3.jpg" />
     <Content Include="Content\Images\machines\news\4.jpg" />
     <Content Include="Content\Images\machines\news\5.jpg" />

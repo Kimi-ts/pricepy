@@ -6,7 +6,6 @@
                 <label class="filter-label">Категория E
                     <input type="checkbox" ng-model="categories.CategoryE" ng-change="saveCategoryFilter()" />
                 </label>
-
                 <label class="filter-label">Показать только доступные
                     <input type="checkbox" ng-model="availibilityFilterValue.useFilter" ng-change="saveAvailibilityFilterValue()" />
                 </label>
@@ -21,7 +20,7 @@
                         <img src="Content/Icons/5 hour orange transparent.png" alt="discount!" title="возможна аренда на 5 часов!" />
                     </span>
                     <div class="textBlock">
-                        <a ng-href="{{item.href}}" class="gallery-item-description" ng-controller="scrollToAnchorController" ng-click="gotoElement('top')">{{item.description}}</a>
+                        <a ng-href="{{item.href}}" class="gallery-item-description" ng-controller="scrollToAnchorController" ng-click="gotoElement('top')" title="{{item.description}}">{{item.description}}</a>
                         <div class="textBlock-contentBlock inGallery">
                             <h5 class="textBlock-contentBlock-title">{{machines.gallery.priceLabel}}</h5>
                             <p class="textBlock-contentBlock-value">{{item.price}}</p>

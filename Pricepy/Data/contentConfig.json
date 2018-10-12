@@ -63,6 +63,27 @@
     ],
     "sections": [
       {
+        "video": {
+          "url": "https://www.youtube.com/watch?v=yeqp7htG5fY"
+        },
+        "textHtml": "<p>Дорогие друзья, предлагаем вашему вниманию ряд публикаций, на тему интересных прицепов американского рынка, где данная тема раскрыта давно интересно и качественно. Как всегда наши ласточки для Вас в разделе <a\nhref='/machines'>Наша Техника</a>. \n</p><p>С уважением, команда Big Trailer.</p>",
+        "$$hashKey": "object:1565"
+      },
+      {
+        "video": {
+          "url": "https://www.youtube.com/watch?v=0oM5fULZkZs"
+        },
+        "textHtml": "<p>Дорогие Друзья, еще раз позволим напомнить насколько важно соблюдение правил эксплуатации прицепа и к чему приводит желание поторопиться, нарушив скоростной режим, или сэкономить, используя прицеп габариты которого не соответствуют размеру перевозимого груза.\n</p><p>С уважением,команда Big Trailer</p>",
+        "$$hashKey": "object:1802"
+      },
+      {
+        "img": {
+          "imgSrc": "Content/Images/news/r2.jpg"
+        },
+        "textHtml": "<p>Дорогие друзья, только для Вас, предлагаем в аренду мобильный рекламный билборд на базе прицепа к легковому автомобилю, рекламная информация размещается на двух баннерных растяжках площадь каждой 31.25 м2, также осуществим перемещение арендованного билборда по городу, изготовим эскиз и баннерную растяжку, сделайте свою рекламу экономичной, простой, эффективной и убойной как АК-74. Подробности в разделе <a\nhref='/machines'>Наша Техника</a>. \n</p><p>С уважением, команда Big Trailer.</p>",
+        "$$hashKey": "object:1563"
+      },
+      {
         "img": {
           "imgSrc": "Content/Images/news/design-3047520_1920.jpg"
         },
@@ -316,14 +337,14 @@
             ]
           },
           "price": "35 руб",
-          "availibilityLabel": "нет до 19.01",
+          "availibilityLabel": "нет до 14.06",
           "availibility": false,
           "discount": false,
           "isSuperAction": false,
           "href": "/machines/rydwan-euro-c750-t4",
           "nextHref": "/machines/rydwan-euro-a750-l4",
-          "previousHref": "/machines/adv-1",
-          "availibilityDate": null,
+          "previousHref": "/machines/rydwan-euro-b2600-k8",
+          "availibilityDate": "2018-06-14 00:06",
           "bookedDates": ""
         },
         {
@@ -433,20 +454,20 @@
               },
               {
                 "name": "до 5 часов",
-                "value": "12 руб",
+                "value": "15 руб",
                 "$$hashKey": "object:1409"
               }
             ]
           },
           "price": "20 руб",
-          "availibilityLabel": "да",
-          "availibility": true,
+          "availibilityLabel": "нет до 14.06",
+          "availibility": false,
           "discount": false,
           "isSuperAction": true,
           "href": "/machines/rydwan-euro-a750-l4",
           "nextHref": "/machines/rydwan-euro-c750-l8",
           "previousHref": "/machines/rydwan-euro-c750-t4",
-          "availibilityDate": null,
+          "availibilityDate": "2018-06-14 00:06",
           "bookedDates": ""
         },
         {
@@ -700,7 +721,7 @@
           "nextHref": "/machines/rydwan-euro-b2600-0-l8",
           "previousHref": "/machines/rydwan-euro-c750-l8",
           "availibilityDate": null,
-          "bookedDates": "2018-01-12,"
+          "bookedDates": ""
         },
         {
           "img": {
@@ -805,14 +826,14 @@
             ]
           },
           "price": "65 руб",
-          "availibilityLabel": "нет до 26.01",
+          "availibilityLabel": "нет до 25.06",
           "availibility": false,
           "discount": false,
           "isSuperAction": false,
           "href": "/machines/rydwan-euro-b2600-0-l8",
           "nextHref": "/machines/rydwan-euro-b2600-0-p3",
           "previousHref": "/machines/rydwan-euro-r-eu-l2",
-          "availibilityDate": "2018-01-26 00:01",
+          "availibilityDate": "2018-06-25 00:06",
           "bookedDates": ""
         },
         {
@@ -1031,14 +1052,14 @@
             ]
           },
           "price": "38 руб",
-          "availibilityLabel": "нет",
-          "availibility": false,
+          "availibilityLabel": "да",
+          "availibility": true,
           "discount": false,
           "isSuperAction": true,
           "href": "/machines/rydwan-euro-c750-l5",
           "nextHref": "/machines/rydwan-euro-p2600",
           "previousHref": "/machines/rydwan-euro-b2600-0-p3",
-          "availibilityDate": "2018-01-30 00:01",
+          "availibilityDate": null,
           "bookedDates": ""
         },
         {
@@ -1088,12 +1109,12 @@
               },
               {
                 "name": "Высота тента",
-                "value": "170 см",
+                "value": "190 см",
                 "$$hashKey": "object:1492"
               },
               {
                 "name": "Рабочий объём",
-                "value": "13.5 куб. м",
+                "value": "14 куб. м",
                 "$$hashKey": "object:1493"
               },
               {
@@ -1121,24 +1142,24 @@
               {
                 "title": "55 руб/сутки",
                 "name": "сутки",
-                "value": "50 руб",
+                "value": "55 руб",
                 "$$hashKey": "object:1514"
               },
               {
                 "title": "53 руб/3-7 суток",
                 "name": "3-7 суток",
-                "value": "47 руб",
+                "value": "53 руб",
                 "$$hashKey": "object:1515"
               },
               {
                 "title": "50 руб/более 7 суток",
                 "name": "более 7 суток",
-                "value": "45 руб",
+                "value": "50 руб",
                 "$$hashKey": "object:1516"
               }
             ]
           },
-          "price": "50 руб",
+          "price": "55 руб",
           "availibilityLabel": "да",
           "availibility": true,
           "discount": false,
@@ -1166,7 +1187,7 @@
           ],
           "id": 9,
           "description": "Рекламный прицеп",
-          "name": "Рекламный прицеп",
+          "name": "adv-1",
           "fullInfo": {
             "category": "Категория BE",
             "characteristics": [
@@ -1179,27 +1200,136 @@
             "prices": [
               {
                 "title": "400 руб/месяц",
-                "name": "сутки",
-                "value": "50 руб",
+                "name": "Месяц",
+                "value": "300 руб",
                 "$$hashKey": "object:1514"
               },
               {
                 "title": "300 руб/2 недели",
-                "name": "3-7 суток",
-                "value": "47 руб",
+                "name": "2 недели",
+                "value": "200 руб",
                 "$$hashKey": "object:1515"
               }
             ]
           },
-          "price": "400 руб",
+          "price": "300 руб",
           "availibilityLabel": "да",
           "availibility": true,
           "discount": false,
           "isSuperAction": false,
           "href": "/machines/adv-1",
-          "nextHref": "/machines/rydwan-euro-c750-t4",
+          "nextHref": "/machines/rydwan-euro-b2600-k8",
           "previousHref": "/machines/rydwan-euro-p2600",
           "availibilityDate": null,
+          "bookedDates": ""
+        },
+		{
+          "img": {
+            "imgSrc": "Content/Images/machines/k8/1.jpg",
+            "imgAlt": "Прицеп Rydwan Euro B2600\\0\\К8",
+            "imgTitle": "Прицеп Rydwan Euro B2600\\0\\К8"
+          },
+          "secondaryImages": [
+            {
+              "img": {
+                "imgSrc": "Content/Images/machines/k8/1.jpg",
+                "imgTitle": "",
+                "imgAlt": "Прицеп Rydwan Euro B2600\\0\\К8"
+              }
+            },
+            {
+              "img": {
+                "imgSrc": "Content/Images/machines/k8/2.jpg",
+                "imgTitle": "",
+                "imgAlt": "Прицеп Rydwan Euro B2600\\0\\К8"
+              }
+            },
+            {
+              "img": {
+                "imgSrc": "Content/Images/machines/k8/3.jpg",
+                "imgTitle": "",
+                "imgAlt": "Прицеп Rydwan Euro B2600\\0\\К8"
+              }
+            }
+          ],
+          "id": 10,
+          "description": "Прицеп Rydwan Euro B2600\\0\\К8",
+          "name": "rydwan-euro-b2600-k8",
+          "fullInfo": {
+            "category": "Категория C",
+            "characteristics": [
+              {
+                "name": "Длинна внутренняя/внешняя",
+                "value": "400/406 см"
+              },
+              {
+                "name": "Ширина внутренняя/внешняя",
+                "value": "150/156 см"
+              },
+              {
+                "name": "Высота прицепа от земли",
+                "value": "235 см"
+              },
+              {
+                "name": "Высота прицепа от пола до верха",
+                "value": "170 см"
+              },
+              {
+                "name": "Высота борта",
+                "value": "35 см"
+              },
+              {
+                "name": "Резина",
+                "value": "R 14C (усиленная)"
+              },
+              {
+                "name": "Полная масса",
+                "value": "750 кг"
+              },
+              {
+                "name": "Подвеска",
+                "value": "усиленная рессорная"
+              },
+              {
+                "name": "Открывающийся задний борт и тент",
+                "value": ""
+              },
+              {
+                "name": "Зелёная карта",
+                "value": ""
+              }
+            ],
+            "prices": [
+              {
+                "title": "20 руб/сутки",
+                "name": "сутки",
+                "value": "20 руб"
+              },
+              {
+                "title": "18 руб/3-7 суток",
+                "name": "3-7 суток",
+                "value": "18 руб"
+              },
+              {
+                "title": "15 руб/более 7 суток",
+                "name": "более 7 суток",
+                "value": "15 руб"
+              },
+              {
+                "name": "до 5 часов",
+                "value": "15 руб"
+              }
+            ]
+          },
+          "price": "20 руб",
+          "availibilityLabel": "нет до 14.06",
+          "availibility": false,
+          "discount": false,
+          "isSuperAction": true,
+          "href": "/machines/rydwan-euro-b2600-k8",
+          "nextHref": "/machines/rydwan-euro-c750-t4",
+          "previousHref": "/machines/adv-1",
+          "availibilityDate": "2018-06-14 00:06",
           "bookedDates": ""
         }
       ]

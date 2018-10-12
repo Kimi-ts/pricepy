@@ -545,12 +545,14 @@ ul.nav--horizontal li {
 }
 .gallery ul {
   list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 .gallery-item {
   float: left;
   padding: 15px 20px 40px 15px;
   margin: 0 15px 20px 0;
-  width: 320px;
+  width: 310px;
   border: 1px solid #807b7b;
   box-shadow: 2px 2px 5px #d3d3d3;
   position: relative;
