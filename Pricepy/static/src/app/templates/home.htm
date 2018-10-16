@@ -1,21 +1,16 @@
-    <div ng-controller="sliderController" ng-if = "showSlides" match-height="toLarger">
-        <div ng-repeat = "banner in data.banners" class="row row--darkbackground has-background-image imaged well cell item-img" ng-style="{'background-image': 'url(' + banner.backgroundImageUrl + ')'}" ng-show ="banner.isActive">
-                    <ng-include src="'static/src/app/templates/banner.htm'"></ng-include>
-        </div>
+<div ng-controller="sliderController" ng-if="showSlides" match-height="toLarger">
+    <div ng-repeat="banner in data.banners" class="row row--darkbackground has-background-image imaged well cell item-img" ng-style="{'background-image': 'url(' + banner.backgroundImageUrl + ')'}" ng-show="banner.isActive">
+        <ng-include src="'static/src/app/templates/banner.htm'"></ng-include>
     </div>
-    <div ng-repeat="section in data.sections" class="row cell well" ng-class="{'row--alternate': section.background == 'alternate',
-                                                                                'mobile-hidden': section.mobileHidden == 'true'}">
+</div>
+<div class="row well cell">
+    <div ng-repeat="section in data.sections" class="card well" ng-class="{'row--alternate': section.background == 'alternate',
+                                                                                'mobile-hidden': section.mobileHidden == 'true', 'card-full': section.video}">
         <div class="bucket bucket--notCentered">
             <div class="bucket-media">
                 <img ng-show="{{section.img}}" ng-src="{{section.img.imgSrc}}" alt="{{section.img.imgAlt}}" title="{{section.img.imgTitle}}" class="bucket-media--main" />
-                <div class="bucket-media-main"  ng-show="{{section.video}}">
-                    <ng-youtube-embed
-                        video="section.video.url" 
-                        autoplay="false"
-                        color="white"
-                        disablekb="true"
-                        class="bucket-media--main"
-                        width ="100%">
+                <div class="bucket-media-main" ng-show="{{section.video}}">
+                    <ng-youtube-embed video="section.video.url" autoplay="false" color="white" disablekb="true" class="bucket-media--main" width="100%">
                     </ng-youtube-embed>
                 </div>
             </div>
@@ -24,14 +19,15 @@
             </div>
         </div>
     </div>
-    <div class="row cell well" ng-class="data.mapView.background == 'alternate' ? 'row--alternate' : ''">
-        <div class="bucket bucket--notCentered">
-            <div class="bucket-media">
-                <div class="map" set-map></div>
-            </div>
-            <div class="bucket-content textBlock">
-                <span ng-bind-html="data.mapView.textHtml"></span>
-            </div>
+</div>
+<div class="row cell well" ng-class="data.mapView.background == 'alternate' ? 'row--alternate' : ''">
+    <div class="bucket bucket--notCentered">
+        <div class="bucket-media">
+            <div class="map" set-map></div>
         </div>
-        <div ng-controller="scrollToAnchorController" class="back-to-top" ng-click="gotoElement('top')"><i class="fa fa-chevron-up"></i></div>
+        <div class="bucket-content textBlock">
+            <span ng-bind-html="data.mapView.textHtml"></span>
+        </div>
     </div>
+    <div ng-controller="scrollToAnchorController" class="back-to-top" ng-click="gotoElement('top')"><i class="fa fa-chevron-up"></i></div>
+</div>
