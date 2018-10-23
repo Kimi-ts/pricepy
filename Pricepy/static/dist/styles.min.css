@@ -65,6 +65,12 @@ p {
   padding-left: 300px;
   padding-right: 300px;
 }
+@media screen and (max-width: 1600px) {
+  .cell {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
 @media screen and (max-width: 1110px) {
   .cell {
     padding-left: 50px;
