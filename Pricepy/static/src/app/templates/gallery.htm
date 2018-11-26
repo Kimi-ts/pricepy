@@ -1,39 +1,35 @@
-﻿        <div class="gallery" match-height>
-            <div class="filter">
-                <label class="filter-label">Категория B
-                    <input type="checkbox" ng-model="categories.CategoryB" ng-change="saveCategoryFilter()" />
-                </label>
-                <label class="filter-label">Категория E
-                    <input type="checkbox" ng-model="categories.CategoryE" ng-change="saveCategoryFilter()" />
-                </label>
-                <label class="filter-label">Показать только доступные
-                    <input type="checkbox" ng-model="availibilityFilterValue.useFilter" ng-change="saveAvailibilityFilterValue()" />
-                </label>
+﻿<div class="text-center mb-3">
+    <label class="lead pr-3">Категория B
+        <input type="checkbox" ng-model="categories.CategoryB" ng-change="saveCategoryFilter()" />
+    </label>
+    <label class="lead pr-3">Категория E
+        <input type="checkbox" ng-model="categories.CategoryE" ng-change="saveCategoryFilter()" />
+    </label>
+    <label class="lead">Показать только доступные
+        <input type="checkbox" ng-model="availibilityFilterValue.useFilter" ng-change="saveAvailibilityFilterValue()" />
+    </label>
+</div>
+<div class="d-flex flex-wrap">
+    <div ng-repeat="item in machines.gallery.items | filter: categoryFilter(categories) | filter: availibilityFilter(availibilityFilterValue.useFilter)" ng-show="item.isVisible != false" class="gallery-wrapper">
+        <div class="content-img">
+            <a href="{{item.href}}"><img class="img-fluid" ng-src="{{item.img.imgSrc}}" title="{{item.img.imgTitle}}" alt="{{item.img.imgAlt}}" ng-controller="scrollToAnchorController" ng-click="gotoElement('top')" /></a>
+            <div class="new-text">
+                <p class="lead heading-text"><a ng-href="{{item.href}}" class="text-warning" ng-controller="scrollToAnchorController" ng-click="gotoElement('top')" title="{{item.description}}">{{item.description}}</a></p>
+                <h5 class="heading-text">{{item.fullInfo.category}}</h5>
+                <h5 class="subheading-text font-weight-bold">{{machines.gallery.priceLabel}}</h5>
+                <p class="content-text text-muted">{{item.price}}</p>
+                <h5 class="subheading-text font-weight-bold">{{machines.gallery.availabilityLabel}}</h5>
+                <p class="content-text text-muted">{{item.availibilityLabel}}</p>
+                <a ng-href="{{item.href}}" class="text-warning subheading-text" ng-controller="scrollToAnchorController" ng-click="gotoElement('top')">{{machines.gallery.moreLabel}}</a>
             </div>
-            <ul>
-                <li ng-repeat="item in machines.gallery.items | filter: categoryFilter(categories) | filter: availibilityFilter(availibilityFilterValue.useFilter)" class="gallery-item" ng-show="item.isVisible != false">
-                    <a href="{{item.href}}"><img class="item-img" ng-src="{{item.img.imgSrc}}" title="{{item.img.imgTitle}}" alt="{{item.img.imgAlt}}" ng-controller="scrollToAnchorController" ng-click="gotoElement('top')" /></a>
-                    <span ng-if="item.discount" class="gallery-diccountIcon">
-                        <img src="Content/Icons/orange transparent discount icon.png" alt="discount!" title="акция!" />
-                    </span>
-                    <span ng-if="item.isSuperAction" class="gallery-diccountIcon  gallery-diccountIcon--right">
-                        <img src="Content/Icons/5 hour orange transparent.png" alt="discount!" title="возможна аренда на 5 часов!" />
-                    </span>
-                    <div class="textBlock">
-                        <a ng-href="{{item.href}}" class="gallery-item-description" ng-controller="scrollToAnchorController" ng-click="gotoElement('top')" title="{{item.description}}">{{item.description}}</a>
-                        <div class="textBlock-contentBlock inGallery">
-                            <h5 class="textBlock-contentBlock-title">{{machines.gallery.priceLabel}}</h5>
-                            <p class="textBlock-contentBlock-value">{{item.price}}</p>
-                        </div>
-                        <div class="textBlock-contentBlock inGallery">
-                            <h5 class="textBlock-contentBlock-title">{{machines.gallery.availabilityLabel}}</h5>
-                            <p class="textBlock-contentBlock-value textBlock-contentBlock-value--highlighted" ng-class="item.availibility == true ? 'green' : 'red'">{{item.availibilityLabel}}</p>
-                        </div>
-                        <div class="gallery-link-wrapper">
-                            <a ng-href="{{item.href}}" class="gallery-link" ng-controller="scrollToAnchorController" ng-click="gotoElement('top')">{{machines.gallery.moreLabel}}</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <div ng-controller="scrollToAnchorController" class="back-to-top" ng-click="gotoElement('top')"><i class="fa fa-chevron-up"></i></div>
+            <div class="discount-label">
+                <span ng-if="item.discount">
+                    <img src="Content/Icons/orange transparent discount icon.png" alt="discount!" title="акция!" />
+                </span>
+                <span ng-if="item.isSuperAction">
+                    <img src="Content/Icons/5 hour orange transparent.png" alt="discount!" title="возможна аренда на 5 часов!" />
+                </span>
+            </div>
         </div>
+    </div>
+</div>

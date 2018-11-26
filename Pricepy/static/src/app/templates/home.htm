@@ -1,33 +1,56 @@
-<div ng-controller="sliderController" ng-if="showSlides" match-height="toLarger">
-    <div ng-repeat="banner in data.banners" class="row row--darkbackground has-background-image imaged well cell item-img" ng-style="{'background-image': 'url(' + banner.backgroundImageUrl + ')'}" ng-show="banner.isActive">
+<div ng-controller="sliderController" ng-if="showSlides">
+    <div ng-repeat="banner in data.banners" class="home-banner" ng-style="{'background-image': 'url(' + banner.backgroundImageUrl + ')'}" ng-show="banner.isActive">
         <ng-include src="'static/src/app/templates/banner.htm'"></ng-include>
     </div>
 </div>
-<div class="row well cell">
-    <div ng-repeat="section in data.sections" class="card well" ng-class="{'row--alternate': section.background == 'alternate',
-                                                                                'mobile-hidden': section.mobileHidden == 'true', 'card-full': section.video}">
-        <div class="bucket bucket--notCentered">
-            <div class="bucket-media">
-                <img ng-show="{{section.img}}" ng-src="{{section.img.imgSrc}}" alt="{{section.img.imgAlt}}" title="{{section.img.imgTitle}}" class="bucket-media--main" />
-                <div class="bucket-media-main" ng-show="{{section.video}}">
-                    <ng-youtube-embed video="section.video.url" autoplay="false" color="white" disablekb="true" class="bucket-media--main" width="100%">
-                    </ng-youtube-embed>
-                </div>
+<div class="row no-gutters p-3 px-md-4 mb-3">
+    <div class="col-12 col-sm-4 pr-3 fixed-height">
+        <div class="position-relative border-top border-warning fake-border-top">
+            <div class="position-absolute date-block">
+                <small class="text-right text-muted">{{newsTitleItem.months}}</small>
+                <div class="text-center font-weight-bold lead">{{newsTitleItem.day | addLeadingZero}}</div>
+                <small class="text-center d-block text-muted">{{newsTitleItem.year}}</small>
             </div>
-            <div class="bucket-content textBlock">
-                <span ng-bind-html="section.textHtml"></span>
+            <div class="mt-5 news-block mb-3 mb-sm-0">
+                <p><a href="/news" class="text-muted">{{newsTitleItem.tags.join(", ")}}</a></p>
+                <h5 class="mb-3">{{newsTitleItem.title}}</h5>
+                <div ng-bind-html="newsTitleItem.textHtml"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-sm-4 pr-3 fixed-height">
+        <div class="position-relative border-top border-warning fake-border-top">
+            <div class="position-absolute date-block">
+                <small class="text-right text-muted">{{textItem.months}}</small>
+                <div class="text-center font-weight-bold lead">{{textItem.day | addLeadingZero}}</div>
+                <small class="text-center d-block text-muted">{{textItem.year}}</small>
+            </div>
+            <div class="mt-5  news-block mb-3 mb-sm-0">
+                <p><a class="text-muted" href="/usefulText">{{textItem.tags.join(", ")}}</a></p>
+                <h5 class="mb-3">{{textItem.title}}</h5>
+                <div ng-bind-html="textItem.textHtml"></div>
+                <p><a class="text-warning" href="/usefulText">Далее</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-sm-4 fixed-height">
+        <div class="position-relative border-top border-warning fake-border-top">
+            <div class="position-absolute date-block">
+                <small class="text-right text-muted">{{videoItem.months}}</small>
+                <div class="text-center font-weight-bold lead">{{videoItem.day | addLeadingZero}}</div>
+                <small class="text-center d-block text-muted">{{videoItem.year}}</small>
+            </div>
+            <div class="mt-5 news-block mb-3 mb-sm-0">
+                <p><a class="text-muted" href="/usefulVideo">{{videoItem.tags.join(", ")}}</a></p>
+                <h5 class="mb-3">{{videoItem.title}}</h5>
+                <div ng-bind-html="videoItem.textHtml"></div>
+                <p><a class="text-warning" href="/usefulVideo">Далее</a></p>
             </div>
         </div>
     </div>
 </div>
-<div class="row cell well" ng-class="data.mapView.background == 'alternate' ? 'row--alternate' : ''">
-    <div class="bucket bucket--notCentered">
-        <div class="bucket-media">
-            <div class="map" set-map></div>
-        </div>
-        <div class="bucket-content textBlock">
-            <span ng-bind-html="data.mapView.textHtml"></span>
-        </div>
+<div class="row-fluid p-3 px-md-4 bg-warning">
+    <div class="col-12">
+        <p class="text-center">Bigtrailer - самые надёжные прицепы твоего города!</p>
     </div>
-    <div ng-controller="scrollToAnchorController" class="back-to-top" ng-click="gotoElement('top')"><i class="fa fa-chevron-up"></i></div>
 </div>

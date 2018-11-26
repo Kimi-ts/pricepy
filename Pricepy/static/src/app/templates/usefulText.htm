@@ -1,0 +1,22 @@
+<div class="row p-5 px-md-4">
+    <div class="col-6">
+        <div class="mb-3">
+            <p class="text-right w-100 mb-3"><small class="text-muted">{{activeSection.fullDate}}</small></p>
+            <hr />
+            <div>
+                <img ng-src="{{activeSection.img.imgSrc}}" alt="{{activeSection.img.imgAlt}}" title="{{activeSection.img.imgTitle}}" class="img-fluid" />
+            </div>
+            <div class="my-5">
+                <span ng-bind-html="activeSection.textHtml"></span>
+            </div>
+        </div>
+    </div>
+    <div class="col-3 offset-3">
+        <h5 class="mb-3">Другие публикации: </h5>
+        <ul class="list-unstyled">
+            <li ng-repeat="section in textItems">
+                <a href="#" ng-click="viewSection(section)" ng-class="section.id == activeSection.id ? 'text-muted' : 'text-warning'">{{section.title}}</a>
+            </li>
+        </ul>
+    </div>
+</div>

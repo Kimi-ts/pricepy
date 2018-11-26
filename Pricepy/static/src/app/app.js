@@ -7,6 +7,18 @@ app.config(["$routeProvider", "$locationProvider", function ($routeProvider, $lo
         templateUrl: templateSourcePath +"home.htm",
         controller: "homeController"
     })
+    .when("/news", {
+        templateUrl: templateSourcePath +"news.htm",
+        controller: "newsController"
+    })
+    .when("/usefulText", {
+        templateUrl: templateSourcePath +"usefulText.htm",
+        controller: "usefulTextController"
+    })
+    .when("/usefulVideo", {
+        templateUrl: templateSourcePath +"usefulVideo.htm",
+        controller: "usefulVideoController"
+    })
     .when("/machines/:machineId", {
         templateUrl: templateSourcePath + "machinePage.htm",
         controller: "machineController",

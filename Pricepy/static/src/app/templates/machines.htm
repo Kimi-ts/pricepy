@@ -1,18 +1,8 @@
-    <div class="row cell well" ng-class="data.content.background == 'alternate' ? 'row--alternate' : ''">
-        <div class="bucket bucket--notCentered">
-            <div class="bucket-media mobile-hidden">
-                <span class="bucket-icon">
-                    <i class="fa fa-hand-o-right fa-6" aria-hidden="true"></i>
-                </span>
-            </div>
-            <div class="bucket-content textBlock">
-                <span ng-bind-html="data.content.textHtml"></span>
-            </div>
-        </div>
-    </div>
-    <div class="row well cell">
-        <div class="textBlock textBlock--centered">
-            <h3 class="textBlock-headline">{{data.gallery.headline}}</h3>
-        </div>
+<div class="jumbotron">
+    <span ng-bind-html="data.content.textHtml"></span>
+</div>
+<div class="row no-gutters p-3 px-md-4">
+    <div class="col-12">
         <ng-include src="'static/src/app/templates/gallery.htm'"></ng-include>
     </div>
+</div>

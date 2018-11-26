@@ -1,0 +1,141 @@
+.gallery-wrapper{
+    width: 100%;
+
+    @media (min-width: 576px){
+        width: 50%;
+    }
+
+    @media (min-width: 992px){
+        width: 25%;
+    }
+}
+
+.content-img{
+    position: relative;
+    width: 100%;
+
+    .new-text{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: black;
+        color: white;
+        font-family: sans-serif;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: visibility 0s, opacity 0.5s linear; 
+        transition: visibility 0s, opacity 0.5s linear;
+
+        .heading-text, 
+        .subheading-text{
+            font-size: 0.9rem;
+        }
+
+        .content-text{
+            font-size: 0.75rem;
+        }
+
+        @media (min-width: 576px){
+            .heading-text, 
+            .subheading-text{
+                font-size: 0.85rem;
+            }
+    
+            .content-text{
+                font-size: 0.75rem;
+            }
+        }
+    
+        @media (min-width: 1200px){
+            .heading-text, 
+            .subheading-text{
+                font-size: 1rem;
+            }
+    
+            .content-text{
+                font-size: 1rem;
+            }
+        }
+    }
+
+    &:hover .new-text{
+        width: 50%;
+        height: 100%;
+        padding: 8px 15px;
+        visibility: visible;
+        opacity: 0.7; 
+    }
+
+    .discount-label{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.arrow-button-right{
+    top: 45%;
+    right: 20px;
+}
+
+.arrow-button-left{
+    top: 45%;
+    left: 20px;
+}
+
+.secondary-image{
+    cursor: pointer;
+}
+
+.nav-tabs{
+    border-bottom-color: #fff;
+
+    @media (min-width: 992px){
+        border-bottom-color: #ffc107;
+    }
+}
+
+.nav-tabs .nav-link.active{
+    border-color: #ffc108;
+
+    @media (min-width: 992px){
+        border-color: #ffc107 #ffc107 #fff;
+    }
+}
+
+.nav-tabs .nav-link:hover{
+    border-color: #ffc107;
+}
+
+.fake-border-top{
+    border-top-width: 1.5em !important;
+}
+
+.date-block{
+    top: -1.5em;
+    right: 5px;
+}
+
+.news-block{
+    top: 60px;
+    left: 5px;
+}
+
+.fixed-height{
+    min-height: 310px;
+}
+
+.home-banner{
+    background-size:     cover;                 
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+.map, 
+.home-banner{
+    height: 400px;
+
+    @media (min-width: 992px){
+        height: 600px;
+    }
+}

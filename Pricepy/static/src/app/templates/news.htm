@@ -1,0 +1,16 @@
+<div class="row p-5 px-md-4">
+    <div class="col-6">
+        <h3>Новости</h3>
+        <div ng-repeat="section in newsTitleItems" class="mb-3">
+            <hr />
+            <p class="text-right w-100 mb-3"><small class="text-muted">{{section.fullDate}}</small></p>
+
+            <div class="mb-5">
+                <span ng-bind-html="section.textHtml"></span>
+            </div>
+        </div>
+    </div>
+    <div class="col-3 offset-3">
+        <div ng-bind-html="data.newsSectionBanner.textHtml"></div>
+    </div>
+</div>

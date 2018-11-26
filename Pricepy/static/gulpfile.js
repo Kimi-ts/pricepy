@@ -62,6 +62,8 @@ gulp.task('compile-js', function(){
         .pipe(ngAnnotate())
         //.pipe(config.production ? uglify() : util.noop())
         //.pipe(config.production? stripDebug() : util.noop())
+        //.pipe(uglify())
+        //.pipe(stripDebug())
         .pipe(gulp.dest('dist'))
 });
 

@@ -1,31 +1,33 @@
-﻿        <div class="textBlock textBlock--centered">
-            <h3 class="textBlock-subheadline">{{banner.subheadline}}</h3>
-            <ul class="textBlock-list textBlock-list--ticked">
-                <li ng-repeat="item in banner.items">{{item.title}}</li>
-            </ul>
-            <div ng-controller="timerController"  class="bucket bucket--notCentered" ng-if="banner.finishDateTime">
-                <div class="bucket-media">
-                    <div ng-show="isActionFinished && isLoaded">
-                        <p>ДО ОКОНЧАНИЯ АКЦИИ ОСТАЛОСЬ:</p>
-                        <table class="bucket-media-table">
-                            <tr>
-                                <td class="bucket-media-table-value">{{daysLeft | addLeadingZero}}</td>
-                                <td class="bucket-media-table-value">{{hoursLeft | addLeadingZero}}</td>
-                                <td class="bucket-media-table-value">{{minutesLeft | addLeadingZero}}</td>
-                                <td class="bucket-media-table-value">{{secondsLeft | addLeadingZero}}</td>
-                            </tr>
-                            <tr>
-                                <td>дней</td>
-                                <td>часов</td>
-                                <td>минут</td>
-                                <td>секунд</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <p ng-show="!isActionFinished">Акция завершилась</p>
-                </div>
-                <div class="bucket-content textBlock">
-                    <span ng-bind-html="banner.textHtml"></span>
-                </div>
-            </div>
+﻿<div class="offset-md-3 pt-5">
+    <h3 class="text-white">{{banner.subheadline}}</h3>
+    <ul class="text-white">
+        <li ng-repeat="item in banner.items">{{item.title}}</li>
+    </ul>
+    <div ng-controller="timerController" ng-if="banner.finishDateTime">
+        <div ng-show="isActionFinished && isLoaded">
+            <p class="mb-1">ДО ОКОНЧАНИЯ АКЦИИ ОСТАЛОСЬ:</p>
+            <table class="mb-3">
+                <tr>
+                    <td class="bg-white border border-warning text-center">
+                        <p class="mb-0 lead font-weight-bold">{{daysLeft | addLeadingZero}}</p>
+                        <small class="text-warning px-1">дней</small>
+                    </td>
+                    <td class="bg-white border border-warning text-center">
+                        <p class="mb-0 lead font-weight-bold">{{hoursLeft | addLeadingZero}}</p>
+                        <small class="text-warning px-1">часов</small>
+                    </td>
+                    <td class="bg-white border border-warning text-center">
+                        <p class="mb-0 lead font-weight-bold">{{minutesLeft | addLeadingZero}}</p>
+                        <small class="text-warning px-1">минут</small>
+                    </td>
+                    <td class="bg-white border border-warning text-center">
+                        <p class="mb-0 lead font-weight-bold">{{secondsLeft | addLeadingZero}}</p>
+                        <small class="text-warning px-1">секунд</small>
+                    </td>
+                </tr>
+            </table>
         </div>
+        <p ng-show="!isActionFinished">Акция завершилась</p>
+        <div ng-bind-html="banner.textHtml"></div>
+    </div>
+</div>

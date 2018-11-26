@@ -247,7 +247,10 @@
     <Content Include="static\src\app\templates\machine.htm" />
     <Content Include="static\src\app\templates\machinePage.htm" />
     <Content Include="static\src\app\templates\machines.htm" />
+    <Content Include="static\src\app\templates\news.htm" />
     <Content Include="static\src\app\templates\notFound.htm" />
+    <Content Include="static\src\app\templates\usefulText.htm" />
+    <Content Include="static\src\app\templates\usefulVideo.htm" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="web.config">

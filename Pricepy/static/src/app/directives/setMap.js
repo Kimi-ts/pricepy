@@ -11,7 +11,7 @@ app.directive("setMap", ["$timeout", function($timeout){
                 var myLatLng = {lat: 53.841885, lng: 27.524684};
 
                 var map = new google.maps.Map(element[0], {
-                    zoom: 14,
+                    zoom: 15,
                     center: myLatLng
                 });
 

@@ -1,56 +1,79 @@
-﻿        <div class="bucket bucket--notCentered" ng-swipe-disable-mouse ng-swipe-left="gotoPage(machine.nextHref)" ng-swipe-right = "gotoPage(machine.previousHref)">
-            <div class="bucket-media">
-                <img ng-src="{{activeImg.img.imgSrc}}" title="{{activeImg.img.imgTitle}}" alt="{{activeImg.img.imgAlt}}" class="bucket-media--main" />
-                <div class="bucket-media-wrapper" match-height ng-show="isShowSecondaryImages">
-                    <img ng-repeat="image in machine.secondaryImages" ng-src="{{image.img.imgSrc}}" title="{{image.img.imgTitle}}" alt="{{image.img.imgAlt}}" class="bucket-media--secondary item-img"  ng-click="setActive(image)" ng-class="image.img.imgSrc==activeImg.img.imgSrc ? 'active' : ''"/>
-                </div>
-                <div class="bucket-media-links-wrapper textBlock" ng-show="isShowSecondaryImages">
-                    <button ng-click="setPreviousImageActive()" class="btn--link prev left" title="{{banner.section.previousLinkLabel}}"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
-                    <button ng-click="setNextImageActive()" class="btn--link right next" title="{{banner.section.nextLinkLabel}}"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+﻿<div class="row">
+    <div class="col-12 col-sm-5">
+        <div class="position-relative">
+            <img ng-src="{{activeImg.img.imgSrc}}" title="{{activeImg.img.imgTitle}}" alt="{{activeImg.img.imgAlt}}" class="img-fluid w-100" />
+            <button ng-click="setPreviousImageActive()" class="arrow-button-left position-absolute btn btn-outline-warning btn-sm" title="{{banner.section.previousLinkLabel}}"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+            <button ng-click="setNextImageActive()" class="arrow-button-right position-absolute btn btn-outline-warning btn-sm" title="{{banner.section.nextLinkLabel}}"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+        </div>
+        <div class="d-flex" ng-show="isShowSecondaryImages">
+            <img ng-repeat="image in machine.secondaryImages" ng-src="{{image.img.imgSrc}}" title="{{image.img.imgTitle}}" alt="{{image.img.imgAlt}}" class="secondary-image" ng-click="setActive(image)" ng-class="image.img.imgSrc==activeImg.img.imgSrc ? 'active border border-warning' : ''" style="width: 33%; height: 100%; border-width: 3px !important;" />
+        </div>
+    </div>
+    <div class="col-12 col-sm-7">
+        <h3 class="mb-3">{{machine.description}}</h3>
+        <ul class="nav nav-tabs mb-3 flex-column flex-lg-row" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="info-tab" data-toggle="tab" data-target="#info" role="tab" aria-controls="info" aria-selected="false">Характеристика</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="size-tab" data-toggle="tab" data-target="#size" role="tab" aria-controls="size" aria-selected="true">Размеры</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="price-tab" data-toggle="tab" data-target="#price" role="tab" aria-controls="price" aria-selected="false">Цена</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="calendar-tab" data-toggle="tab" data-target="#calendar" role="tab" aria-controls="calendar" aria-selected="false">Доступность</a>
+            </li>
+        </ul>
+        <div class="tab-content px-1" id="myTabContent">
+            <div class="tab-pane fade show active" id="info" role="tabpanel" aria-labelledby="info-tab">
+                <h5>{{machine.fullInfo.category}}</h5>
+                <div ng-repeat="item in machine.fullInfo.characteristics" class="mb-1">
+                    <h5>{{item.name}}</h5>
+                    <span class="font-weight-light">{{item.value}}</span>
                 </div>
             </div>
-            <div class="bucket-content bucket-content--wide textBlock">
-                <h3 class="textBlock-headline">{{machine.description}}</h3>
-                <div class="col">
-                    <p class="textBlock-text--highlited">{{machine.fullInfo.category}}</p>
-                    <div ng-repeat="item in machine.fullInfo.characteristics" class="textBlock-contentBlock">
-                        <span class="textBlock-contentBlock-title">{{item.name}}</span>
-                        <p class="textBlock-contentBlock-value">{{item.value}}</p>
-                    </div>
+            <div class="tab-pane fade" id="size" role="tabpanel" aria-labelledby="size-tab">
+                <div ng-repeat="item in machine.fullInfo.sizes" class="mb-1">
+                    <h5>{{item.name}}</h5>
+                    <span class="font-weight-light">{{item.value}}</p>
                 </div>
-                <div class="col">
-                    <p class='textBlock-text--highlited'>{{machine.priceLabel}}</p>
-                    <div ng-repeat="item in machine.fullInfo.prices" class="textBlock-contentBlock">
-                        <span class="textBlock-contentBlock-title">{{item.name}}</span>
-                        <p class="textBlock-contentBlock-value">{{item.value}}</p>
+            </div>
+            <div class="tab-pane fade" id="price" role="tabpanel" aria-labelledby="price-tab">
+                <div ng-repeat="item in machine.fullInfo.prices" class="mb-1">
+                    <h5>{{item.name}}</h5>
+                    <span class="font-weight-light">{{item.value}}</span>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="calendar" role="tabpanel" aria-labelledby="calendar-tab">
+                <div ng-controller="calendarController" ng-if="contentLoaded" class="">
+                    <h5 class="mb-3">Забронированные даты</h5>
+                    <div class="font-weight-light font-italic mb-1">
+                        <button class="btn btn-outline-warning btn-sm" ng-click="prevMonth()"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                        {{monthTitle}}
+                        <button class="btn btn-outline-warning btn-sm" ng-click="nextMonth()"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
                     </div>
-                    <div ng-controller ="calendarController" ng-if="contentLoaded" class="calendar">
-                        <p class='textBlock-text--highlited'>Забронированные даты</p>
-                            <div class="textBlock-text--italic calendar-monthTitle">
-                                <button class="btn--link prev calendar-link left" ng-click="prevMonth()"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
-                                 {{monthTitle}}
-                                <button class="btn--link next calendar-link right" ng-click="nextMonth()"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
-                            </div>
-                            <table class="calendar-body textBlock--smallertext">
-                                <thead>
-                                    <tr class="calendar-body-head">
-                                        <td>Пн</td>
-                                        <td>Вт</td>
-                                        <td>Ср</td>
-                                        <td>Чт</td>
-                                        <td>Пт</td>
-                                        <td>Сб</td>
-                                        <td>Вс</td>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr ng-repeat="row in arr">
-                                        <td ng-repeat="column in row track by $index"><span ng-class="{'calendar-body-item--highlighted' : column.today == true, 'calendar-body-item--marked': column.booked == true}">{{column.value}}</span></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <p class="textBlock--smallertext"><span class="red"><i class="fa fa-square" aria-hidden="true"></i></span> прицеп забронирован</p>
-                    </div>
+                    <table class="mb-3">
+                        <thead>
+                            <tr class="font-weight-bold">
+                                <td class="pr-1">Пн</td>
+                                <td class="pr-1">Вт</td>
+                                <td class="pr-1">Ср</td>
+                                <td class="pr-1">Чт</td>
+                                <td class="pr-1">Пт</td>
+                                <td class="pr-1">Сб</td>
+                                <td class="pr-1">Вс</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="row in arr">
+                                <td ng-repeat="column in row track by $index"><span ng-class="{'border border-secondary' : column.today == true, 'text-warning': column.booked == true}">{{column.value}}</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="text-italic font-weight-light"><span class="text-warning"><i class="fa fa-square" aria-hidden="true"></i></span> прицеп забронирован</p>
                 </div>
             </div>
         </div>
+    </div>
+</div>

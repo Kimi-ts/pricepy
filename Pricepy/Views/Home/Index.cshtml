@@ -5,6 +5,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="myApp" ng-controller="appController">
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="~/static/dist/styles.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title ng-bind="pageTitle">Аренда Прицепов в Минске | Bigtrailer</title>
@@ -14,10 +15,6 @@
     <link href="~/Content/Icons/icon.png" type="image/x-icon" rel="icon">
     <link href="~/Content/Icons/icon.ico" type="image/x-icon" rel="shortcut icon">
     <style>
-        .map {
-            height: 300px;
-        }
-
         html, body {
             height: 100%;
             margin: 0;
@@ -53,13 +50,9 @@
     <noscript>
         <img src="//counter.rambler.ru/top100.cnt?pid=4501909" alt="Топ-100" />
     </noscript>
-    <!— END Top100 (Kraken) Counter —> 
-    <script type="text/javascript" src="~/static/dist/ngModules.app.min.js"></script>
-    <script type="text/javascript" src="~/static/dist/all.min.js"></script>
+    <!— END Top100 (Kraken) Counter —>
     <meta name="google-site-verification" content="dqGQVOfv---ltijSAO0JtaXS6-_oVYSRWJkdL9UYwsE" />
-    <meta name="yandex-verification" content="ae20b23e8dd2f456" /> 
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkNKAC_frei_BLZ0zphi92XjvIkGzudBA" async defer></script>
+    <meta name="yandex-verification" content="ae20b23e8dd2f456" />
     <script type="application/ld+json">
         {
         "@@context": "http://schema.org",
@@ -119,40 +112,41 @@
     <!— /Yandex.Metrika counter —>
 </head>
 <body>
-    <div class="row menu cell well well--smaller">
-        <a href="/" name="top" id="top" class="mainLogo"><img ng-src="{{data.header.logo.src}}"></a>
-        <ul class="nav nav--horizontal menu" ng-controller="toggleMenuController">
-            <li class="desktop-hidden" ng-click="toggleMenu()"><a class="btn btn--noborder menu-item"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
-            <li show-when="large" ng-show="isOpen" ng-repeat="item in data.header.menu"><a href="{{item.href}}" class="btn btn--noborder menu-item" ng-class="path == item.path? 'btn--active': ''">{{item.title}}</a></li>
-        </ul>
+    <div class="d-flex flex-row p-1 px-md-4 mb-1 bg-white border-bottom shadow-sm">
+        <a href="/" name="top" id="top" class="my-md-0 mr-md-auto my-2 py-3"><img ng-src="{{data.header.logo.src}}"></a>
+        <nav class="my-2 my-md-0 mr-md-3 navbar">
+            <a ng-repeat="item in data.header.menu" href="{{item.href}}" class="p-2 nav-item text-warning" ng-class="path == item.path? 'active': ''">{{item.title}}</a>
+        </nav>
     </div>
     <div ng-view style="min-height:75%"></div>
-    <div class="row row--darkbackground cell well grid">
-        <div class="textBlock textBlock--smallertext textBlock--leftAligned col col--third">
-            <p ng-repeat="item in data.footer.leftColumn.tels" class="textBlock-text--highlited"><a href="{{item.href}}">{{item.title}}</a></p>
-            <p ng-repeat="item in data.footer.leftColumn.emails"><a href="{{item.href}}">{{item.title}}</a></p>
-            <p ng-repeat="item in data.footer.leftColumn.paragraphs" class="{{item.class}}">{{item.title}}</p>
+    <div class="d-flex flex-column flex-md-row justify-content-between px-3 py-3 py-md-5 px-md-4 mt-5 bg-white border-top">
+        <div class="mb-3 mb-md-0">
+            <p ng-repeat="item in data.footer.leftColumn.tels" class="mb-0"><a href="{{item.href}}" class="text-warning">{{item.title}}</a></p>
+            <p ng-repeat="item in data.footer.leftColumn.emails" class="mb-0"><a href="{{item.href}}" class="text-warning">{{item.title}}</a></p>
+            <p ng-repeat="item in data.footer.leftColumn.paragraphs" class="mb-0 {{item.class}}">{{item.title}}</p>
         </div>
-        <div class="textBlock textBlock--smallertext textBlock--leftAligned col col--third">
-            <p ng-repeat="item in data.footer.middleColumn">{{item.title}}</p>
+        <div class="mb-3 mb-md-0">
+            <p ng-repeat="item in data.footer.middleColumn" class="mb-0">{{item.title}}</p>
         </div>
-        <div class="textBlock textBlock--smallertext col col--third">
-            <div class="social">
-                <a ng-repeat="item in data.footer.socialBar" href="{{item.href}}" target="_blank"><i class="fa {{item.class}}" aria-hidden="true"></i></a>
-            </div>
-            <nav class="nav nav--white">
-               <a ng-repeat="item in data.header.menu" href="{{item.href}}" class="menu-item" ng-class="path == item.path? 'link-active': ''">{{item.title}}</a>
-            </nav>
+        <div class="mb-3 mb-md-0">
+            <a ng-repeat="item in data.footer.socialBar" href="{{item.href}}" target="_blank"><i class="text-warning fa pr-1 {{item.class}}" aria-hidden="true"></i></a>
+            <p><a ng-repeat="item in data.header.menu" href="{{item.href}}" class="text-warning pr-1 d-block d-lg-inline" ng-class="path == item.path? 'link-active': ''">{{item.title}}</a></p>
         </div>
-        <div class="textBlock col col--fullwidth">
-            <hr class="textBlock-horizontalline" />
+        <div class="mb-3 mb-md-0">
+            <a class="text-warning" href="#top">Наверх</a>
         </div>
-        <div class="textBlock col col--fullwidth">
-            <p class="textBlock--smallertext textBlock-text--rightaligned">{{data.footer.copyright.title}}</p>
-        </div>
+    </div>
+    <div class="border-top p-3 text-right">
+        <p class="m-0">{{data.footer.copyright.title}}</p>
     </div>
     <!— Top100 (Kraken) Widget —>
     <span id="top100_widget"></span>
     <!— END Top100 (Kraken) Widget —>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="~/static/dist/ngModules.app.min.js"></script>
+    <script type="text/javascript" src="~/static/dist/all.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkNKAC_frei_BLZ0zphi92XjvIkGzudBA" async defer></script>
 </body>
 </html>

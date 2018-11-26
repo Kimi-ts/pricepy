@@ -1,10 +1,5 @@
-﻿    <div class="row cell well well-larger" ng-class="data.content.background == 'alternate' ? 'row--alternate' : ''">
-        <div class="bucket bucket--notCentered">
-            <div class="bucket-media mobile-hidden">
-                <img ng-src="{{data.content.img.imgSrc}}" title="{{data.content.img.imgTitle}}" alt="{{data.content.img.imgAlt}}" class="bucket-media--main" />
-            </div>
-            <div class="bucket-content textBlock">
-                <span ng-bind-html="data.content.textHtml"></span>
-            </div>
-        </div>
+﻿<div class="row no-gutters p-3 px-md-4">
+    <div class="col">
+        <div ng-bind-html="data.content.textHtml"></div>
     </div>
+</div>
