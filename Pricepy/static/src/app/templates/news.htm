@@ -4,9 +4,8 @@
         <div ng-repeat="section in newsTitleItems" class="mb-3">
             <hr />
             <p class="text-right w-100 mb-3"><small class="text-muted">{{section.fullDate}}</small></p>
-
             <div class="mb-5">
-                <span ng-bind-html="section.textHtml"></span>
+                <span class="text-justify" ng-bind-html="section.textHtml"></span>
             </div>
         </div>
     </div>

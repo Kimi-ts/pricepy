@@ -11,10 +11,10 @@
                 <div class="text-center font-weight-bold lead">{{newsTitleItem.day | addLeadingZero}}</div>
                 <small class="text-center d-block text-muted">{{newsTitleItem.year}}</small>
             </div>
-            <div class="mt-5 news-block mb-3 mb-sm-0">
+            <div class="mt-5 news-block mb-3 mb-sm-0 mx-3">
                 <p><a href="/news" class="text-muted">{{newsTitleItem.tags.join(", ")}}</a></p>
                 <h5 class="mb-3">{{newsTitleItem.title}}</h5>
-                <div ng-bind-html="newsTitleItem.textHtml"></div>
+                <div ng-bind-html="newsTitleItem.textHtml" class="text-justify"></div>
             </div>
         </div>
     </div>
@@ -25,10 +25,10 @@
                 <div class="text-center font-weight-bold lead">{{textItem.day | addLeadingZero}}</div>
                 <small class="text-center d-block text-muted">{{textItem.year}}</small>
             </div>
-            <div class="mt-5  news-block mb-3 mb-sm-0">
+            <div class="mt-5  news-block mb-3 mb-sm-0 mx-3">
                 <p><a class="text-muted" href="/usefulText">{{textItem.tags.join(", ")}}</a></p>
                 <h5 class="mb-3">{{textItem.title}}</h5>
-                <div ng-bind-html="textItem.textHtml"></div>
+                <div ng-bind-html="textItem.textHtml" class="text-justify"></div>
                 <p><a class="text-warning" href="/usefulText">Далее</a></p>
             </div>
         </div>
@@ -40,10 +40,10 @@
                 <div class="text-center font-weight-bold lead">{{videoItem.day | addLeadingZero}}</div>
                 <small class="text-center d-block text-muted">{{videoItem.year}}</small>
             </div>
-            <div class="mt-5 news-block mb-3 mb-sm-0">
+            <div class="mt-5 news-block mb-3 mb-sm-0 mx-3">
                 <p><a class="text-muted" href="/usefulVideo">{{videoItem.tags.join(", ")}}</a></p>
                 <h5 class="mb-3">{{videoItem.title}}</h5>
-                <div ng-bind-html="videoItem.textHtml"></div>
+                <div ng-bind-html="videoItem.textHtml" class="text-justify"></div>
                 <p><a class="text-warning" href="/usefulVideo">Далее</a></p>
             </div>
         </div>
@@ -51,6 +51,6 @@
 </div>
 <div class="row-fluid p-3 px-md-4 bg-warning">
     <div class="col-12">
-        <p class="text-center">Bigtrailer - самые надёжные прицепы твоего города!</p>
+        <p class="text-center zoomIn animated infinite">Bigtrailer - самые надёжные прицепы твоего города!</p>
     </div>
 </div>

@@ -2,13 +2,13 @@
     <div class="col-12 pb-5 col-sm-6 pb-sm-0">
         <div ng-repeat="item in data.content.rules.col1" class="mb-3">
             <h5 class="mb-1">{{item.headline}}</h5>
-            <span class="font-weight-light" ng-bind-html="item.textHtml"></span>
+            <span class="font-weight-light text-justify" ng-bind-html="item.textHtml"></span>
         </div>
     </div>
     <div class="col-12 col-sm-5 offset-sm-1 col-lg-3 offset-lg-3">
         <div ng-repeat="item in data.content.rules.col2">
             <p class="font-weight-bold">{{item.headline}}</p>
-            <span ng-bind-html="item.textHtml"></span>
+            <span ng-bind-html="item.textHtml text-justify"></span>
         </div>
     </div>
 </div>

@@ -2,7 +2,7 @@
     <div ng-repeat="section in videoItems" class="col-6 mb-3">
         <ng-youtube-embed video="section.video.url" autoplay="false" color="white" disablekb="true" class="" width="100%">
         </ng-youtube-embed>
-        <span ng-bind-html="section.textHtml"></span>
+        <span class="text-justify" ng-bind-html="section.textHtml"></span>
         <p class="w-100 mb-3 mt-3"><small class="text-muted">{{section.fullDate}}</small></p>
     </div>
 </div>

@@ -3,7 +3,7 @@
 </div>
 <div class="row no-gutters p-3 px-md-4">
     <div class="col-12 pb-5 col-sm-6 pb-sm-0">
-        <span ng-bind-html="data.mapView.textHtml"></span>
+        <span ng-bind-html="data.mapView.textHtml" class="text-justify"></span>
         <p>{{data.social.description}}</p>
         <p ng-repeat="item in data.social.links" class="mb-0"><a href="{{item.link}}" target="_blank" class="text-warning">{{item.name}}</a></p>
     </div>
@@ -11,7 +11,7 @@
         <div class="" ng-show="!isSucceeded && !isError">
             <form novalidate name="messagesForm">
                 <h3 class="mb-3">{{data.form.headline}}</h3>
-                <div class="mb-3">{{data.form.innerText}}</div>
+                <div class="mb-3 text-justify">{{data.form.innerText}}</div>
                 <div class="form-group">
                     <label for="name-form">{{data.form.inputs.nameLabel}}</label>
                     <input type="text" class="form-control" ng-model="form.UserName" id="name-form" required />
@@ -19,7 +19,7 @@
                 <div class="form-group">
                     <label for="email-form">{{data.form.inputs.emailLabel}}</label>
                     <input type="email" class="form-control" ng-model="form.UserEmail" id="email-form" required />
-                    <small id="emailHtlp" class="form-text text-muted">Мы используем ваш адрес только для обратной связи, не храним его в базе и не делимся им с третьими лицами.</small>
+                    <small id="emailHtlp" class="form-text text-muted text-justify">Мы используем ваш адрес только для обратной связи, не храним его в базе и не делимся им с третьими лицами.</small>
                 </div>
                 <div class="form-group">
                     <label for="message-form">{{data.form.inputs.messageLabel}}</label>
@@ -29,10 +29,10 @@
             </form>
         </div>
         <div ng-show="isSucceeded">
-            <span ng-bind-html="data.successView.textHtml"></span>
+            <span class="text-justify" ng-bind-html="data.successView.textHtml"></span>
         </div>
         <div ng-show="isError">
-            <span ng-bind-html="data.errorView.textHtml"></span>
+            <span class="text-justify" ng-bind-html="data.errorView.textHtml"></span>
         </div>
     </div>
 </div>
